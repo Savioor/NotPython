@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.cpp
+ExpressionParser.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
+../data/datatypes/primitive/PyString.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
+vector
+-
+../data/datatypes/PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+../data/Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+vector
+-
+map
+-
+datatypes/PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+string
+-
+array
+-
+map
+-
+vector
+-
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
+../PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+

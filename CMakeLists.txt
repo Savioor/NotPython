@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.14)
+project(BasicPythonInterpreter)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(BasicPythonInterpreter main.cpp data/IOR.cpp data/IOR.h data/datatypes/PyObject.cpp data/datatypes/PyObject.h data/datatypes/primitive/PyString.cpp data/datatypes/primitive/PyString.h code/ExpressionParser.cpp code/ExpressionParser.h data/Memory.cpp data/Memory.h code/GenericParser.cpp code/GenericParser.h code/IRequester.h code/keywords/AbstractKeyword.cpp code/keywords/AbstractKeyword.h code/keywords/natives/Print.cpp code/keywords/natives/Print.h data/datatypes/natives/unary/UnaryNativeFunction.cpp data/datatypes/natives/unary/UnaryNativeFunction.h code/reqeusters/CinRequester.cpp code/reqeusters/CinRequester.h)
