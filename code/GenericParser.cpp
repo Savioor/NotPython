@@ -6,6 +6,7 @@
 #include "GenericParser.h"
 #include "keywords/natives/Print.h"
 #include "../data/IOR.h"
+#include "keywords/Var.h"
 #include <iostream>
 
 void GenericParser::parseLine(IRequester & requester) {
@@ -32,6 +33,8 @@ void GenericParser::parseLine(IRequester & requester) {
 GenericParser::GenericParser() {
     auto* p = new Print();
     keywords.push_back(p);
+    auto* v = new Var();
+    keywords.push_back(v);
 
     IOR::getInstance().getIn().emplace_back("default");
     IOR::getInstance().getErr().emplace_back("default");

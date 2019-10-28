@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o"
   "BasicPythonInterpreter.pdb"
   "BasicPythonInterpreter"
 )

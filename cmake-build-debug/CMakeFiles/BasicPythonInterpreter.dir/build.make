@@ -200,6 +200,45 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.s
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp > CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o: ../data/datatypes/natives/binary/AssignOperator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.cpp > CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/keywords/Var.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp > CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.s
+
 # Object files for target BasicPythonInterpreter
 BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o" \
@@ -212,7 +251,10 @@ BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o" \
-"CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o"
+"CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o"
 
 # External object files for target BasicPythonInterpreter
 BasicPythonInterpreter_EXTERNAL_OBJECTS =
@@ -228,9 +270,12 @@ BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Abst
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/build.make
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable BasicPythonInterpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable BasicPythonInterpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BasicPythonInterpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

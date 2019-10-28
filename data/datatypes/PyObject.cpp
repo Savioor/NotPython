@@ -7,7 +7,7 @@
 #include <utility>
 #include "../Memory.h"
 
-const std::string &PyObject::getName() const {
+const std::string &PyObject::getType() const {
     return type;
 }
 

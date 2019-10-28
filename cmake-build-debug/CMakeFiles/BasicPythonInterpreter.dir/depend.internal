@@ -12,6 +12,7 @@ CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/natives/Print.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
@@ -19,6 +20,14 @@ CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o
@@ -46,6 +55,17 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.cpp

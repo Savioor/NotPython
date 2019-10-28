@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.cpp
-ExpressionParser.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
-../data/datatypes/primitive/PyString.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
-
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
 vector
 -
@@ -19,6 +13,30 @@ vector
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 ../data/Memory.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+string
+-
+../../data/Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp
+Var.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.h
+../ExpressionParser.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
+../../data/IOR.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.h
+AbstractKeyword.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+string
+-
+vector
+-
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
 vector
@@ -37,8 +55,4 @@ map
 -
 vector
 -
-
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
-../PyObject.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 

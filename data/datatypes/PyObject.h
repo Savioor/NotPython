@@ -17,7 +17,7 @@ protected:
     std::map<std::string, int> data;
 
 public:
-    virtual const std::string& getName() const;
+    virtual const std::string& getType() const;
     virtual std::map<std::string, int>& getData();
     virtual const std::map<std::string, int>& getData() const;
 

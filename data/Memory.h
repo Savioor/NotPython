@@ -65,6 +65,8 @@ public:
      */
     PyObject* getVariable(std::string&);
 
+    int getPointerByObject(PyObject* inp);
+
     Memory(Memory const&) = delete;
     void operator=(Memory const&) = delete;
 

@@ -105,6 +105,12 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/natives/Print.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -133,6 +139,18 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.cpp">

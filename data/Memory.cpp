@@ -52,3 +52,12 @@ PyObject *Memory::getVariable(std::string & var) {
     }
     return options.at(largestIndex).first;
 }
+
+int Memory::getPointerByObject(PyObject *inp) {
+    for (int i = 0; i < data.size(); i++){
+        if (data.at(i) == inp){
+            return i;
+        }
+    }
+    return -1;
+}

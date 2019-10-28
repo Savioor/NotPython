@@ -13,7 +13,9 @@
 class ExpressionParser {
 private:
     ExpressionParser();
-    std::vector<char> specialChars;
+    std::vector<PyObject*> getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr);
+    PyObject* readVariableName(stringIter_t& start, stringIter_t& end);
+
 
 public:
     static ExpressionParser& getInstance() {
@@ -21,8 +23,8 @@ public:
         return instance;
     }
     PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr);
+    std::vector<char> specialChars;
 
-    std::vector<PyObject*> getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr);
 
 };
 

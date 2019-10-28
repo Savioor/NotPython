@@ -204,6 +204,33 @@ code/keywords/AbstractKeyword.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.s
 .PHONY : code/keywords/AbstractKeyword.cpp.s
 
+code/keywords/Var.o: code/keywords/Var.cpp.o
+
+.PHONY : code/keywords/Var.o
+
+# target to build an object file
+code/keywords/Var.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o
+.PHONY : code/keywords/Var.cpp.o
+
+code/keywords/Var.i: code/keywords/Var.cpp.i
+
+.PHONY : code/keywords/Var.i
+
+# target to preprocess a source file
+code/keywords/Var.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.i
+.PHONY : code/keywords/Var.cpp.i
+
+code/keywords/Var.s: code/keywords/Var.cpp.s
+
+.PHONY : code/keywords/Var.s
+
+# target to generate assembly for a file
+code/keywords/Var.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.s
+.PHONY : code/keywords/Var.cpp.s
+
 code/keywords/natives/Print.o: code/keywords/natives/Print.cpp.o
 
 .PHONY : code/keywords/natives/Print.o
@@ -339,6 +366,60 @@ data/datatypes/PyObject.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.s
 .PHONY : data/datatypes/PyObject.cpp.s
 
+data/datatypes/natives/binary/AssignOperator.o: data/datatypes/natives/binary/AssignOperator.cpp.o
+
+.PHONY : data/datatypes/natives/binary/AssignOperator.o
+
+# target to build an object file
+data/datatypes/natives/binary/AssignOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o
+.PHONY : data/datatypes/natives/binary/AssignOperator.cpp.o
+
+data/datatypes/natives/binary/AssignOperator.i: data/datatypes/natives/binary/AssignOperator.cpp.i
+
+.PHONY : data/datatypes/natives/binary/AssignOperator.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/AssignOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.i
+.PHONY : data/datatypes/natives/binary/AssignOperator.cpp.i
+
+data/datatypes/natives/binary/AssignOperator.s: data/datatypes/natives/binary/AssignOperator.cpp.s
+
+.PHONY : data/datatypes/natives/binary/AssignOperator.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/AssignOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.s
+.PHONY : data/datatypes/natives/binary/AssignOperator.cpp.s
+
+data/datatypes/natives/binary/BinaryNativeFunction.o: data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
+
+.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.o
+
+# target to build an object file
+data/datatypes/natives/binary/BinaryNativeFunction.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
+.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
+
+data/datatypes/natives/binary/BinaryNativeFunction.i: data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
+
+.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/BinaryNativeFunction.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
+.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
+
+data/datatypes/natives/binary/BinaryNativeFunction.s: data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
+
+.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/BinaryNativeFunction.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
+.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
+
 data/datatypes/natives/unary/UnaryNativeFunction.o: data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
 
 .PHONY : data/datatypes/natives/unary/UnaryNativeFunction.o
@@ -438,6 +519,9 @@ help:
 	@echo "... code/keywords/AbstractKeyword.o"
 	@echo "... code/keywords/AbstractKeyword.i"
 	@echo "... code/keywords/AbstractKeyword.s"
+	@echo "... code/keywords/Var.o"
+	@echo "... code/keywords/Var.i"
+	@echo "... code/keywords/Var.s"
 	@echo "... code/keywords/natives/Print.o"
 	@echo "... code/keywords/natives/Print.i"
 	@echo "... code/keywords/natives/Print.s"
@@ -453,6 +537,12 @@ help:
 	@echo "... data/datatypes/PyObject.o"
 	@echo "... data/datatypes/PyObject.i"
 	@echo "... data/datatypes/PyObject.s"
+	@echo "... data/datatypes/natives/binary/AssignOperator.o"
+	@echo "... data/datatypes/natives/binary/AssignOperator.i"
+	@echo "... data/datatypes/natives/binary/AssignOperator.s"
+	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.o"
+	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.i"
+	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.s"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.o"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.i"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.s"

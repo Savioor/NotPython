@@ -19,7 +19,8 @@ stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end) {
         IOR::getInstance().getErr().emplace_back("Error parsing expression");
         return end;
     }
-    if (value->getName() != "string"){
+
+    if (value->getType() != "string"){
         // TODO implement call to __str__
         IOR::getInstance().getErr().emplace_back("String expected! temp");
         return end;

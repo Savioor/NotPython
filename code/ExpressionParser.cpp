@@ -4,6 +4,8 @@
 
 #include "ExpressionParser.h"
 #include "../data/datatypes/primitive/PyString.h"
+#include <algorithm>
+#include <vector>
 
 ExpressionParser::ExpressionParser() {
     specialChars.push_back('"');
@@ -12,9 +14,13 @@ ExpressionParser::ExpressionParser() {
     specialChars.push_back('-');
     specialChars.push_back('*');
     specialChars.push_back('/');
+    specialChars.push_back('\\');
     specialChars.push_back(' ');
     specialChars.push_back('&');
     specialChars.push_back('|');
+    specialChars.push_back('=');
+    specialChars.push_back('(');
+    specialChars.push_back(')');
     specialChars.push_back('!');
 }
 
@@ -33,6 +39,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
 std::vector<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr) {
     std::vector<PyObject*> ret;
     std::string temp;
+
     for (auto it = startOfExpr; it != endOfExpr; it++){
 
         if (*it.base() == ' ') // Ignore all whitespace
@@ -52,7 +59,7 @@ std::vector<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, s
                 ret.push_back(new PyString(std::move(temp)));
                 break;
             default:
-                // Handle variables\functions here
+                ret.push_back(readVariableName(it, endOfExpr));
                 break;
         }
 
@@ -61,4 +68,19 @@ std::vector<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, s
     }
 
     return std::move(ret);
+}
+
+PyObject *ExpressionParser::readVariableName(stringIter_t& iter, stringIter_t& end) {
+    std::string varName;
+    while(iter != end){
+        for (auto& c: specialChars){
+            if (c == *iter.base()) goto endOfWhile;
+        }
+        varName.push_back(*iter.base());
+        iter++;
+    }
+    iter--;
+    endOfWhile:
+
+    return Memory::getInstance().getVariable(varName);
 }
