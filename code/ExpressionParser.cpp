@@ -33,7 +33,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
     LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endOfExpr)};
 
     if (splatData.empty()){
-        IOR::getInstance().getErr().emplace_back("Expression expected but not found!");
+//        IOR::getInstance().getErr().emplace_back("Expression expected but not found!");
         return nullptr;
     }
 
@@ -52,6 +52,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                                 "Found binary operator at the start or end of an expression");
                         return nullptr;
                     }
+
                     auto* asBin = (BinaryNativeFunction*)obj->value;
                     if (asBin->getName() != ((BinaryNativeFunction*)oper.second)->getName()) continue;
                     auto* prev = obj->prev;
@@ -68,7 +69,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                     didSomething = true;
                     break;
 
-                } else if (oper.second->getType() == "unary_native"){
+                } else if (oper.second->getType() == "unary_native" && oper.second == obj->value){
                     // TODO
                 }
             }
@@ -108,10 +109,10 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
 
                 while (*it.base() != '"'){
                     temp.push_back(*it.base());
-                    ++it;
                     if (it == endOfExpr){
                         return LinkedList<PyObject*>{};
                     }
+                    ++it;
                 }
                 ret.addToBackV(new AnonymousObject(new PyString(temp)));
                 break;

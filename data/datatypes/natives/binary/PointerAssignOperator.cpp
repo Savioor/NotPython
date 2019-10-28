@@ -24,6 +24,7 @@ PyObject *PointerAssignOperator::execute(PyObject *left, PyObject *right) {
         mem.getData().at(leftPointer) = right;
     else
         mem.getData().at(leftPointer) = ((AnonymousObject*)right)->getObj();
+
 }
 
 PointerAssignOperator::PointerAssignOperator() : BinaryNativeFunction("=") {
