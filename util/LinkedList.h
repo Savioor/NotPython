@@ -24,6 +24,9 @@ public:
     virtual void connectAfter(int i, Node<T>& node);
     virtual void connectBefore(int i, Node<T>& node);
 
+    virtual void addToFront(Node<T>* n);
+    virtual void addToBack(Node<T>* n);
+
     virtual void disconnect(Node<T>* n);
     virtual void disconnectAndKeepAlive(Node<T>* n);
     virtual void connectAfter(Node<T>* n, Node<T>& node);

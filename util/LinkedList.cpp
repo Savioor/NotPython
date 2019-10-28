@@ -2,13 +2,14 @@
 // Created by alexey on 28/10/2019.
 //
 
-#include <armadillo_bits/newarp_SortEigenvalue.hpp>
+#include "Node.h"
+
 #include "LinkedList.h"
 
 template<class T>
 int LinkedList<T>::size() {
     if (startNode == nullptr){
-        return 0
+        return 0;
     }
     int count = 1;
     Node<T>* counter = startNode;
@@ -31,6 +32,8 @@ T LinkedList<T>::valueAt(int i) {
 
 template<class T>
 void LinkedList<T>::disconnect(int i) {
+    if (startNode == nullptr)
+        return;
     disconnect(at(i));
 }
 
@@ -45,8 +48,10 @@ template<class T>
 void LinkedList<T>::disconnectAndKeepAlive(Node<T> *n) {
     Node<T>* bef = n->prev;
     Node<T>* aft = n->next;
-    bef->next = aft;
-    aft->prev = bef;
+    if (bef != nullptr) bef->next = aft;
+    else startNode = aft;
+    if (aft != nullptr) aft->prev = bef;
+    else endNode = bef;
 }
 
 template<class T>
@@ -71,20 +76,42 @@ void LinkedList<T>::connectBefore(Node<T> *n, Node<T> &node) {
 
 template<class T>
 void LinkedList<T>::disconnectAndKeepAlive(int i) {
+    if (startNode == nullptr)
+        return;
     disconnectAndKeepAlive(at(i));
 }
 
 template<class T>
 void LinkedList<T>::connectAfter(int i, Node<T> &node) {
+    if (startNode == nullptr){
+        startNode = node;
+        endNode = node;
+        return;
+    }
     connectAfter(at(i), node);
 }
 
 template<class T>
 void LinkedList<T>::connectBefore(int i, Node<T> &node) {
+    if (startNode == nullptr){
+        startNode = node;
+        endNode = node;
+    }
     connectBefore(at(i), node);
 }
 
 template<class T>
 LinkedList<T>::~LinkedList() {
     delete startNode;
+}
+
+template<class T>
+void LinkedList<T>::addToFront(Node<T> *n) {
+    connectBefore(0, n);
+}
+
+template<class T>
+void LinkedList<T>::addToBack(Node<T> *n) {
+    endNode->next = n;
+    endNode = n;
 }
