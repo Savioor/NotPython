@@ -9,6 +9,7 @@
 stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
 
     std::string varName;
+    PyObject* toAlloc = new PyObject("null");
 
     for (; ip != end; ip++){
         if (*ip.base() == ' ' || *ip.base() == '='){
@@ -16,18 +17,19 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
             while (ip != end){
                 if (*ip.base() == '='){
 
-                    PyObject* newObj = ExpressionParser::getInstance().parseExpression(++ip, end);
-                    int pointer = Memory::getInstance().alloc(*newObj);
-                    Memory::getInstance().allocPointer(varName, pointer);
-                    return end;
+                    delete(toAlloc);
+                    toAlloc = ExpressionParser::getInstance().parseExpression(++ip, end);
+                    ip = end;
 
                 } else if (*ip.base() != ' '){
 
+                    delete(toAlloc);
                     IOR::getInstance().getErr().emplace_back("Illegal char in var name");
                     return end;
 
                 }
             }
+            goto alloc;
         }
 
         for (char& l : ExpressionParser::getInstance().specialChars){
@@ -38,8 +40,8 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
         }
         varName.push_back(*ip.base());
     }
-
-    int pointer = Memory::getInstance().alloc(*(new PyObject("null")));
+    alloc:
+    int pointer = Memory::getInstance().alloc(*toAlloc);
     Memory::getInstance().allocPointer(varName, pointer);
 }
 

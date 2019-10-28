@@ -56,6 +56,14 @@ public:
      */
     int alloc(PyObject& obj);
     /**
+     *
+     * @param obj object to add into data
+     * @return the pointer to that object
+     */
+    inline int alloc(PyObject* obj){
+        return alloc(*obj);
+    };
+    /**
      * Adds a variable pointing to int that matches the current depth
      */
     void allocPointer(std::string&, int);
@@ -69,6 +77,8 @@ public:
 
     Memory(Memory const&) = delete;
     void operator=(Memory const&) = delete;
+
+    virtual ~Memory();
 
     int depth;
 

@@ -61,3 +61,9 @@ int Memory::getPointerByObject(PyObject *inp) {
     }
     return -1;
 }
+
+Memory::~Memory() {
+    for (auto var : data){
+        delete(var);
+    }
+}
