@@ -7,7 +7,16 @@
 
 template<class T>
 int LinkedList<T>::size() {
-    return 0;
+    if (startNode == nullptr){
+        return 0
+    }
+    int count = 1;
+    Node<T>* counter = startNode;
+    while(counter != endNode){
+        count++;
+        counter = counter + 1;
+    }
+    return count;
 }
 
 template<class T>
@@ -42,17 +51,19 @@ void LinkedList<T>::disconnectAndKeepAlive(Node<T> *n) {
 
 template<class T>
 void LinkedList<T>::connectAfter(Node<T> *n, Node<T> &node) {
-    Node<T>* twoAfter = node + 2;
+    Node<T>* twoAfter = node + 1;
     node.next = n;
     n->prev = node;
     n->next = twoAfter;
     if (twoAfter != nullptr) twoAfter->prev = n;
+    else endNode = n;
 }
 
 template<class T>
 void LinkedList<T>::connectBefore(Node<T> *n, Node<T> &node) {
-    Node<T>* twoBefore = node - 2;
+    Node<T>* twoBefore = node - 1;
     if (twoBefore != nullptr) twoBefore->next = n;
+    else startNode = n;
     n->prev = twoBefore;
     n->next = node;
     node.prev = n;
