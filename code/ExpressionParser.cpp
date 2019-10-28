@@ -25,7 +25,7 @@ ExpressionParser::ExpressionParser() {
     specialChars.push_back(')');
     specialChars.push_back('!');
 
-    operations.push_back(new PointerAssignOperator());
+    operations.insert({'=', new PointerAssignOperator()});
 }
 
 PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr) {
@@ -43,9 +43,9 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
 
         didSomething = false;
 
-        for (auto obj = splatData.getStart(); obj != nullptr; obj = obj->next){
-            for (auto& oper : operations){
-                if (oper->getType() == "binary_native" && oper->getType() == obj->value->getType()){
+        for (std::pair<const char, PyObject*>& oper : operations){
+            for (auto obj = splatData.getStart(); obj != nullptr; obj = obj->next){
+                if (oper.second->getType() == "binary_native" && oper.second == obj->value){
 
                     if (obj == splatData.getStart() || obj == splatData.getEnd()){
                         IOR::getInstance().getErr().emplace_back(
@@ -53,7 +53,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                         return nullptr;
                     }
                     auto* asBin = (BinaryNativeFunction*)obj->value;
-                    if (asBin->getName() != ((BinaryNativeFunction*)oper)->getName()) continue;
+                    if (asBin->getName() != ((BinaryNativeFunction*)oper.second)->getName()) continue;
                     auto* prev = obj->prev;
                     auto* next = obj->next;
 
@@ -68,7 +68,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                     didSomething = true;
                     break;
 
-                } else if (oper->getType() == "unary_native"){
+                } else if (oper.second->getType() == "unary_native"){
                     // TODO
                 }
             }
@@ -83,7 +83,6 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
 
     }
 
-    // TODO delete all anonymous objects
     PyObject* ret = splatData.getStart()->value;
     splatData.disconnectAndKeepAlive(0);
 
@@ -101,10 +100,8 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
             continue;
 
         switch (*it.base()){
-            case ' ':
-                continue;
             case '=':
-                ret.addToBackV(new PointerAssignOperator());
+                ret.addToBackV(operations.at('='));
                 break;
             case '"':
                 it++;
@@ -146,14 +143,14 @@ PyObject *ExpressionParser::readVariableName(stringIter_t& iter, stringIter_t& e
 }
 
 ExpressionParser::~ExpressionParser() {
-    for (auto& o : operations){
-        delete(o);
+    for (std::pair<const char, PyObject*>& o : operations){
+        delete(o.second);
     }
 }
 
 void ExpressionParser::disconnectSafely(LinkedList<PyObject *> &ls, Node<PyObject*>* val) {
     auto& v = val->value->getType();
-    if (v == "rvalue" || v == "binary_native"){
+    if (v == "rvalue"){
         ls.disconnect(val);
     } else {
         ls.disconnectAndKeepAlive(val);

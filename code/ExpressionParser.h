@@ -38,7 +38,7 @@ public:
     /**
      * The first operations happen first
      */
-    std::vector<PyObject*> operations;
+    std::map<char, PyObject*> operations;
 
 };
 
