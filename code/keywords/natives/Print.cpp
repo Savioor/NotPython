@@ -9,11 +9,7 @@
 #include "../../../data/datatypes/primitive/PyString.h"
 
 stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end) {
-    if (*ip.base() != ' '){
-        IOR::getInstance().getErr().emplace_back("Expected space but none was found");
-        return end;
-    }
-    ip++;
+
     PyObject* value = ExpressionParser::getInstance().parseExpression(ip, end);
     if (value == nullptr){
         IOR::getInstance().getErr().emplace_back("Error parsing expression");

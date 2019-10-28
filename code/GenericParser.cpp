@@ -15,8 +15,10 @@ void GenericParser::parseLine(IRequester & requester) {
     stringIter_t end = line.end();
     for (auto& key : keywords){
         if (strncmp(key->getKeyword().c_str(), line.c_str(), key->getKeyword().size()) == 0){
+            if (ip.base()[key->getKeyword().size()] != ' ') continue;
+
             // It's a match!
-            ip += key->getKeyword().size();
+            ip += key->getKeyword().size() + 1;
             ip = key->parse(ip, end);
             break;
         }

@@ -7,7 +7,6 @@
 #include "../../data/IOR.h"
 
 stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
-    ip++;
 
     std::string varName;
 
