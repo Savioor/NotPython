@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.cpp
+ExpressionParser.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
+../data/datatypes/primitive/PyString.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
+../data/datatypes/AnonymousObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
+algorithm
+-
+vector
+-
+
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
 vector
 -
@@ -42,6 +54,10 @@ string
 memory
 -
 
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.cpp
+AbstractKeyword.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
 string
 -
@@ -76,11 +92,19 @@ Print.h
 ../AbstractKeyword.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
 
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h
+../IRequester.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
+
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
 string
 -
 vector
 -
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp
+Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
 vector
@@ -89,6 +113,22 @@ map
 -
 datatypes/PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp
+AnonymousObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
+PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp
+PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+utility
+-
+../Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 string
@@ -100,7 +140,35 @@ map
 vector
 -
 
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.cpp
+AssignOperator.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.h
+../../../IOR.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+../../../Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AssignOperator.h
+BinaryNativeFunction.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
+../../PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp
+PyString.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
+
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
 ../PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp
+iostream
+-
+code/reqeusters/CinRequester.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h
+code/GenericParser.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.h
 

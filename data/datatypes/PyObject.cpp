@@ -26,8 +26,8 @@ PyObject::PyObject(char* n) : type(n), data() {
 }
 
 PyObject *PyObject::getVariable(std::string& name) {
-    if (data.count(name) == 0){
+    if (getData().count(name) == 0){
         return nullptr;
     }
-    return Memory::getInstance().getData().at(data.at(name));
+    return Memory::getInstance().getData().at(getData().at(name));
 }

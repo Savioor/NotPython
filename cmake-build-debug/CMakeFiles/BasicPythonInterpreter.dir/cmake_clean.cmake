@@ -11,8 +11,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o"
-  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.o"
   "BasicPythonInterpreter.pdb"
   "BasicPythonInterpreter"
 )

@@ -9,7 +9,7 @@
 stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
 
     std::string varName;
-    PyObject* toAlloc = new PyObject("null");
+    auto* toAlloc = new PyObject("null");
 
     for (; ip != end; ip++){
         if (*ip.base() == ' ' || *ip.base() == '='){

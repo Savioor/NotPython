@@ -7,25 +7,36 @@
 
 
 #include <vector>
+#include <list>
 #include "../data/datatypes/PyObject.h"
 #include "../data/Memory.h"
 
 class ExpressionParser {
 private:
     ExpressionParser();
-    std::vector<PyObject*> getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr);
+    /**
+     * Returns a list for easy deletion and replacement of elements.
+     * @param startOfExpr
+     * @param endOfExpr
+     * @return
+     */
+    std::__cxx11::list<PyObject *> getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr);
     PyObject* readVariableName(stringIter_t& start, stringIter_t& end);
 
 
 public:
+    virtual ~ExpressionParser();
+
     static ExpressionParser& getInstance() {
         static ExpressionParser instance;
         return instance;
     }
     PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr);
     std::vector<char> specialChars;
-
-
+    /**
+     * The first operations happen first
+     */
+    std::vector<PyObject*> operations;
 };
 
 

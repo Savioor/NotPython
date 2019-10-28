@@ -15,6 +15,8 @@ public:
     PyString(std::string&);
     PyString(std::string&&);
 
+    virtual ~PyString() = default;
+
     std::string myValue;
 
 };

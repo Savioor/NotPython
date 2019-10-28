@@ -339,6 +339,33 @@ data/Memory.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.s
 .PHONY : data/Memory.cpp.s
 
+data/datatypes/AnonymousObject.o: data/datatypes/AnonymousObject.cpp.o
+
+.PHONY : data/datatypes/AnonymousObject.o
+
+# target to build an object file
+data/datatypes/AnonymousObject.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
+.PHONY : data/datatypes/AnonymousObject.cpp.o
+
+data/datatypes/AnonymousObject.i: data/datatypes/AnonymousObject.cpp.i
+
+.PHONY : data/datatypes/AnonymousObject.i
+
+# target to preprocess a source file
+data/datatypes/AnonymousObject.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.i
+.PHONY : data/datatypes/AnonymousObject.cpp.i
+
+data/datatypes/AnonymousObject.s: data/datatypes/AnonymousObject.cpp.s
+
+.PHONY : data/datatypes/AnonymousObject.s
+
+# target to generate assembly for a file
+data/datatypes/AnonymousObject.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.s
+.PHONY : data/datatypes/AnonymousObject.cpp.s
+
 data/datatypes/PyObject.o: data/datatypes/PyObject.cpp.o
 
 .PHONY : data/datatypes/PyObject.o
@@ -366,33 +393,6 @@ data/datatypes/PyObject.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.s
 .PHONY : data/datatypes/PyObject.cpp.s
 
-data/datatypes/natives/binary/AssignOperator.o: data/datatypes/natives/binary/AssignOperator.cpp.o
-
-.PHONY : data/datatypes/natives/binary/AssignOperator.o
-
-# target to build an object file
-data/datatypes/natives/binary/AssignOperator.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.o
-.PHONY : data/datatypes/natives/binary/AssignOperator.cpp.o
-
-data/datatypes/natives/binary/AssignOperator.i: data/datatypes/natives/binary/AssignOperator.cpp.i
-
-.PHONY : data/datatypes/natives/binary/AssignOperator.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/AssignOperator.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.i
-.PHONY : data/datatypes/natives/binary/AssignOperator.cpp.i
-
-data/datatypes/natives/binary/AssignOperator.s: data/datatypes/natives/binary/AssignOperator.cpp.s
-
-.PHONY : data/datatypes/natives/binary/AssignOperator.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/AssignOperator.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AssignOperator.cpp.s
-.PHONY : data/datatypes/natives/binary/AssignOperator.cpp.s
-
 data/datatypes/natives/binary/BinaryNativeFunction.o: data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
 
 .PHONY : data/datatypes/natives/binary/BinaryNativeFunction.o
@@ -419,6 +419,33 @@ data/datatypes/natives/binary/BinaryNativeFunction.s: data/datatypes/natives/bin
 data/datatypes/natives/binary/BinaryNativeFunction.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
 .PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
+
+data/datatypes/natives/binary/PointerAssignOperator.o: data/datatypes/natives/binary/PointerAssignOperator.cpp.o
+
+.PHONY : data/datatypes/natives/binary/PointerAssignOperator.o
+
+# target to build an object file
+data/datatypes/natives/binary/PointerAssignOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o
+.PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.o
+
+data/datatypes/natives/binary/PointerAssignOperator.i: data/datatypes/natives/binary/PointerAssignOperator.cpp.i
+
+.PHONY : data/datatypes/natives/binary/PointerAssignOperator.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/PointerAssignOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.i
+.PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.i
+
+data/datatypes/natives/binary/PointerAssignOperator.s: data/datatypes/natives/binary/PointerAssignOperator.cpp.s
+
+.PHONY : data/datatypes/natives/binary/PointerAssignOperator.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/PointerAssignOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.s
+.PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.s
 
 data/datatypes/natives/unary/UnaryNativeFunction.o: data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
 
@@ -501,6 +528,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+util/LinkedList.o: util/LinkedList.cpp.o
+
+.PHONY : util/LinkedList.o
+
+# target to build an object file
+util/LinkedList.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.o
+.PHONY : util/LinkedList.cpp.o
+
+util/LinkedList.i: util/LinkedList.cpp.i
+
+.PHONY : util/LinkedList.i
+
+# target to preprocess a source file
+util/LinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.i
+.PHONY : util/LinkedList.cpp.i
+
+util/LinkedList.s: util/LinkedList.cpp.s
+
+.PHONY : util/LinkedList.s
+
+# target to generate assembly for a file
+util/LinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.s
+.PHONY : util/LinkedList.cpp.s
+
+util/Node.o: util/Node.cpp.o
+
+.PHONY : util/Node.o
+
+# target to build an object file
+util/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.o
+.PHONY : util/Node.cpp.o
+
+util/Node.i: util/Node.cpp.i
+
+.PHONY : util/Node.i
+
+# target to preprocess a source file
+util/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.i
+.PHONY : util/Node.cpp.i
+
+util/Node.s: util/Node.cpp.s
+
+.PHONY : util/Node.s
+
+# target to generate assembly for a file
+util/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.s
+.PHONY : util/Node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -534,15 +615,18 @@ help:
 	@echo "... data/Memory.o"
 	@echo "... data/Memory.i"
 	@echo "... data/Memory.s"
+	@echo "... data/datatypes/AnonymousObject.o"
+	@echo "... data/datatypes/AnonymousObject.i"
+	@echo "... data/datatypes/AnonymousObject.s"
 	@echo "... data/datatypes/PyObject.o"
 	@echo "... data/datatypes/PyObject.i"
 	@echo "... data/datatypes/PyObject.s"
-	@echo "... data/datatypes/natives/binary/AssignOperator.o"
-	@echo "... data/datatypes/natives/binary/AssignOperator.i"
-	@echo "... data/datatypes/natives/binary/AssignOperator.s"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.o"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.i"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.s"
+	@echo "... data/datatypes/natives/binary/PointerAssignOperator.o"
+	@echo "... data/datatypes/natives/binary/PointerAssignOperator.i"
+	@echo "... data/datatypes/natives/binary/PointerAssignOperator.s"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.o"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.i"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.s"
@@ -552,6 +636,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... util/LinkedList.o"
+	@echo "... util/LinkedList.i"
+	@echo "... util/LinkedList.s"
+	@echo "... util/Node.o"
+	@echo "... util/Node.i"
+	@echo "... util/Node.s"
 .PHONY : help
 
 

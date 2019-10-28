@@ -5,6 +5,7 @@ CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o
@@ -50,6 +51,10 @@ CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h

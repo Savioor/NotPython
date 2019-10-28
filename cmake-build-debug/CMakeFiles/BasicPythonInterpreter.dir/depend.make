@@ -4,6 +4,7 @@
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../code/ExpressionParser.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyString.h
 
@@ -50,6 +51,10 @@ CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/PyObject.h
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o: ../data/datatypes/AnonymousObject.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o: ../data/datatypes/PyObject.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/datatypes/PyObject.cpp
