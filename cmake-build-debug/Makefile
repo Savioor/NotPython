@@ -528,60 +528,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-util/LinkedList.o: util/LinkedList.cpp.o
-
-.PHONY : util/LinkedList.o
-
-# target to build an object file
-util/LinkedList.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.o
-.PHONY : util/LinkedList.cpp.o
-
-util/LinkedList.i: util/LinkedList.cpp.i
-
-.PHONY : util/LinkedList.i
-
-# target to preprocess a source file
-util/LinkedList.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.i
-.PHONY : util/LinkedList.cpp.i
-
-util/LinkedList.s: util/LinkedList.cpp.s
-
-.PHONY : util/LinkedList.s
-
-# target to generate assembly for a file
-util/LinkedList.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.s
-.PHONY : util/LinkedList.cpp.s
-
-util/Node.o: util/Node.cpp.o
-
-.PHONY : util/Node.o
-
-# target to build an object file
-util/Node.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.o
-.PHONY : util/Node.cpp.o
-
-util/Node.i: util/Node.cpp.i
-
-.PHONY : util/Node.i
-
-# target to preprocess a source file
-util/Node.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.i
-.PHONY : util/Node.cpp.i
-
-util/Node.s: util/Node.cpp.s
-
-.PHONY : util/Node.s
-
-# target to generate assembly for a file
-util/Node.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.s
-.PHONY : util/Node.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -636,12 +582,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... util/LinkedList.o"
-	@echo "... util/LinkedList.i"
-	@echo "... util/LinkedList.s"
-	@echo "... util/Node.o"
-	@echo "... util/Node.i"
-	@echo "... util/Node.s"
 .PHONY : help
 
 

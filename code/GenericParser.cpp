@@ -7,12 +7,14 @@
 #include "keywords/natives/Print.h"
 #include "../data/IOR.h"
 #include "keywords/Var.h"
+#include "ExpressionParser.h"
 #include <iostream>
 
 void GenericParser::parseLine(IRequester & requester) {
     std::string& line = *requester.getNext();
     stringIter_t ip = line.begin();
     stringIter_t end = line.end();
+    bool found = false;
     for (auto& key : keywords){
         if (strncmp(key->getKeyword().c_str(), line.c_str(), key->getKeyword().size()) == 0){
             if (ip.base()[key->getKeyword().size()] != ' ') continue;
@@ -20,8 +22,13 @@ void GenericParser::parseLine(IRequester & requester) {
             // It's a match!
             ip += key->getKeyword().size() + 1;
             ip = key->parse(ip, end);
+            found = true;
             break;
         }
+    }
+
+    if (!found){
+        ExpressionParser::getInstance().parseExpression(ip, end);
     }
 
     IOR& ior = IOR::getInstance();

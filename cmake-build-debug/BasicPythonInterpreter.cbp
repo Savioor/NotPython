@@ -174,13 +174,7 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.cpp">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h">

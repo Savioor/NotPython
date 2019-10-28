@@ -13,15 +13,29 @@ public:
     Node* prev;
     T value;
 
-    virtual ~Node();
-    Node(Node*, Node*, T);
-    Node(Node*, T);
-    Node(T);
-    Node();
+    virtual ~Node() {
+        delete (next);
+    };
+    Node(Node* b, Node* a, T v) : prev(b), next(a), value(v) {};
+    Node(Node* b, T v) : Node(b, nullptr, v) {};
+    Node(T v) : Node(nullptr, v) {};
+    Node() = default;
 
-    Node<T> * operator+(int);
-    Node<T> * operator-(int);
-    bool operator==(const Node&);
+    Node<T>* operator+(int i){
+        if (i == 0) return this;
+        if (i < 0) return this - (-i);
+        if (next == nullptr) return nullptr;
+        return next + (i - 1);
+    };
+    Node<T>* operator-(int i){
+        if (i == 0) return this;
+        if (i < 0) return this + (-i);
+        if (prev == nullptr) return nullptr;
+        return prev - (i - 1);
+    };
+    bool operator==(const Node& n){
+        return next == n.next && prev == n.prev && value == n.value;
+    };
 };
 
 

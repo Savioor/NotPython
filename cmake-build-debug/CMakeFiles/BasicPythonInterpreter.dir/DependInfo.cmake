@@ -19,8 +19,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/util/LinkedList.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/util/Node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

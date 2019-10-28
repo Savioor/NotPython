@@ -5,6 +5,7 @@
 #include "Var.h"
 #include "../ExpressionParser.h"
 #include "../../data/IOR.h"
+#include "../../data/datatypes/AnonymousObject.h"
 
 stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
 
@@ -41,8 +42,17 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
         varName.push_back(*ip.base());
     }
     alloc:
-    int pointer = Memory::getInstance().alloc(*toAlloc);
-    Memory::getInstance().allocPointer(varName, pointer);
+
+    if (toAlloc == nullptr) return end;
+
+    if (toAlloc->getType() == "rvalue"){
+        int pointer = Memory::getInstance().alloc(((AnonymousObject*)toAlloc)->getObj());
+        Memory::getInstance().allocPointer(varName, pointer);
+    } else {
+        Memory::getInstance().allocPointer(varName, Memory::getInstance().getPointerByObject(toAlloc));
+    }
+
+    return end;
 }
 
 Var::Var() : AbstractKeyword("var") {

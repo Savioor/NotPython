@@ -7,6 +7,7 @@
 #include "../../../data/IOR.h"
 #include "../../ExpressionParser.h"
 #include "../../../data/datatypes/primitive/PyString.h"
+#include "../../../data/datatypes/AnonymousObject.h"
 
 stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end) {
 
@@ -14,6 +15,14 @@ stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end) {
     if (value == nullptr){
         IOR::getInstance().getErr().emplace_back("Error parsing expression");
         return end;
+    }
+
+    if (value->getType() == "rvalue"){
+        value = ((AnonymousObject*)value)->getObj();
+        if (value == nullptr){
+            IOR::getInstance().getErr().emplace_back("Error parsing expression");
+            return end;
+        }
     }
 
     if (value->getType() != "string"){

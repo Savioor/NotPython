@@ -10,6 +10,7 @@
 #include <list>
 #include "../data/datatypes/PyObject.h"
 #include "../data/Memory.h"
+#include "../util/LinkedList.h"
 
 class ExpressionParser {
 private:
@@ -20,8 +21,9 @@ private:
      * @param endOfExpr
      * @return
      */
-    std::__cxx11::list<PyObject *> getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr);
+    LinkedList<PyObject *> getSubExpr(stringIter_t& startOfExpr, stringIter_t& endOfExpr);
     PyObject* readVariableName(stringIter_t& start, stringIter_t& end);
+    void disconnectSafely(LinkedList<PyObject *> &ls, Node<PyObject *> *val);
 
 
 public:
@@ -37,6 +39,7 @@ public:
      * The first operations happen first
      */
     std::vector<PyObject*> operations;
+
 };
 
 

@@ -7,9 +7,7 @@
 #include "../data/datatypes/AnonymousObject.h"
 #include "../data/datatypes/natives/binary/PointerAssignOperator.h"
 #include "../data/IOR.h"
-#include <algorithm>
-#include <vector>
-#include <list>
+#include "../util/LinkedList.h"
 
 ExpressionParser::ExpressionParser() {
     specialChars.push_back('"');
@@ -32,7 +30,7 @@ ExpressionParser::ExpressionParser() {
 
 PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr) {
 
-    std::list<PyObject*> splatData{getSubExpr(startOfExpr, endOfExpr)};
+    LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endOfExpr)};
 
     if (splatData.empty()){
         IOR::getInstance().getErr().emplace_back("Expression expected but not found!");
@@ -40,36 +38,61 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
     }
 
     bool didSomething;
+
     while(splatData.size() != 1){
+
         didSomething = false;
-        for (auto obj = splatData.begin(); obj != splatData.end(); ++obj){
+
+        for (auto obj = splatData.getStart(); obj != nullptr; obj = obj->next){
             for (auto& oper : operations){
-                if (oper->getType() == "binary_native"){
-                    if (obj == splatData.begin()){
+                if (oper->getType() == "binary_native" && oper->getType() == obj->value->getType()){
+
+                    if (obj == splatData.getStart() || obj == splatData.getEnd()){
                         IOR::getInstance().getErr().emplace_back(
-                                "Found binary operator at the start of an expression");
+                                "Found binary operator at the start or end of an expression");
                         return nullptr;
                     }
-                    auto* asBin = (BinaryNativeFunction*)oper;
-                    auto objBefore = --obj;
-                    (obj++)++;
-                    PyObject* newObj = asBin->execute(*(objBefore), *obj); // TODO bruh
-                    obj++;
+                    auto* asBin = (BinaryNativeFunction*)obj->value;
+                    if (asBin->getName() != ((BinaryNativeFunction*)oper)->getName()) continue;
+                    auto* prev = obj->prev;
+                    auto* next = obj->next;
+
+                    PyObject* newObj = asBin->execute(prev->value, next->value);
+                    auto* newNode = new Node<PyObject*>(newObj);
+
+                    splatData.connectAfter(obj, newNode);
+                    disconnectSafely(splatData, prev);
+                    disconnectSafely(splatData, next);
+                    disconnectSafely(splatData, obj);
+
+                    didSomething = true;
+                    break;
+
                 } else if (oper->getType() == "unary_native"){
                     // TODO
                 }
             }
+            if (didSomething) break;
         }
+
+        if (!didSomething) {
+            IOR::getInstance().getErr().emplace_back(
+                    "Couldn't collapse expression");
+            return nullptr;
+        }
+
     }
 
     // TODO delete all anonymous objects
+    PyObject* ret = splatData.getStart()->value;
+    splatData.disconnectAndKeepAlive(0);
 
-    return splatData.front();
+    return ret;
 
 }
 
-std::list<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, stringIter_t endOfExpr) {
-    std::list<PyObject*> ret;
+LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, stringIter_t& endOfExpr) {
+    LinkedList<PyObject*> ret;
     std::string temp;
 
     for (auto it = startOfExpr; it != endOfExpr; it++){
@@ -78,8 +101,10 @@ std::list<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, str
             continue;
 
         switch (*it.base()){
+            case ' ':
+                continue;
             case '=':
-                ret.push_back(new PointerAssignOperator());
+                ret.addToBackV(new PointerAssignOperator());
                 break;
             case '"':
                 it++;
@@ -88,13 +113,13 @@ std::list<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, str
                     temp.push_back(*it.base());
                     ++it;
                     if (it == endOfExpr){
-                        return std::list<PyObject*>{};
+                        return LinkedList<PyObject*>{};
                     }
                 }
-                ret.push_back(new AnonymousObject(new PyString(std::move(temp))));
+                ret.addToBackV(new AnonymousObject(new PyString(temp)));
                 break;
             default:
-                ret.push_back(readVariableName(it, endOfExpr));
+                ret.addToBackV(readVariableName(it, endOfExpr));
                 it--;
                 break;
         }
@@ -123,5 +148,14 @@ PyObject *ExpressionParser::readVariableName(stringIter_t& iter, stringIter_t& e
 ExpressionParser::~ExpressionParser() {
     for (auto& o : operations){
         delete(o);
+    }
+}
+
+void ExpressionParser::disconnectSafely(LinkedList<PyObject *> &ls, Node<PyObject*>* val) {
+    auto& v = val->value->getType();
+    if (v == "rvalue" || v == "binary_native"){
+        ls.disconnect(val);
+    } else {
+        ls.disconnectAndKeepAlive(val);
     }
 }

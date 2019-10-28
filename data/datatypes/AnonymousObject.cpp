@@ -11,11 +11,12 @@ AnonymousObject::AnonymousObject() : PyObject("rvalue") {
 PyObject *AnonymousObject::getObj() {
     auto* temp = obj;
     obj = nullptr;
-    return obj;
+    return temp;
 }
 
 AnonymousObject::~AnonymousObject() {
-    delete(obj);
+    if (obj != nullptr)
+        delete(obj);
 }
 
 std::map<std::string, int> &AnonymousObject::getData() {
