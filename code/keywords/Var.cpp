@@ -3,6 +3,7 @@
 //
 
 #include "Var.h"
+#include <memory>
 #include "../ExpressionParser.h"
 #include "../../data/IOR.h"
 #include "../../data/datatypes/AnonymousObject.h"
@@ -10,7 +11,7 @@
 stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
 
     std::string varName;
-    auto* toAlloc = new PyObject("null");
+    PyObject* toAlloc = new AnonymousObject(new PyObject("null"));
 
     char first = *ip.base();
     switch (first){
@@ -25,7 +26,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
         case '9':
         case '0':
             IOR::getInstance().getErr().emplace_back("Var name can't start with number");
-            delete(toAlloc);
+            deleteIfRValue(toAlloc);
             return end;
         default:
             break;
@@ -43,8 +44,8 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
 
                 } else if (*ip.base() != ' '){
 
-                    delete(toAlloc);
                     IOR::getInstance().getErr().emplace_back("Illegal char in var name");
+                    deleteIfRValue(toAlloc);
                     return end;
 
                 }
@@ -55,6 +56,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
         for (char& l : ExpressionParser::getInstance().specialChars){
             if (*ip.base() == l){
                 IOR::getInstance().getErr().emplace_back("Illegal char in var name");
+                deleteIfRValue(toAlloc);
                 return end;
             }
         }
@@ -65,15 +67,32 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
     if (toAlloc == nullptr) return end;
 
     if (toAlloc->getType() == "rvalue"){
-        int pointer = Memory::getInstance().alloc(((AnonymousObject*)toAlloc)->getObj());
-        Memory::getInstance().allocPointer(varName, pointer);
-    } else {
-        Memory::getInstance().allocPointer(varName, Memory::getInstance().getPointerByObject(toAlloc));
-    }
 
+        PyObject* released = toAlloc;
+        toAlloc = nullptr;
+        PyObject* inner = ((AnonymousObject*)(released))->getObj();
+
+        int pointer = Memory::getInstance().alloc(inner);
+        if (pointer == -1){
+            IOR::getInstance().getErr().emplace_back("Couldn't allocate variable");
+            delete(released);
+            return end;
+        }
+        Memory::getInstance().allocPointer(varName, pointer);
+        delete(released);
+    } else {
+        Memory::getInstance().allocPointer(varName, Memory::getInstance().getPointerByObject(&(*toAlloc)));
+    }
+    deleteIfRValue(toAlloc);
     return end;
 }
 
 Var::Var() : AbstractKeyword("var") {
 
+}
+
+void Var::deleteIfRValue(PyObject * o) {
+    if (o != nullptr && o->getType() == "rvalue"){
+        delete(o);
+    }
 }

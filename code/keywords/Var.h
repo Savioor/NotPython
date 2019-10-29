@@ -9,6 +9,9 @@
 #include "AbstractKeyword.h"
 
 class Var : public AbstractKeyword {
+protected:
+    void deleteIfRValue(PyObject*);
+
 public:
     virtual ~Var() = default;
     Var();

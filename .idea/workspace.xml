@@ -15,13 +15,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GenericParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/GenericParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/keywords/Var.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/keywords/Var.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/PointerAssignOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/natives/binary/PointerAssignOperator.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +98,8 @@
       <workItem from="1571900948387" duration="5073000" />
       <workItem from="1571907780579" duration="6330000" />
       <workItem from="1571936024458" duration="61310000" />
-      <workItem from="1572297052150" duration="2007000" />
+      <workItem from="1572297052150" duration="3474000" />
+      <workItem from="1572330120355" duration="2746000" />
     </task>
     <servers />
   </component>
@@ -124,6 +120,20 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/data/datatypes/AnonymousObject.cpp</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/code/keywords/Var.cpp</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="splatData.startNode-&gt;value" />
