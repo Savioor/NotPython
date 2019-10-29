@@ -7,6 +7,7 @@
 
 
 #include "../PyObject.h"
+#include "../AnonymousObject.h"
 
 class PyString : public PyObject {
 public:
@@ -16,6 +17,8 @@ public:
     PyString(std::string&&);
 
     virtual ~PyString() = default;
+
+    AnonymousObject* leftAdd(PyObject* right);
 
     std::string myValue;
 

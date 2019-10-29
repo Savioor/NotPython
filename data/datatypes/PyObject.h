@@ -25,6 +25,8 @@ public:
     explicit PyObject(char*);
     PyObject() = delete;
 
+    virtual PyObject* unmask();
+
     virtual ~PyObject() = default;
 
     PyObject *getVariable(std::string &name);

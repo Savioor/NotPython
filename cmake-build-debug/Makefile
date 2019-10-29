@@ -393,6 +393,33 @@ data/datatypes/PyObject.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.s
 .PHONY : data/datatypes/PyObject.cpp.s
 
+data/datatypes/natives/binary/AdditionOperator.o: data/datatypes/natives/binary/AdditionOperator.cpp.o
+
+.PHONY : data/datatypes/natives/binary/AdditionOperator.o
+
+# target to build an object file
+data/datatypes/natives/binary/AdditionOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o
+.PHONY : data/datatypes/natives/binary/AdditionOperator.cpp.o
+
+data/datatypes/natives/binary/AdditionOperator.i: data/datatypes/natives/binary/AdditionOperator.cpp.i
+
+.PHONY : data/datatypes/natives/binary/AdditionOperator.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/AdditionOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.i
+.PHONY : data/datatypes/natives/binary/AdditionOperator.cpp.i
+
+data/datatypes/natives/binary/AdditionOperator.s: data/datatypes/natives/binary/AdditionOperator.cpp.s
+
+.PHONY : data/datatypes/natives/binary/AdditionOperator.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/AdditionOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.s
+.PHONY : data/datatypes/natives/binary/AdditionOperator.cpp.s
+
 data/datatypes/natives/binary/BinaryNativeFunction.o: data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
 
 .PHONY : data/datatypes/natives/binary/BinaryNativeFunction.o
@@ -567,6 +594,9 @@ help:
 	@echo "... data/datatypes/PyObject.o"
 	@echo "... data/datatypes/PyObject.i"
 	@echo "... data/datatypes/PyObject.s"
+	@echo "... data/datatypes/natives/binary/AdditionOperator.o"
+	@echo "... data/datatypes/natives/binary/AdditionOperator.i"
+	@echo "... data/datatypes/natives/binary/AdditionOperator.s"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.o"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.i"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.s"

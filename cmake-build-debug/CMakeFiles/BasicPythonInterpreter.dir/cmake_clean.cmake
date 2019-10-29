@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o"
   "BasicPythonInterpreter.pdb"
   "BasicPythonInterpreter"
 )

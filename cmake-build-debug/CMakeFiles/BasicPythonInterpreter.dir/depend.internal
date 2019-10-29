@@ -8,6 +8,7 @@ CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/PointerAssignOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
@@ -72,8 +73,16 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp
@@ -91,6 +100,7 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFu
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h

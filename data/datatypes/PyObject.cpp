@@ -3,9 +3,8 @@
 //
 
 #include "PyObject.h"
-
-#include <utility>
 #include "../Memory.h"
+#include "AnonymousObject.h"
 
 const std::string &PyObject::getType() const {
     return type;
@@ -30,4 +29,11 @@ PyObject *PyObject::getVariable(std::string& name) {
         return nullptr;
     }
     return Memory::getInstance().getData().at(getData().at(name));
+}
+
+PyObject *PyObject::unmask() {
+    if (type == "rvalue")
+        return ((AnonymousObject*)this)->getObj()->unmask();
+    else
+        return this;
 }

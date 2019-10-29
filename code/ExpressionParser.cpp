@@ -8,6 +8,7 @@
 #include "../data/datatypes/natives/binary/PointerAssignOperator.h"
 #include "../data/IOR.h"
 #include "../util/LinkedList.h"
+#include "../data/datatypes/natives/binary/AdditionOperator.h"
 
 ExpressionParser::ExpressionParser() {
     specialChars.push_back('"');
@@ -26,6 +27,7 @@ ExpressionParser::ExpressionParser() {
     specialChars.push_back('!');
 
     operations.insert({'=', new PointerAssignOperator()});
+    operations.insert({'+', new AdditionOperator()});
 }
 
 PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr) {
@@ -103,6 +105,9 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
         switch (*it.base()){
             case '=':
                 ret.addToBackV(operations.at('='));
+                break;
+            case '+':
+                ret.addToBackV(operations.at('+'));
                 break;
             case '"':
                 it++;
