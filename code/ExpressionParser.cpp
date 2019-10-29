@@ -123,6 +123,9 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                 break;
             default:
                 ret.addToBackV(readVariableName(it, endOfExpr));
+                if (ret.getEnd()->value == nullptr){
+                    return LinkedList<PyObject*>{};
+                }
                 it--;
                 break;
         }
@@ -136,10 +139,17 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
 
 PyObject *ExpressionParser::readVariableName(stringIter_t& iter, stringIter_t& end) {
     std::string varName;
+    bool atLeastOneLong = false;
     while(iter != end){
         for (auto& c: specialChars){
-            if (c == *iter.base()) goto endOfWhile;
+            if (c == *iter.base()) {
+                if (!atLeastOneLong)
+                    return nullptr;
+                else
+                    goto endOfWhile;
+            }
         }
+        atLeastOneLong = true;
         varName.push_back(*iter.base());
         iter++;
     }
