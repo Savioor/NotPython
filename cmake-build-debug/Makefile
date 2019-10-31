@@ -150,33 +150,6 @@ code/ExpressionParser.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.s
 .PHONY : code/ExpressionParser.cpp.s
 
-code/GenericParser.o: code/GenericParser.cpp.o
-
-.PHONY : code/GenericParser.o
-
-# target to build an object file
-code/GenericParser.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o
-.PHONY : code/GenericParser.cpp.o
-
-code/GenericParser.i: code/GenericParser.cpp.i
-
-.PHONY : code/GenericParser.i
-
-# target to preprocess a source file
-code/GenericParser.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.i
-.PHONY : code/GenericParser.cpp.i
-
-code/GenericParser.s: code/GenericParser.cpp.s
-
-.PHONY : code/GenericParser.s
-
-# target to generate assembly for a file
-code/GenericParser.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.s
-.PHONY : code/GenericParser.cpp.s
-
 code/keywords/AbstractKeyword.o: code/keywords/AbstractKeyword.cpp.o
 
 .PHONY : code/keywords/AbstractKeyword.o
@@ -258,6 +231,87 @@ code/keywords/natives/Print.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.s
 .PHONY : code/keywords/natives/Print.cpp.s
 
+code/parsers/CinParser.o: code/parsers/CinParser.cpp.o
+
+.PHONY : code/parsers/CinParser.o
+
+# target to build an object file
+code/parsers/CinParser.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o
+.PHONY : code/parsers/CinParser.cpp.o
+
+code/parsers/CinParser.i: code/parsers/CinParser.cpp.i
+
+.PHONY : code/parsers/CinParser.i
+
+# target to preprocess a source file
+code/parsers/CinParser.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.i
+.PHONY : code/parsers/CinParser.cpp.i
+
+code/parsers/CinParser.s: code/parsers/CinParser.cpp.s
+
+.PHONY : code/parsers/CinParser.s
+
+# target to generate assembly for a file
+code/parsers/CinParser.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.s
+.PHONY : code/parsers/CinParser.cpp.s
+
+code/parsers/FunctionParser.o: code/parsers/FunctionParser.cpp.o
+
+.PHONY : code/parsers/FunctionParser.o
+
+# target to build an object file
+code/parsers/FunctionParser.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o
+.PHONY : code/parsers/FunctionParser.cpp.o
+
+code/parsers/FunctionParser.i: code/parsers/FunctionParser.cpp.i
+
+.PHONY : code/parsers/FunctionParser.i
+
+# target to preprocess a source file
+code/parsers/FunctionParser.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.i
+.PHONY : code/parsers/FunctionParser.cpp.i
+
+code/parsers/FunctionParser.s: code/parsers/FunctionParser.cpp.s
+
+.PHONY : code/parsers/FunctionParser.s
+
+# target to generate assembly for a file
+code/parsers/FunctionParser.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.s
+.PHONY : code/parsers/FunctionParser.cpp.s
+
+code/parsers/GenericParser.o: code/parsers/GenericParser.cpp.o
+
+.PHONY : code/parsers/GenericParser.o
+
+# target to build an object file
+code/parsers/GenericParser.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o
+.PHONY : code/parsers/GenericParser.cpp.o
+
+code/parsers/GenericParser.i: code/parsers/GenericParser.cpp.i
+
+.PHONY : code/parsers/GenericParser.i
+
+# target to preprocess a source file
+code/parsers/GenericParser.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.i
+.PHONY : code/parsers/GenericParser.cpp.i
+
+code/parsers/GenericParser.s: code/parsers/GenericParser.cpp.s
+
+.PHONY : code/parsers/GenericParser.s
+
+# target to generate assembly for a file
+code/parsers/GenericParser.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.s
+.PHONY : code/parsers/GenericParser.cpp.s
+
 code/reqeusters/CinRequester.o: code/reqeusters/CinRequester.cpp.o
 
 .PHONY : code/reqeusters/CinRequester.o
@@ -284,6 +338,33 @@ code/reqeusters/CinRequester.s: code/reqeusters/CinRequester.cpp.s
 code/reqeusters/CinRequester.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.s
 .PHONY : code/reqeusters/CinRequester.cpp.s
+
+code/reqeusters/VectorRequester.o: code/reqeusters/VectorRequester.cpp.o
+
+.PHONY : code/reqeusters/VectorRequester.o
+
+# target to build an object file
+code/reqeusters/VectorRequester.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o
+.PHONY : code/reqeusters/VectorRequester.cpp.o
+
+code/reqeusters/VectorRequester.i: code/reqeusters/VectorRequester.cpp.i
+
+.PHONY : code/reqeusters/VectorRequester.i
+
+# target to preprocess a source file
+code/reqeusters/VectorRequester.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.i
+.PHONY : code/reqeusters/VectorRequester.cpp.i
+
+code/reqeusters/VectorRequester.s: code/reqeusters/VectorRequester.cpp.s
+
+.PHONY : code/reqeusters/VectorRequester.s
+
+# target to generate assembly for a file
+code/reqeusters/VectorRequester.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.s
+.PHONY : code/reqeusters/VectorRequester.cpp.s
 
 data/IOR.o: data/IOR.cpp.o
 
@@ -501,6 +582,33 @@ data/datatypes/natives/unary/UnaryNativeFunction.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.s
 .PHONY : data/datatypes/natives/unary/UnaryNativeFunction.cpp.s
 
+data/datatypes/primitive/PyFunction.o: data/datatypes/primitive/PyFunction.cpp.o
+
+.PHONY : data/datatypes/primitive/PyFunction.o
+
+# target to build an object file
+data/datatypes/primitive/PyFunction.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o
+.PHONY : data/datatypes/primitive/PyFunction.cpp.o
+
+data/datatypes/primitive/PyFunction.i: data/datatypes/primitive/PyFunction.cpp.i
+
+.PHONY : data/datatypes/primitive/PyFunction.i
+
+# target to preprocess a source file
+data/datatypes/primitive/PyFunction.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.i
+.PHONY : data/datatypes/primitive/PyFunction.cpp.i
+
+data/datatypes/primitive/PyFunction.s: data/datatypes/primitive/PyFunction.cpp.s
+
+.PHONY : data/datatypes/primitive/PyFunction.s
+
+# target to generate assembly for a file
+data/datatypes/primitive/PyFunction.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s
+.PHONY : data/datatypes/primitive/PyFunction.cpp.s
+
 data/datatypes/primitive/PyString.o: data/datatypes/primitive/PyString.cpp.o
 
 .PHONY : data/datatypes/primitive/PyString.o
@@ -567,9 +675,6 @@ help:
 	@echo "... code/ExpressionParser.o"
 	@echo "... code/ExpressionParser.i"
 	@echo "... code/ExpressionParser.s"
-	@echo "... code/GenericParser.o"
-	@echo "... code/GenericParser.i"
-	@echo "... code/GenericParser.s"
 	@echo "... code/keywords/AbstractKeyword.o"
 	@echo "... code/keywords/AbstractKeyword.i"
 	@echo "... code/keywords/AbstractKeyword.s"
@@ -579,9 +684,21 @@ help:
 	@echo "... code/keywords/natives/Print.o"
 	@echo "... code/keywords/natives/Print.i"
 	@echo "... code/keywords/natives/Print.s"
+	@echo "... code/parsers/CinParser.o"
+	@echo "... code/parsers/CinParser.i"
+	@echo "... code/parsers/CinParser.s"
+	@echo "... code/parsers/FunctionParser.o"
+	@echo "... code/parsers/FunctionParser.i"
+	@echo "... code/parsers/FunctionParser.s"
+	@echo "... code/parsers/GenericParser.o"
+	@echo "... code/parsers/GenericParser.i"
+	@echo "... code/parsers/GenericParser.s"
 	@echo "... code/reqeusters/CinRequester.o"
 	@echo "... code/reqeusters/CinRequester.i"
 	@echo "... code/reqeusters/CinRequester.s"
+	@echo "... code/reqeusters/VectorRequester.o"
+	@echo "... code/reqeusters/VectorRequester.i"
+	@echo "... code/reqeusters/VectorRequester.s"
 	@echo "... data/IOR.o"
 	@echo "... data/IOR.i"
 	@echo "... data/IOR.s"
@@ -606,6 +723,9 @@ help:
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.o"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.i"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.s"
+	@echo "... data/datatypes/primitive/PyFunction.o"
+	@echo "... data/datatypes/primitive/PyFunction.i"
+	@echo "... data/datatypes/primitive/PyFunction.s"
 	@echo "... data/datatypes/primitive/PyString.o"
 	@echo "... data/datatypes/primitive/PyString.i"
 	@echo "... data/datatypes/primitive/PyString.s"

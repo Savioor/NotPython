@@ -9,7 +9,7 @@
 #include "../../../data/datatypes/primitive/PyString.h"
 #include "../../../data/datatypes/AnonymousObject.h"
 
-stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end) {
+stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
     PyObject* value = ExpressionParser::getInstance().parseExpression(ip, end);
     if (value == nullptr){

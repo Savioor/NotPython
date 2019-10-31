@@ -75,6 +75,10 @@ public:
 
     int getPointerByObject(PyObject* inp);
 
+    void reduceDepth(const std::string& varName, int currDepth);
+
+    void killPointer(const std::string& pointerName, int pointerDepth);
+
     Memory(Memory const&) = delete;
     void operator=(Memory const&) = delete;
 

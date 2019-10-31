@@ -16,7 +16,7 @@ public:
     virtual ~Var() = default;
     Var();
 
-    stringIter_t &parse(stringIter_t &ip, stringIter_t &end) override;
+    stringIter_t &parse(stringIter_t &ip, stringIter_t &end, IRequester& req) override;
 };
 
 

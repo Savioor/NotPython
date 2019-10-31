@@ -5,11 +5,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Var.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/natives/Print.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o"
@@ -18,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/PointerAssignOperator.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
   )

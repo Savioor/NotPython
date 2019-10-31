@@ -90,12 +90,6 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.cpp">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.h">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -117,10 +111,34 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/natives/Print.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.cpp">
@@ -169,6 +187,12 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp">

@@ -7,8 +7,8 @@
 
 
 #include <vector>
-#include "IRequester.h"
-#include "keywords/AbstractKeyword.h"
+#include "../IRequester.h"
+#include "../keywords/AbstractKeyword.h"
 
 class GenericParser {
 protected:
@@ -17,7 +17,9 @@ protected:
 public:
     GenericParser();
 
-    virtual void parseLine(IRequester&);
+    virtual bool parseLine(IRequester&);
+
+    virtual ~GenericParser();
 };
 
 

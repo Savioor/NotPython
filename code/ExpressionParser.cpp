@@ -9,6 +9,7 @@
 #include "../data/IOR.h"
 #include "../util/LinkedList.h"
 #include "../data/datatypes/natives/binary/AdditionOperator.h"
+#include "../data/datatypes/primitive/PyFunction.h"
 
 ExpressionParser::ExpressionParser() {
     specialChars.push_back('"');
@@ -126,6 +127,13 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                 if (ret.getEnd()->value == nullptr){
                     return LinkedList<PyObject*>{};
                 }
+                if (ret.getEnd()->value->getType() == "func"){
+                    funcTryReply_t ran = tryRunFunction(ret.getEnd()->value, it, endOfExpr);
+                    if (ran.second.first){
+                        it = ran.second.second;
+                        ret.getEnd()->value = ran.first;
+                    }
+                }
                 it--;
                 break;
         }
@@ -171,4 +179,68 @@ void ExpressionParser::disconnectSafely(LinkedList<PyObject *> &ls, Node<PyObjec
     } else {
         ls.disconnectAndKeepAlive(val);
     }
+}
+
+funcTryReply_t
+ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIter_t &end) {
+    if (func->getType() != "func"){
+        return {nullptr, {false, end}};
+    }
+    if (*it.base() != '('){
+        return {nullptr, {false, end}};
+    }
+
+    // Get all vars
+    std::vector<PyObject*> vars;
+    std::string expr;
+    bool noInp;
+    noInp = true;
+
+    while (it != end){
+        it++;
+
+        if (*it.base() == ')'){
+            if (!noInp){
+                auto itt = expr.begin();
+                PyObject* toAdd = this->parseExpression(itt, expr.end());
+                if (toAdd == nullptr){
+                    return {nullptr, {false, end}};
+                }
+                vars.push_back(toAdd);
+            }
+            break;
+        }
+
+        noInp = false;
+
+        if (*it.base() == ','){
+
+            auto itt = expr.begin();
+            PyObject* toAdd = this->parseExpression(itt, expr.end());
+            if (toAdd == nullptr){
+                return {nullptr, {false, end}};
+            }
+            expr.clear();
+            vars.push_back(toAdd);
+
+            continue;
+        }
+
+        expr.push_back(*it.base());
+
+    }
+
+    if (it == end){
+        return {nullptr, {false, end}};
+    }
+
+    PyFunction* asF = (PyFunction*)func;
+
+    PyObject* ret = asF->execute(vars);
+
+    if (ret == nullptr) {
+        return {nullptr, {false, end}};
+    }
+
+    return {ret, {true, ++it}};
 }

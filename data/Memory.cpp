@@ -67,3 +67,17 @@ Memory::~Memory() {
         delete(var);
     }
 }
+
+void Memory::killPointer(const std::string &pointerName, int pointerDepth) {
+    pointerTable.erase({pointerName, pointerDepth});
+}
+
+void Memory::reduceDepth(const std::string &varName, int currDepth) {
+    for (auto& pair : pointerTable){
+        if (pair.first.first == varName && pair.first.second == currDepth){
+            pointerTable.insert({{pair.first.first, currDepth - 1}, pair.second});
+            pointerTable.erase({varName, currDepth });
+            return;
+        }
+    }
+}

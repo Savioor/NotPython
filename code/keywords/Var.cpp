@@ -8,7 +8,7 @@
 #include "../../data/IOR.h"
 #include "../../data/datatypes/AnonymousObject.h"
 
-stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
+stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
     std::string varName;
     PyObject* toAlloc = new AnonymousObject(new PyObject("null"));
@@ -65,6 +65,11 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end) {
     alloc:
 
     if (toAlloc == nullptr) return end;
+    if (Memory::getInstance().getVariable(varName) != nullptr){
+        IOR::getInstance().getErr().emplace_back("Variable already defined");
+        deleteIfRValue(toAlloc);
+        return end;
+    }
 
     if (toAlloc->getType() == "rvalue"){
 

@@ -11,7 +11,7 @@
 class Print : public AbstractKeyword {
 public:
     Print();
-    virtual stringIter_t &parse(stringIter_t &ip, stringIter_t &end) override;
+    virtual stringIter_t &parse(stringIter_t &ip, stringIter_t &end, IRequester& req) override;
 };
 
 

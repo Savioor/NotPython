@@ -135,18 +135,18 @@ CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.s
 
-CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
-CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o: ../code/GenericParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.cpp
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/parsers/GenericParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.cpp
 
-CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.cpp > CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.i
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.cpp > CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.i
 
-CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/GenericParser.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.s
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.s
 
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../code/keywords/AbstractKeyword.cpp
@@ -265,6 +265,58 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOper
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.s
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/datatypes/primitive/PyFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp > CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../code/parsers/CinParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.cpp > CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/FunctionParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.cpp > CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../code/reqeusters/VectorRequester.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp > CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp -o CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.s
+
 # Object files for target BasicPythonInterpreter
 BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o" \
@@ -273,7 +325,7 @@ BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o" \
-"CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o" \
@@ -282,7 +334,11 @@ BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o" \
-"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o"
+"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o"
 
 # External object files for target BasicPythonInterpreter
 BasicPythonInterpreter_EXTERNAL_OBJECTS =
@@ -293,7 +349,7 @@ BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyO
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o
-BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/GenericParser.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
@@ -303,9 +359,13 @@ BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/nat
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/build.make
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable BasicPythonInterpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable BasicPythonInterpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BasicPythonInterpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

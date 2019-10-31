@@ -7,6 +7,7 @@
 
 #include <string>
 #include "../../data/Memory.h"
+#include "../IRequester.h"
 
 class AbstractKeyword {
 protected:
@@ -18,7 +19,7 @@ public:
     AbstractKeyword() = delete;
     explicit AbstractKeyword(std::string& name);
     explicit AbstractKeyword(std::string&& name);
-    virtual stringIter_t& parse(stringIter_t& ip, stringIter_t& end) = 0;
+    virtual stringIter_t& parse(stringIter_t& ip, stringIter_t& end, IRequester& req) = 0;
 
     const std::string& getKeyword() const;
 
