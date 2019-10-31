@@ -51,7 +51,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                 if (oper.second->getType() == "binary_native" && oper.second == obj->value){
 
                     if (obj == splatData.getStart() || obj == splatData.getEnd()){
-                        IOR::getInstance().getErr().emplace_back(
+                        IOR::getInstance().reportError(
                                 "Found binary operator at the start or end of an expression");
                         return nullptr;
                     }
@@ -80,7 +80,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
         }
 
         if (!didSomething) {
-            IOR::getInstance().getErr().emplace_back(
+            IOR::getInstance().reportError(
                     "Couldn't collapse expression");
             return nullptr;
         }

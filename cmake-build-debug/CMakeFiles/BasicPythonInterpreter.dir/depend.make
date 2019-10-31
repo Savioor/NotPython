@@ -80,6 +80,8 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../cod
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../code/reqeusters/CinRequester.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../code/reqeusters/CinRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/IOR.h
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/datatypes/PyObject.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../code/reqeusters/VectorRequester.cpp
@@ -87,6 +89,8 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../
 
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/IOR.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/IOR.h
+CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/datatypes/PyObject.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.h

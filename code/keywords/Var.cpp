@@ -25,7 +25,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
         case '8':
         case '9':
         case '0':
-            IOR::getInstance().getErr().emplace_back("Var name can't start with number");
+            IOR::getInstance().reportError("Var name can't start with number");
             deleteIfRValue(toAlloc);
             return end;
         default:
@@ -44,7 +44,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
                 } else if (*ip.base() != ' '){
 
-                    IOR::getInstance().getErr().emplace_back("Illegal char in var name");
+                    IOR::getInstance().reportError("Illegal char in var name");
                     deleteIfRValue(toAlloc);
                     return end;
 
@@ -55,7 +55,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
         for (char& l : ExpressionParser::getInstance().specialChars){
             if (*ip.base() == l){
-                IOR::getInstance().getErr().emplace_back("Illegal char in var name");
+                IOR::getInstance().reportError("Illegal char in var name");
                 deleteIfRValue(toAlloc);
                 return end;
             }
@@ -66,7 +66,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
     if (toAlloc == nullptr) return end;
     if (Memory::getInstance().getVariable(varName) != nullptr){
-        IOR::getInstance().getErr().emplace_back("Variable already defined");
+        IOR::getInstance().reportError("Variable already defined");
         deleteIfRValue(toAlloc);
         return end;
     }
@@ -79,7 +79,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
         int pointer = Memory::getInstance().alloc(inner);
         if (pointer == -1){
-            IOR::getInstance().getErr().emplace_back("Couldn't allocate variable");
+            IOR::getInstance().reportError("Couldn't allocate variable");
             delete(released);
             return end;
         }

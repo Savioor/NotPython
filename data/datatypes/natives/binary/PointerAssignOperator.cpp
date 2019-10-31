@@ -9,14 +9,14 @@
 
 PyObject *PointerAssignOperator::execute(PyObject *left, PyObject *right) {
     if (left->getType() == "rvalue"){
-        IOR::getInstance().getErr().emplace_back("Can't perform assignment on rvalues");
+        IOR::getInstance().reportError("Can't perform assignment on rvalues");
         return nullptr;
     }
     Memory& mem = Memory::getInstance();
     int leftPointer = mem.getPointerByObject(left);
 
     if (leftPointer == -1){
-        IOR::getInstance().getErr().emplace_back("Variable not found in memory");
+        IOR::getInstance().reportError("Variable not found in memory");
         return nullptr;
     }
 

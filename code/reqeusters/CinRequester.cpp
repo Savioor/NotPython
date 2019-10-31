@@ -10,6 +10,5 @@ std::string* CinRequester::getNext() {
     auto* str = new std::string;
     std::cout << " >>> ";
     std::getline(std::cin, *str);
-    IOR::getInstance().getIn().push_back(*str);
     return str;
 }

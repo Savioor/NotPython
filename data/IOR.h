@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include "Memory.h"
 
 typedef std::vector<std::string> strList;
 
@@ -14,12 +15,7 @@ typedef std::vector<std::string> strList;
 class IOR {
 
 private:
-    IOR();
-
-    strList in;
-    strList out;
-    strList err;
-
+    IOR() = default;
 
 public:
     static IOR& getInstance() {
@@ -28,13 +24,14 @@ public:
     };
 
 public:
-    virtual const strList& getIn() const;
-    virtual const strList& getOut() const;
-    virtual const strList& getErr() const;
+    void reportError(std::string&);
+    void reportError(const char*);
 
-    virtual strList& getIn();
-    virtual strList& getOut();
-    virtual strList& getErr();
+    void reportOut(std::string&);
+    void reportOut(const char*);
+
+    void operator=(IOR const&) = delete;
+    IOR(IOR const&) = delete;
 };
 
 

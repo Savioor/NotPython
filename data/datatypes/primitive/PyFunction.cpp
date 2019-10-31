@@ -20,7 +20,7 @@ const std::vector<std::string> &PyFunction::getInputNames() {
 PyObject *PyFunction::execute(std::vector<PyObject *> &input) {
     // Check if number of inputs match
     if (input.size() != inputVariables.size()){
-        IOR::getInstance().getErr().emplace_back("Function variable amount doesn't match");
+        IOR::getInstance().reportError("Function variable amount doesn't match");
         return nullptr;
     }
     // Alloc all memory
@@ -28,7 +28,7 @@ PyObject *PyFunction::execute(std::vector<PyObject *> &input) {
     Memory& mem = Memory::getInstance();
     mem.depth += 1;
     for (int i = 0; i < input.size(); i++){
-        alloc = mem.alloc(input.at(i));
+        alloc = mem.alloc(input.at(i)->unmask());
         mem.allocPointer(inputVariables.at(i), alloc);
     }
     // Run the code for the function

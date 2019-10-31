@@ -20,7 +20,7 @@ string
 ../IRequester.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
 
-/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.h
 GenericParser.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.h
 
@@ -32,9 +32,19 @@ vector
 ../keywords/AbstractKeyword.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
 
-/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.h
+vector
+-
 ../IRequester.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+string
+-
+vector
+-
+Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
 vector
@@ -54,17 +64,19 @@ map
 vector
 -
 
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp
+PyFunction.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
+../../IOR.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+../../Memory.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+../../../code/parsers/FunctionParser.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.h
+../../../code/reqeusters/VectorRequester.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.h
+
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
 ../PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
-
-/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp
-iostream
--
-code/reqeusters/CinRequester.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h
-code/parsers/CinParser.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.h
-data/datatypes/primitive/PyFunction.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
 

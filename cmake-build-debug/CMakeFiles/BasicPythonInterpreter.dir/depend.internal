@@ -81,6 +81,8 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp
@@ -88,6 +90,8 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h

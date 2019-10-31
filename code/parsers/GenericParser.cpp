@@ -13,8 +13,7 @@ bool GenericParser::parseLine(IRequester & requester) {
 
     std::string* line = requester.getNext();
     if (line == nullptr){
-
-        IOR::getInstance().getErr().emplace_back("No input could be found!");
+//        IOR::getInstance().reportError("No input could be found!");
         return false;
 
     }
@@ -47,11 +46,6 @@ GenericParser::GenericParser() {
     keywords.push_back(p);
     auto* v = new Var();
     keywords.push_back(v);
-
-    IOR::getInstance().getIn().emplace_back("default");
-    IOR::getInstance().getErr().emplace_back("default");
-    IOR::getInstance().getOut().emplace_back("default");
-
 }
 
 GenericParser::~GenericParser() {
