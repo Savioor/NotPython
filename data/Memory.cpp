@@ -17,6 +17,9 @@ std::map<std::pair<std::string, int>, int> &Memory::getPointers() {
 }
 
 int Memory::alloc(PyObject &obj) {
+    int existingPtr = getPointerByObject(&obj);
+    if (existingPtr != -1)
+        return existingPtr;
     data.push_back(&obj);
     return (int)data.size() - 1;
 }

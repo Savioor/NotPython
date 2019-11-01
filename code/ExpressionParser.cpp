@@ -87,6 +87,11 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
         if (!didSomething) {
             IOR::getInstance().reportError(
                     "Couldn't collapse expression");
+            // Run clean nup
+            while (splatData.getStart() != nullptr){
+                disconnectSafely(splatData, splatData.getStart());
+            }
+
             return nullptr;
         }
 
@@ -94,6 +99,10 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
 
     PyObject* ret = splatData.getStart()->value;
     splatData.disconnectAndKeepAlive(0);
+
+    if (ret->getType() == "rvalue"){
+        Memory::getInstance().alloc(ret); // Let the garbage collector deal with it when needed.
+    }
 
     return ret;
 

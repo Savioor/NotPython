@@ -30,11 +30,11 @@ AnonymousObject::~AnonymousObject() {
     #if OBJECT_DEBUG == true
         std::stringstream s;
         s << "Deleting anon object. Currently " << --anonCount << " alive.";
-        if (obj == nullptr){
+        if (obj != nullptr){
             s << " Also deleting contained object of type " << obj->getType() << ".";
         }
-        char buffer[50];
-        s.getline(buffer, 50);
+        char buffer[100];
+        s.getline(buffer, 100);
         IOR::getInstance().reportDebug(buffer);
     #endif
     if (obj != nullptr) {
@@ -54,9 +54,9 @@ const std::map<std::string, int> &AnonymousObject::getData() const {
 AnonymousObject::AnonymousObject(PyObject *o) : PyObject("rvalue"), obj(o) {
     #if OBJECT_DEBUG == true
         std::stringstream s;
-        s << "Created anon object. Currently " << ++anonCount << " alive.";
-        char buffer[50];
-        s.getline(buffer, 50);
+        s << "Created anon object. Currently " << ++anonCount << " alive. Object created with object of type " << o->getType() << " inside.";
+        char buffer[100];
+        s.getline(buffer, 100);
         IOR::getInstance().reportDebug(buffer);
     #endif
 }
