@@ -12,11 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datatypes/AnonymousObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/AnonymousObject.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +105,7 @@
       <workItem from="1572330120355" duration="5217000" />
       <workItem from="1572339801028" duration="674000" />
       <workItem from="1572355499870" duration="16430000" />
-      <workItem from="1572620901785" duration="17062000" />
+      <workItem from="1572620901785" duration="18376000" />
     </task>
     <servers />
   </component>

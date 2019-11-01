@@ -101,6 +101,12 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
     splatData.disconnectAndKeepAlive(0);
 
     if (ret->getType() == "rvalue"){
+#if OBJECT_DEBUG == true
+        IOR::getInstance().reportDebug("Added anon to mem for treatment by GC");
+#endif
+        PyObject* temp = ret;
+        ret = ret->yoink();
+        delete(temp);
         Memory::getInstance().alloc(ret); // Let the garbage collector deal with it when needed.
     }
 
