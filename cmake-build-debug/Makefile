@@ -636,6 +636,33 @@ data/datatypes/primitive/PyFunction.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s
 .PHONY : data/datatypes/primitive/PyFunction.cpp.s
 
+data/datatypes/primitive/PyPrimitive.o: data/datatypes/primitive/PyPrimitive.cpp.o
+
+.PHONY : data/datatypes/primitive/PyPrimitive.o
+
+# target to build an object file
+data/datatypes/primitive/PyPrimitive.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o
+.PHONY : data/datatypes/primitive/PyPrimitive.cpp.o
+
+data/datatypes/primitive/PyPrimitive.i: data/datatypes/primitive/PyPrimitive.cpp.i
+
+.PHONY : data/datatypes/primitive/PyPrimitive.i
+
+# target to preprocess a source file
+data/datatypes/primitive/PyPrimitive.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.i
+.PHONY : data/datatypes/primitive/PyPrimitive.cpp.i
+
+data/datatypes/primitive/PyPrimitive.s: data/datatypes/primitive/PyPrimitive.cpp.s
+
+.PHONY : data/datatypes/primitive/PyPrimitive.s
+
+# target to generate assembly for a file
+data/datatypes/primitive/PyPrimitive.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.s
+.PHONY : data/datatypes/primitive/PyPrimitive.cpp.s
+
 data/datatypes/primitive/PyString.o: data/datatypes/primitive/PyString.cpp.o
 
 .PHONY : data/datatypes/primitive/PyString.o
@@ -756,6 +783,9 @@ help:
 	@echo "... data/datatypes/primitive/PyFunction.o"
 	@echo "... data/datatypes/primitive/PyFunction.i"
 	@echo "... data/datatypes/primitive/PyFunction.s"
+	@echo "... data/datatypes/primitive/PyPrimitive.o"
+	@echo "... data/datatypes/primitive/PyPrimitive.i"
+	@echo "... data/datatypes/primitive/PyPrimitive.s"
 	@echo "... data/datatypes/primitive/PyString.o"
 	@echo "... data/datatypes/primitive/PyString.i"
 	@echo "... data/datatypes/primitive/PyString.s"

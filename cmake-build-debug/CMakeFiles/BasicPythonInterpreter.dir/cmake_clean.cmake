@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o"
   "BasicPythonInterpreter.pdb"
   "BasicPythonInterpreter"
 )

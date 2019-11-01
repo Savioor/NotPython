@@ -1,4 +1,3 @@
-#include <iostream>
 #include "code/reqeusters/CinRequester.h"
 #include "code/parsers/CinParser.h"
 #include "data/datatypes/primitive/PyFunction.h"

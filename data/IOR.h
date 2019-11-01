@@ -30,6 +30,9 @@ public:
     void reportOut(std::string&);
     void reportOut(const char*);
 
+    void reportDebug(std::string&);
+    void reportDebug(const char*);
+
     void operator=(IOR const&) = delete;
     IOR(IOR const&) = delete;
 };

@@ -13,8 +13,8 @@ PyObject *AdditionOperator::execute(PyObject *left, PyObject *right) {
     left = left->unmask();
     right = right->unmask();
 
-    if (left->getType() == "string"){
-        return ((PyString*)left)->leftAdd(right);
+    if (left->isPrimitive()){
+        return ((PyPrimitive*)left)->addLeft(right);
     }
     return nullptr;
 }

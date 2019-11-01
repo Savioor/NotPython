@@ -18,7 +18,7 @@ stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end, IRequester& req)
     }
 
     if (value->getType() == "rvalue"){
-        value = ((AnonymousObject*)value)->getObj();
+        value = ((AnonymousObject *) value)->releaseObject();
         if (value == nullptr){
             IOR::getInstance().reportError("Error parsing expression");
             return end;

@@ -21,7 +21,7 @@ const std::map<std::string, int> &PyObject::getData() const {
 PyObject::PyObject(std::string&& n) : type(n), data() {
 }
 
-PyObject::PyObject(char* n) : type(n), data() {
+PyObject::PyObject(char* n) : type(n), data(), isPrimitiveVar(false) {
 }
 
 PyObject *PyObject::getVariable(std::string& name) {
@@ -33,7 +33,17 @@ PyObject *PyObject::getVariable(std::string& name) {
 
 PyObject *PyObject::unmask() {
     if (type == "rvalue")
-        return ((AnonymousObject*)this)->getObj()->unmask();
+        return ((AnonymousObject *) this)->getObject()->unmask();
     else
         return this;
 }
+
+const bool &PyObject::isPrimitive() {
+    return isPrimitiveVar;
+}
+
+PyObject *PyObject::yoink() {
+    if (type == "rvalue")
+        return ((AnonymousObject *) this)->releaseObject()->yoink();
+    else
+        return this;}

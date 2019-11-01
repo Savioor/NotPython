@@ -75,7 +75,7 @@ stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
         PyObject* released = toAlloc;
         toAlloc = nullptr;
-        PyObject* inner = ((AnonymousObject*)(released))->getObj();
+        PyObject* inner = ((AnonymousObject *) (released))->releaseObject();
 
         int pointer = Memory::getInstance().alloc(inner);
         if (pointer == -1){

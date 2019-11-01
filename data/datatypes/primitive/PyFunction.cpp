@@ -27,7 +27,8 @@ PyObject *PyFunction::execute(std::vector<PyObject *> &input) {
     Memory& mem = Memory::getInstance();
     mem.depth += 1;
     for (int i = 0; i < input.size(); i++){
-        alloc = mem.alloc(input.at(i)->unmask());
+        alloc = mem.getPointerByObject(input.at(i));
+        if (alloc == -1) alloc = mem.alloc(input.at(i)->unmask());
         mem.allocPointer(inputVariables.at(i), alloc);
     }
     // Run the code for the function

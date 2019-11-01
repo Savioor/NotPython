@@ -5,11 +5,11 @@
 #ifndef BASICPYTHONINTERPRETER_PYSTRING_H
 #define BASICPYTHONINTERPRETER_PYSTRING_H
 
-
+#include "PyPrimitive.h"
 #include "../PyObject.h"
 #include "../AnonymousObject.h"
 
-class PyString : public PyObject {
+class PyString : public PyPrimitive {
 public:
     PyString();
     PyString(char*);
@@ -18,7 +18,16 @@ public:
 
     virtual ~PyString() = default;
 
-    AnonymousObject* leftAdd(PyObject* right);
+
+    virtual AnonymousObject *addLeft(PyObject *right) override;
+
+    virtual AnonymousObject *subLeft(PyObject *right) override;
+
+    virtual AnonymousObject *multLeft(PyObject *right) override;
+
+    virtual AnonymousObject *divLeft(PyObject *right) override;
+
+    virtual AnonymousObject *asStr(PyObject *right) override;
 
     std::string myValue;
 

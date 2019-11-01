@@ -4,22 +4,21 @@
 
 #include "PyString.h"
 
-PyString::PyString() : PyObject("string") {
+PyString::PyString() : PyPrimitive("string") {
 
 }
 
-PyString::PyString(char *str) : PyObject("string"), myValue(str) {
+PyString::PyString(char *str) : PyPrimitive("string"), myValue(str) {
+}
+
+PyString::PyString(std::string &str) : PyPrimitive("string"), myValue(str) {
 
 }
 
-PyString::PyString(std::string &str) : PyObject("string"), myValue(str) {
-
+PyString::PyString(std::string && inp) : PyPrimitive("string"), myValue(inp){
 }
 
-PyString::PyString(std::string && inp) : PyObject("string"), myValue(inp){
-}
-
-AnonymousObject *PyString::leftAdd(PyObject *right) {
+AnonymousObject *PyString::addLeft(PyObject *right) {
     right = right->unmask();
     if (right->getType() == "string"){
         return new AnonymousObject(new PyString(this->myValue + ((PyString*)right)->myValue));
@@ -27,4 +26,20 @@ AnonymousObject *PyString::leftAdd(PyObject *right) {
         // TODO
         return new AnonymousObject(new PyString(this->myValue));
     }
+}
+
+AnonymousObject *PyString::subLeft(PyObject *right) {
+    return nullptr;
+}
+
+AnonymousObject *PyString::multLeft(PyObject *right) {
+    return nullptr;
+}
+
+AnonymousObject *PyString::divLeft(PyObject *right) {
+    return nullptr;
+}
+
+AnonymousObject *PyString::asStr(PyObject *right) {
+    return new AnonymousObject(new PyString(this->myValue));
 }

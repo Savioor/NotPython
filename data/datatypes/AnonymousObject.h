@@ -11,10 +11,17 @@
 class AnonymousObject : public PyObject {
 private:
     PyObject* obj;
+
+#if OBJECT_DEBUG == true
+    static int anonCount;
+#endif
+
 public:
+
     AnonymousObject();
     AnonymousObject(PyObject*);
-    PyObject* getObj();
+    PyObject* releaseObject();
+    PyObject* getObject();
 
     virtual ~AnonymousObject();
 
@@ -22,6 +29,5 @@ public:
 
     virtual const std::map<std::string, int> &getData() const override ;
 };
-
 
 #endif //BASICPYTHONINTERPRETER_ANONYMOUSOBJECT_H

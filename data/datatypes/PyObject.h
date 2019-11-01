@@ -10,11 +10,14 @@
 #include <map>
 #include <vector>
 
+#define OBJECT_DEBUG true
+
 class PyObject {
 
 protected:
     std::string type;
     std::map<std::string, int> data;
+    bool isPrimitiveVar;
 
 public:
     virtual const std::string& getType() const;
@@ -25,10 +28,20 @@ public:
     explicit PyObject(char*);
     PyObject() = delete;
 
+    /**
+     *
+     * @return The core object, without any primitive wrappers, primitive keeps ownership
+     */
     virtual PyObject* unmask();
+    /**
+     *
+     * @return The core object, without any primitive wrappers, primitive doesn't keeps ownership
+     */
+    virtual PyObject* yoink();
 
     virtual ~PyObject() = default;
 
+    const bool& isPrimitive();
     PyObject *getVariable(std::string &name);
 };
 
