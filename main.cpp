@@ -12,7 +12,7 @@ int main() {
     std::vector<std::string> vars;
     vars.emplace_back("inp1");
     vars.emplace_back("inp2");
-    code.emplace_back("print inp1 + inp2");
+    code.emplace_back("return inp1 + inp2");
     PyFunction f = PyFunction(code, vars);
     int p = mem.alloc(&f);
     std::string fN{"test"};

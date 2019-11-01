@@ -11,6 +11,8 @@
 class FunctionParser : public GenericParser {
 public:
     FunctionParser();
+
+    virtual ~FunctionParser() = default;
 };
 
 

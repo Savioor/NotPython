@@ -8,7 +8,6 @@
 #include "../../../code/parsers/FunctionParser.h"
 #include "../../../code/reqeusters/VectorRequester.h"
 
-
 PyFunction::PyFunction(std::vector<std::string>& code, std::vector<std::string>& vars) : PyObject("func"), code(code), inputVariables(vars) {
 
 }
@@ -36,7 +35,7 @@ PyObject *PyFunction::execute(std::vector<PyObject *> &input) {
     VectorRequester requester{code};
     while(tempParser.parseLine(requester));
     // Get the return value of this function
-    std::string retName{"return"};
+    std::string retName{RETURN_VAR_NAME};
     PyObject* retVal = mem.getVariable(retName);
     // Exit the function, kill all pointers
     for (int i = 0; i < input.size(); i++){

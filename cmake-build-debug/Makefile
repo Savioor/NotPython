@@ -177,6 +177,33 @@ code/keywords/AbstractKeyword.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.s
 .PHONY : code/keywords/AbstractKeyword.cpp.s
 
+code/keywords/Return.o: code/keywords/Return.cpp.o
+
+.PHONY : code/keywords/Return.o
+
+# target to build an object file
+code/keywords/Return.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o
+.PHONY : code/keywords/Return.cpp.o
+
+code/keywords/Return.i: code/keywords/Return.cpp.i
+
+.PHONY : code/keywords/Return.i
+
+# target to preprocess a source file
+code/keywords/Return.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.i
+.PHONY : code/keywords/Return.cpp.i
+
+code/keywords/Return.s: code/keywords/Return.cpp.s
+
+.PHONY : code/keywords/Return.s
+
+# target to generate assembly for a file
+code/keywords/Return.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.s
+.PHONY : code/keywords/Return.cpp.s
+
 code/keywords/Var.o: code/keywords/Var.cpp.o
 
 .PHONY : code/keywords/Var.o
@@ -678,6 +705,9 @@ help:
 	@echo "... code/keywords/AbstractKeyword.o"
 	@echo "... code/keywords/AbstractKeyword.i"
 	@echo "... code/keywords/AbstractKeyword.s"
+	@echo "... code/keywords/Return.o"
+	@echo "... code/keywords/Return.i"
+	@echo "... code/keywords/Return.s"
 	@echo "... code/keywords/Var.o"
 	@echo "... code/keywords/Var.i"
 	@echo "... code/keywords/Var.s"

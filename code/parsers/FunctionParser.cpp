@@ -3,7 +3,9 @@
 //
 
 #include "FunctionParser.h"
+#include "../keywords/Return.h"
 
 FunctionParser::FunctionParser() : GenericParser() {
-    // TODO add return keyword
+    Return* ret = new Return();
+    keywords.push_back(ret);
 }

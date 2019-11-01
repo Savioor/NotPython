@@ -8,6 +8,8 @@
 
 #include "../PyObject.h"
 
+#define RETURN_VAR_NAME "!return"
+
 class PyFunction : public PyObject {
 protected:
     std::vector<std::string> inputVariables;

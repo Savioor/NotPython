@@ -21,6 +21,18 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../co
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../data/datatypes/PyObject.h
 
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/ExpressionParser.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/IRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywords/AbstractKeyword.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywords/Return.cpp
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywords/Return.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/IOR.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/datatypes/primitive/PyFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../util/Node.h
+
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/keywords/AbstractKeyword.h
@@ -57,11 +69,13 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../data/data
 
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/keywords/AbstractKeyword.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/keywords/Return.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/FunctionParser.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/FunctionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/GenericParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data/datatypes/primitive/PyFunction.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/IRequester.h

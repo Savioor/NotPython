@@ -21,6 +21,18 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Return.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Return.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
@@ -58,11 +70,13 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Return.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/FunctionParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h

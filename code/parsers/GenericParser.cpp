@@ -49,7 +49,8 @@ GenericParser::GenericParser() {
 }
 
 GenericParser::~GenericParser() {
-    for (AbstractKeyword* k : keywords){
+    for (AbstractKeyword*& k : keywords){
         delete(k);
+        k = nullptr;
     }
 }
