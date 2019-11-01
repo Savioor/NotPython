@@ -10,8 +10,9 @@ int main() {
     Memory& mem = Memory::getInstance();
     std::vector<std::string> code;
     std::vector<std::string> vars;
-    vars.emplace_back("input");
-    code.emplace_back("print input");
+    vars.emplace_back("inp1");
+    vars.emplace_back("inp2");
+    code.emplace_back("print inp1 + inp2");
     PyFunction f = PyFunction(code, vars);
     int p = mem.alloc(&f);
     std::string fN{"test"};

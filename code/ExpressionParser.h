@@ -20,10 +20,10 @@ private:
     /**
      * Returns a list for easy deletion and replacement of elements.
      * @param startOfExpr
-     * @param endOfExpr
+     * @param endIt
      * @return
      */
-    LinkedList<PyObject *> getSubExpr(stringIter_t& startOfExpr, stringIter_t& endOfExpr);
+    LinkedList<PyObject *> getSubExpr(stringIter_t& startOfExpr, stringIter_t& endIt, const char* endChar);
     /**
      *
      * If a variable is a variable, return it's value. If it's a function, attempt to execute it. If you
@@ -52,7 +52,8 @@ public:
         static ExpressionParser instance;
         return instance;
     }
-    PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr);
+    PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar);
+    PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endIt);
     std::vector<char> specialChars;
     /**
      * The first operations happen first

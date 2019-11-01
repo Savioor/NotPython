@@ -31,9 +31,14 @@ ExpressionParser::ExpressionParser() {
     operations.insert({'+', new AdditionOperator()});
 }
 
-PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endOfExpr) {
+PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt) {
+    const char noTerminator = '\0';
+    return parseExpression(startOfExpr, endIt, &noTerminator);
+}
 
-    LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endOfExpr)};
+PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar) {
+
+    LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endIt, endChar)};
 
     if (splatData.empty()){
 //        IOR::getInstance().getErr().emplace_back("Expression expected but not found!");
@@ -94,14 +99,23 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
 
 }
 
-LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, stringIter_t& endOfExpr) {
+LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, stringIter_t& endIt, const char* endChar) {
     LinkedList<PyObject*> ret;
     std::string temp;
 
-    for (auto it = startOfExpr; it != endOfExpr; it++){
+    for (stringIter_t& it = startOfExpr; it != endIt; it++){
+
 
         if (*it.base() == ' ') // Ignore all whitespace
             continue;
+        // Make sure end char is not seen
+        const char* tempP = endChar;
+        while (*tempP != '\0'){
+            if (*tempP == *it.base())
+                return ret;
+            tempP++;
+        }
+
 
         switch (*it.base()){
             case '=':
@@ -115,7 +129,7 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
 
                 while (*it.base() != '"'){
                     temp.push_back(*it.base());
-                    if (it == endOfExpr){
+                    if (it == endIt){
                         return LinkedList<PyObject*>{};
                     }
                     ++it;
@@ -123,12 +137,12 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                 ret.addToBackV(new AnonymousObject(new PyString(temp)));
                 break;
             default:
-                ret.addToBackV(readVariableName(it, endOfExpr));
+                ret.addToBackV(readVariableName(it, endIt));
                 if (ret.getEnd()->value == nullptr){
                     return LinkedList<PyObject*>{};
                 }
                 if (ret.getEnd()->value->getType() == "func"){
-                    funcTryReply_t ran = tryRunFunction(ret.getEnd()->value, it, endOfExpr);
+                    funcTryReply_t ran = tryRunFunction(ret.getEnd()->value, it, endIt);
                     if (ran.second.first){
                         it = ran.second.second;
                         ret.getEnd()->value = ran.first;
@@ -192,42 +206,24 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
 
     // Get all vars
     std::vector<PyObject*> vars;
-    std::string expr;
-    bool noInp;
-    noInp = true;
+    char stoppers[2] = {',', ')'};
+    bool noInp = true;
 
     while (it != end){
         it++;
 
-        if (*it.base() == ')'){
-            if (!noInp){
-                auto itt = expr.begin();
-                PyObject* toAdd = this->parseExpression(itt, expr.end());
-                if (toAdd == nullptr){
-                    return {nullptr, {false, end}};
-                }
-                vars.push_back(toAdd);
+        PyObject* obj = parseExpression(it, end, stoppers);
+        if (obj == nullptr){
+            if (noInp){
+                break;
             }
-            break;
+            return {nullptr, {false, end}};
         }
+
+        vars.push_back(obj);
+        if (*it.base() == ')') break;
 
         noInp = false;
-
-        if (*it.base() == ','){
-
-            auto itt = expr.begin();
-            PyObject* toAdd = this->parseExpression(itt, expr.end());
-            if (toAdd == nullptr){
-                return {nullptr, {false, end}};
-            }
-            expr.clear();
-            vars.push_back(toAdd);
-
-            continue;
-        }
-
-        expr.push_back(*it.base());
-
     }
 
     if (it == end){
