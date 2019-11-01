@@ -68,7 +68,7 @@ int Memory::alloc(PyObject &obj) {
     if (existingPtr != -1)
         return existingPtr;
     allocCount++;
-    if (allocCount % 5 == 0)
+    if (allocCount % GC_FREQ == 0)
         collectGarbage();
     data.push_back(&obj);
     return (int)data.size() - 1;

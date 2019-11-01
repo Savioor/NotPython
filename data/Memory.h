@@ -9,6 +9,8 @@
 #include <map>
 #include "datatypes/PyObject.h"
 
+#define GC_FREQ 5
+
 class Memory;
 
 typedef __gnu_cxx::__normal_iterator<char *, std::basic_string<char, std::char_traits<char>, std::allocator<char>>> stringIter_t;
