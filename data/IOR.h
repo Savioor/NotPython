@@ -31,6 +31,7 @@ public:
     void reportOut(const char*);
 
     void reportDebug(std::string&);
+    void reportDebug(std::string&&);
     void reportDebug(const char*);
 
     void operator=(IOR const&) = delete;

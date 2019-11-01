@@ -108,6 +108,7 @@ CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/datatypes/PyObject.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/PyObject.h

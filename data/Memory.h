@@ -34,6 +34,8 @@ private:
 
     Memory();
 
+    int allocCount;
+
 public:
 
     static Memory& getInstance()

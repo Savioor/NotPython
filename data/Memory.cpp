@@ -3,9 +3,56 @@
 //
 
 #include "Memory.h"
+#include "IOR.h"
 
 void Memory::collectGarbage() {
-    throw "TODO";
+    int latestInd = -1;
+    std::vector<PyObject*> marked;
+    bool* markedStatus = new bool[data.size()];
+    for (int i = 0; i < data.size(); i++)
+        markedStatus[i] = false;
+    bool markedSomeone;
+
+    // Mark everyone
+    while (true){ // TODO tidy up a bit
+        markedSomeone = false;
+
+        if (latestInd == -1){
+            latestInd = 0;
+            for (auto& pair : pointerTable){
+                PyObject* pointingTo = data.at(pair.second);
+                if (markedStatus[pair.second]) continue;
+                markedSomeone = true;
+                markedStatus[pair.second] = true;
+                marked.push_back(pointingTo);
+            }
+        } else {
+            int i = latestInd;
+            latestInd = marked.size();
+            for (; i < latestInd; i++){
+                for (auto& pair : marked.at(i)->getData()){
+                    PyObject* pointingTo = data.at(pair.second);
+                    if (markedStatus[pair.second]) continue;
+                    markedSomeone = true;
+                    markedStatus[pair.second] = true;
+                    marked.push_back(pointingTo);
+                }
+            }
+        }
+
+
+        if (!markedSomeone) break;
+    }
+
+    for (int i = 0; i < data.size(); i++){
+        if (!markedStatus[i]){
+#if OBJECT_DEBUG == true
+            IOR::getInstance().reportDebug("GC deleting object of type " + data.at(i)->getType());
+#endif
+            delete(data.at(i));
+        }
+    }
+
 }
 
 std::vector<PyObject*> &Memory::getData() {
@@ -20,6 +67,9 @@ int Memory::alloc(PyObject &obj) {
     int existingPtr = getPointerByObject(&obj);
     if (existingPtr != -1)
         return existingPtr;
+    allocCount++;
+    if (allocCount % 5 == 0)
+        collectGarbage();
     data.push_back(&obj);
     return (int)data.size() - 1;
 }
@@ -28,7 +78,7 @@ void Memory::allocPointer(std::string & varName, int pointer) {
     pointerTable.insert({{varName, depth}, pointer});
 }
 
-Memory::Memory() : depth(0) {
+Memory::Memory() : depth(0), allocCount(0) {
 
 }
 
