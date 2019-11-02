@@ -7,13 +7,13 @@
 #include "../../data/IOR.h"
 
 stringIter_t &Return::parse(stringIter_t &ip, stringIter_t &end, IRequester &req) {
-    PyObject* returnValue = ExpressionParser::getInstance().parseExpression(ip, end);
-    if (returnValue == nullptr){
+    int returnValue = ExpressionParser::getInstance().parseExpression(ip, end);
+    if (returnValue == -1){
         IOR::getInstance().reportError("Expected some value to return, none found!");
     }
     static Memory& mem = Memory::getInstance();
     static std::string retName{RETURN_VAR_NAME};
-    mem.allocPointer(retName, mem.alloc(returnValue));
+    mem.allocPointer(retName, returnValue);
     return end;
 }
 

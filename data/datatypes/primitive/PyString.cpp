@@ -43,3 +43,13 @@ AnonymousObject *PyString::divLeft(PyObject *right) {
 AnonymousObject *PyString::asStr(PyObject *right) {
     return new AnonymousObject(new PyString(this->myValue));
 }
+
+int PyString::compare(PyObject *right) {
+    return -2;
+}
+
+bool PyString::equals(PyObject *other) {
+    other = other->unmask();
+    if (other->getType() != "string") return false;
+    return ((PyString*)other)->myValue == myValue;
+}

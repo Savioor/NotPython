@@ -10,6 +10,7 @@
 #include "datatypes/PyObject.h"
 
 #define GC_FREQ 5
+#define MEM_DEBUG true
 
 class Memory;
 
@@ -37,6 +38,11 @@ private:
     Memory();
 
     int allocCount;
+
+#if MEM_DEBUG == true
+    static int currentlyAlloced;
+#endif
+
 
 public:
 
@@ -91,6 +97,5 @@ public:
     int depth;
 
 };
-
 
 #endif //BASICPYTHONINTERPRETER_MEMORY_H

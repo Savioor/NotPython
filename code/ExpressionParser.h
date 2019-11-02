@@ -52,8 +52,8 @@ public:
         static ExpressionParser instance;
         return instance;
     }
-    PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar);
-    PyObject * parseExpression(stringIter_t& startOfExpr, stringIter_t endIt);
+    int parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar);
+    int parseExpression(stringIter_t& startOfExpr, stringIter_t endIt);
     std::vector<char> specialChars;
     /**
      * The first operations happen first

@@ -29,6 +29,9 @@ public:
 
     virtual AnonymousObject *asStr(PyObject *right) override;
 
+    virtual int compare(PyObject* right) override;
+    virtual bool equals(PyObject* other) override;
+
     std::string myValue;
 
 };

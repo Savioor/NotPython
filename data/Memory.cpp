@@ -5,6 +5,12 @@
 #include "Memory.h"
 #include "IOR.h"
 
+#if MEM_DEBUG == true
+    int Memory::currentlyAlloced = 0;
+#endif
+
+
+// TODO add defragmentation
 void Memory::collectGarbage() {
     int latestInd = -1;
     std::vector<PyObject*> marked;
@@ -45,11 +51,13 @@ void Memory::collectGarbage() {
     }
 
     for (int i = 0; i < data.size(); i++){
-        if (!markedStatus[i]){
-#if OBJECT_DEBUG == true
+        if (!markedStatus[i] && data.at(i) != nullptr){
+#if MEM_DEBUG == true
             IOR::getInstance().reportDebug("GC deleting object of type " + data.at(i)->getType());
+            currentlyAlloced--;
 #endif
             delete(data.at(i));
+            data.at(i) = nullptr;
         }
     }
 
@@ -71,6 +79,12 @@ int Memory::alloc(PyObject &obj) {
     if (allocCount % GC_FREQ == 0)
         collectGarbage();
     data.push_back(&obj);
+
+#if MEM_DEBUG == true
+    IOR::getInstance().reportDebug("Allocated new object of type " + obj.getType());
+    currentlyAlloced++;
+#endif
+
     return (int)data.size() - 1;
 }
 
@@ -117,7 +131,7 @@ int Memory::getPointerByObject(PyObject *inp) {
 
 Memory::~Memory() {
     for (auto var : data){
-        delete(var);
+        if (var != nullptr) delete(var);
     }
 }
 

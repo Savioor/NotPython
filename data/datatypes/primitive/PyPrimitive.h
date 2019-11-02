@@ -24,6 +24,15 @@ public:
     virtual AnonymousObject* divLeft(PyObject* right) = 0;
 
     virtual AnonymousObject* asStr(PyObject* right) = 0;
+
+    /**
+     *
+     * @param other
+     * @return 1 if I am bigger, -1 if I am smaller, 0 if I am equal.
+     */
+    virtual int compare(PyObject* other) = 0;
+
+    virtual bool equals(PyObject* other) = 0;
 };
 
 

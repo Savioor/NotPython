@@ -11,18 +11,17 @@
 
 stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 
-    PyObject* value = ExpressionParser::getInstance().parseExpression(ip, end);
-    if (value == nullptr){
+    int ptr = ExpressionParser::getInstance().parseExpression(ip, end);
+    if (ptr == -1){
         IOR::getInstance().reportError("Error parsing expression");
         return end;
     }
 
-    if (value->getType() == "rvalue"){
-        value = ((AnonymousObject *) value)->getObject();
-        if (value == nullptr){
-            IOR::getInstance().reportError("Error parsing expression");
-            return end;
-        }
+    PyObject* value = Memory::getInstance().getData().at(ptr)->unmask();
+
+    if (value == nullptr){
+        IOR::getInstance().reportError("Error parsing expression");
+        return end;
     }
 
     if (value->getType() != "string"){

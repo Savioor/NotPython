@@ -26,23 +26,24 @@ ExpressionParser::ExpressionParser() {
     specialChars.push_back('(');
     specialChars.push_back(')');
     specialChars.push_back('!');
+    specialChars.push_back(',');
 
     operations.insert({'=', new PointerAssignOperator()});
     operations.insert({'+', new AdditionOperator()});
 }
 
-PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt) {
+int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt) {
     const char noTerminator = '\0';
     return parseExpression(startOfExpr, endIt, &noTerminator);
 }
 
-PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar) {
+int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar) {
 
     LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endIt, endChar)};
 
     if (splatData.empty()){
 //        IOR::getInstance().getErr().emplace_back("Expression expected but not found!");
-        return nullptr;
+        return -1;
     }
 
     bool didSomething;
@@ -58,7 +59,7 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                     if (obj == splatData.getStart() || obj == splatData.getEnd()){
                         IOR::getInstance().reportError(
                                 "Found binary operator at the start or end of an expression");
-                        return nullptr;
+                        return -1;
                     }
 
                     auto* asBin = (BinaryNativeFunction*)obj->value;
@@ -92,13 +93,15 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
                 disconnectSafely(splatData, splatData.getStart());
             }
 
-            return nullptr;
+            return -1;
         }
 
     }
 
     PyObject* ret = splatData.getStart()->value;
     splatData.disconnectAndKeepAlive(0);
+
+    int retPointer;
 
     if (ret->getType() == "rvalue"){
 #if OBJECT_DEBUG == true
@@ -107,10 +110,12 @@ PyObject* ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIte
         PyObject* temp = ret;
         ret = ret->yoink();
         delete(temp);
-        Memory::getInstance().alloc(ret); // Let the garbage collector deal with it when needed.
+        retPointer = Memory::getInstance().alloc(ret); // Let the garbage collector deal with it when needed.
+    } else {
+        retPointer = Memory::getInstance().getPointerByObject(ret);
     }
 
-    return ret;
+    return retPointer;
 
 }
 
@@ -227,15 +232,15 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
     while (it != end){
         it++;
 
-        PyObject* obj = parseExpression(it, end, stoppers);
-        if (obj == nullptr){
+        int ptr = parseExpression(it, end, stoppers);
+        if (ptr == -1){
             if (noInp){
                 break;
             }
             return {nullptr, {false, end}};
         }
 
-        vars.push_back(obj);
+        vars.push_back(Memory::getInstance().getData().at(ptr));
         if (*it.base() == ')') break;
 
         noInp = false;
