@@ -14,7 +14,7 @@ public:
     T value;
 
     virtual ~Node() {
-        delete(value);
+        if (value != nullptr) delete(value);
         delete (next);
     };
     Node(Node* b, Node* a, T v) : prev(b), next(a), value(v) {};

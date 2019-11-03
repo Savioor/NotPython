@@ -3,10 +3,8 @@
 //
 
 #include "Var.h"
-#include <memory>
 #include "../ExpressionParser.h"
 #include "../../data/IOR.h"
-#include "../../data/datatypes/AnonymousObject.h"
 
 stringIter_t &Var::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 

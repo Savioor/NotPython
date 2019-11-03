@@ -89,9 +89,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
             IOR::getInstance().reportError(
                     "Couldn't collapse expression");
             // Run clean nup
-            while (splatData.getStart() != nullptr){
-                disconnectSafely(splatData, splatData.getStart());
-            }
+            safelyClear(splatData);
 
             return -1;
         }
@@ -132,7 +130,7 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
         const char* tempP = endChar;
         while (*tempP != '\0'){
             if (*tempP == *it.base())
-                return ret;
+                return std::move(ret);
             tempP++;
         }
 
@@ -150,6 +148,7 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                 while (*it.base() != '"'){
                     temp.push_back(*it.base());
                     if (it == endIt){
+                        safelyClear(ret);
                         return LinkedList<PyObject*>{};
                     }
                     ++it;
@@ -159,6 +158,7 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
             default:
                 ret.addToBackV(readVariableName(it, endIt));
                 if (ret.getEnd()->value == nullptr){
+                    safelyClear(ret);
                     return LinkedList<PyObject*>{};
                 }
                 if (ret.getEnd()->value->getType() == "func"){
@@ -207,6 +207,10 @@ ExpressionParser::~ExpressionParser() {
 }
 
 void ExpressionParser::disconnectSafely(LinkedList<PyObject *> &ls, Node<PyObject*>* val) {
+    if (val->value == nullptr){
+        ls.disconnect(val);
+        return;
+    }
     auto& v = val->value->getType();
     if (v == "rvalue"){
         ls.disconnect(val);
@@ -234,7 +238,7 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
 
         int ptr = parseExpression(it, end, stoppers);
         if (ptr == -1){
-            if (noInp){
+            if (noInp && *it.base() == ')'){
                 break;
             }
             return {nullptr, {false, end}};
@@ -259,4 +263,10 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
     }
 
     return {ret, {true, ++it}};
+}
+
+void ExpressionParser::safelyClear(LinkedList<PyObject *> &ls) {
+    while(ls.getStart() != nullptr){
+        disconnectSafely(ls, ls.getStart());
+    }
 }

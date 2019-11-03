@@ -2,12 +2,10 @@
 // Created by alexey on 26/10/2019.
 //
 
-#include <iostream>
 #include "Print.h"
 #include "../../../data/IOR.h"
 #include "../../ExpressionParser.h"
 #include "../../../data/datatypes/primitive/PyString.h"
-#include "../../../data/datatypes/AnonymousObject.h"
 
 stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end, IRequester& req) {
 

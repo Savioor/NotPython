@@ -41,6 +41,7 @@ private:
      */
     void disconnectSafely(LinkedList<PyObject *> &ls, Node<PyObject *> *val);
 
+    void safelyClear(LinkedList<PyObject *>& ls);
 
     funcTryReply_t tryRunFunction(PyObject* funcName, stringIter_t start, const stringIter_t& end);
 
