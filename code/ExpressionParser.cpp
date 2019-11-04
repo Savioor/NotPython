@@ -68,6 +68,12 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
                     auto* next = obj->next;
 
                     PyObject* newObj = asBin->execute(prev->value, next->value);
+
+                    if (newObj == nullptr){
+                        safelyClear(splatData);
+                        return -1;
+                    }
+
                     auto* newNode = new Node<PyObject*>(newObj);
 
                     splatData.connectAfter(obj, newNode);
@@ -149,6 +155,7 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                     temp.push_back(*it.base());
                     if (it == endIt){
                         safelyClear(ret);
+                        IOR::getInstance().reportError("Couldn't find \" to end string");
                         return LinkedList<PyObject*>{};
                     }
                     ++it;
@@ -197,7 +204,13 @@ PyObject *ExpressionParser::readVariableName(stringIter_t& iter, stringIter_t& e
     }
     endOfWhile:
 
-    return Memory::getInstance().getVariable(varName);
+    PyObject* obj = Memory::getInstance().getVariable(varName);
+
+    if (obj == nullptr){
+        IOR::getInstance().reportError("Couldn't find variable with name: " + varName);
+    }
+
+    return obj;
 }
 
 ExpressionParser::~ExpressionParser() {

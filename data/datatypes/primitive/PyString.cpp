@@ -40,7 +40,7 @@ AnonymousObject *PyString::divLeft(PyObject *right) {
     return nullptr;
 }
 
-AnonymousObject *PyString::asStr(PyObject *right) {
+AnonymousObject *PyString::asStr() {
     return new AnonymousObject(new PyString(this->myValue));
 }
 

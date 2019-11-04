@@ -34,3 +34,7 @@ void IOR::reportDebug(const char *in) {
 void IOR::reportDebug(std::string && in) {
     reportDebug(in.c_str());
 }
+
+void IOR::reportError(std::string && ipn) {
+    reportError(ipn.c_str());
+}

@@ -12,18 +12,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/code/keywords/If.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/keywords/If.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/reqeusters/BlockRequester.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/reqeusters/BlockRequester.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/datatypes/primitive/PyBoolean.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/datatypes/primitive/PyBoolean.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ExpressionParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/code/ExpressionParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/keywords/Var.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/keywords/Var.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/keywords/Var.h" beforeDir="false" afterPath="$PROJECT_DIR$/code/keywords/Var.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/keywords/natives/Print.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/keywords/natives/Print.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/util/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/GenericParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/parsers/GenericParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/IOR.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/IOR.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/IOR.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/IOR.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Memory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/Memory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Memory.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/Memory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/PointerAssignOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/natives/binary/PointerAssignOperator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyPrimitive.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/primitive/PyPrimitive.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/primitive/PyString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyString.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/primitive/PyString.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +143,8 @@
       <workItem from="1572339801028" duration="674000" />
       <workItem from="1572355499870" duration="16430000" />
       <workItem from="1572620901785" duration="28649000" />
-      <workItem from="1572769725821" duration="1182000" />
+      <workItem from="1572769725821" duration="7256000" />
+      <workItem from="1572903397553" duration="2075000" />
     </task>
     <servers />
   </component>
@@ -132,15 +165,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/code/ExpressionParser.cpp</url>
-          <line>264</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />

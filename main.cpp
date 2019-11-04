@@ -1,6 +1,7 @@
 #include "code/reqeusters/CinRequester.h"
 #include "code/parsers/CinParser.h"
 #include "data/datatypes/primitive/PyFunction.h"
+#include "data/datatypes/primitive/PyBoolean.h"
 
 int main() {
     CinRequester req;

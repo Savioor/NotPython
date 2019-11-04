@@ -27,8 +27,13 @@ public:
 
     virtual AnonymousObject *divLeft(PyObject *right) override;
 
-    virtual AnonymousObject *asStr(PyObject *right) override;
+    virtual AnonymousObject *asStr() override;
 
+    /**
+     * 1 for bigger, -1 for smaller, 0 for equal. -2 for unsupported.
+     * @param right
+     * @return
+     */
     virtual int compare(PyObject* right) override;
     virtual bool equals(PyObject* other) override;
 

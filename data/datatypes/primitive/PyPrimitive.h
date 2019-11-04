@@ -23,7 +23,7 @@ public:
     virtual AnonymousObject* multLeft(PyObject* right) = 0;
     virtual AnonymousObject* divLeft(PyObject* right) = 0;
 
-    virtual AnonymousObject* asStr(PyObject* right) = 0;
+    virtual AnonymousObject* asStr() = 0;
 
     /**
      *

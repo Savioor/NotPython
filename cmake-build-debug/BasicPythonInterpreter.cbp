@@ -99,6 +99,12 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/If.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/If.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/Return.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -133,6 +139,12 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/BlockRequester.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/BlockRequester.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.cpp">
@@ -193,6 +205,12 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/unary/UnaryNativeFunction.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.cpp">

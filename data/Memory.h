@@ -77,6 +77,7 @@ public:
      * Adds a variable pointing to int that matches the current depth
      */
     void allocPointer(std::string&, int);
+    void allocPointer(std::string && varName, int pointer);
     /**
      *
      * @return The matching variable of highest depth.

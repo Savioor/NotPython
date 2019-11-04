@@ -22,6 +22,23 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../co
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../data/datatypes/PyObject.h
 
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/ExpressionParser.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/IRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/keywords/AbstractKeyword.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/keywords/If.cpp
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/keywords/If.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/parsers/GenericParser.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/BlockRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/CinRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/IOR.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/primitive/PyBoolean.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../util/Node.h
+
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywords/AbstractKeyword.h
@@ -81,6 +98,7 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/keywords/AbstractKeyword.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/keywords/If.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/keywords/Var.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/keywords/natives/Print.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/parsers/GenericParser.cpp
@@ -90,6 +108,10 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../util/Node.h
+
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/BlockRequester.cpp.o: ../code/IRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/BlockRequester.cpp.o: ../code/reqeusters/BlockRequester.cpp
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/BlockRequester.cpp.o: ../code/reqeusters/BlockRequester.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../code/reqeusters/CinRequester.cpp
@@ -110,7 +132,10 @@ CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/datatypes/PyObject
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/primitive/PyBoolean.h
+CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o: ../data/Memory.h
@@ -137,7 +162,6 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNative
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/PointerAssignOperator.cpp
@@ -146,6 +170,13 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssig
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/natives/unary/UnaryNativeFunction.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/natives/unary/UnaryNativeFunction.h
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyBoolean.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyBoolean.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyString.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/keywords/AbstractKeyword.h
@@ -175,7 +206,10 @@ CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../code/parsers/CinParser.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../code/parsers/GenericParser.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../code/reqeusters/CinRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/primitive/PyBoolean.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/primitive/PyFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../main.cpp
 

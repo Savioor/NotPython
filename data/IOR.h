@@ -26,6 +26,7 @@ public:
 public:
     void reportError(std::string&);
     void reportError(const char*);
+    void reportError(std::string&&);
 
     void reportOut(std::string&);
     void reportOut(const char*);

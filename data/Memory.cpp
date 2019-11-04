@@ -4,6 +4,7 @@
 
 #include "Memory.h"
 #include "IOR.h"
+#include "datatypes/primitive/PyBoolean.h"
 
 #if MEM_DEBUG == true
     int Memory::currentlyAlloced = 0;
@@ -92,7 +93,16 @@ void Memory::allocPointer(std::string & varName, int pointer) {
     pointerTable.insert({{varName, depth}, pointer});
 }
 
+void Memory::allocPointer(std::string && varName, int pointer) {
+    pointerTable.insert({{varName, depth}, pointer});
+}
+
+
 Memory::Memory() : depth(0), allocCount(0) {
+
+    // Alloc some basic vars
+    this->allocPointer(*new std::string("true"), this->alloc(new PyBoolean(true)));
+    this->allocPointer(*new std::string("false"), this->alloc(new PyBoolean(false)));
 
 }
 

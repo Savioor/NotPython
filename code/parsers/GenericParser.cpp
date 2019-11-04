@@ -8,6 +8,7 @@
 #include "../../data/IOR.h"
 #include "../keywords/Var.h"
 #include "../ExpressionParser.h"
+#include "../keywords/If.h"
 
 bool GenericParser::parseLine(IRequester & requester) {
 
@@ -46,6 +47,8 @@ GenericParser::GenericParser() {
     keywords.push_back(p);
     auto* v = new Var();
     keywords.push_back(v);
+    auto* ifKeyword = new If();
+    keywords.push_back(ifKeyword);
 }
 
 GenericParser::~GenericParser() {

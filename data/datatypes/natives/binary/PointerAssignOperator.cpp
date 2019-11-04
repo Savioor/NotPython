@@ -5,11 +5,10 @@
 #include "PointerAssignOperator.h"
 #include "../../../IOR.h"
 #include "../../../Memory.h"
-#include "../../AnonymousObject.h"
-
 PyObject *PointerAssignOperator::execute(PyObject *left, PyObject *right) {
-    if (left->getType() == "rvalue"){
-        IOR::getInstance().reportError("Can't perform assignment on rvalues");
+
+    if (left->getType() == "rvalue" || left->getType() == "bool"){
+        IOR::getInstance().reportError("Can't perform assignment on rvalues or bools");
         return nullptr;
     }
     Memory& mem = Memory::getInstance();
