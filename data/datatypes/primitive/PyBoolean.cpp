@@ -4,6 +4,7 @@
 
 #include "PyBoolean.h"
 #include "PyString.h"
+#include "../../Memory.h"
 
 AnonymousObject *PyBoolean::addLeft(PyObject *right) {
     return nullptr;
@@ -21,11 +22,11 @@ AnonymousObject *PyBoolean::divLeft(PyObject *right) {
     return nullptr;
 }
 
-AnonymousObject *PyBoolean::asStr() {
+std::string PyBoolean::asStr() {
     if (value){
-        return new AnonymousObject(new PyString("true"));
+        return "true";
     } else {
-        return new AnonymousObject(new PyString("false"));
+        return "false";
     }
 }
 
@@ -41,4 +42,9 @@ bool PyBoolean::equals(PyObject *other) {
 
 PyBoolean::PyBoolean(bool val) : PyPrimitive("bool"), value(val) {
 
+}
+
+
+int PyBoolean::allocCopy() {
+    return Memory::getInstance().alloc(new PyBoolean(value));
 }

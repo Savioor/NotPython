@@ -23,7 +23,9 @@ public:
 
     AnonymousObject *divLeft(PyObject *right) override;
 
-    AnonymousObject *asStr() override;
+    std::string asStr() override;
+
+    virtual int allocCopy() override;
 
     int compare(PyObject *other) override;
 

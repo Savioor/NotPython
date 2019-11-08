@@ -5,7 +5,7 @@
 #include "BinaryNativeFunction.h"
 
 const std::string &BinaryNativeFunction::getName() const {
-    return getType();
+    return name;
 }
 
 BinaryNativeFunction::BinaryNativeFunction(char * in) : PyObject("binary_native"), name(in) {

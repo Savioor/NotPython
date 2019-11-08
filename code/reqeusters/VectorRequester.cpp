@@ -4,7 +4,7 @@
 
 #include "VectorRequester.h"
 
-std::string *VectorRequester::getNext() {
+std::string *VectorRequester::getNext(bool affectEnv) {
     if (lastInd == data.size())
         return nullptr;
     return &data.at(lastInd++);

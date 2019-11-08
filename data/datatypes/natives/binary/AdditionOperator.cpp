@@ -16,5 +16,8 @@ PyObject *AdditionOperator::execute(PyObject *left, PyObject *right) {
     if (left->isPrimitive()){
         return ((PyPrimitive*)left)->addLeft(right);
     }
+
+    throw "Write this code you dumbfuck";
+
     return nullptr;
 }

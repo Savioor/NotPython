@@ -420,6 +420,33 @@ code/reqeusters/CinRequester.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.s
 .PHONY : code/reqeusters/CinRequester.cpp.s
 
+code/reqeusters/FunctionRequester.o: code/reqeusters/FunctionRequester.cpp.o
+
+.PHONY : code/reqeusters/FunctionRequester.o
+
+# target to build an object file
+code/reqeusters/FunctionRequester.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o
+.PHONY : code/reqeusters/FunctionRequester.cpp.o
+
+code/reqeusters/FunctionRequester.i: code/reqeusters/FunctionRequester.cpp.i
+
+.PHONY : code/reqeusters/FunctionRequester.i
+
+# target to preprocess a source file
+code/reqeusters/FunctionRequester.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.i
+.PHONY : code/reqeusters/FunctionRequester.cpp.i
+
+code/reqeusters/FunctionRequester.s: code/reqeusters/FunctionRequester.cpp.s
+
+.PHONY : code/reqeusters/FunctionRequester.s
+
+# target to generate assembly for a file
+code/reqeusters/FunctionRequester.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.s
+.PHONY : code/reqeusters/FunctionRequester.cpp.s
+
 code/reqeusters/VectorRequester.o: code/reqeusters/VectorRequester.cpp.o
 
 .PHONY : code/reqeusters/VectorRequester.o
@@ -609,6 +636,60 @@ data/datatypes/natives/binary/BinaryNativeFunction.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
 .PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
 
+data/datatypes/natives/binary/EqualityCheckOperator.o: data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
+
+.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.o
+
+# target to build an object file
+data/datatypes/natives/binary/EqualityCheckOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
+.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
+
+data/datatypes/natives/binary/EqualityCheckOperator.i: data/datatypes/natives/binary/EqualityCheckOperator.cpp.i
+
+.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/EqualityCheckOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.i
+.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.cpp.i
+
+data/datatypes/natives/binary/EqualityCheckOperator.s: data/datatypes/natives/binary/EqualityCheckOperator.cpp.s
+
+.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/EqualityCheckOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.s
+.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.cpp.s
+
+data/datatypes/natives/binary/MultiplicationOperator.o: data/datatypes/natives/binary/MultiplicationOperator.cpp.o
+
+.PHONY : data/datatypes/natives/binary/MultiplicationOperator.o
+
+# target to build an object file
+data/datatypes/natives/binary/MultiplicationOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o
+.PHONY : data/datatypes/natives/binary/MultiplicationOperator.cpp.o
+
+data/datatypes/natives/binary/MultiplicationOperator.i: data/datatypes/natives/binary/MultiplicationOperator.cpp.i
+
+.PHONY : data/datatypes/natives/binary/MultiplicationOperator.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/MultiplicationOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.i
+.PHONY : data/datatypes/natives/binary/MultiplicationOperator.cpp.i
+
+data/datatypes/natives/binary/MultiplicationOperator.s: data/datatypes/natives/binary/MultiplicationOperator.cpp.s
+
+.PHONY : data/datatypes/natives/binary/MultiplicationOperator.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/MultiplicationOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.s
+.PHONY : data/datatypes/natives/binary/MultiplicationOperator.cpp.s
+
 data/datatypes/natives/binary/PointerAssignOperator.o: data/datatypes/natives/binary/PointerAssignOperator.cpp.o
 
 .PHONY : data/datatypes/natives/binary/PointerAssignOperator.o
@@ -635,6 +716,33 @@ data/datatypes/natives/binary/PointerAssignOperator.s: data/datatypes/natives/bi
 data/datatypes/natives/binary/PointerAssignOperator.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.s
 .PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.s
+
+data/datatypes/natives/binary/SubtractionOperator.o: data/datatypes/natives/binary/SubtractionOperator.cpp.o
+
+.PHONY : data/datatypes/natives/binary/SubtractionOperator.o
+
+# target to build an object file
+data/datatypes/natives/binary/SubtractionOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o
+.PHONY : data/datatypes/natives/binary/SubtractionOperator.cpp.o
+
+data/datatypes/natives/binary/SubtractionOperator.i: data/datatypes/natives/binary/SubtractionOperator.cpp.i
+
+.PHONY : data/datatypes/natives/binary/SubtractionOperator.i
+
+# target to preprocess a source file
+data/datatypes/natives/binary/SubtractionOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.i
+.PHONY : data/datatypes/natives/binary/SubtractionOperator.cpp.i
+
+data/datatypes/natives/binary/SubtractionOperator.s: data/datatypes/natives/binary/SubtractionOperator.cpp.s
+
+.PHONY : data/datatypes/natives/binary/SubtractionOperator.s
+
+# target to generate assembly for a file
+data/datatypes/natives/binary/SubtractionOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.s
+.PHONY : data/datatypes/natives/binary/SubtractionOperator.cpp.s
 
 data/datatypes/natives/unary/UnaryNativeFunction.o: data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
 
@@ -716,6 +824,33 @@ data/datatypes/primitive/PyFunction.s: data/datatypes/primitive/PyFunction.cpp.s
 data/datatypes/primitive/PyFunction.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s
 .PHONY : data/datatypes/primitive/PyFunction.cpp.s
+
+data/datatypes/primitive/PyInteger.o: data/datatypes/primitive/PyInteger.cpp.o
+
+.PHONY : data/datatypes/primitive/PyInteger.o
+
+# target to build an object file
+data/datatypes/primitive/PyInteger.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o
+.PHONY : data/datatypes/primitive/PyInteger.cpp.o
+
+data/datatypes/primitive/PyInteger.i: data/datatypes/primitive/PyInteger.cpp.i
+
+.PHONY : data/datatypes/primitive/PyInteger.i
+
+# target to preprocess a source file
+data/datatypes/primitive/PyInteger.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.i
+.PHONY : data/datatypes/primitive/PyInteger.cpp.i
+
+data/datatypes/primitive/PyInteger.s: data/datatypes/primitive/PyInteger.cpp.s
+
+.PHONY : data/datatypes/primitive/PyInteger.s
+
+# target to generate assembly for a file
+data/datatypes/primitive/PyInteger.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.s
+.PHONY : data/datatypes/primitive/PyInteger.cpp.s
 
 data/datatypes/primitive/PyPrimitive.o: data/datatypes/primitive/PyPrimitive.cpp.o
 
@@ -840,6 +975,9 @@ help:
 	@echo "... code/reqeusters/CinRequester.o"
 	@echo "... code/reqeusters/CinRequester.i"
 	@echo "... code/reqeusters/CinRequester.s"
+	@echo "... code/reqeusters/FunctionRequester.o"
+	@echo "... code/reqeusters/FunctionRequester.i"
+	@echo "... code/reqeusters/FunctionRequester.s"
 	@echo "... code/reqeusters/VectorRequester.o"
 	@echo "... code/reqeusters/VectorRequester.i"
 	@echo "... code/reqeusters/VectorRequester.s"
@@ -861,9 +999,18 @@ help:
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.o"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.i"
 	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.s"
+	@echo "... data/datatypes/natives/binary/EqualityCheckOperator.o"
+	@echo "... data/datatypes/natives/binary/EqualityCheckOperator.i"
+	@echo "... data/datatypes/natives/binary/EqualityCheckOperator.s"
+	@echo "... data/datatypes/natives/binary/MultiplicationOperator.o"
+	@echo "... data/datatypes/natives/binary/MultiplicationOperator.i"
+	@echo "... data/datatypes/natives/binary/MultiplicationOperator.s"
 	@echo "... data/datatypes/natives/binary/PointerAssignOperator.o"
 	@echo "... data/datatypes/natives/binary/PointerAssignOperator.i"
 	@echo "... data/datatypes/natives/binary/PointerAssignOperator.s"
+	@echo "... data/datatypes/natives/binary/SubtractionOperator.o"
+	@echo "... data/datatypes/natives/binary/SubtractionOperator.i"
+	@echo "... data/datatypes/natives/binary/SubtractionOperator.s"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.o"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.i"
 	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.s"
@@ -873,6 +1020,9 @@ help:
 	@echo "... data/datatypes/primitive/PyFunction.o"
 	@echo "... data/datatypes/primitive/PyFunction.i"
 	@echo "... data/datatypes/primitive/PyFunction.s"
+	@echo "... data/datatypes/primitive/PyInteger.o"
+	@echo "... data/datatypes/primitive/PyInteger.i"
+	@echo "... data/datatypes/primitive/PyInteger.s"
 	@echo "... data/datatypes/primitive/PyPrimitive.o"
 	@echo "... data/datatypes/primitive/PyPrimitive.i"
 	@echo "... data/datatypes/primitive/PyPrimitive.s"

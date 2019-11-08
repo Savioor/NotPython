@@ -3,13 +3,17 @@
 //
 
 #include "ExpressionParser.h"
+#include <sstream>
 #include "../data/datatypes/primitive/PyString.h"
-#include "../data/datatypes/AnonymousObject.h"
 #include "../data/datatypes/natives/binary/PointerAssignOperator.h"
 #include "../data/IOR.h"
 #include "../util/LinkedList.h"
 #include "../data/datatypes/natives/binary/AdditionOperator.h"
 #include "../data/datatypes/primitive/PyFunction.h"
+#include "../data/datatypes/natives/binary/EqualityCheckOperator.h"
+#include "../data/datatypes/primitive/PyInteger.h"
+#include "../data/datatypes/natives/binary/MultiplicationOperator.h"
+#include "../data/datatypes/natives/binary/SubtractionOperator.h"
 
 ExpressionParser::ExpressionParser() {
     specialChars.push_back('"');
@@ -28,8 +32,17 @@ ExpressionParser::ExpressionParser() {
     specialChars.push_back('!');
     specialChars.push_back(',');
 
-    operations.insert({'=', new PointerAssignOperator()});
-    operations.insert({'+', new AdditionOperator()});
+# define multI 0
+    operations.push_back(new MultiplicationOperator());
+# define addI 1
+    operations.push_back(new AdditionOperator());
+# define subI 2
+    operations.push_back(new SubtractionOperator());
+# define eqI 3
+    operations.push_back(new EqualityCheckOperator());
+# define assingI 4
+    operations.push_back(new PointerAssignOperator());
+
 }
 
 int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt) {
@@ -52,9 +65,11 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
 
         didSomething = false;
 
-        for (std::pair<const char, PyObject*>& oper : operations){
+        for (PyObject* oper : operations){
+
             for (auto obj = splatData.getStart(); obj != nullptr; obj = obj->next){
-                if (oper.second->getType() == "binary_native" && oper.second == obj->value){
+
+                if (oper->getType() == "binary_native" && oper == obj->value){
 
                     if (obj == splatData.getStart() || obj == splatData.getEnd()){
                         IOR::getInstance().reportError(
@@ -63,7 +78,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
                     }
 
                     auto* asBin = (BinaryNativeFunction*)obj->value;
-                    if (asBin->getName() != ((BinaryNativeFunction*)oper.second)->getName()) continue;
+                    if (asBin->getName() != ((BinaryNativeFunction*)oper)->getName()) continue;
                     auto* prev = obj->prev;
                     auto* next = obj->next;
 
@@ -84,7 +99,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
                     didSomething = true;
                     break;
 
-                } else if (oper.second->getType() == "unary_native" && oper.second == obj->value){
+                } else if (oper->getType() == "unary_native" && oper == obj->value){
                     // TODO
                 }
             }
@@ -143,10 +158,22 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
 
         switch (*it.base()){
             case '=':
-                ret.addToBackV(operations.at('='));
+                ++it;
+                if (*(it).base() == '='){
+                    ret.addToBackV(operations.at(eqI)); // e for equality
+                    break;
+                }
+                --it;
+                ret.addToBackV(operations.at(assingI));
                 break;
             case '+':
-                ret.addToBackV(operations.at('+'));
+                ret.addToBackV(operations.at(addI));
+                break;
+            case '*':
+                ret.addToBackV(operations.at(multI));
+                break;
+            case '-':
+                ret.addToBackV(operations.at(subI));
                 break;
             case '"':
                 it++;
@@ -163,19 +190,32 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                 ret.addToBackV(new AnonymousObject(new PyString(temp)));
                 break;
             default:
-                ret.addToBackV(readVariableName(it, endIt));
-                if (ret.getEnd()->value == nullptr){
-                    safelyClear(ret);
-                    return LinkedList<PyObject*>{};
-                }
-                if (ret.getEnd()->value->getType() == "func"){
-                    funcTryReply_t ran = tryRunFunction(ret.getEnd()->value, it, endIt);
-                    if (ran.second.first){
-                        it = ran.second.second;
-                        ret.getEnd()->value = ran.first;
+
+                if (!isNumber(it.base())) {
+                    ret.addToBackV(readVariableName(it, endIt));
+                    if (ret.getEnd()->value == nullptr) {
+                        safelyClear(ret);
+                        return LinkedList<PyObject *>{};
                     }
+                    if (ret.getEnd()->value->getType() == "func") {
+                        funcTryReply_t ran = tryRunFunction(ret.getEnd()->value, it, endIt);
+                        if (ran.second.first) {
+                            it = ran.second.second;
+                            ret.getEnd()->value = ran.first;
+                        }
+                    }
+                    it--;
+                } else {
+
+                    std::string tempInt;
+                    while(it != endIt && isNumber(it.base())){
+                        tempInt.push_back(*it.base());
+                        it++;
+                    }
+                    it--;
+
+                    ret.addToBackV(new AnonymousObject(new PyInteger(atoi(tempInt.c_str()))));
                 }
-                it--;
                 break;
         }
 
@@ -214,8 +254,9 @@ PyObject *ExpressionParser::readVariableName(stringIter_t& iter, stringIter_t& e
 }
 
 ExpressionParser::~ExpressionParser() {
-    for (std::pair<const char, PyObject*>& o : operations){
-        delete(o.second);
+    for (PyObject*& o : operations){
+        delete(o);
+        o = nullptr;
     }
 }
 
@@ -282,4 +323,8 @@ void ExpressionParser::safelyClear(LinkedList<PyObject *> &ls) {
     while(ls.getStart() != nullptr){
         disconnectSafely(ls, ls.getStart());
     }
+}
+
+bool ExpressionParser::isNumber(const char *c) {
+    return *c >= 0x30 && *c <= 0x39;
 }

@@ -9,8 +9,12 @@ CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datat
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/AdditionOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/EqualityCheckOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/MultiplicationOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/PointerAssignOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/SubtractionOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyInteger.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../util/LinkedList.h
@@ -27,9 +31,11 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/IRequester
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/keywords/AbstractKeyword.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/keywords/If.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/keywords/If.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/parsers/FunctionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/parsers/GenericParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/BlockRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/CinRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/FunctionRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/AnonymousObject.h
@@ -120,6 +126,10 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../dat
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/datatypes/PyObject.h
 
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o: ../code/IRequester.h
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o: ../code/reqeusters/FunctionRequester.cpp
+CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o: ../code/reqeusters/FunctionRequester.h
+
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../code/reqeusters/VectorRequester.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../code/reqeusters/VectorRequester.h
@@ -160,6 +170,21 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNative
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/natives/binary/EqualityCheckOperator.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/natives/binary/EqualityCheckOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/primitive/PyBoolean.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/natives/binary/MultiplicationOperator.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/natives/binary/MultiplicationOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/PyObject.h
@@ -167,10 +192,18 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssig
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/PointerAssignOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/PointerAssignOperator.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/natives/binary/SubtractionOperator.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/natives/binary/SubtractionOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/natives/unary/UnaryNativeFunction.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/natives/unary/UnaryNativeFunction.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyBoolean.cpp
@@ -182,6 +215,7 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o:
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/keywords/AbstractKeyword.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/parsers/FunctionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/parsers/GenericParser.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/reqeusters/FunctionRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/reqeusters/VectorRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/IOR.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/Memory.h
@@ -189,11 +223,19 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o:
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/datatypes/primitive/PyFunction.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/datatypes/primitive/PyFunction.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/AnonymousObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyInteger.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyInteger.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyString.h
+
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/primitive/PyPrimitive.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/AnonymousObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/primitive/PyPrimitive.h

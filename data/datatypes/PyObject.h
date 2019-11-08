@@ -10,7 +10,7 @@
 #include <map>
 #include <vector>
 
-#define OBJECT_DEBUG true
+#define OBJECT_DEBUG false
 
 class PyObject {
 
@@ -21,6 +21,8 @@ protected:
 
 public:
     virtual const std::string& getType() const;
+    virtual std::string& getType();
+
     virtual std::map<std::string, int>& getData();
     virtual const std::map<std::string, int>& getData() const;
 

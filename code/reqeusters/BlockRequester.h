@@ -14,7 +14,7 @@ class BlockRequester : public IRequester {
 
 public:
     BlockRequester(IRequester& req);
-    virtual std::string* getNext();
+    virtual std::string* getNext(bool affectEnv) override ;
 
 
 };

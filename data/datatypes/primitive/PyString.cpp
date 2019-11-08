@@ -3,6 +3,7 @@
 //
 
 #include "PyString.h"
+#include "../../Memory.h"
 
 PyString::PyString() : PyPrimitive("string") {
 
@@ -40,8 +41,8 @@ AnonymousObject *PyString::divLeft(PyObject *right) {
     return nullptr;
 }
 
-AnonymousObject *PyString::asStr() {
-    return new AnonymousObject(new PyString(this->myValue));
+std::string PyString::asStr() {
+    return this->myValue;
 }
 
 int PyString::compare(PyObject *right) {
@@ -52,4 +53,8 @@ bool PyString::equals(PyObject *other) {
     other = other->unmask();
     if (other->getType() != "string") return false;
     return ((PyString*)other)->myValue == myValue;
+}
+
+int PyString::allocCopy() {
+    return Memory::getInstance().alloc(new PyString(myValue));
 }

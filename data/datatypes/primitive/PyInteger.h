@@ -1,22 +1,19 @@
 //
-// Created by alexey on 24/10/2019.
+// Created by alexey on 06/11/2019.
 //
 
-#ifndef BASICPYTHONINTERPRETER_PYSTRING_H
-#define BASICPYTHONINTERPRETER_PYSTRING_H
+#ifndef BASICPYTHONINTERPRETER_PYINTEGER_H
+#define BASICPYTHONINTERPRETER_PYINTEGER_H
+
 
 #include "PyPrimitive.h"
-#include "../PyObject.h"
-#include "../AnonymousObject.h"
 
-class PyString : public PyPrimitive {
+class PyInteger : public PyPrimitive {
 public:
-    PyString();
-    PyString(char*);
-    PyString(std::string&);
-    PyString(std::string&&);
+    PyInteger();
+    PyInteger(long);
 
-    virtual ~PyString() = default;
+    virtual ~PyInteger() = default;
 
 
     virtual AnonymousObject *addLeft(PyObject *right) override;
@@ -39,9 +36,8 @@ public:
     virtual int compare(PyObject* right) override;
     virtual bool equals(PyObject* other) override;
 
-    std::string myValue;
-
+    long myValue;
 };
 
 
-#endif //BASICPYTHONINTERPRETER_PYSTRING_H
+#endif //BASICPYTHONINTERPRETER_PYINTEGER_H

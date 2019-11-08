@@ -12,7 +12,11 @@
 class IRequester {
 
 public:
-    virtual std::string* getNext() = 0;
+    virtual inline std::string* getNext() {
+        return getNext(true);
+    };
+    virtual std::string* getNext(bool affectEnv) = 0;
+
 
 };
 

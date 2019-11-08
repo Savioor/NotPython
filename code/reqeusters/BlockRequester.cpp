@@ -2,9 +2,10 @@
 // Created by alexey on 04/11/2019.
 //
 
+#include <cstring>
 #include "BlockRequester.h"
 
-std::string *BlockRequester::getNext() {
+std::string *BlockRequester::getNext(bool) {
     std::string* ret = subRequester.getNext();
     if (ret == nullptr) return ret;
     if (ret->empty()) return nullptr;
@@ -15,5 +16,4 @@ std::string *BlockRequester::getNext() {
 }
 
 BlockRequester::BlockRequester(IRequester &req) : subRequester(req) {
-
 }

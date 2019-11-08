@@ -6,7 +6,7 @@
 #include "../../data/IOR.h"
 #include <iostream>
 
-std::string* CinRequester::getNext() {
+std::string* CinRequester::getNext(bool) {
     auto* str = new std::string;
     std::cout << " >>> ";
     std::getline(std::cin, *str);

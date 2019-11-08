@@ -22,12 +22,13 @@ stringIter_t &Print::parse(stringIter_t &ip, stringIter_t &end, IRequester& req)
         return end;
     }
 
-    if (value->getType() != "string"){
+    if (!value->isPrimitive()){
         // TODO implement call to __str__
-        IOR::getInstance().reportError("String expected! temp");
+        IOR::getInstance().reportError("Primitive expected! temp");
         return end;
     } else {
-        IOR::getInstance().reportOut(((PyString*)value)->myValue);
+        std::string&& toPrint = ((PyPrimitive*)value)->asStr();
+        IOR::getInstance().reportOut(toPrint);
         return end;
     }
 }

@@ -18,7 +18,7 @@ protected:
 public:
     VectorRequester(std::vector<std::string>& v);
 
-    virtual std::string* getNext() override;
+    virtual std::string* getNext(bool affectEnv) override ;
 
 };
 

@@ -23,7 +23,8 @@ public:
     virtual AnonymousObject* multLeft(PyObject* right) = 0;
     virtual AnonymousObject* divLeft(PyObject* right) = 0;
 
-    virtual AnonymousObject* asStr() = 0;
+    virtual std::string asStr() = 0;
+    virtual int allocCopy() = 0;
 
     /**
      *

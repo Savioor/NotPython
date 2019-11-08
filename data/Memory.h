@@ -10,7 +10,7 @@
 #include "datatypes/PyObject.h"
 
 #define GC_FREQ 5
-#define MEM_DEBUG true
+#define MEM_DEBUG false
 
 class Memory;
 

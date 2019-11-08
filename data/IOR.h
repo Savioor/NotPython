@@ -24,15 +24,15 @@ public:
     };
 
 public:
-    void reportError(std::string&);
+    void reportError(const std::string&);
     void reportError(const char*);
-    void reportError(std::string&&);
+    void reportError(const std::string&&);
 
-    void reportOut(std::string&);
+    void reportOut(const std::string&);
     void reportOut(const char*);
 
-    void reportDebug(std::string&);
-    void reportDebug(std::string&&);
+    void reportDebug(const std::string&);
+    void reportDebug(const std::string&&);
     void reportDebug(const char*);
 
     void operator=(IOR const&) = delete;

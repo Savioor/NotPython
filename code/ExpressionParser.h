@@ -59,7 +59,9 @@ public:
     /**
      * The first operations happen first
      */
-    std::map<char, PyObject*> operations;
+    std::vector<PyObject*> operations;
+
+    bool isNumber(const char* c);
 
 };
 

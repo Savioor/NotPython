@@ -18,7 +18,7 @@ public:
 
     virtual PyObject* execute(PyObject*, PyObject*) = 0;
     virtual ~BinaryNativeFunction() override = default;
-    const std::string& getName() const;
+    virtual const std::string& getName() const;
 
 };
 

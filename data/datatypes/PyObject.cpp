@@ -10,6 +10,10 @@ const std::string &PyObject::getType() const {
     return type;
 }
 
+std::string &PyObject::getType() {
+    return type;
+}
+
 std::map<std::string, int> &PyObject::getData() {
     return data;
 }

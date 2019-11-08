@@ -7,7 +7,7 @@
 #include "../../../Memory.h"
 PyObject *PointerAssignOperator::execute(PyObject *left, PyObject *right) {
 
-    if (left->getType() == "rvalue" || left->getType() == "bool"){
+        if (left->getType() == "rvalue" || left->getType() == "bool"){
         IOR::getInstance().reportError("Can't perform assignment on rvalues or bools");
         return nullptr;
     }

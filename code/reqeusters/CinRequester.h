@@ -11,7 +11,7 @@
 class CinRequester : public IRequester {
 
 public:
-    virtual std::string* getNext();
+    virtual std::string* getNext(bool affectEnv) override ;
 
 
 };
