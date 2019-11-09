@@ -13,6 +13,9 @@
 
 // TODO add defragmentation
 void Memory::collectGarbage() {
+    if (!garbageCollectorRunning)
+        return;
+
     int latestInd = -1;
     std::vector<PyObject*> marked;
     bool* markedStatus = new bool[data.size()];
@@ -52,7 +55,7 @@ void Memory::collectGarbage() {
     }
 
     for (int i = 0; i < data.size(); i++){
-        if (!markedStatus[i] && data.at(i) != nullptr){
+        if (!markedStatus[i] && data.at(i) != nullptr && !data.at(i)->isConst()) {
 #if MEM_DEBUG == true
             IOR::getInstance().reportDebug("GC deleting object of type " + data.at(i)->getType());
             currentlyAlloced--;
@@ -98,11 +101,11 @@ void Memory::allocPointer(std::string && varName, int pointer) {
 }
 
 
-Memory::Memory() : depth(0), allocCount(0) {
+Memory::Memory() : depth(0), allocCount(0), garbageCollectorRunning(true) {
 
     // Alloc some basic vars
-    this->allocPointer(*new std::string("true"), this->alloc(new PyBoolean(true)));
-    this->allocPointer(*new std::string("false"), this->alloc(new PyBoolean(false)));
+    this->allocPointer(*new std::string("true"), this->allocConst(new PyBoolean(true)));
+    this->allocPointer(*new std::string("false"), this->allocConst(new PyBoolean(false)));
 
 }
 
@@ -155,6 +158,30 @@ void Memory::reduceDepth(const std::string &varName, int currDepth) {
             pointerTable.insert({{pair.first.first, currDepth - 1}, pair.second});
             pointerTable.erase({varName, currDepth });
             return;
+        }
+    }
+}
+
+void Memory::enableGC() {
+    garbageCollectorRunning = true;
+#if MEM_DEBUG == true
+    IOR::getInstance().reportDebug("GC on");
+#endif
+
+}
+
+void Memory::disableGC() {
+    garbageCollectorRunning = false;
+#if MEM_DEBUG == true
+    IOR::getInstance().reportDebug("GC off");
+#endif
+}
+
+void Memory::manuallyRemove(PyObject *obj) {
+    for (int i = 0; i < data.size(); i++){
+        if (data.at(i) == obj){
+            data.at(i) = nullptr;
+            break;
         }
     }
 }

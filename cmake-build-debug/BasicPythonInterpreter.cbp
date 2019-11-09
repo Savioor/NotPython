@@ -261,6 +261,9 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/debug.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>

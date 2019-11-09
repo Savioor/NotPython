@@ -3,7 +3,6 @@
 //
 
 #include "ExpressionParser.h"
-#include <sstream>
 #include "../data/datatypes/primitive/PyString.h"
 #include "../data/datatypes/natives/binary/PointerAssignOperator.h"
 #include "../data/IOR.h"
@@ -55,7 +54,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
     LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endIt, endChar)};
 
     if (splatData.empty()){
-//        IOR::getInstance().getErr().emplace_back("Expression expected but not found!");
+//        IOR::getInstance().reportError("Expression expected but not found!");
         return -1;
     }
 
@@ -86,6 +85,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
 
                     if (newObj == nullptr){
                         safelyClear(splatData);
+                        IOR::getInstance().reportError("Execution of operator " + asBin->getName() + " failed.");
                         return -1;
                     }
 
@@ -199,6 +199,7 @@ LinkedList<PyObject*> ExpressionParser::getSubExpr(stringIter_t& startOfExpr, st
                     }
                     if (ret.getEnd()->value->getType() == "func") {
                         funcTryReply_t ran = tryRunFunction(ret.getEnd()->value, it, endIt);
+                        Memory::getInstance().enableGC();
                         if (ran.second.first) {
                             it = ran.second.second;
                             ret.getEnd()->value = ran.first;
@@ -287,10 +288,13 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
     char stoppers[2] = {',', ')'};
     bool noInp = true;
 
+    Memory::getInstance().disableGC();
+
     while (it != end){
         it++;
 
         int ptr = parseExpression(it, end, stoppers);
+
         if (ptr == -1){
             if (noInp && *it.base() == ')'){
                 break;
@@ -308,9 +312,20 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
         return {nullptr, {false, end}};
     }
 
+    Memory::getInstance().enableGC();
+
+#if FUNCTION_DEBUG == true
+    IOR::getInstance().reportDebug("Running function, current depth = " + std::to_string(Memory::getInstance().depth + 1));
+#endif
+
     PyFunction* asF = (PyFunction*)func;
 
     PyObject* ret = asF->execute(vars);
+
+#if FUNCTION_DEBUG == true
+    IOR::getInstance().reportDebug("Exiting function, current depth = " + std::to_string(Memory::getInstance().depth));
+#endif
+
 
     if (ret == nullptr) {
         return {nullptr, {false, end}};

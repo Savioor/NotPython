@@ -11,15 +11,18 @@ int main() {
     std::vector<std::string> code;
     std::vector<std::string> vars;
     vars.emplace_back("n");
-
+    code.emplace_back("print n");
     code.emplace_back("if n == 0");
     code.emplace_back("\treturn 1");
     code.emplace_back("");
-    code.emplace_back("return n * fact(n - 1)");
+    code.emplace_back("if n == 1");
+    code.emplace_back("\treturn 1");
+    code.emplace_back("");
+    code.emplace_back("return fib(n-1) + fib(n-2)");
 
     PyFunction f = PyFunction(code, vars);
     int p = mem.alloc(&f);
-    std::string fN{"fact"};
+    std::string fN{"fib"};
     mem.allocPointer(fN, p);
 
     while (true){

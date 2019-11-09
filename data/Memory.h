@@ -7,10 +7,10 @@
 
 #include <vector>
 #include <map>
+#include "../debug.h"
 #include "datatypes/PyObject.h"
 
 #define GC_FREQ 5
-#define MEM_DEBUG false
 
 class Memory;
 
@@ -38,6 +38,7 @@ private:
     Memory();
 
     int allocCount;
+    bool garbageCollectorRunning;
 
 #if MEM_DEBUG == true
     static int currentlyAlloced;
@@ -73,6 +74,10 @@ public:
     inline int alloc(PyObject* obj){
         return alloc(*obj);
     };
+    inline int allocConst(PyObject* obj){
+        obj->setConst(true);
+        return alloc(obj);
+    }
     /**
      * Adds a variable pointing to int that matches the current depth
      */
@@ -92,6 +97,11 @@ public:
 
     Memory(Memory const&) = delete;
     void operator=(Memory const&) = delete;
+
+    void enableGC();
+    void disableGC();
+
+    void manuallyRemove(PyObject* obj);
 
     virtual ~Memory();
 

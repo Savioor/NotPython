@@ -22,10 +22,10 @@ const std::map<std::string, int> &PyObject::getData() const {
     return data;
 }
 
-PyObject::PyObject(std::string&& n) : type(n), data() {
+PyObject::PyObject(std::string&& n) : type(n), data(), isConstant(false), isPrimitiveVar(false) {
 }
 
-PyObject::PyObject(char* n) : type(n), data(), isPrimitiveVar(false) {
+PyObject::PyObject(char* n) : type(n), data(), isPrimitiveVar(false), isConstant(false) {
 }
 
 PyObject *PyObject::getVariable(std::string& name) {
@@ -50,4 +50,13 @@ PyObject *PyObject::yoink() {
     if (type == "rvalue")
         return ((AnonymousObject *) this)->releaseObject()->yoink();
     else
-        return this;}
+        return this;
+}
+
+const bool &PyObject::isConst() {
+    return isConstant;
+}
+
+void PyObject::setConst(bool val) {
+    isConstant = val;
+}

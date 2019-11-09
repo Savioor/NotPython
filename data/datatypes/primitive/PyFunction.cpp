@@ -40,6 +40,7 @@ PyObject *PyFunction::execute(std::vector<PyObject *> &input) {
     // Get the return value of this function
     std::string retName{RETURN_VAR_NAME};
     PyObject* retVal = mem.getVariable(retName);
+    mem.manuallyRemove(retVal);
     // Exit the function, kill all pointers
     for (int i = 0; i < input.size(); i++){
         mem.killPointer(inputVariables.at(i), mem.depth);

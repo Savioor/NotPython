@@ -9,8 +9,7 @@
 #include <array>
 #include <map>
 #include <vector>
-
-#define OBJECT_DEBUG false
+#include "../../debug.h"
 
 class PyObject {
 
@@ -18,6 +17,7 @@ protected:
     std::string type;
     std::map<std::string, int> data;
     bool isPrimitiveVar;
+    bool isConstant;
 
 public:
     virtual const std::string& getType() const;
@@ -44,6 +44,8 @@ public:
     virtual ~PyObject() = default;
 
     const bool& isPrimitive();
+    const bool& isConst();
+    void setConst(bool val);
     PyObject *getVariable(std::string &name);
 };
 

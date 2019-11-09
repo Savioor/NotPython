@@ -1,0 +1,14 @@
+//
+// Created by alexey on 09/11/2019.
+//
+
+#ifndef BASICPYTHONINTERPRETER_DEBUG_H
+#define BASICPYTHONINTERPRETER_DEBUG_H
+
+#define MEM_DEBUG true
+#define OBJECT_DEBUG true
+#define KEYWORD_DEBUG true
+#define FUNCTION_DEBUG true
+#define ASSIGN_DEBUG true
+
+#endif //BASICPYTHONINTERPRETER_DEBUG_H

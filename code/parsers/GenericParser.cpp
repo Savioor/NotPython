@@ -27,6 +27,10 @@ bool GenericParser::parseLine(IRequester & requester) {
             if (ip.base()[key->getKeyword().size()] != ' ') continue;
 
             // It's a match!
+#if KEYWORD_DEBUG == true
+            IOR::getInstance().reportDebug("Executing keyword " + key->getKeyword());
+#endif
+
             ip += key->getKeyword().size() + 1;
             ip = key->parse(ip, end, requester);
             found = true;
