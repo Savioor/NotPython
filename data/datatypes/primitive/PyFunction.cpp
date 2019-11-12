@@ -47,5 +47,10 @@ PyObject *PyFunction::execute(std::vector<PyObject *> &input) {
     }
     mem.killPointer(retName, mem.depth);
     mem.depth -= 1;
+
+#if FUNCTION_RETURN_DEBUG
+    IOR::getInstance().reportDebug("Returned value of type " + retVal->getType());
+#endif
+
     return retVal;
 }

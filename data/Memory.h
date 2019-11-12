@@ -40,7 +40,7 @@ private:
     int allocCount;
     bool garbageCollectorRunning;
 
-#if MEM_DEBUG == true
+#if MEM_DEBUG
     static int currentlyAlloced;
 #endif
 

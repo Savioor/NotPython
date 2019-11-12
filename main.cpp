@@ -11,7 +11,7 @@ int main() {
     std::vector<std::string> code;
     std::vector<std::string> vars;
     vars.emplace_back("n");
-    code.emplace_back("print n");
+//    code.emplace_back("print n");
     code.emplace_back("if n == 0");
     code.emplace_back("\treturn 1");
     code.emplace_back("");

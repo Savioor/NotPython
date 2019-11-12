@@ -6,7 +6,7 @@
 #include "IOR.h"
 #include "datatypes/primitive/PyBoolean.h"
 
-#if MEM_DEBUG == true
+#if MEM_DEBUG
     int Memory::currentlyAlloced = 0;
 #endif
 
@@ -56,9 +56,10 @@ void Memory::collectGarbage() {
 
     for (int i = 0; i < data.size(); i++){
         if (!markedStatus[i] && data.at(i) != nullptr && !data.at(i)->isConst()) {
-#if MEM_DEBUG == true
-            IOR::getInstance().reportDebug("GC deleting object of type " + data.at(i)->getType());
+#if MEM_DEBUG
             currentlyAlloced--;
+            IOR::getInstance().reportDebug("GC deleting object of type " + data.at(i)->getType()
+            + ". Currently alloced = " + std::to_string(currentlyAlloced));
 #endif
             delete(data.at(i));
             data.at(i) = nullptr;
@@ -84,9 +85,10 @@ int Memory::alloc(PyObject &obj) {
         collectGarbage();
     data.push_back(&obj);
 
-#if MEM_DEBUG == true
-    IOR::getInstance().reportDebug("Allocated new object of type " + obj.getType());
+#if MEM_DEBUG
     currentlyAlloced++;
+    IOR::getInstance().reportDebug("Allocated new object of type " + obj.getType() + ". Currently alloced = "
+    + std::to_string(currentlyAlloced));
 #endif
 
     return (int)data.size() - 1;
@@ -172,7 +174,7 @@ void Memory::enableGC() {
 
 void Memory::disableGC() {
     garbageCollectorRunning = false;
-#if MEM_DEBUG == true
+#if MEM_DEBUG
     IOR::getInstance().reportDebug("GC off");
 #endif
 }
@@ -181,6 +183,10 @@ void Memory::manuallyRemove(PyObject *obj) {
     for (int i = 0; i < data.size(); i++){
         if (data.at(i) == obj){
             data.at(i) = nullptr;
+#if MEM_DEBUG
+            currentlyAlloced--;
+            IOR::getInstance().reportDebug("Manually removed object from memory. Currently alloced = " + std::to_string(currentlyAlloced));
+#endif
             break;
         }
     }

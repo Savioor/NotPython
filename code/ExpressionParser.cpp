@@ -120,18 +120,16 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
     PyObject* ret = splatData.getStart()->value;
     splatData.disconnectAndKeepAlive(0);
 
-    int retPointer;
+    int retPointer = Memory::getInstance().getPointerByObject(ret);
 
-    if (ret->getType() == "rvalue"){
+    if (ret->getType() == "rvalue" || retPointer == -1){
 #if OBJECT_DEBUG == true
         IOR::getInstance().reportDebug("Added anon to mem for treatment by GC");
 #endif
         PyObject* temp = ret;
         ret = ret->yoink();
-        delete(temp);
+        if (temp->getType() == "rvalue") delete(temp);
         retPointer = Memory::getInstance().alloc(ret); // Let the garbage collector deal with it when needed.
-    } else {
-        retPointer = Memory::getInstance().getPointerByObject(ret);
     }
 
     return retPointer;
@@ -314,7 +312,7 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
 
     Memory::getInstance().enableGC();
 
-#if FUNCTION_DEBUG == true
+#if FUNCTION_CALL_DEBUG == true
     IOR::getInstance().reportDebug("Running function, current depth = " + std::to_string(Memory::getInstance().depth + 1));
 #endif
 
@@ -322,7 +320,7 @@ ExpressionParser::tryRunFunction(PyObject* func, stringIter_t it, const stringIt
 
     PyObject* ret = asF->execute(vars);
 
-#if FUNCTION_DEBUG == true
+#if FUNCTION_CALL_DEBUG == true
     IOR::getInstance().reportDebug("Exiting function, current depth = " + std::to_string(Memory::getInstance().depth));
 #endif
 
