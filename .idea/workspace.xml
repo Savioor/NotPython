@@ -14,12 +14,7 @@
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/ExpressionParser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Memory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/Memory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Memory.h" beforeDir="false" afterPath="$PROJECT_DIR$/data/Memory.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/data/datatypes/primitive/PyFunction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/debug.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +106,7 @@
       <workItem from="1572903397553" duration="3910000" />
       <workItem from="1573034880931" duration="4508000" />
       <workItem from="1573221205532" duration="14738000" />
-      <workItem from="1573490686998" duration="1732000" />
+      <workItem from="1573490686998" duration="3156000" />
     </task>
     <servers />
   </component>

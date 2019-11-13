@@ -167,7 +167,7 @@ void Memory::reduceDepth(const std::string &varName, int currDepth) {
 void Memory::enableGC() {
     garbageCollectorRunning = true;
 #if MEM_DEBUG == true
-    IOR::getInstance().reportDebug("GC on");
+    if (!garbageCollectorRunning) IOR::getInstance().reportDebug("GC on");
 #endif
 
 }
@@ -175,7 +175,7 @@ void Memory::enableGC() {
 void Memory::disableGC() {
     garbageCollectorRunning = false;
 #if MEM_DEBUG
-    IOR::getInstance().reportDebug("GC off");
+    if (garbageCollectorRunning) IOR::getInstance().reportDebug("GC off");
 #endif
 }
 
