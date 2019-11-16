@@ -7,7 +7,6 @@
 
 
 #include "../PyObject.h"
-#include "../AnonymousObject.h"
 #include <string>
 
 class PyPrimitive : public PyObject {
@@ -18,10 +17,10 @@ public:
 
     virtual ~PyPrimitive() = default;
 
-    virtual AnonymousObject* addLeft(PyObject* right) = 0;
-    virtual AnonymousObject* subLeft(PyObject* right) = 0;
-    virtual AnonymousObject* multLeft(PyObject* right) = 0;
-    virtual AnonymousObject* divLeft(PyObject* right) = 0;
+    virtual PyObject* addLeft(PyObject* right) = 0;
+    virtual PyObject* subLeft(PyObject* right) = 0;
+    virtual PyObject* multLeft(PyObject* right) = 0;
+    virtual PyObject* divLeft(PyObject* right) = 0;
 
     virtual std::string asStr() = 0;
     virtual int allocCopy() = 0;

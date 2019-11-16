@@ -13,7 +13,7 @@ AnonymousObject *PyBoolean::addLeft(PyObject *right) {
 AnonymousObject *PyBoolean::subLeft(PyObject *right) {
     return nullptr;
 }
-
+bool
 AnonymousObject *PyBoolean::multLeft(PyObject *right) {
     return nullptr;
 }
@@ -35,8 +35,7 @@ int PyBoolean::compare(PyObject *other) {
 }
 
 bool PyBoolean::equals(PyObject *other) {
-    other = other->unmask();
-    if (other->getType() != "bool") return false;
+    if (other->getType() != Boolean) return false;
     return value == ((PyBoolean*)other)->value;
 }
 

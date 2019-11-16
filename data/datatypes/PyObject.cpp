@@ -3,55 +3,27 @@
 //
 
 #include "PyObject.h"
-#include "../Memory.h"
-#include "AnonymousObject.h"
+#include "../../optimization.h"
 
-const std::string &PyObject::getType() const {
+EType &PyObject::getType() {
     return type;
 }
 
-std::string &PyObject::getType() {
-    return type;
-}
-
-std::map<std::string, int> &PyObject::getData() {
+std::map<std::string, PyObject*> &PyObject::getData() {
     return data;
 }
 
-const std::map<std::string, int> &PyObject::getData() const {
+const std::map<std::string, PyObject*> &PyObject::getData() const {
     return data;
-}
-
-PyObject::PyObject(std::string&& n) : type(n), data(), isConstant(false), isPrimitiveVar(false) {
-}
-
-PyObject::PyObject(char* n) : type(n), data(), isPrimitiveVar(false), isConstant(false) {
 }
 
 PyObject *PyObject::getVariable(std::string& name) {
-    if (getData().count(name) == 0){
+    if (UNLIKELY(getData().count(name) == 0)){
         return nullptr;
     }
-    return Memory::getInstance().getData().at(getData().at(name));
+    return getData().at(name);
 }
 
-PyObject *PyObject::unmask() {
-    if (type == "rvalue")
-        return ((AnonymousObject *) this)->getObject()->unmask();
-    else
-        return this;
-}
-
-const bool &PyObject::isPrimitive() {
-    return isPrimitiveVar;
-}
-
-PyObject *PyObject::yoink() {
-    if (type == "rvalue")
-        return ((AnonymousObject *) this)->releaseObject()->yoink();
-    else
-        return this;
-}
 
 const bool &PyObject::isConst() {
     return isConstant;
@@ -59,4 +31,12 @@ const bool &PyObject::isConst() {
 
 void PyObject::setConst(bool val) {
     isConstant = val;
+}
+
+PyObject::PyObject(EType t) : type(t) {
+
+}
+
+size_t PyObject::getMySize() {
+    return sizeof(*this);
 }

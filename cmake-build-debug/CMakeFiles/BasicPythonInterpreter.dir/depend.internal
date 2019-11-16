@@ -167,11 +167,10 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
@@ -268,6 +267,24 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/optimization.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/IRequester.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/AbstractKeyword.h

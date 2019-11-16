@@ -7,7 +7,6 @@
 
 #include "PyPrimitive.h"
 #include "../PyObject.h"
-#include "../AnonymousObject.h"
 
 class PyString : public PyPrimitive {
 public:
@@ -19,13 +18,13 @@ public:
     virtual ~PyString() = default;
 
 
-    virtual AnonymousObject *addLeft(PyObject *right) override;
+    virtual PyObject *addLeft(PyObject *right) override;
 
-    virtual AnonymousObject *subLeft(PyObject *right) override;
+    virtual PyObject *subLeft(PyObject *right) override;
 
-    virtual AnonymousObject *multLeft(PyObject *right) override;
+    virtual PyObject *multLeft(PyObject *right) override;
 
-    virtual AnonymousObject *divLeft(PyObject *right) override;
+    virtual PyObject *divLeft(PyObject *right) override;
 
     virtual std::string asStr() override;
 

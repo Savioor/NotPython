@@ -11,39 +11,42 @@
 #include <vector>
 #include "../../debug.h"
 
+enum EType {
+    Unallocated, // = 0 = nullptr
+    Integer,
+    String,
+    Boolean,
+    Function,
+    BinaryOperator,
+    UnaryOperatorLeft,
+    UnaryOperatorRight,
+    Rvalue,
+    Class
+};
+
 class PyObject {
 
 protected:
-    std::string type;
-    std::map<std::string, int> data;
-    bool isPrimitiveVar;
+    EType type;
+    std::map<std::string, PyObject*> data;
     bool isConstant;
 
 public:
-    virtual const std::string& getType() const;
-    virtual std::string& getType();
+    virtual EType& getType();
 
-    virtual std::map<std::string, int>& getData();
-    virtual const std::map<std::string, int>& getData() const;
+    virtual std::map<std::string, PyObject*>& getData();
+    virtual const std::map<std::string, PyObject*>& getData() const;
 
-    explicit PyObject(std::string&&);
-    explicit PyObject(char*);
+    virtual size_t getMySize();
+
+    explicit PyObject(EType t);
     PyObject() = delete;
-
-    /**
-     *
-     * @return The core object, without any primitive wrappers, primitive keeps ownership
-     */
-    virtual PyObject* unmask();
-    /**
-     *
-     * @return The core object, without any primitive wrappers, primitive doesn't keeps ownership
-     */
-    virtual PyObject* yoink();
 
     virtual ~PyObject() = default;
 
-    const bool& isPrimitive();
+    inline const bool isPrimitive() {
+        return type != Class;
+    };
     const bool& isConst();
     void setConst(bool val);
     PyObject *getVariable(std::string &name);

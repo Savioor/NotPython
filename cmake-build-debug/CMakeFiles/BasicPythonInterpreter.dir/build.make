@@ -447,6 +447,45 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionO
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/SubtractionOperator.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.s
 
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/memory-structure/Pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp > CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../data/memory-structure/PoolMaster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp > CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../data/memory-structure/Context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.cpp > CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.cpp -o CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.s
+
 # Object files for target BasicPythonInterpreter
 BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o" \
@@ -478,7 +517,10 @@ BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o" \
-"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o"
+"CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o"
 
 # External object files for target BasicPythonInterpreter
 BasicPythonInterpreter_EXTERNAL_OBJECTS =
@@ -513,9 +555,12 @@ BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/pri
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/build.make
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable BasicPythonInterpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Linking CXX executable BasicPythonInterpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BasicPythonInterpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

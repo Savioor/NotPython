@@ -122,8 +122,10 @@ public:
             endNode = bef;
         }
 
+        n->value = nullptr;
         n->prev = nullptr;
         n->next = nullptr;
+        delete(n);
     };
 
     virtual void connectAfter(Node<T>* location, Node<T>* node){

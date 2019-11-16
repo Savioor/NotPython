@@ -33,6 +33,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyInteger.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

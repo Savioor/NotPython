@@ -30,6 +30,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
 )
 

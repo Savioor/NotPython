@@ -906,6 +906,87 @@ data/datatypes/primitive/PyString.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.s
 .PHONY : data/datatypes/primitive/PyString.cpp.s
 
+data/memory-structure/Context.o: data/memory-structure/Context.cpp.o
+
+.PHONY : data/memory-structure/Context.o
+
+# target to build an object file
+data/memory-structure/Context.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o
+.PHONY : data/memory-structure/Context.cpp.o
+
+data/memory-structure/Context.i: data/memory-structure/Context.cpp.i
+
+.PHONY : data/memory-structure/Context.i
+
+# target to preprocess a source file
+data/memory-structure/Context.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.i
+.PHONY : data/memory-structure/Context.cpp.i
+
+data/memory-structure/Context.s: data/memory-structure/Context.cpp.s
+
+.PHONY : data/memory-structure/Context.s
+
+# target to generate assembly for a file
+data/memory-structure/Context.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.s
+.PHONY : data/memory-structure/Context.cpp.s
+
+data/memory-structure/Pool.o: data/memory-structure/Pool.cpp.o
+
+.PHONY : data/memory-structure/Pool.o
+
+# target to build an object file
+data/memory-structure/Pool.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o
+.PHONY : data/memory-structure/Pool.cpp.o
+
+data/memory-structure/Pool.i: data/memory-structure/Pool.cpp.i
+
+.PHONY : data/memory-structure/Pool.i
+
+# target to preprocess a source file
+data/memory-structure/Pool.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.i
+.PHONY : data/memory-structure/Pool.cpp.i
+
+data/memory-structure/Pool.s: data/memory-structure/Pool.cpp.s
+
+.PHONY : data/memory-structure/Pool.s
+
+# target to generate assembly for a file
+data/memory-structure/Pool.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.s
+.PHONY : data/memory-structure/Pool.cpp.s
+
+data/memory-structure/PoolMaster.o: data/memory-structure/PoolMaster.cpp.o
+
+.PHONY : data/memory-structure/PoolMaster.o
+
+# target to build an object file
+data/memory-structure/PoolMaster.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o
+.PHONY : data/memory-structure/PoolMaster.cpp.o
+
+data/memory-structure/PoolMaster.i: data/memory-structure/PoolMaster.cpp.i
+
+.PHONY : data/memory-structure/PoolMaster.i
+
+# target to preprocess a source file
+data/memory-structure/PoolMaster.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.i
+.PHONY : data/memory-structure/PoolMaster.cpp.i
+
+data/memory-structure/PoolMaster.s: data/memory-structure/PoolMaster.cpp.s
+
+.PHONY : data/memory-structure/PoolMaster.s
+
+# target to generate assembly for a file
+data/memory-structure/PoolMaster.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.s
+.PHONY : data/memory-structure/PoolMaster.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1029,6 +1110,15 @@ help:
 	@echo "... data/datatypes/primitive/PyString.o"
 	@echo "... data/datatypes/primitive/PyString.i"
 	@echo "... data/datatypes/primitive/PyString.s"
+	@echo "... data/memory-structure/Context.o"
+	@echo "... data/memory-structure/Context.i"
+	@echo "... data/memory-structure/Context.s"
+	@echo "... data/memory-structure/Pool.o"
+	@echo "... data/memory-structure/Pool.i"
+	@echo "... data/memory-structure/Pool.s"
+	@echo "... data/memory-structure/PoolMaster.o"
+	@echo "... data/memory-structure/PoolMaster.i"
+	@echo "... data/memory-structure/PoolMaster.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
