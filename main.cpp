@@ -2,8 +2,19 @@
 #include "code/parsers/CinParser.h"
 #include "data/datatypes/primitive/PyFunction.h"
 #include "data/datatypes/primitive/PyBoolean.h"
+#include "data/memory-structure/PoolMaster.h"
+#include "data/datatypes/primitive/PyString.h"
+#include "data/IOR.h"
 
-int main() {
+void testNewMemoryModel(){
+
+    PoolMaster mem;
+    objectLoc_t anonPtr = mem.allocateAnon(PyString("Testing"));
+    IOR::getInstance().reportOut(((PyPrimitive*)anonPtr.first->safelyRetrieve(anonPtr.second))->asStr());
+
+}
+
+void testParser(){
     CinRequester req;
     CinParser parser;
 
@@ -28,6 +39,11 @@ int main() {
     while (true){
         parser.parseLine(req);
     }
+}
+
+int main() {
+
+    testNewMemoryModel();
 
     return 0;
 }

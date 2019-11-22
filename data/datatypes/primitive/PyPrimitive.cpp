@@ -4,10 +4,5 @@
 
 #include "PyPrimitive.h"
 
-PyPrimitive::PyPrimitive(char *name) : PyObject(name){
-    isPrimitiveVar = true;
-}
-
-PyPrimitive::PyPrimitive(std::string && n) : PyObject(std::move(n)) {
-    isPrimitiveVar = true;
+PyPrimitive::PyPrimitive(EType name) : PyObject(name) {
 }

@@ -5,18 +5,18 @@
 #include "PyString.h"
 #include "../../Memory.h"
 
-PyString::PyString() : PyPrimitive("string") {
+PyString::PyString() : PyPrimitive(String) {
 
 }
 
-PyString::PyString(char *str) : PyPrimitive("string"), myValue(str) {
+PyString::PyString(char *str) : PyPrimitive(String), myValue(str) {
 }
 
-PyString::PyString(std::string &str) : PyPrimitive("string"), myValue(str) {
+PyString::PyString(std::string &str) : PyPrimitive(String), myValue(str) {
 
 }
 
-PyString::PyString(std::string && inp) : PyPrimitive("string"), myValue(inp){
+PyString::PyString(std::string && inp) : PyPrimitive(String), myValue(inp){
 }
 
 PyObject *PyString::addLeft(PyObject *right) {
@@ -49,7 +49,7 @@ int PyString::compare(PyObject *right) {
 }
 
 bool PyString::equals(PyObject *other) {
-    if (other->getType() != "string") return false;
+    if (other->getType() != String) return false;
     return ((PyString*)other)->myValue == myValue;
 }
 

@@ -228,18 +228,6 @@ map
 datatypes/PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
 
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp
-AnonymousObject.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
-../IOR.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
-sstream
--
-
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
-PyObject.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
-
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp
 PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
@@ -379,8 +367,6 @@ PyPrimitive.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
 ../PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
-../AnonymousObject.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
 string
 -
 
@@ -395,8 +381,20 @@ PyPrimitive.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
 ../PyObject.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
-../AnonymousObject.h
-/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.cpp
+Context.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.h
+../../optimization.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/optimization.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.h
+map
+-
+../datatypes/PyObject.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+Pool.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp
 Pool.h
@@ -423,6 +421,8 @@ PoolMaster.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
 Pool.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
+Context.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.h
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 
@@ -435,6 +435,12 @@ data/datatypes/primitive/PyFunction.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
 data/datatypes/primitive/PyBoolean.h
 /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.h
+data/memory-structure/PoolMaster.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.h
+data/datatypes/primitive/PyString.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
+data/IOR.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
 
 /home/alexey/CLionProjects/BasicPythonInterpreter/optimization.h
 

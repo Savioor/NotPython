@@ -11,8 +11,7 @@
 
 class PyPrimitive : public PyObject {
 public:
-    explicit PyPrimitive(char*);
-    explicit PyPrimitive(std::string&&);
+    explicit PyPrimitive(EType);
     PyPrimitive() = delete;
 
     virtual ~PyPrimitive() = default;

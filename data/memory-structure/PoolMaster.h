@@ -21,10 +21,11 @@ protected:
     LinkedList<Pool*> freePools;
     LinkedList<Pool*> fullPools;
 
-    std::map<pointer_t, objectLoc_t> globalPointerTable;
     std::vector<Context*> contextList;
 
 public:
+    PoolMaster();
+    ~PoolMaster();
 
     pointerValuePair_t getObject(pointer_t& ptr);
     pointer_t allocate(pointer_t& ptr, PyObject&& obj);

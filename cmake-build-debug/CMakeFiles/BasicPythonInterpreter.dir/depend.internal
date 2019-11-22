@@ -6,7 +6,6 @@ CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/ExpressionParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
@@ -41,7 +40,6 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/FunctionRequester.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
@@ -81,7 +79,6 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/keywords/natives/Print.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
@@ -154,25 +151,17 @@ CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.h
@@ -186,7 +175,6 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNative
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/EqualityCheckOperator.cpp
@@ -195,7 +183,6 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityChec
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/MultiplicationOperator.cpp
@@ -211,7 +198,6 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssig
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/PointerAssignOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/SubtractionOperator.cpp
@@ -225,7 +211,6 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFu
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.h
@@ -246,7 +231,6 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyInteger.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyInteger.h
@@ -254,19 +238,26 @@ CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/optimization.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
@@ -279,6 +270,7 @@ CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.h
@@ -291,11 +283,17 @@ CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/CinParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/parsers/GenericParser.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/CinRequester.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h
- /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyBoolean.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyFunction.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyPrimitive.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/primitive/PyString.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Context.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h

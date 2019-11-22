@@ -42,3 +42,16 @@ objectLoc_t PoolMaster::allocateAnon(PyObject &&obj) {
     }
     return {allocPool, objectLoc};
 }
+
+PoolMaster::PoolMaster() : contextList() {
+    // First context is global context
+    contextList.push_back(new Context());
+}
+
+PoolMaster::~PoolMaster() {
+    for (auto& c : contextList){
+        delete(c);
+        c = nullptr;
+    }
+    // TODO delete other things
+}
