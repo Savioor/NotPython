@@ -528,32 +528,32 @@ data/Memory.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.s
 .PHONY : data/Memory.cpp.s
 
-data/datatypes/AnonymousObject.o: data/datatypes/AnonymousObject.cpp.o
+data/MemoryNew.o: data/MemoryNew.cpp.o
 
-.PHONY : data/datatypes/AnonymousObject.o
+.PHONY : data/MemoryNew.o
 
 # target to build an object file
-data/datatypes/AnonymousObject.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
-.PHONY : data/datatypes/AnonymousObject.cpp.o
+data/MemoryNew.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o
+.PHONY : data/MemoryNew.cpp.o
 
-data/datatypes/AnonymousObject.i: data/datatypes/AnonymousObject.cpp.i
+data/MemoryNew.i: data/MemoryNew.cpp.i
 
-.PHONY : data/datatypes/AnonymousObject.i
+.PHONY : data/MemoryNew.i
 
 # target to preprocess a source file
-data/datatypes/AnonymousObject.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.i
-.PHONY : data/datatypes/AnonymousObject.cpp.i
+data/MemoryNew.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.i
+.PHONY : data/MemoryNew.cpp.i
 
-data/datatypes/AnonymousObject.s: data/datatypes/AnonymousObject.cpp.s
+data/MemoryNew.s: data/MemoryNew.cpp.s
 
-.PHONY : data/datatypes/AnonymousObject.s
+.PHONY : data/MemoryNew.s
 
 # target to generate assembly for a file
-data/datatypes/AnonymousObject.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.s
-.PHONY : data/datatypes/AnonymousObject.cpp.s
+data/MemoryNew.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.s
+.PHONY : data/MemoryNew.cpp.s
 
 data/datatypes/PyObject.o: data/datatypes/PyObject.cpp.o
 
@@ -1014,6 +1014,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+util/NullPointerException.o: util/NullPointerException.cpp.o
+
+.PHONY : util/NullPointerException.o
+
+# target to build an object file
+util/NullPointerException.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.o
+.PHONY : util/NullPointerException.cpp.o
+
+util/NullPointerException.i: util/NullPointerException.cpp.i
+
+.PHONY : util/NullPointerException.i
+
+# target to preprocess a source file
+util/NullPointerException.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.i
+.PHONY : util/NullPointerException.cpp.i
+
+util/NullPointerException.s: util/NullPointerException.cpp.s
+
+.PHONY : util/NullPointerException.s
+
+# target to generate assembly for a file
+util/NullPointerException.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.s
+.PHONY : util/NullPointerException.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1068,9 +1095,9 @@ help:
 	@echo "... data/Memory.o"
 	@echo "... data/Memory.i"
 	@echo "... data/Memory.s"
-	@echo "... data/datatypes/AnonymousObject.o"
-	@echo "... data/datatypes/AnonymousObject.i"
-	@echo "... data/datatypes/AnonymousObject.s"
+	@echo "... data/MemoryNew.o"
+	@echo "... data/MemoryNew.i"
+	@echo "... data/MemoryNew.s"
 	@echo "... data/datatypes/PyObject.o"
 	@echo "... data/datatypes/PyObject.i"
 	@echo "... data/datatypes/PyObject.s"
@@ -1122,6 +1149,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... util/NullPointerException.o"
+	@echo "... util/NullPointerException.i"
+	@echo "... util/NullPointerException.s"
 .PHONY : help
 
 

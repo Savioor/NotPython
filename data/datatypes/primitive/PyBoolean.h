@@ -15,21 +15,21 @@ public:
 
     PyBoolean(bool val);
 
-    AnonymousObject *addLeft(PyObject *right) override;
+    objectLoc_t addLeft(objectLoc_t right) override;
 
-    AnonymousObject *subLeft(PyObject *right) override;
+    objectLoc_t subLeft(objectLoc_t right) override;
 
-    AnonymousObject *multLeft(PyObject *right) override;
+    objectLoc_t multLeft(objectLoc_t right) override;
 
-    AnonymousObject *divLeft(PyObject *right) override;
+    objectLoc_t divLeft(objectLoc_t right) override;
 
     std::string asStr() override;
 
-    virtual int allocCopy() override;
+    virtual objectLoc_t allocCopy() override;
 
-    int compare(PyObject *other) override;
+    int compare(objectLoc_t other) override;
 
-    bool equals(PyObject *other) override;
+    bool equals(objectLoc_t other) override;
 };
 
 

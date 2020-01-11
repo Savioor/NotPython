@@ -9,11 +9,12 @@
 #include "../../util/LinkedList.h"
 #include "Pool.h"
 #include "Context.h"
+#include "../../optimization.h"
 
 typedef std::string pointer_t;
 typedef std::pair<Pool*, PyObject*> objectLoc_t;
 
-typedef std::pair<pointer_t&, PyObject*> pointerValuePair_t;
+typedef std::pair<pointer_t&, objectLoc_t> pointerValuePair_t;
 
 class PoolMaster {
 
@@ -30,6 +31,12 @@ public:
     pointerValuePair_t getObject(pointer_t& ptr);
     pointer_t allocate(pointer_t& ptr, PyObject&& obj);
     objectLoc_t allocateAnon(PyObject&& obj);
+
+    static inline PyObject* retrieve(objectLoc_t& obj){
+        if (UNLIKELY(obj.first == nullptr || obj.second == nullptr))
+            return nullptr;
+        return obj.first->safelyRetrieve(obj.second);
+    }
 
 };
 

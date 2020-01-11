@@ -15,13 +15,13 @@ typedef std::pair<Pool*, PyObject*> objectLoc_t;
 
 class Context {
 public:
-    std::map<pointer_t, objectLoc_t> pointerTable;
+    std::map<pointer_t, std::pair<Pool*, PyObject*>> pointerTable;
     /**
      * These object don't have a variable name corresponding to them, and they will live as long as the context lives.
      */
     std::vector<PyObject*> anonymousList;
 
-    PyObject* getObject(const pointer_t& ptr);
+    objectLoc_t getObject(const pointer_t& ptr);
     const pointer_t* getPtr(const PyObject* obj);
 
     void addObject(pointer_t& ptr, objectLoc_t& obj);

@@ -19,7 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/code/reqeusters/VectorRequester.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/IOR.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/data/MemoryNew.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/AdditionOperator.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/natives/binary/BinaryNativeFunction.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o"
@@ -37,6 +37,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/Pool.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/data/memory-structure/PoolMaster.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

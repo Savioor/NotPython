@@ -7,12 +7,13 @@
 
 
 #include "../../PyObject.h"
+#include "../../../memory-structure/PoolMaster.h"
 
 class UnaryNativeFunction : public PyObject {
 public:
     UnaryNativeFunction();
 
-    virtual PyObject* execute(PyObject*) = 0;
+    virtual objectLoc_t execute(objectLoc_t) = 0;
 
     virtual ~UnaryNativeFunction() = default;
 };

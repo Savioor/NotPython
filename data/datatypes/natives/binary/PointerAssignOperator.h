@@ -8,10 +8,10 @@
 
 #include "BinaryNativeFunction.h"
 
-class PointerAssignOperator : public BinaryNativeFunction {
+class PointerAssignOperator {
 public:
     PointerAssignOperator();
-    PyObject *execute(PyObject *left, PyObject *right) override;
+    pointerValuePair_t execute(pointerValuePair_t left, objectLoc_t right);
 };
 
 

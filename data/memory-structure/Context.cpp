@@ -5,10 +5,10 @@
 #include "Context.h"
 #include "../../optimization.h"
 
-PyObject *Context::getObject(const pointer_t &ptr) {
+objectLoc_t Context::getObject(const pointer_t &ptr) {
     auto val = pointerTable.find(ptr);
     if (UNLIKELY(val == pointerTable.end())) return nullptr;
-    return (*val).second.first->safelyRetrieve((*val).second.second);
+    return (*val).second;
 }
 
 const pointer_t *Context::getPtr(const PyObject *obj) {

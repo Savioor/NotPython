@@ -9,15 +9,15 @@ SubtractionOperator::SubtractionOperator() : BinaryNativeFunction("-") {
 
 }
 
-PyObject *SubtractionOperator::execute(PyObject *left, PyObject *right) {
-    left = left->unmask();
-    right = right->unmask();
+objectLoc_t SubtractionOperator::execute(objectLoc_t left, objectLoc_t right) {
+    PyObject* leftO = left.first->safelyRetrieve(left.second);
+//    PyObject* rightO = right.first->safelyRetrieve(right.second);
 
-    if (left->isPrimitive()){
-        return ((PyPrimitive*)left)->subLeft(right);
+    if (leftO->isPrimitive()){
+        return ((PyPrimitive *) leftO)->subLeft(right);
     }
 
     throw "Write this code you dumbfuck";
 
-    return nullptr;
+    return {};
 }

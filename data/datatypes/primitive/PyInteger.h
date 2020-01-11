@@ -16,25 +16,25 @@ public:
     virtual ~PyInteger() = default;
 
 
-    virtual AnonymousObject *addLeft(PyObject *right) override;
+    virtual objectLoc_t addLeft(objectLoc_t right) override;
 
-    virtual AnonymousObject *subLeft(PyObject *right) override;
+    virtual objectLoc_t subLeft(objectLoc_t right) override;
 
-    virtual AnonymousObject *multLeft(PyObject *right) override;
+    virtual objectLoc_t multLeft(objectLoc_t right) override;
 
-    virtual AnonymousObject *divLeft(PyObject *right) override;
+    virtual objectLoc_t divLeft(objectLoc_t right) override;
 
     virtual std::string asStr() override;
 
-    virtual int allocCopy() override;
+    virtual objectLoc_t allocCopy() override;
 
     /**
      * 1 for bigger, -1 for smaller, 0 for equal. -2 for unsupported.
      * @param right
      * @return
      */
-    virtual int compare(PyObject* right) override;
-    virtual bool equals(PyObject* other) override;
+    virtual int compare(objectLoc_t right) override;
+    virtual bool equals(objectLoc_t other) override;
 
     long myValue;
 };

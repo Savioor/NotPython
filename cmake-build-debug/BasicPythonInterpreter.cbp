@@ -177,10 +177,10 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/Memory.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/MemoryNew.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/AnonymousObject.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/MemoryNew.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/data/datatypes/PyObject.cpp">
@@ -292,6 +292,12 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/CMakeLists.txt">

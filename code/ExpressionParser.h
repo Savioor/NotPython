@@ -11,6 +11,7 @@
 #include "../data/datatypes/PyObject.h"
 #include "../data/Memory.h"
 #include "../util/LinkedList.h"
+#include "../data/memory-structure/PoolMaster.h"
 
 typedef std::pair<PyObject *, std::pair<bool, stringIter_t>> funcTryReply_t;
 
@@ -53,8 +54,8 @@ public:
         static ExpressionParser instance;
         return instance;
     }
-    int parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar);
-    int parseExpression(stringIter_t& startOfExpr, stringIter_t endIt);
+    objectLoc_t parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar);
+    objectLoc_t parseExpression(stringIter_t& startOfExpr, stringIter_t endIt);
     std::vector<char> specialChars;
     /**
      * The first operations happen first

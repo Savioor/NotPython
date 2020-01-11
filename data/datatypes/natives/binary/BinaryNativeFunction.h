@@ -7,6 +7,7 @@
 
 
 #include "../../PyObject.h"
+#include "../../../memory-structure/Context.h"
 
 class BinaryNativeFunction : public PyObject {
 protected:
@@ -16,7 +17,7 @@ public:
     BinaryNativeFunction(char*);
     BinaryNativeFunction(std::string&&);
 
-    virtual PyObject* execute(PyObject*, PyObject*) = 0;
+    virtual objectLoc_t execute(objectLoc_t, objectLoc_t) = 0;
     virtual ~BinaryNativeFunction() override = default;
     virtual const std::string& getName() const;
 

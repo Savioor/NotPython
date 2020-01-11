@@ -99,3 +99,4 @@ PyObject *Pool::safelyRetrieve(PyObject *obj) {
     }
     return obj;
 }
+

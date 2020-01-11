@@ -10,6 +10,7 @@
 #include <map>
 #include <vector>
 #include "../../debug.h"
+#include "../memory-structure/PoolMaster.h"
 
 enum EType {
     Unallocated, // = 0 = nullptr
@@ -19,8 +20,6 @@ enum EType {
     Function,
     BinaryOperator,
     UnaryOperatorLeft,
-    UnaryOperatorRight,
-    Rvalue,
     Class
 };
 

@@ -3,7 +3,8 @@
 //
 
 #include "PyString.h"
-#include "../../Memory.h"
+#include "../../MemoryNew.h"
+#include "../../../util/NullPointerException.h"
 
 PyString::PyString() : PyPrimitive(String) {
 
@@ -19,40 +20,46 @@ PyString::PyString(std::string &str) : PyPrimitive(String), myValue(str) {
 PyString::PyString(std::string && inp) : PyPrimitive(String), myValue(inp){
 }
 
-PyObject *PyString::addLeft(PyObject *right) {
-    if (right->getType() == String){
-        return new PyString(this->myValue + ((PyString*)right)->myValue);
+objectLoc_t PyString::addLeft(objectLoc_t right) {
+    PyObject* rightObj = PoolMaster::retrieve(right);
+    if (UNLIKELY(rightObj == nullptr)) {
+        throw NullPointerException();
+    }
+
+    if (rightObj->getType() == String){
+        return ALLOC_ANON(PyString(this->myValue + ((PyString*)rightObj)->myValue));
     } else {
         // TODO
-        return new PyString(this->myValue);
+        return ALLOC_ANON(PyString(this->myValue));
     }
 }
 
-PyObject *PyString::subLeft(PyObject *right) {
-    return nullptr;
+objectLoc_t PyString::subLeft(objectLoc_t right) {
+    return {nullptr, nullptr};
 }
 
-PyObject *PyString::multLeft(PyObject *right) {
-    return nullptr;
+objectLoc_t PyString::multLeft(objectLoc_t right) {
+    return {nullptr, nullptr};
 }
 
-PyObject *PyString::divLeft(PyObject *right) {
-    return nullptr;
+objectLoc_t PyString::divLeft(objectLoc_t right) {
+    return {nullptr, nullptr};
 }
 
 std::string PyString::asStr() {
     return this->myValue;
 }
 
-int PyString::compare(PyObject *right) {
+int PyString::compare(objectLoc_t right) {
     return -2;
 }
 
-bool PyString::equals(PyObject *other) {
-    if (other->getType() != String) return false;
-    return ((PyString*)other)->myValue == myValue;
+bool PyString::equals(objectLoc_t other) {
+    PyObject* otherObj = PoolMaster::retrieve(other);
+    if (otherObj->getType() != String) return false;
+    return ((PyString*)otherObj)->myValue == myValue;
 }
 
-int PyString::allocCopy() {
-    return Memory::getInstance().alloc(new PyString(myValue));
+objectLoc_t PyString::allocCopy() {
+    return MemoryNew::getInstance().mem.allocateAnon(PyString(myValue));
 }

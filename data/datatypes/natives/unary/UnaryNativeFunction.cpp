@@ -4,6 +4,6 @@
 
 #include "UnaryNativeFunction.h"
 
-UnaryNativeFunction::UnaryNativeFunction() : PyObject("unary_native") {
+UnaryNativeFunction::UnaryNativeFunction() : PyObject(UnaryOperatorLeft) {
 
 }

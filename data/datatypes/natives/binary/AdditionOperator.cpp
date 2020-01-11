@@ -14,7 +14,7 @@ PyObject *AdditionOperator::execute(PyObject *left, PyObject *right) {
     right = right->unmask();
 
     if (left->isPrimitive()){
-        return ((PyPrimitive*)left)->addLeft(right);
+        return ((PyPrimitive *) left)->addLeft(right);
     }
 
     throw "Write this code you dumbfuck";

@@ -11,7 +11,7 @@
 class SubtractionOperator : public BinaryNativeFunction{
 public:
     SubtractionOperator();
-    PyObject *execute(PyObject *left, PyObject *right) override;
+    objectLoc_t execute(objectLoc_t left, objectLoc_t right) override;
 };
 
 

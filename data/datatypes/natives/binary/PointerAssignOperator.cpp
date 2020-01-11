@@ -4,30 +4,27 @@
 
 #include "PointerAssignOperator.h"
 #include "../../../IOR.h"
-#include "../../../Memory.h"
+#include "../../../memory-structure/Pool.h"
 #include "../../../../debug.h"
 
-PyObject *PointerAssignOperator::execute(PyObject *left, PyObject *right) {
+pointerValuePair_t PointerAssignOperator::execute(pointerValuePair_t left, objectLoc_t right) {
 
-        if (left->getType() == "rvalue" || left->isConst()){
-        IOR::getInstance().reportError("Can't perform assignment on rvalues or constants");
-        return nullptr;
+    PyObject* leftO = get(left.second);
+    PyObject* rightO = get(right);
+
+    if (leftO->isConst()){
+        IOR::getInstance().reportError("Can't perform assignment on constants");
+        return {};
     }
     Memory& mem = Memory::getInstance();
-    int leftPointer = mem.getPointerByObject(left);
-
-    if (leftPointer == -1){
-        IOR::getInstance().reportError("Variable not found in memory");
-        return nullptr;
-    }
 
 #if ASSIGN_DEBUG == true
-    IOR::getInstance().reportDebug("Assigning pointer " + std::to_string(leftPointer));
+    IOR::getInstance().reportDebug("Assigning pointer");
 #endif
 
-    mem.getData().at(leftPointer) = right->yoink();
+    left.first->allocateHere() = rightO;
 }
 
-PointerAssignOperator::PointerAssignOperator() : BinaryNativeFunction("=") {
+PointerAssignOperator::PointerAssignOperator() {
 
 }

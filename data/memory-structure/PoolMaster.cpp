@@ -5,10 +5,10 @@
 #include "PoolMaster.h"
 
 pointerValuePair_t PoolMaster::getObject(pointer_t &ptr) {
-    pointerValuePair_t retPair{ptr, nullptr};
+    pointerValuePair_t retPair{ptr, {nullptr, nullptr}};
     for (auto iter = --contextList.end(); iter != contextList.begin(); iter--){
         retPair.second = (*iter.base())->getObject(ptr);
-        if (retPair.second != nullptr) return retPair;
+        if (retPair.second.first != nullptr) return retPair;
     }
     return retPair;
 }

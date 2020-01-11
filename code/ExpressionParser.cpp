@@ -49,7 +49,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
     return parseExpression(startOfExpr, endIt, &noTerminator);
 }
 
-int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar) {
+objectLoc_t ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t endIt, const char* endChar) {
 
     LinkedList<PyObject*> splatData{getSubExpr(startOfExpr, endIt, endChar)};
 
@@ -68,7 +68,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
 
             for (auto obj = splatData.getStart(); obj != nullptr; obj = obj->next){
 
-                if (oper->getType() == "binary_native" && oper == obj->value){
+                if (oper->getType() == BinaryOperator && oper == obj->value){
 
                     if (obj == splatData.getStart() || obj == splatData.getEnd()){
                         IOR::getInstance().reportError(
@@ -99,7 +99,7 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
                     didSomething = true;
                     break;
 
-                } else if (oper->getType() == "unary_native" && oper == obj->value){
+                } else if (oper->getType() == UnaryOperatorLeft && oper == obj->value){
                     // TODO
                 }
             }
@@ -122,13 +122,12 @@ int ExpressionParser::parseExpression(stringIter_t& startOfExpr, stringIter_t en
 
     int retPointer = Memory::getInstance().getPointerByObject(ret);
 
-    if (ret->getType() == "rvalue" || retPointer == -1){
-#if OBJECT_DEBUG == true
-        IOR::getInstance().reportDebug("Added anon to mem for treatment by GC");
-#endif
+//    if (ret->getType() || retPointer == -1){
+//#if OBJECT_DEBUG == true
+//        IOR::getInstance().reportDebug("Added anon to mem for treatment by GC");
+//#endif
         PyObject* temp = ret;
-        ret = ret->yoink();
-        if (temp->getType() == "rvalue") delete(temp);
+//        if (temp->getType() == "rvalue") delete(temp);
         retPointer = Memory::getInstance().alloc(ret); // Let the garbage collector deal with it when needed.
     }
 

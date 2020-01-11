@@ -13,7 +13,7 @@ PyObject *MultiplicationOperator::execute(PyObject *left, PyObject *right) {
     right = right->unmask();
 
     if (left->isPrimitive()){
-        return ((PyPrimitive*)left)->multLeft(right);
+        return ((PyPrimitive *) left)->multLeft(right);
     }
 
     throw "Write this code you dumbfuck";

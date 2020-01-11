@@ -8,11 +8,14 @@
 
 #include "../datatypes/PyObject.h"
 #include "../../util/LinkedList.h"
+#include "PoolMaster.h"
 
 #define POOL_SIZE 1024 * 4
 
 #define POOL_AVAILABLE 1
 #define POOL_FULL 2
+
+#define get(item) item.first->safelyRetrieve(item.second);
 
 typedef int8_t block;
 
@@ -36,6 +39,7 @@ public:
     const int8_t blockSize;
 
     PyObject* allocateHere(PyObject&& obj);
+    void replaceMemory(objectLoc_t source, objectLoc_t destination);
     void freeResource(PyObject* ptr);
     PyObject* safelyRetrieve(PyObject* obj);
 

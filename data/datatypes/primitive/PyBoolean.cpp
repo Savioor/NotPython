@@ -4,23 +4,7 @@
 
 #include "PyBoolean.h"
 #include "PyString.h"
-#include "../../Memory.h"
 
-AnonymousObject *PyBoolean::addLeft(PyObject *right) {
-    return nullptr;
-}
-
-AnonymousObject *PyBoolean::subLeft(PyObject *right) {
-    return nullptr;
-}
-bool
-AnonymousObject *PyBoolean::multLeft(PyObject *right) {
-    return nullptr;
-}
-
-AnonymousObject *PyBoolean::divLeft(PyObject *right) {
-    return nullptr;
-}
 
 std::string PyBoolean::asStr() {
     if (value){
@@ -30,20 +14,36 @@ std::string PyBoolean::asStr() {
     }
 }
 
-int PyBoolean::compare(PyObject *other) {
+int PyBoolean::compare(objectLoc_t other) {
     return -2;
 }
 
-bool PyBoolean::equals(PyObject *other) {
-    if (other->getType() != Boolean) return false;
-    return value == ((PyBoolean*)other)->value;
+bool PyBoolean::equals(objectLoc_t other) {
+    PyObject* otherO = other.first->safelyRetrieve(other.second);
+    if (otherO->getType() != Boolean) return false;
+    return value == ((PyBoolean*)otherO)->value;
 }
 
-PyBoolean::PyBoolean(bool val) : PyPrimitive("bool"), value(val) {
+PyBoolean::PyBoolean(bool val) : PyPrimitive(Boolean), value(val) {
 
 }
 
+objectLoc_t PyBoolean::addLeft(objectLoc_t right) {
+    return {};
+}
 
-int PyBoolean::allocCopy() {
-    return Memory::getInstance().alloc(new PyBoolean(value));
+objectLoc_t PyBoolean::subLeft(objectLoc_t right) {
+    return {};
+}
+
+objectLoc_t PyBoolean::multLeft(objectLoc_t right) {
+    return {};
+}
+
+objectLoc_t PyBoolean::divLeft(objectLoc_t right) {
+    return {};
+}
+
+objectLoc_t PyBoolean::allocCopy() {
+    return MemoryNew::getInstance().mem.allocateAnon(PyBoolean(value));
 }

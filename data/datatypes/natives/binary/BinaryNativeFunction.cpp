@@ -8,10 +8,10 @@ const std::string &BinaryNativeFunction::getName() const {
     return name;
 }
 
-BinaryNativeFunction::BinaryNativeFunction(char * in) : PyObject("binary_native"), name(in) {
+BinaryNativeFunction::BinaryNativeFunction(char * in) : PyObject(BinaryOperator), name(in) {
 
 }
 
-BinaryNativeFunction::BinaryNativeFunction(std::string && in) : PyObject("binary_native"), name(in) {
+BinaryNativeFunction::BinaryNativeFunction(std::string && in) : PyObject(BinaryOperator), name(in) {
 
 }

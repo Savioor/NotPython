@@ -6,72 +6,83 @@
 #include "PyString.h"
 #include <sstream>
 
-PyInteger::PyInteger() : PyPrimitive("int") {
+PyInteger::PyInteger() : PyPrimitive(Integer) {
 
 }
 
-PyInteger::PyInteger(long i) : PyPrimitive("int"), myValue(i) {
+PyInteger::PyInteger(long i) : PyPrimitive(Integer), myValue(i) {
 
 }
 
-AnonymousObject *PyInteger::addLeft(PyObject *right) {
-    right = right->unmask();
-    if (right->getType() != "int"){
+objectLoc_t PyInteger::addLeft(objectLoc_t right) {
+    PyObject* rightObject = PoolMaster::retrieve(right);
+    if (UNLIKELY(rightObject == nullptr))
+        return {nullptr, nullptr};
+    if (rightObject->getType() != Integer){
         throw "TODO this";
-        return nullptr;
+        return {nullptr, nullptr};
     }
-    auto* asInt = (PyInteger*)right;
-    return new AnonymousObject(new PyInteger(myValue + asInt->myValue));
+    auto* asInt = (PyInteger*)rightObject;
+    return ALLOC_ANON(PyInteger(myValue + asInt->myValue));
 }
 
-AnonymousObject *PyInteger::subLeft(PyObject *right) {
-    right = right->unmask();
-    if (right->getType() != "int"){
+objectLoc_t PyInteger::subLeft(objectLoc_t right) {
+    PyObject *rightObject = PoolMaster::retrieve(right);
+    if (UNLIKELY(rightObject == nullptr))
+        return {nullptr, nullptr};
+    if (rightObject->getType() != Integer) {
         throw "TODO this";
-        return nullptr;
+        return {nullptr, nullptr};
     }
-    auto* asInt = (PyInteger*)right;
-    return new AnonymousObject(new PyInteger(myValue - asInt->myValue));}
+    auto *asInt = (PyInteger *) rightObject;
+    return ALLOC_ANON(PyInteger(myValue - asInt->myValue));
+}
 
-AnonymousObject *PyInteger::multLeft(PyObject *right) {
-    right = right->unmask();
-    if (right->getType() != "int"){
+objectLoc_t PyInteger::multLeft(objectLoc_t right) {
+    PyObject* rightObject = PoolMaster::retrieve(right);
+    if (UNLIKELY(rightObject == nullptr))
+        return {nullptr, nullptr};
+    if (rightObject->getType() != Integer){
         throw "TODO this";
-        return nullptr;
+        return {nullptr, nullptr};
     }
-    auto* asInt = (PyInteger*)right;
-    return new AnonymousObject(new PyInteger(myValue * asInt->myValue));}
+    auto* asInt = (PyInteger*)rightObject;
+    return ALLOC_ANON(PyInteger(myValue * asInt->myValue));
+}
 
-AnonymousObject *PyInteger::divLeft(PyObject *right) {
-    right = right->unmask();
-    if (right->getType() != "int"){
+objectLoc_t PyInteger::divLeft(objectLoc_t right) {
+    PyObject* rightObject = PoolMaster::retrieve(right);
+    if (UNLIKELY(rightObject == nullptr))
+        return {nullptr, nullptr};
+    if (rightObject->getType() != Integer){
         throw "TODO this";
-        return nullptr;
+        return {nullptr, nullptr};
     }
-    auto* asInt = (PyInteger*)right;
-    return new AnonymousObject(new PyInteger(myValue / asInt->myValue));}
+    auto* asInt = (PyInteger*)rightObject;
+    return ALLOC_ANON(PyInteger(myValue / asInt->myValue));
+}
 
 std::string PyInteger::asStr() {
-    std::stringstream stream;
+    static std::stringstream stream;
     stream << myValue;
     std::string myStr;
     stream >> myStr;
     return std::move(myStr);
 }
 
-int PyInteger::allocCopy() {
+objectLoc_t PyInteger::allocCopy() {
+    return {nullptr, nullptr};
+}
+
+int PyInteger::compare(objectLoc_t right) {
     return 0;
 }
 
-int PyInteger::compare(PyObject *right) {
-    return 0;
-}
-
-bool PyInteger::equals(PyObject *other) {
-    other = other->unmask();
-    if (other->getType() != "int"){
+bool PyInteger::equals(objectLoc_t other) {
+    PyObject* o = other.first->safelyRetrieve(other.second);
+    if (o->getType() != Integer){
         return false;
     }
-    auto* asInt = (PyInteger*)other;
+    auto* asInt = (PyInteger*)o;
     return myValue == asInt->myValue;
 }

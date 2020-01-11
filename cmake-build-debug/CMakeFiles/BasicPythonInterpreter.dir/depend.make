@@ -4,7 +4,7 @@
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../code/ExpressionParser.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/AdditionOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
@@ -16,16 +16,17 @@ CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datat
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyInteger.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/datatypes/primitive/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../code/keywords/AbstractKeyword.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../code/keywords/AbstractKeyword.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../data/datatypes/PyObject.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o: ../debug.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/IRequester.h
@@ -38,11 +39,15 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/CinRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../code/reqeusters/FunctionRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/primitive/PyBoolean.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o: ../util/Node.h
 
@@ -52,10 +57,13 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywor
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywords/Return.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../code/keywords/Return.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/datatypes/primitive/PyFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o: ../util/Node.h
 
@@ -65,9 +73,12 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/keywords/
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/keywords/Var.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../code/keywords/Var.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o: ../util/Node.h
 
@@ -77,11 +88,15 @@ CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../code
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../code/keywords/natives/Print.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../code/keywords/natives/Print.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/datatypes/primitive/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o: ../util/Node.h
 
@@ -91,9 +106,6 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../code/pars
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../code/parsers/CinParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../code/parsers/GenericParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../data/datatypes/PyObject.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o: ../debug.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/keywords/AbstractKeyword.h
@@ -101,10 +113,7 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/FunctionParser.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/FunctionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../code/parsers/GenericParser.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../data/datatypes/primitive/PyFunction.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o: ../debug.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/IRequester.h
@@ -115,9 +124,12 @@ CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/parsers/GenericParser.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../code/parsers/GenericParser.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o: ../util/Node.h
 
@@ -129,9 +141,6 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../cod
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../code/reqeusters/CinRequester.cpp
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../code/reqeusters/CinRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../data/datatypes/PyObject.h
-CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o: ../debug.h
 
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o: ../code/IRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o: ../code/reqeusters/FunctionRequester.cpp
@@ -143,126 +152,194 @@ CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o: ../
 
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/IOR.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../data/datatypes/PyObject.h
-CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o: ../debug.h
 
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.cpp
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/PyObject.h
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/primitive/PyBoolean.h
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
-CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o: ../debug.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../data/MemoryNew.cpp
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../data/MemoryNew.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../data/memory-structure/PoolMaster.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/MemoryNew.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/datatypes/PyObject.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o: ../util/Node.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/datatypes/natives/binary/AdditionOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/datatypes/natives/binary/AdditionOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/datatypes/primitive/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o: ../util/Node.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/natives/binary/EqualityCheckOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/natives/binary/EqualityCheckOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/primitive/PyBoolean.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o: ../util/Node.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/natives/binary/MultiplicationOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/natives/binary/MultiplicationOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/PointerAssignOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/datatypes/natives/binary/PointerAssignOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o: ../util/Node.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/natives/binary/BinaryNativeFunction.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/natives/binary/SubtractionOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/natives/binary/SubtractionOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/natives/unary/UnaryNativeFunction.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/datatypes/natives/unary/UnaryNativeFunction.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o: ../util/Node.h
 
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyBoolean.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyBoolean.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/datatypes/primitive/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o: ../util/Node.h
 
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/IRequester.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/keywords/AbstractKeyword.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/parsers/FunctionParser.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/parsers/GenericParser.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/reqeusters/FunctionRequester.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../code/reqeusters/VectorRequester.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/Memory.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/datatypes/primitive/PyFunction.cpp
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../data/datatypes/primitive/PyFunction.h
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o: ../debug.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyInteger.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyInteger.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/datatypes/primitive/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o: ../util/Node.h
 
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/primitive/PyPrimitive.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o: ../util/Node.h
 
-CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/primitive/PyPrimitive.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/primitive/PyString.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/datatypes/primitive/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/memory-structure/Context.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../optimization.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../util/Node.h
+CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o: ../util/NullPointerException.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../data/memory-structure/Context.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../data/memory-structure/Context.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/Memory.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/datatypes/PyObject.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/memory-structure/Context.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/memory-structure/Pool.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/memory-structure/Pool.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o: ../util/LinkedList.h
@@ -274,6 +351,7 @@ CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ..
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../data/memory-structure/PoolMaster.cpp
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../debug.h
+CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o: ../util/Node.h
 
@@ -283,7 +361,7 @@ CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../code/parsers/CinParser.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../code/parsers/GenericParser.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../code/reqeusters/CinRequester.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/IOR.h
-CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/Memory.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/MemoryNew.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/PyObject.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/primitive/PyBoolean.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/datatypes/primitive/PyFunction.h
@@ -294,6 +372,10 @@ CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/memory-structure/Pool.
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../data/memory-structure/PoolMaster.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../main.cpp
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../optimization.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o: ../util/Node.h
+
+CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.o: ../util/NullPointerException.cpp
+CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.o: ../util/NullPointerException.h
 
