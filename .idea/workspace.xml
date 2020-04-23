@@ -12,7 +12,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/memory/Class.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/Class.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/ExpressionParser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/BinaryExpression.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/BinaryExpression.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ExpressionParser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ExpressionParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/IRequester.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/AbstractKeyword.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/AbstractKeyword.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/If.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/If.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/Return.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/Return.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/Var.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/Var.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/natives/Print.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/keywords/natives/Print.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/CinParser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/CinParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/FunctionParser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/FunctionParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/GenericParser.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/parsers/GenericParser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/BlockRequester.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/BlockRequester.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/CinRequester.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/CinRequester.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/FunctionRequester.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/FunctionRequester.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/VectorRequester.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/reqeusters/VectorRequester.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/IOR.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/IOR.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/MemoryNew.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/MemoryNew.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/PyObject.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/PyObject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/AdditionOperator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/AdditionOperator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/BinaryNativeFunction.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/BinaryNativeFunction.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/EqualityCheckOperator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/EqualityCheckOperator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/MultiplicationOperator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/MultiplicationOperator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/PointerAssignOperator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/PointerAssignOperator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/SubtractionOperator.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/binary/SubtractionOperator.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/unary/UnaryNativeFunction.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/natives/unary/UnaryNativeFunction.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyBoolean.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyBoolean.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyFunction.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyFunction.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyInteger.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyInteger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyPrimitive.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyPrimitive.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyString.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datatypes/primitive/PyString.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memory-structure/Context.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memory-structure/Context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memory-structure/Pool.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memory-structure/Pool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memory-structure/PoolMaster.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memory-structure/PoolMaster.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/debug.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +187,10 @@
       <workItem from="1573034880931" duration="4508000" />
       <workItem from="1573221205532" duration="14738000" />
       <workItem from="1573490686998" duration="34499000" />
-      <workItem from="1574443942356" duration="621000" />
+      <workItem from="1574443942356" duration="1963000" />
+      <workItem from="1575400649208" duration="31000" />
+      <workItem from="1576148368588" duration="3817000" />
+      <workItem from="1576414047196" duration="5011000" />
     </task>
     <servers />
   </component>

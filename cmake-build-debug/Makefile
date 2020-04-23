@@ -123,870 +123,6 @@ BasicPythonInterpreter/fast:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/build
 .PHONY : BasicPythonInterpreter/fast
 
-code/ExpressionParser.o: code/ExpressionParser.cpp.o
-
-.PHONY : code/ExpressionParser.o
-
-# target to build an object file
-code/ExpressionParser.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.o
-.PHONY : code/ExpressionParser.cpp.o
-
-code/ExpressionParser.i: code/ExpressionParser.cpp.i
-
-.PHONY : code/ExpressionParser.i
-
-# target to preprocess a source file
-code/ExpressionParser.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.i
-.PHONY : code/ExpressionParser.cpp.i
-
-code/ExpressionParser.s: code/ExpressionParser.cpp.s
-
-.PHONY : code/ExpressionParser.s
-
-# target to generate assembly for a file
-code/ExpressionParser.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/ExpressionParser.cpp.s
-.PHONY : code/ExpressionParser.cpp.s
-
-code/keywords/AbstractKeyword.o: code/keywords/AbstractKeyword.cpp.o
-
-.PHONY : code/keywords/AbstractKeyword.o
-
-# target to build an object file
-code/keywords/AbstractKeyword.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.o
-.PHONY : code/keywords/AbstractKeyword.cpp.o
-
-code/keywords/AbstractKeyword.i: code/keywords/AbstractKeyword.cpp.i
-
-.PHONY : code/keywords/AbstractKeyword.i
-
-# target to preprocess a source file
-code/keywords/AbstractKeyword.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.i
-.PHONY : code/keywords/AbstractKeyword.cpp.i
-
-code/keywords/AbstractKeyword.s: code/keywords/AbstractKeyword.cpp.s
-
-.PHONY : code/keywords/AbstractKeyword.s
-
-# target to generate assembly for a file
-code/keywords/AbstractKeyword.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/AbstractKeyword.cpp.s
-.PHONY : code/keywords/AbstractKeyword.cpp.s
-
-code/keywords/If.o: code/keywords/If.cpp.o
-
-.PHONY : code/keywords/If.o
-
-# target to build an object file
-code/keywords/If.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.o
-.PHONY : code/keywords/If.cpp.o
-
-code/keywords/If.i: code/keywords/If.cpp.i
-
-.PHONY : code/keywords/If.i
-
-# target to preprocess a source file
-code/keywords/If.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.i
-.PHONY : code/keywords/If.cpp.i
-
-code/keywords/If.s: code/keywords/If.cpp.s
-
-.PHONY : code/keywords/If.s
-
-# target to generate assembly for a file
-code/keywords/If.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/If.cpp.s
-.PHONY : code/keywords/If.cpp.s
-
-code/keywords/Return.o: code/keywords/Return.cpp.o
-
-.PHONY : code/keywords/Return.o
-
-# target to build an object file
-code/keywords/Return.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.o
-.PHONY : code/keywords/Return.cpp.o
-
-code/keywords/Return.i: code/keywords/Return.cpp.i
-
-.PHONY : code/keywords/Return.i
-
-# target to preprocess a source file
-code/keywords/Return.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.i
-.PHONY : code/keywords/Return.cpp.i
-
-code/keywords/Return.s: code/keywords/Return.cpp.s
-
-.PHONY : code/keywords/Return.s
-
-# target to generate assembly for a file
-code/keywords/Return.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Return.cpp.s
-.PHONY : code/keywords/Return.cpp.s
-
-code/keywords/Var.o: code/keywords/Var.cpp.o
-
-.PHONY : code/keywords/Var.o
-
-# target to build an object file
-code/keywords/Var.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.o
-.PHONY : code/keywords/Var.cpp.o
-
-code/keywords/Var.i: code/keywords/Var.cpp.i
-
-.PHONY : code/keywords/Var.i
-
-# target to preprocess a source file
-code/keywords/Var.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.i
-.PHONY : code/keywords/Var.cpp.i
-
-code/keywords/Var.s: code/keywords/Var.cpp.s
-
-.PHONY : code/keywords/Var.s
-
-# target to generate assembly for a file
-code/keywords/Var.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/Var.cpp.s
-.PHONY : code/keywords/Var.cpp.s
-
-code/keywords/natives/Print.o: code/keywords/natives/Print.cpp.o
-
-.PHONY : code/keywords/natives/Print.o
-
-# target to build an object file
-code/keywords/natives/Print.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.o
-.PHONY : code/keywords/natives/Print.cpp.o
-
-code/keywords/natives/Print.i: code/keywords/natives/Print.cpp.i
-
-.PHONY : code/keywords/natives/Print.i
-
-# target to preprocess a source file
-code/keywords/natives/Print.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.i
-.PHONY : code/keywords/natives/Print.cpp.i
-
-code/keywords/natives/Print.s: code/keywords/natives/Print.cpp.s
-
-.PHONY : code/keywords/natives/Print.s
-
-# target to generate assembly for a file
-code/keywords/natives/Print.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/keywords/natives/Print.cpp.s
-.PHONY : code/keywords/natives/Print.cpp.s
-
-code/parsers/CinParser.o: code/parsers/CinParser.cpp.o
-
-.PHONY : code/parsers/CinParser.o
-
-# target to build an object file
-code/parsers/CinParser.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.o
-.PHONY : code/parsers/CinParser.cpp.o
-
-code/parsers/CinParser.i: code/parsers/CinParser.cpp.i
-
-.PHONY : code/parsers/CinParser.i
-
-# target to preprocess a source file
-code/parsers/CinParser.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.i
-.PHONY : code/parsers/CinParser.cpp.i
-
-code/parsers/CinParser.s: code/parsers/CinParser.cpp.s
-
-.PHONY : code/parsers/CinParser.s
-
-# target to generate assembly for a file
-code/parsers/CinParser.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/CinParser.cpp.s
-.PHONY : code/parsers/CinParser.cpp.s
-
-code/parsers/FunctionParser.o: code/parsers/FunctionParser.cpp.o
-
-.PHONY : code/parsers/FunctionParser.o
-
-# target to build an object file
-code/parsers/FunctionParser.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.o
-.PHONY : code/parsers/FunctionParser.cpp.o
-
-code/parsers/FunctionParser.i: code/parsers/FunctionParser.cpp.i
-
-.PHONY : code/parsers/FunctionParser.i
-
-# target to preprocess a source file
-code/parsers/FunctionParser.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.i
-.PHONY : code/parsers/FunctionParser.cpp.i
-
-code/parsers/FunctionParser.s: code/parsers/FunctionParser.cpp.s
-
-.PHONY : code/parsers/FunctionParser.s
-
-# target to generate assembly for a file
-code/parsers/FunctionParser.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/FunctionParser.cpp.s
-.PHONY : code/parsers/FunctionParser.cpp.s
-
-code/parsers/GenericParser.o: code/parsers/GenericParser.cpp.o
-
-.PHONY : code/parsers/GenericParser.o
-
-# target to build an object file
-code/parsers/GenericParser.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.o
-.PHONY : code/parsers/GenericParser.cpp.o
-
-code/parsers/GenericParser.i: code/parsers/GenericParser.cpp.i
-
-.PHONY : code/parsers/GenericParser.i
-
-# target to preprocess a source file
-code/parsers/GenericParser.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.i
-.PHONY : code/parsers/GenericParser.cpp.i
-
-code/parsers/GenericParser.s: code/parsers/GenericParser.cpp.s
-
-.PHONY : code/parsers/GenericParser.s
-
-# target to generate assembly for a file
-code/parsers/GenericParser.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/parsers/GenericParser.cpp.s
-.PHONY : code/parsers/GenericParser.cpp.s
-
-code/reqeusters/BlockRequester.o: code/reqeusters/BlockRequester.cpp.o
-
-.PHONY : code/reqeusters/BlockRequester.o
-
-# target to build an object file
-code/reqeusters/BlockRequester.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/BlockRequester.cpp.o
-.PHONY : code/reqeusters/BlockRequester.cpp.o
-
-code/reqeusters/BlockRequester.i: code/reqeusters/BlockRequester.cpp.i
-
-.PHONY : code/reqeusters/BlockRequester.i
-
-# target to preprocess a source file
-code/reqeusters/BlockRequester.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/BlockRequester.cpp.i
-.PHONY : code/reqeusters/BlockRequester.cpp.i
-
-code/reqeusters/BlockRequester.s: code/reqeusters/BlockRequester.cpp.s
-
-.PHONY : code/reqeusters/BlockRequester.s
-
-# target to generate assembly for a file
-code/reqeusters/BlockRequester.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/BlockRequester.cpp.s
-.PHONY : code/reqeusters/BlockRequester.cpp.s
-
-code/reqeusters/CinRequester.o: code/reqeusters/CinRequester.cpp.o
-
-.PHONY : code/reqeusters/CinRequester.o
-
-# target to build an object file
-code/reqeusters/CinRequester.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.o
-.PHONY : code/reqeusters/CinRequester.cpp.o
-
-code/reqeusters/CinRequester.i: code/reqeusters/CinRequester.cpp.i
-
-.PHONY : code/reqeusters/CinRequester.i
-
-# target to preprocess a source file
-code/reqeusters/CinRequester.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.i
-.PHONY : code/reqeusters/CinRequester.cpp.i
-
-code/reqeusters/CinRequester.s: code/reqeusters/CinRequester.cpp.s
-
-.PHONY : code/reqeusters/CinRequester.s
-
-# target to generate assembly for a file
-code/reqeusters/CinRequester.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/CinRequester.cpp.s
-.PHONY : code/reqeusters/CinRequester.cpp.s
-
-code/reqeusters/FunctionRequester.o: code/reqeusters/FunctionRequester.cpp.o
-
-.PHONY : code/reqeusters/FunctionRequester.o
-
-# target to build an object file
-code/reqeusters/FunctionRequester.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.o
-.PHONY : code/reqeusters/FunctionRequester.cpp.o
-
-code/reqeusters/FunctionRequester.i: code/reqeusters/FunctionRequester.cpp.i
-
-.PHONY : code/reqeusters/FunctionRequester.i
-
-# target to preprocess a source file
-code/reqeusters/FunctionRequester.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.i
-.PHONY : code/reqeusters/FunctionRequester.cpp.i
-
-code/reqeusters/FunctionRequester.s: code/reqeusters/FunctionRequester.cpp.s
-
-.PHONY : code/reqeusters/FunctionRequester.s
-
-# target to generate assembly for a file
-code/reqeusters/FunctionRequester.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/FunctionRequester.cpp.s
-.PHONY : code/reqeusters/FunctionRequester.cpp.s
-
-code/reqeusters/VectorRequester.o: code/reqeusters/VectorRequester.cpp.o
-
-.PHONY : code/reqeusters/VectorRequester.o
-
-# target to build an object file
-code/reqeusters/VectorRequester.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.o
-.PHONY : code/reqeusters/VectorRequester.cpp.o
-
-code/reqeusters/VectorRequester.i: code/reqeusters/VectorRequester.cpp.i
-
-.PHONY : code/reqeusters/VectorRequester.i
-
-# target to preprocess a source file
-code/reqeusters/VectorRequester.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.i
-.PHONY : code/reqeusters/VectorRequester.cpp.i
-
-code/reqeusters/VectorRequester.s: code/reqeusters/VectorRequester.cpp.s
-
-.PHONY : code/reqeusters/VectorRequester.s
-
-# target to generate assembly for a file
-code/reqeusters/VectorRequester.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/code/reqeusters/VectorRequester.cpp.s
-.PHONY : code/reqeusters/VectorRequester.cpp.s
-
-data/IOR.o: data/IOR.cpp.o
-
-.PHONY : data/IOR.o
-
-# target to build an object file
-data/IOR.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.o
-.PHONY : data/IOR.cpp.o
-
-data/IOR.i: data/IOR.cpp.i
-
-.PHONY : data/IOR.i
-
-# target to preprocess a source file
-data/IOR.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.i
-.PHONY : data/IOR.cpp.i
-
-data/IOR.s: data/IOR.cpp.s
-
-.PHONY : data/IOR.s
-
-# target to generate assembly for a file
-data/IOR.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/IOR.cpp.s
-.PHONY : data/IOR.cpp.s
-
-data/Memory.o: data/Memory.cpp.o
-
-.PHONY : data/Memory.o
-
-# target to build an object file
-data/Memory.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.o
-.PHONY : data/Memory.cpp.o
-
-data/Memory.i: data/Memory.cpp.i
-
-.PHONY : data/Memory.i
-
-# target to preprocess a source file
-data/Memory.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.i
-.PHONY : data/Memory.cpp.i
-
-data/Memory.s: data/Memory.cpp.s
-
-.PHONY : data/Memory.s
-
-# target to generate assembly for a file
-data/Memory.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/Memory.cpp.s
-.PHONY : data/Memory.cpp.s
-
-data/datatypes/AnonymousObject.o: data/datatypes/AnonymousObject.cpp.o
-
-.PHONY : data/datatypes/AnonymousObject.o
-
-# target to build an object file
-data/datatypes/AnonymousObject.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.o
-.PHONY : data/datatypes/AnonymousObject.cpp.o
-
-data/datatypes/AnonymousObject.i: data/datatypes/AnonymousObject.cpp.i
-
-.PHONY : data/datatypes/AnonymousObject.i
-
-# target to preprocess a source file
-data/datatypes/AnonymousObject.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.i
-.PHONY : data/datatypes/AnonymousObject.cpp.i
-
-data/datatypes/AnonymousObject.s: data/datatypes/AnonymousObject.cpp.s
-
-.PHONY : data/datatypes/AnonymousObject.s
-
-# target to generate assembly for a file
-data/datatypes/AnonymousObject.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/AnonymousObject.cpp.s
-.PHONY : data/datatypes/AnonymousObject.cpp.s
-
-data/datatypes/PyObject.o: data/datatypes/PyObject.cpp.o
-
-.PHONY : data/datatypes/PyObject.o
-
-# target to build an object file
-data/datatypes/PyObject.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.o
-.PHONY : data/datatypes/PyObject.cpp.o
-
-data/datatypes/PyObject.i: data/datatypes/PyObject.cpp.i
-
-.PHONY : data/datatypes/PyObject.i
-
-# target to preprocess a source file
-data/datatypes/PyObject.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.i
-.PHONY : data/datatypes/PyObject.cpp.i
-
-data/datatypes/PyObject.s: data/datatypes/PyObject.cpp.s
-
-.PHONY : data/datatypes/PyObject.s
-
-# target to generate assembly for a file
-data/datatypes/PyObject.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/PyObject.cpp.s
-.PHONY : data/datatypes/PyObject.cpp.s
-
-data/datatypes/natives/binary/AdditionOperator.o: data/datatypes/natives/binary/AdditionOperator.cpp.o
-
-.PHONY : data/datatypes/natives/binary/AdditionOperator.o
-
-# target to build an object file
-data/datatypes/natives/binary/AdditionOperator.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.o
-.PHONY : data/datatypes/natives/binary/AdditionOperator.cpp.o
-
-data/datatypes/natives/binary/AdditionOperator.i: data/datatypes/natives/binary/AdditionOperator.cpp.i
-
-.PHONY : data/datatypes/natives/binary/AdditionOperator.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/AdditionOperator.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.i
-.PHONY : data/datatypes/natives/binary/AdditionOperator.cpp.i
-
-data/datatypes/natives/binary/AdditionOperator.s: data/datatypes/natives/binary/AdditionOperator.cpp.s
-
-.PHONY : data/datatypes/natives/binary/AdditionOperator.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/AdditionOperator.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/AdditionOperator.cpp.s
-.PHONY : data/datatypes/natives/binary/AdditionOperator.cpp.s
-
-data/datatypes/natives/binary/BinaryNativeFunction.o: data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
-
-.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.o
-
-# target to build an object file
-data/datatypes/natives/binary/BinaryNativeFunction.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
-.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.o
-
-data/datatypes/natives/binary/BinaryNativeFunction.i: data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
-
-.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/BinaryNativeFunction.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
-.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.i
-
-data/datatypes/natives/binary/BinaryNativeFunction.s: data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
-
-.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/BinaryNativeFunction.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
-.PHONY : data/datatypes/natives/binary/BinaryNativeFunction.cpp.s
-
-data/datatypes/natives/binary/EqualityCheckOperator.o: data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
-
-.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.o
-
-# target to build an object file
-data/datatypes/natives/binary/EqualityCheckOperator.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
-.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.cpp.o
-
-data/datatypes/natives/binary/EqualityCheckOperator.i: data/datatypes/natives/binary/EqualityCheckOperator.cpp.i
-
-.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/EqualityCheckOperator.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.i
-.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.cpp.i
-
-data/datatypes/natives/binary/EqualityCheckOperator.s: data/datatypes/natives/binary/EqualityCheckOperator.cpp.s
-
-.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/EqualityCheckOperator.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/EqualityCheckOperator.cpp.s
-.PHONY : data/datatypes/natives/binary/EqualityCheckOperator.cpp.s
-
-data/datatypes/natives/binary/MultiplicationOperator.o: data/datatypes/natives/binary/MultiplicationOperator.cpp.o
-
-.PHONY : data/datatypes/natives/binary/MultiplicationOperator.o
-
-# target to build an object file
-data/datatypes/natives/binary/MultiplicationOperator.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.o
-.PHONY : data/datatypes/natives/binary/MultiplicationOperator.cpp.o
-
-data/datatypes/natives/binary/MultiplicationOperator.i: data/datatypes/natives/binary/MultiplicationOperator.cpp.i
-
-.PHONY : data/datatypes/natives/binary/MultiplicationOperator.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/MultiplicationOperator.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.i
-.PHONY : data/datatypes/natives/binary/MultiplicationOperator.cpp.i
-
-data/datatypes/natives/binary/MultiplicationOperator.s: data/datatypes/natives/binary/MultiplicationOperator.cpp.s
-
-.PHONY : data/datatypes/natives/binary/MultiplicationOperator.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/MultiplicationOperator.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/MultiplicationOperator.cpp.s
-.PHONY : data/datatypes/natives/binary/MultiplicationOperator.cpp.s
-
-data/datatypes/natives/binary/PointerAssignOperator.o: data/datatypes/natives/binary/PointerAssignOperator.cpp.o
-
-.PHONY : data/datatypes/natives/binary/PointerAssignOperator.o
-
-# target to build an object file
-data/datatypes/natives/binary/PointerAssignOperator.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.o
-.PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.o
-
-data/datatypes/natives/binary/PointerAssignOperator.i: data/datatypes/natives/binary/PointerAssignOperator.cpp.i
-
-.PHONY : data/datatypes/natives/binary/PointerAssignOperator.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/PointerAssignOperator.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.i
-.PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.i
-
-data/datatypes/natives/binary/PointerAssignOperator.s: data/datatypes/natives/binary/PointerAssignOperator.cpp.s
-
-.PHONY : data/datatypes/natives/binary/PointerAssignOperator.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/PointerAssignOperator.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/PointerAssignOperator.cpp.s
-.PHONY : data/datatypes/natives/binary/PointerAssignOperator.cpp.s
-
-data/datatypes/natives/binary/SubtractionOperator.o: data/datatypes/natives/binary/SubtractionOperator.cpp.o
-
-.PHONY : data/datatypes/natives/binary/SubtractionOperator.o
-
-# target to build an object file
-data/datatypes/natives/binary/SubtractionOperator.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.o
-.PHONY : data/datatypes/natives/binary/SubtractionOperator.cpp.o
-
-data/datatypes/natives/binary/SubtractionOperator.i: data/datatypes/natives/binary/SubtractionOperator.cpp.i
-
-.PHONY : data/datatypes/natives/binary/SubtractionOperator.i
-
-# target to preprocess a source file
-data/datatypes/natives/binary/SubtractionOperator.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.i
-.PHONY : data/datatypes/natives/binary/SubtractionOperator.cpp.i
-
-data/datatypes/natives/binary/SubtractionOperator.s: data/datatypes/natives/binary/SubtractionOperator.cpp.s
-
-.PHONY : data/datatypes/natives/binary/SubtractionOperator.s
-
-# target to generate assembly for a file
-data/datatypes/natives/binary/SubtractionOperator.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/binary/SubtractionOperator.cpp.s
-.PHONY : data/datatypes/natives/binary/SubtractionOperator.cpp.s
-
-data/datatypes/natives/unary/UnaryNativeFunction.o: data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
-
-.PHONY : data/datatypes/natives/unary/UnaryNativeFunction.o
-
-# target to build an object file
-data/datatypes/natives/unary/UnaryNativeFunction.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
-.PHONY : data/datatypes/natives/unary/UnaryNativeFunction.cpp.o
-
-data/datatypes/natives/unary/UnaryNativeFunction.i: data/datatypes/natives/unary/UnaryNativeFunction.cpp.i
-
-.PHONY : data/datatypes/natives/unary/UnaryNativeFunction.i
-
-# target to preprocess a source file
-data/datatypes/natives/unary/UnaryNativeFunction.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.i
-.PHONY : data/datatypes/natives/unary/UnaryNativeFunction.cpp.i
-
-data/datatypes/natives/unary/UnaryNativeFunction.s: data/datatypes/natives/unary/UnaryNativeFunction.cpp.s
-
-.PHONY : data/datatypes/natives/unary/UnaryNativeFunction.s
-
-# target to generate assembly for a file
-data/datatypes/natives/unary/UnaryNativeFunction.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/natives/unary/UnaryNativeFunction.cpp.s
-.PHONY : data/datatypes/natives/unary/UnaryNativeFunction.cpp.s
-
-data/datatypes/primitive/PyBoolean.o: data/datatypes/primitive/PyBoolean.cpp.o
-
-.PHONY : data/datatypes/primitive/PyBoolean.o
-
-# target to build an object file
-data/datatypes/primitive/PyBoolean.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.o
-.PHONY : data/datatypes/primitive/PyBoolean.cpp.o
-
-data/datatypes/primitive/PyBoolean.i: data/datatypes/primitive/PyBoolean.cpp.i
-
-.PHONY : data/datatypes/primitive/PyBoolean.i
-
-# target to preprocess a source file
-data/datatypes/primitive/PyBoolean.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.i
-.PHONY : data/datatypes/primitive/PyBoolean.cpp.i
-
-data/datatypes/primitive/PyBoolean.s: data/datatypes/primitive/PyBoolean.cpp.s
-
-.PHONY : data/datatypes/primitive/PyBoolean.s
-
-# target to generate assembly for a file
-data/datatypes/primitive/PyBoolean.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyBoolean.cpp.s
-.PHONY : data/datatypes/primitive/PyBoolean.cpp.s
-
-data/datatypes/primitive/PyFunction.o: data/datatypes/primitive/PyFunction.cpp.o
-
-.PHONY : data/datatypes/primitive/PyFunction.o
-
-# target to build an object file
-data/datatypes/primitive/PyFunction.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.o
-.PHONY : data/datatypes/primitive/PyFunction.cpp.o
-
-data/datatypes/primitive/PyFunction.i: data/datatypes/primitive/PyFunction.cpp.i
-
-.PHONY : data/datatypes/primitive/PyFunction.i
-
-# target to preprocess a source file
-data/datatypes/primitive/PyFunction.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.i
-.PHONY : data/datatypes/primitive/PyFunction.cpp.i
-
-data/datatypes/primitive/PyFunction.s: data/datatypes/primitive/PyFunction.cpp.s
-
-.PHONY : data/datatypes/primitive/PyFunction.s
-
-# target to generate assembly for a file
-data/datatypes/primitive/PyFunction.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyFunction.cpp.s
-.PHONY : data/datatypes/primitive/PyFunction.cpp.s
-
-data/datatypes/primitive/PyInteger.o: data/datatypes/primitive/PyInteger.cpp.o
-
-.PHONY : data/datatypes/primitive/PyInteger.o
-
-# target to build an object file
-data/datatypes/primitive/PyInteger.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.o
-.PHONY : data/datatypes/primitive/PyInteger.cpp.o
-
-data/datatypes/primitive/PyInteger.i: data/datatypes/primitive/PyInteger.cpp.i
-
-.PHONY : data/datatypes/primitive/PyInteger.i
-
-# target to preprocess a source file
-data/datatypes/primitive/PyInteger.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.i
-.PHONY : data/datatypes/primitive/PyInteger.cpp.i
-
-data/datatypes/primitive/PyInteger.s: data/datatypes/primitive/PyInteger.cpp.s
-
-.PHONY : data/datatypes/primitive/PyInteger.s
-
-# target to generate assembly for a file
-data/datatypes/primitive/PyInteger.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyInteger.cpp.s
-.PHONY : data/datatypes/primitive/PyInteger.cpp.s
-
-data/datatypes/primitive/PyPrimitive.o: data/datatypes/primitive/PyPrimitive.cpp.o
-
-.PHONY : data/datatypes/primitive/PyPrimitive.o
-
-# target to build an object file
-data/datatypes/primitive/PyPrimitive.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.o
-.PHONY : data/datatypes/primitive/PyPrimitive.cpp.o
-
-data/datatypes/primitive/PyPrimitive.i: data/datatypes/primitive/PyPrimitive.cpp.i
-
-.PHONY : data/datatypes/primitive/PyPrimitive.i
-
-# target to preprocess a source file
-data/datatypes/primitive/PyPrimitive.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.i
-.PHONY : data/datatypes/primitive/PyPrimitive.cpp.i
-
-data/datatypes/primitive/PyPrimitive.s: data/datatypes/primitive/PyPrimitive.cpp.s
-
-.PHONY : data/datatypes/primitive/PyPrimitive.s
-
-# target to generate assembly for a file
-data/datatypes/primitive/PyPrimitive.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyPrimitive.cpp.s
-.PHONY : data/datatypes/primitive/PyPrimitive.cpp.s
-
-data/datatypes/primitive/PyString.o: data/datatypes/primitive/PyString.cpp.o
-
-.PHONY : data/datatypes/primitive/PyString.o
-
-# target to build an object file
-data/datatypes/primitive/PyString.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.o
-.PHONY : data/datatypes/primitive/PyString.cpp.o
-
-data/datatypes/primitive/PyString.i: data/datatypes/primitive/PyString.cpp.i
-
-.PHONY : data/datatypes/primitive/PyString.i
-
-# target to preprocess a source file
-data/datatypes/primitive/PyString.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.i
-.PHONY : data/datatypes/primitive/PyString.cpp.i
-
-data/datatypes/primitive/PyString.s: data/datatypes/primitive/PyString.cpp.s
-
-.PHONY : data/datatypes/primitive/PyString.s
-
-# target to generate assembly for a file
-data/datatypes/primitive/PyString.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/datatypes/primitive/PyString.cpp.s
-.PHONY : data/datatypes/primitive/PyString.cpp.s
-
-data/memory-structure/Context.o: data/memory-structure/Context.cpp.o
-
-.PHONY : data/memory-structure/Context.o
-
-# target to build an object file
-data/memory-structure/Context.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.o
-.PHONY : data/memory-structure/Context.cpp.o
-
-data/memory-structure/Context.i: data/memory-structure/Context.cpp.i
-
-.PHONY : data/memory-structure/Context.i
-
-# target to preprocess a source file
-data/memory-structure/Context.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.i
-.PHONY : data/memory-structure/Context.cpp.i
-
-data/memory-structure/Context.s: data/memory-structure/Context.cpp.s
-
-.PHONY : data/memory-structure/Context.s
-
-# target to generate assembly for a file
-data/memory-structure/Context.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Context.cpp.s
-.PHONY : data/memory-structure/Context.cpp.s
-
-data/memory-structure/Pool.o: data/memory-structure/Pool.cpp.o
-
-.PHONY : data/memory-structure/Pool.o
-
-# target to build an object file
-data/memory-structure/Pool.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.o
-.PHONY : data/memory-structure/Pool.cpp.o
-
-data/memory-structure/Pool.i: data/memory-structure/Pool.cpp.i
-
-.PHONY : data/memory-structure/Pool.i
-
-# target to preprocess a source file
-data/memory-structure/Pool.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.i
-.PHONY : data/memory-structure/Pool.cpp.i
-
-data/memory-structure/Pool.s: data/memory-structure/Pool.cpp.s
-
-.PHONY : data/memory-structure/Pool.s
-
-# target to generate assembly for a file
-data/memory-structure/Pool.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/Pool.cpp.s
-.PHONY : data/memory-structure/Pool.cpp.s
-
-data/memory-structure/PoolMaster.o: data/memory-structure/PoolMaster.cpp.o
-
-.PHONY : data/memory-structure/PoolMaster.o
-
-# target to build an object file
-data/memory-structure/PoolMaster.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.o
-.PHONY : data/memory-structure/PoolMaster.cpp.o
-
-data/memory-structure/PoolMaster.i: data/memory-structure/PoolMaster.cpp.i
-
-.PHONY : data/memory-structure/PoolMaster.i
-
-# target to preprocess a source file
-data/memory-structure/PoolMaster.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.i
-.PHONY : data/memory-structure/PoolMaster.cpp.i
-
-data/memory-structure/PoolMaster.s: data/memory-structure/PoolMaster.cpp.s
-
-.PHONY : data/memory-structure/PoolMaster.s
-
-# target to generate assembly for a file
-data/memory-structure/PoolMaster.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/data/memory-structure/PoolMaster.cpp.s
-.PHONY : data/memory-structure/PoolMaster.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1014,6 +150,114 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+memory/Class.o: memory/Class.cpp.o
+
+.PHONY : memory/Class.o
+
+# target to build an object file
+memory/Class.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.o
+.PHONY : memory/Class.cpp.o
+
+memory/Class.i: memory/Class.cpp.i
+
+.PHONY : memory/Class.i
+
+# target to preprocess a source file
+memory/Class.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.i
+.PHONY : memory/Class.cpp.i
+
+memory/Class.s: memory/Class.cpp.s
+
+.PHONY : memory/Class.s
+
+# target to generate assembly for a file
+memory/Class.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.s
+.PHONY : memory/Class.cpp.s
+
+parsing/ExpressionParser.o: parsing/ExpressionParser.cpp.o
+
+.PHONY : parsing/ExpressionParser.o
+
+# target to build an object file
+parsing/ExpressionParser.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o
+.PHONY : parsing/ExpressionParser.cpp.o
+
+parsing/ExpressionParser.i: parsing/ExpressionParser.cpp.i
+
+.PHONY : parsing/ExpressionParser.i
+
+# target to preprocess a source file
+parsing/ExpressionParser.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.i
+.PHONY : parsing/ExpressionParser.cpp.i
+
+parsing/ExpressionParser.s: parsing/ExpressionParser.cpp.s
+
+.PHONY : parsing/ExpressionParser.s
+
+# target to generate assembly for a file
+parsing/ExpressionParser.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.s
+.PHONY : parsing/ExpressionParser.cpp.s
+
+parsing/operators/binary/BinaryExpression.o: parsing/operators/binary/BinaryExpression.cpp.o
+
+.PHONY : parsing/operators/binary/BinaryExpression.o
+
+# target to build an object file
+parsing/operators/binary/BinaryExpression.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryExpression.cpp.o
+.PHONY : parsing/operators/binary/BinaryExpression.cpp.o
+
+parsing/operators/binary/BinaryExpression.i: parsing/operators/binary/BinaryExpression.cpp.i
+
+.PHONY : parsing/operators/binary/BinaryExpression.i
+
+# target to preprocess a source file
+parsing/operators/binary/BinaryExpression.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryExpression.cpp.i
+.PHONY : parsing/operators/binary/BinaryExpression.cpp.i
+
+parsing/operators/binary/BinaryExpression.s: parsing/operators/binary/BinaryExpression.cpp.s
+
+.PHONY : parsing/operators/binary/BinaryExpression.s
+
+# target to generate assembly for a file
+parsing/operators/binary/BinaryExpression.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryExpression.cpp.s
+.PHONY : parsing/operators/binary/BinaryExpression.cpp.s
+
+util/NullPointerException.o: util/NullPointerException.cpp.o
+
+.PHONY : util/NullPointerException.o
+
+# target to build an object file
+util/NullPointerException.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.o
+.PHONY : util/NullPointerException.cpp.o
+
+util/NullPointerException.i: util/NullPointerException.cpp.i
+
+.PHONY : util/NullPointerException.i
+
+# target to preprocess a source file
+util/NullPointerException.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.i
+.PHONY : util/NullPointerException.cpp.i
+
+util/NullPointerException.s: util/NullPointerException.cpp.s
+
+.PHONY : util/NullPointerException.s
+
+# target to generate assembly for a file
+util/NullPointerException.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.s
+.PHONY : util/NullPointerException.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1023,105 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... BasicPythonInterpreter"
 	@echo "... edit_cache"
-	@echo "... code/ExpressionParser.o"
-	@echo "... code/ExpressionParser.i"
-	@echo "... code/ExpressionParser.s"
-	@echo "... code/keywords/AbstractKeyword.o"
-	@echo "... code/keywords/AbstractKeyword.i"
-	@echo "... code/keywords/AbstractKeyword.s"
-	@echo "... code/keywords/If.o"
-	@echo "... code/keywords/If.i"
-	@echo "... code/keywords/If.s"
-	@echo "... code/keywords/Return.o"
-	@echo "... code/keywords/Return.i"
-	@echo "... code/keywords/Return.s"
-	@echo "... code/keywords/Var.o"
-	@echo "... code/keywords/Var.i"
-	@echo "... code/keywords/Var.s"
-	@echo "... code/keywords/natives/Print.o"
-	@echo "... code/keywords/natives/Print.i"
-	@echo "... code/keywords/natives/Print.s"
-	@echo "... code/parsers/CinParser.o"
-	@echo "... code/parsers/CinParser.i"
-	@echo "... code/parsers/CinParser.s"
-	@echo "... code/parsers/FunctionParser.o"
-	@echo "... code/parsers/FunctionParser.i"
-	@echo "... code/parsers/FunctionParser.s"
-	@echo "... code/parsers/GenericParser.o"
-	@echo "... code/parsers/GenericParser.i"
-	@echo "... code/parsers/GenericParser.s"
-	@echo "... code/reqeusters/BlockRequester.o"
-	@echo "... code/reqeusters/BlockRequester.i"
-	@echo "... code/reqeusters/BlockRequester.s"
-	@echo "... code/reqeusters/CinRequester.o"
-	@echo "... code/reqeusters/CinRequester.i"
-	@echo "... code/reqeusters/CinRequester.s"
-	@echo "... code/reqeusters/FunctionRequester.o"
-	@echo "... code/reqeusters/FunctionRequester.i"
-	@echo "... code/reqeusters/FunctionRequester.s"
-	@echo "... code/reqeusters/VectorRequester.o"
-	@echo "... code/reqeusters/VectorRequester.i"
-	@echo "... code/reqeusters/VectorRequester.s"
-	@echo "... data/IOR.o"
-	@echo "... data/IOR.i"
-	@echo "... data/IOR.s"
-	@echo "... data/Memory.o"
-	@echo "... data/Memory.i"
-	@echo "... data/Memory.s"
-	@echo "... data/datatypes/AnonymousObject.o"
-	@echo "... data/datatypes/AnonymousObject.i"
-	@echo "... data/datatypes/AnonymousObject.s"
-	@echo "... data/datatypes/PyObject.o"
-	@echo "... data/datatypes/PyObject.i"
-	@echo "... data/datatypes/PyObject.s"
-	@echo "... data/datatypes/natives/binary/AdditionOperator.o"
-	@echo "... data/datatypes/natives/binary/AdditionOperator.i"
-	@echo "... data/datatypes/natives/binary/AdditionOperator.s"
-	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.o"
-	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.i"
-	@echo "... data/datatypes/natives/binary/BinaryNativeFunction.s"
-	@echo "... data/datatypes/natives/binary/EqualityCheckOperator.o"
-	@echo "... data/datatypes/natives/binary/EqualityCheckOperator.i"
-	@echo "... data/datatypes/natives/binary/EqualityCheckOperator.s"
-	@echo "... data/datatypes/natives/binary/MultiplicationOperator.o"
-	@echo "... data/datatypes/natives/binary/MultiplicationOperator.i"
-	@echo "... data/datatypes/natives/binary/MultiplicationOperator.s"
-	@echo "... data/datatypes/natives/binary/PointerAssignOperator.o"
-	@echo "... data/datatypes/natives/binary/PointerAssignOperator.i"
-	@echo "... data/datatypes/natives/binary/PointerAssignOperator.s"
-	@echo "... data/datatypes/natives/binary/SubtractionOperator.o"
-	@echo "... data/datatypes/natives/binary/SubtractionOperator.i"
-	@echo "... data/datatypes/natives/binary/SubtractionOperator.s"
-	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.o"
-	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.i"
-	@echo "... data/datatypes/natives/unary/UnaryNativeFunction.s"
-	@echo "... data/datatypes/primitive/PyBoolean.o"
-	@echo "... data/datatypes/primitive/PyBoolean.i"
-	@echo "... data/datatypes/primitive/PyBoolean.s"
-	@echo "... data/datatypes/primitive/PyFunction.o"
-	@echo "... data/datatypes/primitive/PyFunction.i"
-	@echo "... data/datatypes/primitive/PyFunction.s"
-	@echo "... data/datatypes/primitive/PyInteger.o"
-	@echo "... data/datatypes/primitive/PyInteger.i"
-	@echo "... data/datatypes/primitive/PyInteger.s"
-	@echo "... data/datatypes/primitive/PyPrimitive.o"
-	@echo "... data/datatypes/primitive/PyPrimitive.i"
-	@echo "... data/datatypes/primitive/PyPrimitive.s"
-	@echo "... data/datatypes/primitive/PyString.o"
-	@echo "... data/datatypes/primitive/PyString.i"
-	@echo "... data/datatypes/primitive/PyString.s"
-	@echo "... data/memory-structure/Context.o"
-	@echo "... data/memory-structure/Context.i"
-	@echo "... data/memory-structure/Context.s"
-	@echo "... data/memory-structure/Pool.o"
-	@echo "... data/memory-structure/Pool.i"
-	@echo "... data/memory-structure/Pool.s"
-	@echo "... data/memory-structure/PoolMaster.o"
-	@echo "... data/memory-structure/PoolMaster.i"
-	@echo "... data/memory-structure/PoolMaster.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... memory/Class.o"
+	@echo "... memory/Class.i"
+	@echo "... memory/Class.s"
+	@echo "... parsing/ExpressionParser.o"
+	@echo "... parsing/ExpressionParser.i"
+	@echo "... parsing/ExpressionParser.s"
+	@echo "... parsing/operators/binary/BinaryExpression.o"
+	@echo "... parsing/operators/binary/BinaryExpression.i"
+	@echo "... parsing/operators/binary/BinaryExpression.s"
+	@echo "... util/NullPointerException.o"
+	@echo "... util/NullPointerException.i"
+	@echo "... util/NullPointerException.s"
 .PHONY : help
 
 

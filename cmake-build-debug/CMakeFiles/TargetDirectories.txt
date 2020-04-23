@@ -1,3 +1,0 @@
-/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir
-/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/edit_cache.dir
