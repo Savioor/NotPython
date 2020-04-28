@@ -10,7 +10,7 @@ class BinaryExpression {
 
 public:
 
-    virtual
+    virtual Class* reduce(Class* left, Class* right) = 0;
 
 };
 
