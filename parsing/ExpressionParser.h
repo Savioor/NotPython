@@ -7,6 +7,9 @@
 
 
 #include <map>
+#include <vector>
+#include "../memory/Class.h"
+#include "operators/binary/BinaryOperator.h"
 
 /*
  * ----------------------------------
@@ -39,12 +42,29 @@
  * The only exception to this is numbers.
  *
  */
+enum BREAKER_CLASSES {
+    WHITESPACE,
+    MATH_AND_LOGIC,
+    ENCAPSULATING,
+    DOT_OPERATOR,
+    NUMBER
+};
+
 class ExpressionParser {
 
-protected:
-    std::map<std::string, BinaryExpression> binaryExpr;
+public:
+    ExpressionParser();
 
-    Class* parse(std::string);
+protected:
+    std::map<char, char> numbers;
+    std::map<char, int> breakerClassMap;
+    std::map<std::string, Operator*> operators; // TODO Does this need a custom destructor?
+
+    void insertToBreakerMap(const std::string& chars, int cls);
+
+    Class* parse(const std::string&);
+    std::vector<Operator*>* toOperatorList(const std::string&);
+
 
 };
 

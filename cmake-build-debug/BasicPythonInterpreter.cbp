@@ -99,10 +99,22 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryExpression.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryExpression.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/Addition.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/Addition.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.cpp">

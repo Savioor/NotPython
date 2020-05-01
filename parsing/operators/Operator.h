@@ -1,0 +1,29 @@
+//
+// Created by alexey on 28/04/2020.
+//
+
+#ifndef BASICPYTHONINTERPRETER_OPERATOR_H
+#define BASICPYTHONINTERPRETER_OPERATOR_H
+
+
+enum OPERATOR_TYPE {
+
+    BINARY,
+    UNARY,
+    ENCLOSING,
+    LEGAL_ALPHABETICAL
+
+};
+
+class Operator {
+
+public:
+
+    const OPERATOR_TYPE type;
+
+    Operator(OPERATOR_TYPE);
+
+};
+
+
+#endif //BASICPYTHONINTERPRETER_OPERATOR_H

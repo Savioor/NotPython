@@ -204,32 +204,86 @@ parsing/ExpressionParser.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.s
 .PHONY : parsing/ExpressionParser.cpp.s
 
-parsing/operators/binary/BinaryExpression.o: parsing/operators/binary/BinaryExpression.cpp.o
+parsing/operators/Operator.o: parsing/operators/Operator.cpp.o
 
-.PHONY : parsing/operators/binary/BinaryExpression.o
+.PHONY : parsing/operators/Operator.o
 
 # target to build an object file
-parsing/operators/binary/BinaryExpression.cpp.o:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryExpression.cpp.o
-.PHONY : parsing/operators/binary/BinaryExpression.cpp.o
+parsing/operators/Operator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.o
+.PHONY : parsing/operators/Operator.cpp.o
 
-parsing/operators/binary/BinaryExpression.i: parsing/operators/binary/BinaryExpression.cpp.i
+parsing/operators/Operator.i: parsing/operators/Operator.cpp.i
 
-.PHONY : parsing/operators/binary/BinaryExpression.i
+.PHONY : parsing/operators/Operator.i
 
 # target to preprocess a source file
-parsing/operators/binary/BinaryExpression.cpp.i:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryExpression.cpp.i
-.PHONY : parsing/operators/binary/BinaryExpression.cpp.i
+parsing/operators/Operator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.i
+.PHONY : parsing/operators/Operator.cpp.i
 
-parsing/operators/binary/BinaryExpression.s: parsing/operators/binary/BinaryExpression.cpp.s
+parsing/operators/Operator.s: parsing/operators/Operator.cpp.s
 
-.PHONY : parsing/operators/binary/BinaryExpression.s
+.PHONY : parsing/operators/Operator.s
 
 # target to generate assembly for a file
-parsing/operators/binary/BinaryExpression.cpp.s:
-	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryExpression.cpp.s
-.PHONY : parsing/operators/binary/BinaryExpression.cpp.s
+parsing/operators/Operator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.s
+.PHONY : parsing/operators/Operator.cpp.s
+
+parsing/operators/binary/Addition.o: parsing/operators/binary/Addition.cpp.o
+
+.PHONY : parsing/operators/binary/Addition.o
+
+# target to build an object file
+parsing/operators/binary/Addition.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.o
+.PHONY : parsing/operators/binary/Addition.cpp.o
+
+parsing/operators/binary/Addition.i: parsing/operators/binary/Addition.cpp.i
+
+.PHONY : parsing/operators/binary/Addition.i
+
+# target to preprocess a source file
+parsing/operators/binary/Addition.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.i
+.PHONY : parsing/operators/binary/Addition.cpp.i
+
+parsing/operators/binary/Addition.s: parsing/operators/binary/Addition.cpp.s
+
+.PHONY : parsing/operators/binary/Addition.s
+
+# target to generate assembly for a file
+parsing/operators/binary/Addition.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.s
+.PHONY : parsing/operators/binary/Addition.cpp.s
+
+parsing/operators/binary/BinaryOperator.o: parsing/operators/binary/BinaryOperator.cpp.o
+
+.PHONY : parsing/operators/binary/BinaryOperator.o
+
+# target to build an object file
+parsing/operators/binary/BinaryOperator.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.o
+.PHONY : parsing/operators/binary/BinaryOperator.cpp.o
+
+parsing/operators/binary/BinaryOperator.i: parsing/operators/binary/BinaryOperator.cpp.i
+
+.PHONY : parsing/operators/binary/BinaryOperator.i
+
+# target to preprocess a source file
+parsing/operators/binary/BinaryOperator.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.i
+.PHONY : parsing/operators/binary/BinaryOperator.cpp.i
+
+parsing/operators/binary/BinaryOperator.s: parsing/operators/binary/BinaryOperator.cpp.s
+
+.PHONY : parsing/operators/binary/BinaryOperator.s
+
+# target to generate assembly for a file
+parsing/operators/binary/BinaryOperator.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.s
+.PHONY : parsing/operators/binary/BinaryOperator.cpp.s
 
 util/NullPointerException.o: util/NullPointerException.cpp.o
 
@@ -276,9 +330,15 @@ help:
 	@echo "... parsing/ExpressionParser.o"
 	@echo "... parsing/ExpressionParser.i"
 	@echo "... parsing/ExpressionParser.s"
-	@echo "... parsing/operators/binary/BinaryExpression.o"
-	@echo "... parsing/operators/binary/BinaryExpression.i"
-	@echo "... parsing/operators/binary/BinaryExpression.s"
+	@echo "... parsing/operators/Operator.o"
+	@echo "... parsing/operators/Operator.i"
+	@echo "... parsing/operators/Operator.s"
+	@echo "... parsing/operators/binary/Addition.o"
+	@echo "... parsing/operators/binary/Addition.i"
+	@echo "... parsing/operators/binary/Addition.s"
+	@echo "... parsing/operators/binary/BinaryOperator.o"
+	@echo "... parsing/operators/binary/BinaryOperator.i"
+	@echo "... parsing/operators/binary/BinaryOperator.s"
 	@echo "... util/NullPointerException.o"
 	@echo "... util/NullPointerException.i"
 	@echo "... util/NullPointerException.s"
