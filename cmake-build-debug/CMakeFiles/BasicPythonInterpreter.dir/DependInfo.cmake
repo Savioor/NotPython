@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/memory/Class.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.o"
+  "/home/alexey/CLionProjects/BasicPythonInterpreter/memory/MemoryManager.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.o"
   "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/Addition.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.o"

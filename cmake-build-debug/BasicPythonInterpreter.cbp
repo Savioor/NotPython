@@ -93,6 +93,12 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/Class.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/MemoryManager.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/MemoryManager.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>

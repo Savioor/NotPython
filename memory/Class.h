@@ -10,6 +10,12 @@ class Class {
 
 public:
 
+    Class();
+
+    int references;
+    int expressionDepth;
+    int memoryAllocationLocation;
+
     // Mathematical operations
     virtual Class* leftAdd(Class const& rightElem) = 0;
     virtual Class* leftMult(Class const& rightElem) = 0;

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "BasicPythonInterpreter.pdb"
   "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.o"
+  "CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.o"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.o"

@@ -177,6 +177,33 @@ memory/Class.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.s
 .PHONY : memory/Class.cpp.s
 
+memory/MemoryManager.o: memory/MemoryManager.cpp.o
+
+.PHONY : memory/MemoryManager.o
+
+# target to build an object file
+memory/MemoryManager.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.o
+.PHONY : memory/MemoryManager.cpp.o
+
+memory/MemoryManager.i: memory/MemoryManager.cpp.i
+
+.PHONY : memory/MemoryManager.i
+
+# target to preprocess a source file
+memory/MemoryManager.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.i
+.PHONY : memory/MemoryManager.cpp.i
+
+memory/MemoryManager.s: memory/MemoryManager.cpp.s
+
+.PHONY : memory/MemoryManager.s
+
+# target to generate assembly for a file
+memory/MemoryManager.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.s
+.PHONY : memory/MemoryManager.cpp.s
+
 parsing/ExpressionParser.o: parsing/ExpressionParser.cpp.o
 
 .PHONY : parsing/ExpressionParser.o
@@ -327,6 +354,9 @@ help:
 	@echo "... memory/Class.o"
 	@echo "... memory/Class.i"
 	@echo "... memory/Class.s"
+	@echo "... memory/MemoryManager.o"
+	@echo "... memory/MemoryManager.i"
+	@echo "... memory/MemoryManager.s"
 	@echo "... parsing/ExpressionParser.o"
 	@echo "... parsing/ExpressionParser.i"
 	@echo "... parsing/ExpressionParser.s"
