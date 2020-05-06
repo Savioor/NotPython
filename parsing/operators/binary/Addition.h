@@ -16,7 +16,6 @@ public:
 
     Class* reduce(Class* left, Class* right) override;
 
-
 };
 
 

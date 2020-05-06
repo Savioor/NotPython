@@ -47,13 +47,17 @@ enum BREAKER_CLASSES {
     MATH_AND_LOGIC,
     ENCAPSULATING,
     DOT_OPERATOR,
-    NUMBER
+    LEGAL_ALPHABETICAL
 };
 
 class ExpressionParser {
 
 public:
     ExpressionParser();
+
+    Class* parse(const std::string&);
+    std::vector<Operator*>* toOperatorList(const std::string&);
+    Operator* toOperator(const std::string&, int);
 
 protected:
     std::map<char, char> numbers;
@@ -62,8 +66,6 @@ protected:
 
     void insertToBreakerMap(const std::string& chars, int cls);
 
-    Class* parse(const std::string&);
-    std::vector<Operator*>* toOperatorList(const std::string&);
 
 
 };

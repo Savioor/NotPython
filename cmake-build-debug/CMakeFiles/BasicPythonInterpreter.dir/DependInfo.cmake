@@ -4,14 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/memory/Class.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/memory/MemoryManager.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/Addition.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.o"
-  "/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.cpp" "/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.o"
+  "C:/Users/USER/CLionProjects/NotPython/main.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/memory/Class.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

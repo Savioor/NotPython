@@ -2,6 +2,7 @@
 // Created by alexey on 28/04/2020.
 //
 
+#include <ostream>
 #include "Addition.h"
 
 Class *Addition::reduce(Class *left, Class *right) {
@@ -11,3 +12,5 @@ Class *Addition::reduce(Class *left, Class *right) {
 Addition::Addition() : BinaryOperator() {
 
 }
+
+

@@ -6,12 +6,14 @@
 #define BASICPYTHONINTERPRETER_OPERATOR_H
 
 
+#include "../../memory/Class.h"
+
 enum OPERATOR_TYPE {
 
     BINARY,
     UNARY,
     ENCLOSING,
-    LEGAL_ALPHABETICAL
+    CLASS
 
 };
 
@@ -22,6 +24,8 @@ public:
     const OPERATOR_TYPE type;
 
     Operator(OPERATOR_TYPE);
+
+    virtual Class* getAsClass() const;
 
 };
 

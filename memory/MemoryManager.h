@@ -14,7 +14,7 @@
 class MemoryManager {
 
 public:
-    MemoryManager();
+    static MemoryManager& getManager();
 
     std::vector<Class*> memory;
     std::vector<std::vector<Class*>*> classesByExpDepth;
@@ -24,9 +24,17 @@ public:
     void decreaseExpDepth();
     void increaseExpDepth();
     int allocateNewClass(Class*);
+    void deallocateClass(int);
+    int getCurrentDepth();
 
 protected:
+    static MemoryManager* instance;
     int expressionDepth; // 0 = global expression aka the 'main' function.
+
+private:
+    MemoryManager& operator=(MemoryManager const&) = delete;
+    MemoryManager(MemoryManager const&) = delete;
+    MemoryManager();
 
 };
 

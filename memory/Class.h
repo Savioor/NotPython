@@ -6,15 +6,29 @@
 #define BASICPYTHONINTERPRETER_CLASS_H
 
 
+#include <vector>
+
+enum BuiltInClasses {
+    pyINTEGER,
+    pyBOOL,
+    pyFUNCTION,
+    pyDOUBLE,
+    pySTRING,
+    pyARRAY,
+    pyOTHER
+};
+
 class Class {
 
 public:
 
     Class();
+    virtual ~Class() = default;
 
     int references;
     int expressionDepth;
     int memoryAllocationLocation;
+    BuiltInClasses type;
 
     // Mathematical operations
     virtual Class* leftAdd(Class const& rightElem) = 0;
