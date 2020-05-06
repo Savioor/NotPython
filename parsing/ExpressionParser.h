@@ -8,6 +8,7 @@
 
 #include <map>
 #include <vector>
+#include "../util/LinkedList.h"
 #include "../memory/Class.h"
 #include "operators/binary/BinaryOperator.h"
 
@@ -56,7 +57,7 @@ public:
     ExpressionParser();
 
     Class* parse(const std::string&);
-    std::vector<Operator*>* toOperatorList(const std::string&);
+    LinkedList<Operator*>* toOperatorList(const std::string&);
     Operator* toOperator(const std::string&, int);
 
 protected:

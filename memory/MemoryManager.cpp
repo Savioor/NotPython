@@ -42,6 +42,10 @@ int MemoryManager::allocateNewClass(Class* newClass) {
         throw std::runtime_error("Attempting to allocate class that was already allocated");
     }
 
+#if MEM_ALLOC_DEBUG
+    std::cout << "Allocating new class. Current classes allocated = " << (1 + memory.size() - freeOpenCellsStack.size()) << std::endl;
+#endif
+
     classesByExpDepth.at(classesByExpDepth.size() - 1)->push_back(newClass);
     newClass->expressionDepth = getCurrentDepth();
 

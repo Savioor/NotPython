@@ -6,7 +6,6 @@
 #define BASICPYTHONINTERPRETER_LINKEDLIST_H
 
 #include "Node.h"
-#include "../data/datatypes/PyObject.h"
 
 template <class T>
 class LinkedList {

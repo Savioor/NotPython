@@ -10,7 +10,7 @@ Class *Addition::reduce(Class *left, Class *right) {
 }
 
 Addition::Addition() : BinaryOperator() {
-
+    precedence = 11;
 }
 
 

@@ -10,8 +10,13 @@
 #include "../debug.h"
 
 
-Class *ExpressionParser::parse(const std::string&) {
+Class *ExpressionParser::parse(const std::string& data) {
 
+    LinkedList<Operator *>* tokenizedExpr = toOperatorList(data);
+
+    while (tokenizedExpr->getStart() != nullptr) {
+
+    }
 
     return nullptr;
 }
@@ -42,9 +47,9 @@ void ExpressionParser::insertToBreakerMap(const std::string& chars, int cls) {
     }
 }
 
-std::vector<Operator *>* ExpressionParser::toOperatorList(const std::string& data) {
+LinkedList<Operator *>* ExpressionParser::toOperatorList(const std::string& data) {
 
-    auto* returnList = new std::vector<Operator*>();
+    auto* returnList = new LinkedList<Operator*>();
     int context = WHITESPACE;
     int currContext;
     std::string currentOp;
@@ -67,13 +72,13 @@ std::vector<Operator *>* ExpressionParser::toOperatorList(const std::string& dat
             // Context broke let's parse that other piece of shit
 
 #if EXPR_PARSE_DEBUG
-            std::cout << "Context swithced. Curr op = " << currentOp << std::endl;
+            std::cout << "Context switched. Curr op = " << currentOp << std::endl;
 #endif
 
             Operator* op = toOperator(currentOp, context);
 
             if (op != nullptr)
-                returnList->push_back(op);
+                returnList->addToBackV(op);
 
             currentOp = c;
         } else {
@@ -83,7 +88,10 @@ std::vector<Operator *>* ExpressionParser::toOperatorList(const std::string& dat
         context = currContext;
     }
 
-    returnList->push_back(toOperator(currentOp, context));
+    Operator* op = toOperator(currentOp, context);
+
+    if (op != nullptr)
+        returnList->addToBackV(op);
 
     return returnList;
 }

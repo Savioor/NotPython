@@ -27,6 +27,14 @@ public:
 
     virtual Class* getAsClass() const;
 
+    int getPrecedence();
+
+protected:
+    // Lower = done later. higher = done sooner
+    // Stolen from here https://introcs.cs.princeton.edu/java/11precedence/
+    int precedence;
+
+
 };
 
 
