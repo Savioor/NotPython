@@ -15,9 +15,61 @@ Class *ExpressionParser::parse(const std::string& data) {
     LinkedList<Operator *>* tokenizedExpr = toOperatorList(data);
 
     while (tokenizedExpr->getStart() != nullptr) {
+        Node<Operator*>* toExecute = tokenizedExpr->getStart();
+        Node<Operator*>* current = toExecute;
 
+#if EXPR_PARSE_DEBUG
+        std::cout << "Parsing with " << tokenizedExpr->size() << " operators left." << std::endl;
+#endif
+
+        while (current != nullptr){
+            if (current->value->getPrecedence() > toExecute->value->getPrecedence()) {
+               toExecute = current;
+            }
+            current = current->next;
+        }
+        Operator* currOp = toExecute->value;
+        BinaryOperator* asBin;
+        Class* lClass;
+        Class* rClass;
+
+        switch (currOp->type) {
+
+            case BINARY:
+
+                if (toExecute->prev == nullptr || toExecute->next == nullptr) {
+                    throw std::runtime_error("Binary operator missing left or right operand");
+                }
+                lClass = toExecute->prev->value->getAsClass();
+                rClass = toExecute->next->value->getAsClass();
+                if (lClass == nullptr || rClass == nullptr){
+                    throw std::runtime_error("Right or left operand of binary expression are not classes.");
+                }
+                asBin = (BinaryOperator*) currOp;
+                // TODO love mem leaks :)   (it's the ClassOperator obvsly)
+                tokenizedExpr->connectAfterV(toExecute, new ClassOperator(asBin->reduce(lClass, rClass)));
+
+                tokenizedExpr->disconnectAndKeepAlive(toExecute->prev);
+                tokenizedExpr->disconnectAndKeepAlive(toExecute->next->next);
+                tokenizedExpr->disconnectAndKeepAlive(toExecute);
+
+                break;
+
+            case UNARY: // TODO
+                break;
+            case ENCLOSING: // TODO
+                break;
+            case CLASS:
+                if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Easy way to check length == 1
+                    return currOp->getAsClass();
+                } else {
+                    throw std::runtime_error("Can't finish parsing equation");
+                }
+                break;
+        }
     }
 
+    throw std::runtime_error("Can't finish parsing equation");
     return nullptr;
 }
 

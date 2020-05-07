@@ -31,11 +31,7 @@ public:
     virtual T valueAt(int i){
         return (*startNode + i)->value;
     };
-    virtual void disconnect(int i){
-        if (startNode == nullptr)
-            return;
-        disconnect(at(i));
-    };
+
     virtual void disconnectAndKeepAlive(int i){
         if (startNode == nullptr)
             return;
@@ -99,11 +95,6 @@ public:
         connectBefore(n, toAdd);
     };
 
-    virtual void disconnect(Node<T>* n){
-        disconnectAndKeepAlive(n);
-        if (n != nullptr)
-            delete n;
-    };
     virtual void disconnectAndKeepAlive(Node<T>* n){
         Node<T>* bef = n->prev;
         Node<T>* aft = n->next;

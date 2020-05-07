@@ -4,9 +4,12 @@
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../memory/Class.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../memory/MemoryManager.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../memory/builtins/Integer.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../parsing/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../parsing/operators/Operator.h
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj: ../memory/Class.cpp
 CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj: ../memory/Class.h
@@ -30,6 +33,8 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsi
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/Operator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/binary/Addition.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj: ../memory/Class.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj: ../parsing/operators/ClassOperator.cpp

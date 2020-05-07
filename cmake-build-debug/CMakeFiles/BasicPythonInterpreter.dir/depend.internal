@@ -5,9 +5,12 @@ CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/main.cpp
  C:/Users/USER/CLionProjects/NotPython/memory/Class.h
  C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
+ C:/Users/USER/CLionProjects/NotPython/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/Class.cpp
  C:/Users/USER/CLionProjects/NotPython/memory/Class.h
@@ -31,6 +34,8 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
+ C:/Users/USER/CLionProjects/NotPython/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/Class.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.cpp

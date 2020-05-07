@@ -2,16 +2,15 @@
 #include <iostream>
 #include "parsing/ExpressionParser.h"
 #include "memory/MemoryManager.h"
+#include "memory/builtins/Integer.h"
 
 int main() {
 
     MemoryManager::getManager().increaseExpDepth();
     ExpressionParser parser = ExpressionParser();
-    auto lis = *parser.toOperatorList("1 + 1");
+    Class* cls = parser.parse("51 + 1 51");
 
-    for (auto i : lis){
-        std::cout << "bruh\n";
-    }
+    std::cout << ((Integer*)cls)->getValue();
 
     return 0;
 }

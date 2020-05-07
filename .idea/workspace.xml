@@ -13,13 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/MemoryManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/Operator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/Operator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/Operator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/Operator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/Addition.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/Addition.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/LinkedList.h" beforeDir="false" afterPath="$PROJECT_DIR$/util/LinkedList.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/keywords" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/parsing/operators/binary" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
@@ -114,7 +109,8 @@
       <workItem from="1587737262201" duration="2586000" />
       <workItem from="1587759309867" duration="672000" />
       <workItem from="1588764224922" duration="11794000" />
-      <workItem from="1588782237093" duration="3043000" />
+      <workItem from="1588782237093" duration="3760000" />
+      <workItem from="1588860918589" duration="6485000" />
     </task>
     <servers />
   </component>
@@ -147,47 +143,64 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="307" y="518" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685412235" />
-    <state width="1877" height="158" key="GridCell.Tab.0.bottom" timestamp="1588781368648">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1588869900036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588781368648" />
-    <state width="1877" height="158" key="GridCell.Tab.0.center" timestamp="1588781368648">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869900036" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1588869900036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588781368648" />
-    <state width="1877" height="158" key="GridCell.Tab.0.left" timestamp="1588781368648">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869900036" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1588869900036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588781368648" />
-    <state width="1877" height="158" key="GridCell.Tab.0.right" timestamp="1588781368648">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869900036" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1588869900036">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="158" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588781368648" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869900036" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1588869899958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869899958" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1588869899958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869899958" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1588869899958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869899958" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1588869899958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588869899958" />
     <state x="540" y="247" key="SettingsEditor" timestamp="1588685480862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="247" key="SettingsEditor/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685480862" />
-    <state x="739" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1588782250382">
+    <state x="739" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1588860922221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588782250382" />
+    <state x="739" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588860922221" />
     <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1588771246608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="701" y="163" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588771246608" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1588695114921">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1588865732797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588695114921" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588774572277">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588865732797" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588870293565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588774572277" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588870293565" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />
+        <watch expression="tokenizedExpr-&gt;startNode" />
       </configuration>
     </watches-manager>
   </component>
