@@ -13,3 +13,13 @@ Class::Class() {
     type = pyOTHER;
 
 }
+
+static_ver_bin_impl(add, leftAdd);
+static_ver_bin_impl(sub, leftSub);
+static_ver_bin_impl(mult, leftMult);
+static_ver_bin_impl(div, leftDiv);
+static_ver_bin_impl(mod, leftModulu);
+static_ver_bin_impl(pow, leftPower);
+
+
+

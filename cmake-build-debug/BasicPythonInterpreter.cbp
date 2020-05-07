@@ -131,6 +131,12 @@
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>

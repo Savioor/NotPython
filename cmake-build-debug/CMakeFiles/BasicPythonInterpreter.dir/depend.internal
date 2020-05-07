@@ -34,6 +34,7 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
  C:/Users/USER/CLionProjects/NotPython/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj
@@ -56,6 +57,12 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp
  C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.h

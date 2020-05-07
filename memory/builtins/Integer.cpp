@@ -4,6 +4,7 @@
 
 #include <ostream>
 #include "Integer.h"
+#include <cmath>
 
 Class *Integer::leftAdd(Class const &rightElem) {
     switch (rightElem.type){
@@ -20,22 +21,72 @@ Class *Integer::leftAdd(Class const &rightElem) {
 }
 
 Class *Integer::leftMult(Class const &rightElem) {
+    switch (rightElem.type){
+        case pyINTEGER:
+            return new Integer(value * dynamic_cast<Integer const&>(rightElem).value);
+        case pyDOUBLE:
+
+            break;
+        case pySTRING:
+
+            break;
+    }
     return nullptr;
 }
 
 Class *Integer::leftDiv(Class const &rightElem) {
+    switch (rightElem.type){
+        case pyINTEGER:
+            return new Integer(value / dynamic_cast<Integer const&>(rightElem).value);
+        case pyDOUBLE:
+
+            break;
+        case pySTRING:
+
+            break;
+    }
     return nullptr;
 }
 
 Class *Integer::leftSub(Class const &rightElem) {
+    switch (rightElem.type){
+        case pyINTEGER:
+            return new Integer(value - dynamic_cast<Integer const&>(rightElem).value);
+        case pyDOUBLE:
+
+            break;
+        case pySTRING:
+
+            break;
+    }
     return nullptr;
 }
 
 Class *Integer::leftModulu(Class const &rightElem) {
+    switch (rightElem.type){
+        case pyINTEGER:
+            return new Integer(value % dynamic_cast<Integer const&>(rightElem).value);
+        case pyDOUBLE:
+
+            break;
+        case pySTRING:
+
+            break;
+    }
     return nullptr;
 }
 
 Class *Integer::leftPower(Class const &rightElem) {
+    switch (rightElem.type){
+        case pyINTEGER:
+            return new Integer(std::round(std::pow(value, dynamic_cast<Integer const&>(rightElem).value)));
+        case pyDOUBLE:
+
+            break;
+        case pySTRING:
+
+            break;
+    }
     return nullptr;
 }
 

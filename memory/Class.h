@@ -5,6 +5,11 @@
 #ifndef BASICPYTHONINTERPRETER_CLASS_H
 #define BASICPYTHONINTERPRETER_CLASS_H
 
+#define static_ver_bin_decl(name) static Class* name(Class* leftElem, Class* rightElem)
+
+#define static_ver_bin_impl(name, func) Class *Class::name(Class *leftElem, Class *rightElem) { return leftElem->func(*rightElem); }
+
+
 
 #include <vector>
 
@@ -32,13 +37,19 @@ public:
 
     // Mathematical operations
     virtual Class* leftAdd(Class const& rightElem) = 0;
+    static_ver_bin_decl(add);
     virtual Class* leftMult(Class const& rightElem) = 0;
+    static_ver_bin_decl(mult);
     virtual Class* leftDiv(Class const& rightElem) = 0;
+    static_ver_bin_decl(div);
     virtual Class* leftSub(Class const& rightElem) = 0;
+    static_ver_bin_decl(sub);
 
     // Slightly weird mathematical operations
     virtual Class* leftModulu(Class const& rightElem) = 0;
+    static_ver_bin_decl(mod);
     virtual Class* leftPower(Class const& rightElem) = 0;
+    static_ver_bin_decl(pow);
     virtual Class* negate() = 0;
 
     // TODO This should receive List const& when they exist

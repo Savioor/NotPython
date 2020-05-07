@@ -365,6 +365,33 @@ parsing/operators/binary/BinaryOperator.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.s
 .PHONY : parsing/operators/binary/BinaryOperator.cpp.s
 
+parsing/operators/binary/SimpleBinaryOperator.obj: parsing/operators/binary/SimpleBinaryOperator.cpp.obj
+
+.PHONY : parsing/operators/binary/SimpleBinaryOperator.obj
+
+# target to build an object file
+parsing/operators/binary/SimpleBinaryOperator.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj
+.PHONY : parsing/operators/binary/SimpleBinaryOperator.cpp.obj
+
+parsing/operators/binary/SimpleBinaryOperator.i: parsing/operators/binary/SimpleBinaryOperator.cpp.i
+
+.PHONY : parsing/operators/binary/SimpleBinaryOperator.i
+
+# target to preprocess a source file
+parsing/operators/binary/SimpleBinaryOperator.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.i
+.PHONY : parsing/operators/binary/SimpleBinaryOperator.cpp.i
+
+parsing/operators/binary/SimpleBinaryOperator.s: parsing/operators/binary/SimpleBinaryOperator.cpp.s
+
+.PHONY : parsing/operators/binary/SimpleBinaryOperator.s
+
+# target to generate assembly for a file
+parsing/operators/binary/SimpleBinaryOperator.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.s
+.PHONY : parsing/operators/binary/SimpleBinaryOperator.cpp.s
+
 util/NullPointerException.obj: util/NullPointerException.cpp.obj
 
 .PHONY : util/NullPointerException.obj
@@ -428,6 +455,9 @@ help:
 	@echo ... parsing/operators/binary/BinaryOperator.obj
 	@echo ... parsing/operators/binary/BinaryOperator.i
 	@echo ... parsing/operators/binary/BinaryOperator.s
+	@echo ... parsing/operators/binary/SimpleBinaryOperator.obj
+	@echo ... parsing/operators/binary/SimpleBinaryOperator.i
+	@echo ... parsing/operators/binary/SimpleBinaryOperator.s
 	@echo ... util/NullPointerException.obj
 	@echo ... util/NullPointerException.i
 	@echo ... util/NullPointerException.s

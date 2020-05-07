@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.obj"
   "C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj"
   "C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.obj"
+  "C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj"
   "C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp" "C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

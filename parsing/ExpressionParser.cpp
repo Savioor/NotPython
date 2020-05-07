@@ -8,6 +8,7 @@
 #include "operators/ClassOperator.h"
 #include "../memory/builtins/Integer.h"
 #include "../debug.h"
+#include "operators/binary/SimpleBinaryOperator.h"
 
 
 Class *ExpressionParser::parse(const std::string& data) {
@@ -84,7 +85,12 @@ ExpressionParser::ExpressionParser() {
 
     operators = std::map<std::string, Operator*>();
 
-    operators.insert({"+", new Addition()});
+    operators.insert({"+", new SimpleBinaryOperator(11, Class::add)});
+    operators.insert({"-", new SimpleBinaryOperator(11, Class::sub)});
+    operators.insert({"*", new SimpleBinaryOperator(12, Class::mult)});
+    operators.insert({"/", new SimpleBinaryOperator(12, Class::div)});
+    operators.insert({"%", new SimpleBinaryOperator(12, Class::mod)});
+    operators.insert({"**", new SimpleBinaryOperator(15, Class::pow)}); // TODO this is subject to changes
 
     numbers = std::map<char, char>();
     for (const char* c = "1234567890"; *c != '\0'; c++){
