@@ -177,8 +177,10 @@ Operator *ExpressionParser::toOperator(const std::string& currentOp, int context
                         );
 
             } else {
+
                 // Double
                 // TODO
+
             }
 
         } else {
