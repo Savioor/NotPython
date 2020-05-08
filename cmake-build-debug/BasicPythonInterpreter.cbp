@@ -119,12 +119,6 @@
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.cpp">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.h">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -135,6 +129,18 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp">

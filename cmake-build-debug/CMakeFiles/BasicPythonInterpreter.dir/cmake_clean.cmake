@@ -9,9 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.obj"
-  "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.obj"
   "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj"
+  "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj"
+  "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj"
   "CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.obj"
   "libBasicPythonInterpreter.dll.a"
 )

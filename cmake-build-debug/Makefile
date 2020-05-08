@@ -311,33 +311,6 @@ parsing/operators/Operator.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.s
 .PHONY : parsing/operators/Operator.cpp.s
 
-parsing/operators/binary/Addition.obj: parsing/operators/binary/Addition.cpp.obj
-
-.PHONY : parsing/operators/binary/Addition.obj
-
-# target to build an object file
-parsing/operators/binary/Addition.cpp.obj:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj
-.PHONY : parsing/operators/binary/Addition.cpp.obj
-
-parsing/operators/binary/Addition.i: parsing/operators/binary/Addition.cpp.i
-
-.PHONY : parsing/operators/binary/Addition.i
-
-# target to preprocess a source file
-parsing/operators/binary/Addition.cpp.i:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.i
-.PHONY : parsing/operators/binary/Addition.cpp.i
-
-parsing/operators/binary/Addition.s: parsing/operators/binary/Addition.cpp.s
-
-.PHONY : parsing/operators/binary/Addition.s
-
-# target to generate assembly for a file
-parsing/operators/binary/Addition.cpp.s:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.s
-.PHONY : parsing/operators/binary/Addition.cpp.s
-
 parsing/operators/binary/BinaryOperator.obj: parsing/operators/binary/BinaryOperator.cpp.obj
 
 .PHONY : parsing/operators/binary/BinaryOperator.obj
@@ -391,6 +364,60 @@ parsing/operators/binary/SimpleBinaryOperator.s: parsing/operators/binary/Simple
 parsing/operators/binary/SimpleBinaryOperator.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.s
 .PHONY : parsing/operators/binary/SimpleBinaryOperator.cpp.s
+
+parsing/operators/encapsulating/Brackets.obj: parsing/operators/encapsulating/Brackets.cpp.obj
+
+.PHONY : parsing/operators/encapsulating/Brackets.obj
+
+# target to build an object file
+parsing/operators/encapsulating/Brackets.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj
+.PHONY : parsing/operators/encapsulating/Brackets.cpp.obj
+
+parsing/operators/encapsulating/Brackets.i: parsing/operators/encapsulating/Brackets.cpp.i
+
+.PHONY : parsing/operators/encapsulating/Brackets.i
+
+# target to preprocess a source file
+parsing/operators/encapsulating/Brackets.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.i
+.PHONY : parsing/operators/encapsulating/Brackets.cpp.i
+
+parsing/operators/encapsulating/Brackets.s: parsing/operators/encapsulating/Brackets.cpp.s
+
+.PHONY : parsing/operators/encapsulating/Brackets.s
+
+# target to generate assembly for a file
+parsing/operators/encapsulating/Brackets.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.s
+.PHONY : parsing/operators/encapsulating/Brackets.cpp.s
+
+parsing/operators/encapsulating/EncapsulatingOperator.obj: parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj
+
+.PHONY : parsing/operators/encapsulating/EncapsulatingOperator.obj
+
+# target to build an object file
+parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj
+.PHONY : parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj
+
+parsing/operators/encapsulating/EncapsulatingOperator.i: parsing/operators/encapsulating/EncapsulatingOperator.cpp.i
+
+.PHONY : parsing/operators/encapsulating/EncapsulatingOperator.i
+
+# target to preprocess a source file
+parsing/operators/encapsulating/EncapsulatingOperator.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.i
+.PHONY : parsing/operators/encapsulating/EncapsulatingOperator.cpp.i
+
+parsing/operators/encapsulating/EncapsulatingOperator.s: parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
+
+.PHONY : parsing/operators/encapsulating/EncapsulatingOperator.s
+
+# target to generate assembly for a file
+parsing/operators/encapsulating/EncapsulatingOperator.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
+.PHONY : parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
 
 util/NullPointerException.obj: util/NullPointerException.cpp.obj
 
@@ -449,15 +476,18 @@ help:
 	@echo ... parsing/operators/Operator.obj
 	@echo ... parsing/operators/Operator.i
 	@echo ... parsing/operators/Operator.s
-	@echo ... parsing/operators/binary/Addition.obj
-	@echo ... parsing/operators/binary/Addition.i
-	@echo ... parsing/operators/binary/Addition.s
 	@echo ... parsing/operators/binary/BinaryOperator.obj
 	@echo ... parsing/operators/binary/BinaryOperator.i
 	@echo ... parsing/operators/binary/BinaryOperator.s
 	@echo ... parsing/operators/binary/SimpleBinaryOperator.obj
 	@echo ... parsing/operators/binary/SimpleBinaryOperator.i
 	@echo ... parsing/operators/binary/SimpleBinaryOperator.s
+	@echo ... parsing/operators/encapsulating/Brackets.obj
+	@echo ... parsing/operators/encapsulating/Brackets.i
+	@echo ... parsing/operators/encapsulating/Brackets.s
+	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.obj
+	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.i
+	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.s
 	@echo ... util/NullPointerException.obj
 	@echo ... util/NullPointerException.i
 	@echo ... util/NullPointerException.s

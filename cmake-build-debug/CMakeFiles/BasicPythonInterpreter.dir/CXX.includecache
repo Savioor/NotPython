@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/USER/CLionProjects/NotPython/debug.h
+
 C:/Users/USER/CLionProjects/NotPython/main.cpp
 iostream
 -
@@ -38,6 +40,22 @@ cstdint
 ../Class.h
 C:/Users/USER/CLionProjects/NotPython/memory/Class.h
 
+C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp
+iostream
+-
+ExpressionParser.h
+C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
+operators/binary/Addition.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.h
+operators/ClassOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
+../memory/builtins/Integer.h
+C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h
+../debug.h
+C:/Users/USER/CLionProjects/NotPython/debug.h
+operators/binary/SimpleBinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
+
 C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
 map
 -
@@ -50,15 +68,29 @@ C:/Users/USER/CLionProjects/NotPython/memory/Class.h
 operators/binary/BinaryOperator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
+Operator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
 ../../memory/Class.h
 C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+../../memory/Class.h
+C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/Addition.h
+BinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 ../../../memory/Class.h
 C:/Users/USER/CLionProjects/NotPython/memory/Class.h
 ../Operator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
+BinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 
 C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
 Node.h

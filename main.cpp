@@ -8,7 +8,7 @@ int main() {
 
     MemoryManager::getManager().increaseExpDepth();
     ExpressionParser parser = ExpressionParser();
-    Class* cls = parser.parse("5** 3 +3 *   5  * 5   ");
+    Class* cls = parser.parse(std::cin!);
 
     std::cout << ((Integer*)cls)->getValue();
 

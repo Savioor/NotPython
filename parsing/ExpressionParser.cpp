@@ -4,16 +4,15 @@
 
 #include <iostream>
 #include "ExpressionParser.h"
-#include "operators/binary/Addition.h"
 #include "operators/ClassOperator.h"
 #include "../memory/builtins/Integer.h"
 #include "../debug.h"
 #include "operators/binary/SimpleBinaryOperator.h"
 
 
-Class *ExpressionParser::parse(const std::string& data) {
+Class *ExpressionParser::parse(std::istream& dataStream) {
 
-    LinkedList<Operator *>* tokenizedExpr = toOperatorList(data);
+    LinkedList<Operator *>* tokenizedExpr = toOperatorList(dataStream);
 
     while (tokenizedExpr->getStart() != nullptr) {
         Node<Operator*>* toExecute = tokenizedExpr->getStart();
@@ -105,14 +104,21 @@ void ExpressionParser::insertToBreakerMap(const std::string& chars, int cls) {
     }
 }
 
-LinkedList<Operator *>* ExpressionParser::toOperatorList(const std::string& data) {
+LinkedList<Operator *>* ExpressionParser::toOperatorList(std::istream& dataStream) {
 
     auto* returnList = new LinkedList<Operator*>();
     int context = WHITESPACE;
     int currContext;
+    char c;
     std::string currentOp;
 
-    for (char c : data) {
+    while (true) { // Not sure with while true is the correct thing here.
+
+        c = dataStream.get();
+
+        if (c == ';'){ // TODO make this more generic, for now I'll live with this shit
+            break;
+        }
 
 #if EXPR_PARSE_DEBUG
         std::cout << "Reading '" << c << "' with current breaker group " << context << std::endl;

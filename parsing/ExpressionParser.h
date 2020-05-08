@@ -56,8 +56,8 @@ class ExpressionParser {
 public:
     ExpressionParser();
 
-    Class* parse(const std::string&);
-    LinkedList<Operator*>* toOperatorList(const std::string&);
+    Class* parse(std::istream&);
+    LinkedList<Operator*>* toOperatorList(std::istream&);
     Operator* toOperator(const std::string&, int);
 
 protected:

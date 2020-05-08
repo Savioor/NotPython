@@ -134,22 +134,9 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\CLionProjects\NotPython\parsing\operators\Operator.cpp -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\Operator.cpp.s
 
-CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
-CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj: ../parsing/operators/binary/Addition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\binary\Addition.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\parsing\operators\binary\Addition.cpp
-
-CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\USER\CLionProjects\NotPython\parsing\operators\binary\Addition.cpp > CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\binary\Addition.cpp.i
-
-CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\CLionProjects\NotPython\parsing\operators\binary\Addition.cpp -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\binary\Addition.cpp.s
-
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/MemoryManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\memory\MemoryManager.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\memory\MemoryManager.cpp
 
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.i: cmake_force
@@ -162,7 +149,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.s: cmake_force
 
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj: ../memory/builtins/Integer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\memory\builtins\Integer.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\memory\builtins\Integer.cpp
 
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.i: cmake_force
@@ -175,7 +162,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.s: cmake_force
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj: ../parsing/operators/ClassOperator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\ClassOperator.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\parsing\operators\ClassOperator.cpp
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.i: cmake_force
@@ -188,7 +175,7 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.s: cma
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: ../parsing/operators/binary/SimpleBinaryOperator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\binary\SimpleBinaryOperator.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\parsing\operators\binary\SimpleBinaryOperator.cpp
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.i: cmake_force
@@ -199,6 +186,32 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOpera
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\CLionProjects\NotPython\parsing\operators\binary\SimpleBinaryOperator.cpp -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\binary\SimpleBinaryOperator.cpp.s
 
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj: ../parsing/operators/encapsulating/EncapsulatingOperator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\encapsulating\EncapsulatingOperator.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\parsing\operators\encapsulating\EncapsulatingOperator.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\USER\CLionProjects\NotPython\parsing\operators\encapsulating\EncapsulatingOperator.cpp > CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\encapsulating\EncapsulatingOperator.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\CLionProjects\NotPython\parsing\operators\encapsulating\EncapsulatingOperator.cpp -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\encapsulating\EncapsulatingOperator.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj: ../parsing/operators/encapsulating/Brackets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\encapsulating\Brackets.cpp.obj -c C:\Users\USER\CLionProjects\NotPython\parsing\operators\encapsulating\Brackets.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\USER\CLionProjects\NotPython\parsing\operators\encapsulating\Brackets.cpp > CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\encapsulating\Brackets.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\USER\CLionProjects\NotPython\parsing\operators\encapsulating\Brackets.cpp -o CMakeFiles\BasicPythonInterpreter.dir\parsing\operators\encapsulating\Brackets.cpp.s
+
 # Object files for target BasicPythonInterpreter
 BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj" \
@@ -207,11 +220,12 @@ BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.obj" \
 "CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj" \
 "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.obj" \
-"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj" \
 "CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj" \
 "CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj" \
 "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj" \
-"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj"
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj" \
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj" \
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj"
 
 # External object files for target BasicPythonInterpreter
 BasicPythonInterpreter_EXTERNAL_OBJECTS =
@@ -222,16 +236,17 @@ BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/Expres
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.obj
-BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/Addition.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj
+BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj
+BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/build.make
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/linklibs.rsp
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/objects1.rsp
 BasicPythonInterpreter.exe: CMakeFiles/BasicPythonInterpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable BasicPythonInterpreter.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\USER\CLionProjects\NotPython\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable BasicPythonInterpreter.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BasicPythonInterpreter.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
