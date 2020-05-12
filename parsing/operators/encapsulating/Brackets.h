@@ -6,7 +6,27 @@
 #define BASICPYTHONINTERPRETER_BRACKETS_H
 
 
-class Brackets {
+#include "EncapsulatingOperator.h"
+
+class Brackets : public EncapsulatingOperator {
+
+public:
+    Brackets();
+
+    EncapsulatingOperator *supplySelf() override;
+
+    void supplyInnards(std::string *innards) override;
+
+    bool atEncapsulationEnd(char currChar) override;
+
+    Class *getAsClass() const override;
+
+protected:
+    std::string* expr;
+    int bracketDepthCount;
+    char lastChar;
+    bool inString;
+    bool isDoubleQuoteString;
 
 };
 

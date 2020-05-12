@@ -5,6 +5,9 @@
 #include <ostream>
 #include "Integer.h"
 #include <cmath>
+#include <iostream>
+#include "../../debug.h"
+
 
 Class *Integer::leftAdd(Class const &rightElem) {
     switch (rightElem.type){
@@ -118,4 +121,7 @@ int Integer::getValue() const{
 Integer::Integer(int64_t val) : Class() {
     type = pyINTEGER;
     value = val;
+#if MEM_ALLOC_DEBUG
+    std::cout << "This class is an integer with value " << val << std::endl;
+#endif
 }

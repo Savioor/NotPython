@@ -4,12 +4,24 @@
 
 #include "EncapsulatingOperator.h"
 
-EncapsulatingOperator::~EncapsulatingOperator() {
-    delete(data);
-    data = nullptr;
+bool EncapsulatingOperator::isInsideString(bool wasInsideLastChar, bool isDoubleQuote, char lastChar, char thisChar) {
+    if (!wasInsideLastChar && (thisChar == '\'' || thisChar == '\"')) {
+        return true;
+    }
+    if (wasInsideLastChar && lastChar != '\\') {
+        if (isDoubleQuote) {
+            if (thisChar == '"') {
+                return false;
+            }
+        } else {
+            if (thisChar == '\''){
+                return false;
+            }
+        }
+    }
+    return wasInsideLastChar;
 }
 
-EncapsulatingOperator::EncapsulatingOperator(char oc, char cc, bool an, std::string * data) :
-                openingChr{oc}, closingChr{cc}, allowNesting{an}, data{data} {
+EncapsulatingOperator::EncapsulatingOperator() : Operator(ENCLOSING) {
 
 }

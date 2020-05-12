@@ -12,22 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/EncapsulatingOperator.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/EncapsulatingOperator.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/MemoryManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/Integer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/Integer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/Addition.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/Addition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/Brackets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/Brackets.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/Brackets.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/Brackets.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/EncapsulatingOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/EncapsulatingOperator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/EncapsulatingOperator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/EncapsulatingOperator.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +119,9 @@
       <workItem from="1588782237093" duration="3760000" />
       <workItem from="1588860918589" duration="11426000" />
       <workItem from="1588885781678" duration="546000" />
-      <workItem from="1588950932109" duration="3383000" />
+      <workItem from="1588950932109" duration="4113000" />
+      <workItem from="1589224382037" duration="614000" />
+      <workItem from="1589281681656" duration="8325000" />
     </task>
     <servers />
   </component>
@@ -150,58 +146,62 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Inspections/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588686072526" />
-    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1588770604861">
+    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1589308347593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588770604861" />
+    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589308347593" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588952187531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588952187531" />
+    <state x="865" y="273" width="640" height="494" key="#xdebugger.XInspectDialog" timestamp="1589307031352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="865" y="273" width="640" height="494" key="#xdebugger.XInspectDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589307031352" />
     <state x="307" y="518" key="FileChooserDialogImpl" timestamp="1588685412235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="307" y="518" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685412235" />
-    <state width="1877" height="89" key="GridCell.Tab.0.bottom" timestamp="1588952187956">
+    <state width="1877" height="489" key="GridCell.Tab.0.bottom" timestamp="1589308413818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588952187956" />
-    <state width="1877" height="89" key="GridCell.Tab.0.center" timestamp="1588952187956">
+    <state width="1877" height="489" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589308413818" />
+    <state width="1877" height="489" key="GridCell.Tab.0.center" timestamp="1589308413818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588952187956" />
-    <state width="1877" height="89" key="GridCell.Tab.0.left" timestamp="1588952187956">
+    <state width="1877" height="489" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589308413818" />
+    <state width="1877" height="489" key="GridCell.Tab.0.left" timestamp="1589308413818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588952187956" />
-    <state width="1877" height="89" key="GridCell.Tab.0.right" timestamp="1588952187956">
+    <state width="1877" height="489" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589308413818" />
+    <state width="1877" height="489" key="GridCell.Tab.0.right" timestamp="1589308413818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="89" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588952187956" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1588875676782">
+    <state width="1877" height="489" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589308413818" />
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom" timestamp="1589307217402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588875676782" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1588875676782">
+    <state width="1877" height="306" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589307217402" />
+    <state width="1877" height="306" key="GridCell.Tab.1.center" timestamp="1589307217402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588875676782" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1588875676782">
+    <state width="1877" height="306" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589307217402" />
+    <state width="1877" height="306" key="GridCell.Tab.1.left" timestamp="1589307217402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588875676782" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1588875676782">
+    <state width="1877" height="306" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589307217402" />
+    <state width="1877" height="306" key="GridCell.Tab.1.right" timestamp="1589307217402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588875676782" />
+    <state width="1877" height="306" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589307217402" />
     <state x="540" y="247" key="SettingsEditor" timestamp="1588685480862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="247" key="SettingsEditor/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685480862" />
-    <state x="739" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1588950953751">
+    <state x="739" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1589281685086">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588950953751" />
+    <state x="739" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589281685086" />
     <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1588771246608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,6 +220,7 @@
       <configuration name="CMakeRunConfiguration">
         <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />
         <watch expression="tokenizedExpr-&gt;startNode" />
+        <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>

@@ -5,6 +5,7 @@
 #include <iostream>
 #include "MemoryManager.h"
 #include "../debug.h"
+#include "builtins/Integer.h"
 
 MemoryManager* MemoryManager::instance = nullptr;
 

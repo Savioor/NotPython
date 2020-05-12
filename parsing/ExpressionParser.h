@@ -58,12 +58,13 @@ public:
 
     Class* parse(std::istream&);
     LinkedList<Operator*>* toOperatorList(std::istream&);
-    Operator* toOperator(const std::string&, int);
+    Operator* toOperator(const std::string&, int, std::istream&);
 
 protected:
     std::map<char, char> numbers;
     std::map<char, int> breakerClassMap;
     std::map<std::string, Operator*> operators; // TODO Does this need a custom destructor?
+    char currCharRead;
 
     void insertToBreakerMap(const std::string& chars, int cls);
 

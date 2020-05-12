@@ -7,19 +7,19 @@
 
 #include <string>
 #include "../../../memory/Class.h"
+#include "../Operator.h"
 
-class EncapsulatingOperator {
+class EncapsulatingOperator : public Operator {
 
 public:
-    virtual ~EncapsulatingOperator();
-    EncapsulatingOperator(char, char, bool, std::string*);
+    virtual ~EncapsulatingOperator() = default;
+    EncapsulatingOperator();
 
-    const char openingChr;
-    const char closingChr;
-    const bool allowNesting;
-    const std::string* data;
+    virtual EncapsulatingOperator* supplySelf() = 0;
+    virtual void supplyInnards(std::string* innards) = 0;
+    virtual bool atEncapsulationEnd(char currChar) = 0;
 
-    virtual Class* consume() = 0;
+    static bool isInsideString(bool wasInsideLastChar, bool isDoubleQuote, char lastChar, char thisChar);
 
 };
 
