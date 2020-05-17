@@ -9,7 +9,7 @@
 #include <map>
 #include <vector>
 #include "../util/LinkedList.h"
-#include "../memory/Class.h"
+#include "../memory/PyClass.h"
 #include "operators/binary/BinaryOperator.h"
 
 /*
@@ -56,7 +56,7 @@ class ExpressionParser {
 public:
     ExpressionParser();
 
-    Class* parse(std::istream&);
+    PyClass* parse(std::istream&);
     LinkedList<Operator*>* toOperatorList(std::istream&);
     Operator* toOperator(const std::string&, int, std::istream&);
 

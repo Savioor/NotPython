@@ -5,10 +5,10 @@
 #include "SimpleBinaryOperator.h"
 
 
-SimpleBinaryOperator::SimpleBinaryOperator(int pred, Class* (*op)(Class*, Class*)) : BinaryOperator(), operation{op} {
+SimpleBinaryOperator::SimpleBinaryOperator(int pred, PyClass* (*op)(PyClass*, PyClass*)) : BinaryOperator(), operation{op} {
     precedence = pred;
 }
 
-Class *SimpleBinaryOperator::reduce(Class *left, Class *right) {
+PyClass *SimpleBinaryOperator::reduce(PyClass *left, PyClass *right) {
     return (*operation)(left, right);
 }

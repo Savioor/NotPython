@@ -9,7 +9,7 @@
 
 #if DEBUG
 
-#define EXPR_PARSE_DEBUG true
+#define EXPR_PARSE_DEBUG false
 #define MEM_EXPR_DEPTH_DEBUG true
 #define MEM_ALLOC_DEBUG true
 

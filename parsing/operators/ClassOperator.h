@@ -7,15 +7,15 @@
 
 
 #include "Operator.h"
-#include "../../memory/Class.h"
+#include "../../memory/PyClass.h"
 
 class ClassOperator : public Operator {
 public:
-    ClassOperator(Class*);
-    Class *getAsClass() const override;
+    ClassOperator(PyClass*);
+    PyClass *getAsClass() const override;
 
 private:
-    Class* val;
+    PyClass* val;
 };
 
 

@@ -5,13 +5,14 @@
 #include <iostream>
 #include "MemoryManager.h"
 #include "../debug.h"
-#include "builtins/Integer.h"
+#include "builtins/PyInteger.h"
+#include "builtins/PyVariable.h"
 
 MemoryManager* MemoryManager::instance = nullptr;
 
 void MemoryManager::decreaseExpDepth() {
     expressionDepth--;
-    std::vector<Class*>* temp = classesByExpDepth.at(classesByExpDepth.size() - 1);
+    std::vector<PyClass*>* temp = classesByExpDepth.at(classesByExpDepth.size() - 1);
     classesByExpDepth.pop_back();
 
     for (auto & i : *temp){
@@ -25,19 +26,17 @@ void MemoryManager::decreaseExpDepth() {
 
 void MemoryManager::increaseExpDepth() {
     expressionDepth++;
-    classesByExpDepth.push_back(new std::vector<Class*>());
+    classesByExpDepth.push_back(new std::vector<PyClass*>());
 }
 
-MemoryManager::MemoryManager() {
+MemoryManager::MemoryManager() : namedVariableStack{}, freeOpenCellsStack{}, memory{} {
     expressionDepth = 0;
-    memory = std::vector<Class*>();
-    namedVariableStack = std::vector<std::map<std::string, int>>();
-    freeOpenCellsStack = std::vector<int>();
-    classesByExpDepth = std::vector<std::vector<Class*>*>();
+    namedVariableStack.emplace_back();
+    classesByExpDepth = std::vector<std::vector<PyClass*>*>();
 
 }
 
-int MemoryManager::allocateNewClass(Class* newClass) {
+int MemoryManager::allocateNewClass(PyClass* newClass) {
 
     if (newClass->expressionDepth >= 0) {
         throw std::runtime_error("Attempting to allocate class that was already allocated");
@@ -63,7 +62,7 @@ int MemoryManager::allocateNewClass(Class* newClass) {
 }
 
 void MemoryManager::deallocateClass(int index) {
-    Class* subject = memory.at(index);
+    PyClass* subject = memory.at(index);
     if (subject == nullptr) {
 #if MEM_ALLOC_DEBUG
         std::cout << "attempted dealloc class at " << index << " that was nullptr";
@@ -92,4 +91,19 @@ MemoryManager &MemoryManager::getManager() {
 
 int MemoryManager::getCurrentDepth() {
     return classesByExpDepth.size();
+}
+
+PyClass *MemoryManager::getVariable(const std::string &name) {
+    // TODO code blocks don't exist yet so I'm writing shit code for now
+    if (namedVariableStack.at(0).count(name) == 0) {
+        return new PyVariable(name);
+    } else {
+        return namedVariableStack.at(0).at(name);
+    }
+    return nullptr;
+}
+
+void MemoryManager::allocateVariable(PyVariable *var) {
+    // TODO same as getVariable function
+    namedVariableStack.at(0).insert({var->getName(), var});
 }

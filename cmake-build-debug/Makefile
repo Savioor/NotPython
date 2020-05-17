@@ -149,33 +149,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-memory/Class.obj: memory/Class.cpp.obj
-
-.PHONY : memory/Class.obj
-
-# target to build an object file
-memory/Class.cpp.obj:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj
-.PHONY : memory/Class.cpp.obj
-
-memory/Class.i: memory/Class.cpp.i
-
-.PHONY : memory/Class.i
-
-# target to preprocess a source file
-memory/Class.cpp.i:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.i
-.PHONY : memory/Class.cpp.i
-
-memory/Class.s: memory/Class.cpp.s
-
-.PHONY : memory/Class.s
-
-# target to generate assembly for a file
-memory/Class.cpp.s:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.s
-.PHONY : memory/Class.cpp.s
-
 memory/MemoryManager.obj: memory/MemoryManager.cpp.obj
 
 .PHONY : memory/MemoryManager.obj
@@ -203,32 +176,140 @@ memory/MemoryManager.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.s
 .PHONY : memory/MemoryManager.cpp.s
 
-memory/builtins/Integer.obj: memory/builtins/Integer.cpp.obj
+memory/PyClass.obj: memory/PyClass.cpp.obj
 
-.PHONY : memory/builtins/Integer.obj
+.PHONY : memory/PyClass.obj
 
 # target to build an object file
-memory/builtins/Integer.cpp.obj:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj
-.PHONY : memory/builtins/Integer.cpp.obj
+memory/PyClass.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.obj
+.PHONY : memory/PyClass.cpp.obj
 
-memory/builtins/Integer.i: memory/builtins/Integer.cpp.i
+memory/PyClass.i: memory/PyClass.cpp.i
 
-.PHONY : memory/builtins/Integer.i
+.PHONY : memory/PyClass.i
 
 # target to preprocess a source file
-memory/builtins/Integer.cpp.i:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.i
-.PHONY : memory/builtins/Integer.cpp.i
+memory/PyClass.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.i
+.PHONY : memory/PyClass.cpp.i
 
-memory/builtins/Integer.s: memory/builtins/Integer.cpp.s
+memory/PyClass.s: memory/PyClass.cpp.s
 
-.PHONY : memory/builtins/Integer.s
+.PHONY : memory/PyClass.s
 
 # target to generate assembly for a file
-memory/builtins/Integer.cpp.s:
-	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.s
-.PHONY : memory/builtins/Integer.cpp.s
+memory/PyClass.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.s
+.PHONY : memory/PyClass.cpp.s
+
+memory/builtins/PyBool.obj: memory/builtins/PyBool.cpp.obj
+
+.PHONY : memory/builtins/PyBool.obj
+
+# target to build an object file
+memory/builtins/PyBool.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj
+.PHONY : memory/builtins/PyBool.cpp.obj
+
+memory/builtins/PyBool.i: memory/builtins/PyBool.cpp.i
+
+.PHONY : memory/builtins/PyBool.i
+
+# target to preprocess a source file
+memory/builtins/PyBool.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.i
+.PHONY : memory/builtins/PyBool.cpp.i
+
+memory/builtins/PyBool.s: memory/builtins/PyBool.cpp.s
+
+.PHONY : memory/builtins/PyBool.s
+
+# target to generate assembly for a file
+memory/builtins/PyBool.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.s
+.PHONY : memory/builtins/PyBool.cpp.s
+
+memory/builtins/PyInteger.obj: memory/builtins/PyInteger.cpp.obj
+
+.PHONY : memory/builtins/PyInteger.obj
+
+# target to build an object file
+memory/builtins/PyInteger.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj
+.PHONY : memory/builtins/PyInteger.cpp.obj
+
+memory/builtins/PyInteger.i: memory/builtins/PyInteger.cpp.i
+
+.PHONY : memory/builtins/PyInteger.i
+
+# target to preprocess a source file
+memory/builtins/PyInteger.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.i
+.PHONY : memory/builtins/PyInteger.cpp.i
+
+memory/builtins/PyInteger.s: memory/builtins/PyInteger.cpp.s
+
+.PHONY : memory/builtins/PyInteger.s
+
+# target to generate assembly for a file
+memory/builtins/PyInteger.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.s
+.PHONY : memory/builtins/PyInteger.cpp.s
+
+memory/builtins/PyString.obj: memory/builtins/PyString.cpp.obj
+
+.PHONY : memory/builtins/PyString.obj
+
+# target to build an object file
+memory/builtins/PyString.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj
+.PHONY : memory/builtins/PyString.cpp.obj
+
+memory/builtins/PyString.i: memory/builtins/PyString.cpp.i
+
+.PHONY : memory/builtins/PyString.i
+
+# target to preprocess a source file
+memory/builtins/PyString.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.i
+.PHONY : memory/builtins/PyString.cpp.i
+
+memory/builtins/PyString.s: memory/builtins/PyString.cpp.s
+
+.PHONY : memory/builtins/PyString.s
+
+# target to generate assembly for a file
+memory/builtins/PyString.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.s
+.PHONY : memory/builtins/PyString.cpp.s
+
+memory/builtins/PyVariable.obj: memory/builtins/PyVariable.cpp.obj
+
+.PHONY : memory/builtins/PyVariable.obj
+
+# target to build an object file
+memory/builtins/PyVariable.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyVariable.cpp.obj
+.PHONY : memory/builtins/PyVariable.cpp.obj
+
+memory/builtins/PyVariable.i: memory/builtins/PyVariable.cpp.i
+
+.PHONY : memory/builtins/PyVariable.i
+
+# target to preprocess a source file
+memory/builtins/PyVariable.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyVariable.cpp.i
+.PHONY : memory/builtins/PyVariable.cpp.i
+
+memory/builtins/PyVariable.s: memory/builtins/PyVariable.cpp.s
+
+.PHONY : memory/builtins/PyVariable.s
+
+# target to generate assembly for a file
+memory/builtins/PyVariable.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyVariable.cpp.s
+.PHONY : memory/builtins/PyVariable.cpp.s
 
 parsing/ExpressionParser.obj: parsing/ExpressionParser.cpp.obj
 
@@ -338,6 +419,33 @@ parsing/operators/binary/BinaryOperator.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.s
 .PHONY : parsing/operators/binary/BinaryOperator.cpp.s
 
+parsing/operators/binary/SetOperator.obj: parsing/operators/binary/SetOperator.cpp.obj
+
+.PHONY : parsing/operators/binary/SetOperator.obj
+
+# target to build an object file
+parsing/operators/binary/SetOperator.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.obj
+.PHONY : parsing/operators/binary/SetOperator.cpp.obj
+
+parsing/operators/binary/SetOperator.i: parsing/operators/binary/SetOperator.cpp.i
+
+.PHONY : parsing/operators/binary/SetOperator.i
+
+# target to preprocess a source file
+parsing/operators/binary/SetOperator.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.i
+.PHONY : parsing/operators/binary/SetOperator.cpp.i
+
+parsing/operators/binary/SetOperator.s: parsing/operators/binary/SetOperator.cpp.s
+
+.PHONY : parsing/operators/binary/SetOperator.s
+
+# target to generate assembly for a file
+parsing/operators/binary/SetOperator.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.s
+.PHONY : parsing/operators/binary/SetOperator.cpp.s
+
 parsing/operators/binary/SimpleBinaryOperator.obj: parsing/operators/binary/SimpleBinaryOperator.cpp.obj
 
 .PHONY : parsing/operators/binary/SimpleBinaryOperator.obj
@@ -419,6 +527,33 @@ parsing/operators/encapsulating/EncapsulatingOperator.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
 .PHONY : parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
 
+parsing/operators/encapsulating/StringLiteral.obj: parsing/operators/encapsulating/StringLiteral.cpp.obj
+
+.PHONY : parsing/operators/encapsulating/StringLiteral.obj
+
+# target to build an object file
+parsing/operators/encapsulating/StringLiteral.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.obj
+.PHONY : parsing/operators/encapsulating/StringLiteral.cpp.obj
+
+parsing/operators/encapsulating/StringLiteral.i: parsing/operators/encapsulating/StringLiteral.cpp.i
+
+.PHONY : parsing/operators/encapsulating/StringLiteral.i
+
+# target to preprocess a source file
+parsing/operators/encapsulating/StringLiteral.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.i
+.PHONY : parsing/operators/encapsulating/StringLiteral.cpp.i
+
+parsing/operators/encapsulating/StringLiteral.s: parsing/operators/encapsulating/StringLiteral.cpp.s
+
+.PHONY : parsing/operators/encapsulating/StringLiteral.s
+
+# target to generate assembly for a file
+parsing/operators/encapsulating/StringLiteral.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.s
+.PHONY : parsing/operators/encapsulating/StringLiteral.cpp.s
+
 util/NullPointerException.obj: util/NullPointerException.cpp.obj
 
 .PHONY : util/NullPointerException.obj
@@ -458,15 +593,24 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... memory/Class.obj
-	@echo ... memory/Class.i
-	@echo ... memory/Class.s
 	@echo ... memory/MemoryManager.obj
 	@echo ... memory/MemoryManager.i
 	@echo ... memory/MemoryManager.s
-	@echo ... memory/builtins/Integer.obj
-	@echo ... memory/builtins/Integer.i
-	@echo ... memory/builtins/Integer.s
+	@echo ... memory/PyClass.obj
+	@echo ... memory/PyClass.i
+	@echo ... memory/PyClass.s
+	@echo ... memory/builtins/PyBool.obj
+	@echo ... memory/builtins/PyBool.i
+	@echo ... memory/builtins/PyBool.s
+	@echo ... memory/builtins/PyInteger.obj
+	@echo ... memory/builtins/PyInteger.i
+	@echo ... memory/builtins/PyInteger.s
+	@echo ... memory/builtins/PyString.obj
+	@echo ... memory/builtins/PyString.i
+	@echo ... memory/builtins/PyString.s
+	@echo ... memory/builtins/PyVariable.obj
+	@echo ... memory/builtins/PyVariable.i
+	@echo ... memory/builtins/PyVariable.s
 	@echo ... parsing/ExpressionParser.obj
 	@echo ... parsing/ExpressionParser.i
 	@echo ... parsing/ExpressionParser.s
@@ -479,6 +623,9 @@ help:
 	@echo ... parsing/operators/binary/BinaryOperator.obj
 	@echo ... parsing/operators/binary/BinaryOperator.i
 	@echo ... parsing/operators/binary/BinaryOperator.s
+	@echo ... parsing/operators/binary/SetOperator.obj
+	@echo ... parsing/operators/binary/SetOperator.i
+	@echo ... parsing/operators/binary/SetOperator.s
 	@echo ... parsing/operators/binary/SimpleBinaryOperator.obj
 	@echo ... parsing/operators/binary/SimpleBinaryOperator.i
 	@echo ... parsing/operators/binary/SimpleBinaryOperator.s
@@ -488,6 +635,9 @@ help:
 	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.obj
 	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.i
 	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.s
+	@echo ... parsing/operators/encapsulating/StringLiteral.obj
+	@echo ... parsing/operators/encapsulating/StringLiteral.i
+	@echo ... parsing/operators/encapsulating/StringLiteral.s
 	@echo ... util/NullPointerException.obj
 	@echo ... util/NullPointerException.i
 	@echo ... util/NullPointerException.s

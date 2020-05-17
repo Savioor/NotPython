@@ -8,7 +8,7 @@ Operator::Operator(OPERATOR_TYPE t) : type{t} {
     precedence = 0;
 }
 
-Class *Operator::getAsClass() const{
+PyClass *Operator::getAsClass() const{
     return nullptr;
 }
 

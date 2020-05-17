@@ -5,8 +5,8 @@
 #include <ostream>
 #include "ClassOperator.h"
 
-Class *ClassOperator::getAsClass() const {
+PyClass *ClassOperator::getAsClass() const {
     return val;
 }
 
-ClassOperator::ClassOperator(Class * c) : Operator(CLASS), val{c} {}
+ClassOperator::ClassOperator(PyClass * c) : Operator(CLASS), val{c} {}

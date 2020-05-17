@@ -5,14 +5,16 @@
 #include <iostream>
 #include "ExpressionParser.h"
 #include "operators/ClassOperator.h"
-#include "../memory/builtins/Integer.h"
+#include "../memory/builtins/PyInteger.h"
 #include "../debug.h"
 #include "operators/binary/SimpleBinaryOperator.h"
 #include "operators/encapsulating/EncapsulatingOperator.h"
 #include "operators/encapsulating/Brackets.h"
+#include "operators/encapsulating/StringLiteral.h"
+#include "../memory/MemoryManager.h"
 
 
-Class *ExpressionParser::parse(std::istream& dataStream) {
+PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
     LinkedList<Operator *>* tokenizedExpr = toOperatorList(dataStream);
 
@@ -32,11 +34,11 @@ Class *ExpressionParser::parse(std::istream& dataStream) {
         }
         Operator* currOp = toExecute->value;
         BinaryOperator* asBin;
-        Class* lClass;
-        Class* rClass;
+        PyClass* lClass;
+        PyClass* rClass;
 
         if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Checking if length == 1
-            Class* retVal = tokenizedExpr->getStart()->value->getAsClass();
+            PyClass* retVal = tokenizedExpr->getStart()->value->getAsClass();
             if (retVal == nullptr) {
                 throw std::runtime_error("Reduced expression to single non-class operator");
             }
@@ -94,14 +96,16 @@ ExpressionParser::ExpressionParser() {
 
     operators = std::map<std::string, Operator*>();
 
-    operators.insert({"+", new SimpleBinaryOperator(11, Class::add)});
-    operators.insert({"-", new SimpleBinaryOperator(11, Class::sub)});
-    operators.insert({"*", new SimpleBinaryOperator(12, Class::mult)});
-    operators.insert({"/", new SimpleBinaryOperator(12, Class::div)});
-    operators.insert({"%", new SimpleBinaryOperator(12, Class::mod)});
-    operators.insert({"**", new SimpleBinaryOperator(15, Class::pow)}); // TODO this is subject to changes
+    operators.insert({"+", new SimpleBinaryOperator(11, PyClass::add)});
+    operators.insert({"-", new SimpleBinaryOperator(11, PyClass::sub)});
+    operators.insert({"*", new SimpleBinaryOperator(12, PyClass::mult)});
+    operators.insert({"/", new SimpleBinaryOperator(12, PyClass::div)});
+    operators.insert({"%", new SimpleBinaryOperator(12, PyClass::mod)});
+    operators.insert({"**", new SimpleBinaryOperator(15, PyClass::pow)}); // TODO this is subject to changes
 
     operators.insert({"(", new Brackets()});
+    operators.insert({"\"", new StringLiteral(true)});
+    operators.insert({"'", new StringLiteral(false)});
 
 
     numbers = std::map<char, char>();
@@ -217,7 +221,7 @@ Operator *ExpressionParser::toOperator(const std::string& currentOp, int context
                 // Integer
                 return
                         new ClassOperator(
-                                new Integer(std::atoi(currentOp.c_str()))
+                                new PyInteger(std::atoi(currentOp.c_str()))
                         );
 
             } else {
@@ -229,8 +233,14 @@ Operator *ExpressionParser::toOperator(const std::string& currentOp, int context
 
         } else {
 
-            // This must be a variable
+            // This could be a keyword :/
             // TODO
+
+            // This is a variable
+            return
+                    new ClassOperator(
+                            MemoryManager::getManager().getVariable(currentOp)
+                    );
 
         }
 

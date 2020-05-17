@@ -6,7 +6,7 @@
 #define BASICPYTHONINTERPRETER_ENCAPSULATINGOPERATOR_H
 
 #include <string>
-#include "../../../memory/Class.h"
+#include "../../../memory/PyClass.h"
 #include "../Operator.h"
 
 class EncapsulatingOperator : public Operator {

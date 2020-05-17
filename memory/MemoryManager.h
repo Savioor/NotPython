@@ -9,23 +9,28 @@
 #include <vector>
 #include <map>
 #include <string>
-#include "Class.h"
+#include "PyClass.h"
+
+class PyVariable;
 
 class MemoryManager {
 
 public:
     static MemoryManager& getManager();
 
-    std::vector<Class*> memory;
-    std::vector<std::vector<Class*>*> classesByExpDepth;
+    std::vector<PyClass*> memory;
+    std::vector<std::vector<PyClass*>*> classesByExpDepth;
     std::vector<int> freeOpenCellsStack; // Vector can be used as a stack :)
-    std::vector<std::map<std::string, int>> namedVariableStack; // Stack depth dictated by code block depth
+    std::vector<std::map<std::string, PyVariable*>> namedVariableStack; // Stack depth dictated by code block depth
 
     void decreaseExpDepth();
     void increaseExpDepth();
-    int allocateNewClass(Class*);
+    int allocateNewClass(PyClass*);
     void deallocateClass(int);
     int getCurrentDepth();
+
+    PyClass* getVariable(const std::string& name);
+    void allocateVariable(PyVariable* var);
 
 protected:
     static MemoryManager* instance;

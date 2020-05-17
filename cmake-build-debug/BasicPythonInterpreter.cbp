@@ -83,22 +83,40 @@
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/main.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/Class.cpp">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/Class.h">
-			<Option target="BasicPythonInterpreter"/>
-		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.cpp">
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/PyClass.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h">
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp">
@@ -125,6 +143,12 @@
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -141,6 +165,12 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp">

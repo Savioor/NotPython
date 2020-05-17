@@ -6,7 +6,7 @@
 #define BASICPYTHONINTERPRETER_BINARYOPERATOR_H
 
 
-#include "../../../memory/Class.h"
+#include "../../../memory/PyClass.h"
 #include "../Operator.h"
 
 
@@ -16,7 +16,7 @@ public:
 
     BinaryOperator();
 
-    virtual Class* reduce(Class* left, Class* right) = 0;
+    virtual PyClass* reduce(PyClass* left, PyClass* right) = 0;
 
 };
 

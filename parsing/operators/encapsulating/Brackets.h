@@ -19,7 +19,7 @@ public:
 
     bool atEncapsulationEnd(char currChar) override;
 
-    Class *getAsClass() const override;
+    PyClass *getAsClass() const override;
 
 protected:
     std::string* expr;

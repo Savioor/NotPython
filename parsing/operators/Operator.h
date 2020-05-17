@@ -6,7 +6,7 @@
 #define BASICPYTHONINTERPRETER_OPERATOR_H
 
 
-#include "../../memory/Class.h"
+#include "../../memory/PyClass.h"
 
 enum OPERATOR_TYPE {
 
@@ -25,7 +25,7 @@ public:
 
     Operator(OPERATOR_TYPE);
 
-    virtual Class* getAsClass() const;
+    virtual PyClass* getAsClass() const;
 
     int getPrecedence();
 

@@ -11,12 +11,12 @@
 class SimpleBinaryOperator : public BinaryOperator {
 
 public:
-    SimpleBinaryOperator(int, Class* (*)(Class*, Class*));
+    SimpleBinaryOperator(int, PyClass* (*)(PyClass*, PyClass*));
 
-    Class* reduce(Class* left, Class* right) override;
+    PyClass* reduce(PyClass* left, PyClass* right) override;
 
 private:
-    Class* (*operation)(Class*, Class*);
+    PyClass* (*operation)(PyClass*, PyClass*);
 };
 
 

@@ -43,7 +43,7 @@ bool Brackets::atEncapsulationEnd(char currChar) {
 
 }
 
-Class *Brackets::getAsClass() const {
+PyClass *Brackets::getAsClass() const {
     std::istringstream ss{*expr + ";"}; // TODO this is slow and temporary (but it should work)
     return ExpressionParser().parse(ss);
 }

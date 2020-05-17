@@ -3,33 +3,56 @@
 
 CMakeFiles/BasicPythonInterpreter.dir/main.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/main.cpp
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
  C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
- C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
  C:/Users/USER/CLionProjects/NotPython/util/Node.h
-CMakeFiles/BasicPythonInterpreter.dir/memory/Class.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.cpp
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
- C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/debug.h
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
  C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.cpp
  C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
- C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h
-CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/Integer.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.cpp
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.cpp
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/debug.h
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
- C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.cpp
- C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.cpp
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.cpp
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyVariable.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.cpp
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/debug.h
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
- C:/Users/USER/CLionProjects/NotPython/memory/builtins/Integer.h
+ C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
@@ -38,30 +61,31 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h
  C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
  C:/Users/USER/CLionProjects/NotPython/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/ClassOperator.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/Operator.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
@@ -71,10 +95,17 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.c
  C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
  C:/Users/USER/CLionProjects/NotPython/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj
- C:/Users/USER/CLionProjects/NotPython/memory/Class.h
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.cpp
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h
 CMakeFiles/BasicPythonInterpreter.dir/util/NullPointerException.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp
  C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.h
