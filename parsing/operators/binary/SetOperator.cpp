@@ -3,3 +3,12 @@
 //
 
 #include "SetOperator.h"
+
+PyClass *SetOperator::reduce(PyClass *left, PyClass *right) {
+    left->setSelf(*right);
+    return left;
+}
+
+SetOperator::SetOperator() {
+    precedence = 1;
+}

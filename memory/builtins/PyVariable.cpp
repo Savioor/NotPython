@@ -126,13 +126,13 @@ PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(nam
 
 PyClass *PyVariable::setSelf(PyClass &other) {
     if (other.type == pyOTHER) {
-        child->references--;
+        if (child != nullptr) child->references--;
         child = &other;
         child->references++;
     } else if (other.type == pyVAR) {
         return setSelf(*other.getSelf());
     } else {
-        child->references--;
+        if (child != nullptr) child->references--;
         child = other.getSelf();
         child->references++;
     }

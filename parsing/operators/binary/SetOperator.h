@@ -10,6 +10,11 @@
 
 class SetOperator : public BinaryOperator {
 
+public:
+    SetOperator();
+
+    PyClass *reduce(PyClass *left, PyClass *right) override;
+
 };
 
 

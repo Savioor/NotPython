@@ -12,6 +12,8 @@
 #include "operators/encapsulating/Brackets.h"
 #include "operators/encapsulating/StringLiteral.h"
 #include "../memory/MemoryManager.h"
+#include "../memory/builtins/PyVariable.h"
+#include "operators/binary/SetOperator.h"
 
 
 PyClass *ExpressionParser::parse(std::istream& dataStream) {
@@ -54,6 +56,12 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 }
                 lClass = toExecute->prev->value->getAsClass();
                 rClass = toExecute->next->value->getAsClass();
+
+                // TODO temporary, make better pls
+                if (rClass->type == pyVAR){
+                    rClass = ((PyVariable*)rClass)->getChild();
+                }
+
                 if (lClass == nullptr || rClass == nullptr){
                     throw std::runtime_error("Right or left operand of binary expression are not classes.");
                 }
@@ -69,7 +77,7 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
             case UNARY: // TODO
                 break;
-            case ENCLOSING: // TODO
+            case ENCLOSING: // TODO (might not be needed)
                 break;
             case CLASS:
                 if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Easy way to check length == 1
@@ -106,6 +114,8 @@ ExpressionParser::ExpressionParser() {
     operators.insert({"(", new Brackets()});
     operators.insert({"\"", new StringLiteral(true)});
     operators.insert({"'", new StringLiteral(false)});
+
+    operators.insert({"=", new SetOperator()});
 
 
     numbers = std::map<char, char>();

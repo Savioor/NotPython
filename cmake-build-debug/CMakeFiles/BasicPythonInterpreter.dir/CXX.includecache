@@ -6,19 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/USER/CLionProjects/NotPython/main.cpp
-iostream
--
-memory/builtins/PyString.h
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
-parsing/ExpressionParser.h
-C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
-memory/MemoryManager.h
-C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
-memory/builtins/PyInteger.h
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
-memory/builtins/PyVariable.h
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
+C:/Users/USER/CLionProjects/NotPython/debug.h
 
 C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
 vector
@@ -56,6 +44,32 @@ string
 ../PyClass.h
 C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
 
+C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp
+iostream
+-
+ExpressionParser.h
+C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
+operators/ClassOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
+../memory/builtins/PyInteger.h
+C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+../debug.h
+C:/Users/USER/CLionProjects/NotPython/debug.h
+operators/binary/SimpleBinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
+operators/encapsulating/EncapsulatingOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+operators/encapsulating/Brackets.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
+operators/encapsulating/StringLiteral.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h
+../memory/MemoryManager.h
+C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
+../memory/builtins/PyVariable.h
+C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
+operators/binary/SetOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h
+
 C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
 map
 -
@@ -68,6 +82,12 @@ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
 operators/binary/BinaryOperator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
+Operator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+../../memory/PyClass.h
+C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
 ../../memory/PyClass.h
 C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
@@ -77,6 +97,30 @@ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
 ../Operator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h
+BinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
+BinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
+EncapsulatingOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+string
+-
+../../../memory/PyClass.h
+C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+../Operator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h
+EncapsulatingOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
 
 C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
 Node.h

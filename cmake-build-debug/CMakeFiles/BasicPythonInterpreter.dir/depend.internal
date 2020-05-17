@@ -53,11 +53,13 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
@@ -78,6 +80,12 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/BinaryOperator.cp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.cpp
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
