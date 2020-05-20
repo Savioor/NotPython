@@ -3,9 +3,14 @@
 //
 
 #include "PyBool.h"
+#include "../../debug.h"
 #include "PyString.h"
+#include <iostream>
 
 PyBool::PyBool(bool v) : value{v} {
+#if MEM_ALLOC_DEBUG
+    std::cout << "Allocated new boolean with value " << v << std::endl;
+#endif
     type = pyBOOL;
 }
 

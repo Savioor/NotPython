@@ -27,6 +27,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/debug.h
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.cpp
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h
@@ -39,6 +40,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/debug.h
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.cpp

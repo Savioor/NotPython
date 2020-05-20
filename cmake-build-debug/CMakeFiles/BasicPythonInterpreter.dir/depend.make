@@ -26,6 +26,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.obj: ../memory/PyClass.
 CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.obj: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/PyClass.cpp.obj: ../memory/builtins/PyVariable.h
 
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj: ../memory/builtins/PyBool.cpp
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj: ../memory/builtins/PyBool.h
@@ -38,6 +39,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memo
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/builtins/PyInteger.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/builtins/PyString.h
 
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj: ../memory/builtins/PyBool.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj: ../memory/builtins/PyString.cpp

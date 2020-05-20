@@ -4,6 +4,8 @@
 
 #include "PyString.h"
 #include "PyBool.h"
+#include "../../debug.h"
+#include <iostream>
 
 PyClass *PyString::leftAdd(PyClass const &rightElem) const {
     const PyString* other = (PyString*)rightElem.asString();
@@ -55,8 +57,10 @@ const std::string &PyString::getValue() const {
     return value;
 }
 
-PyString::PyString(std::string &&string) {
-    value = string;
+PyString::PyString(std::string &&string) : value{string} {
+#if MEM_ALLOC_DEBUG
+    std::cout << "Allocated new string with value " << value << std::endl;
+#endif
     type = pySTRING;
 }
 
@@ -65,6 +69,10 @@ PyBool *PyString::leftAnd(PyClass const &rightElem) const {
 }
 
 PyBool *PyString::leftOr(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyBool *PyString::leftEql(PyClass const &rightElem) const {
     switch (rightElem.type){
 
         case pySTRING:
@@ -72,10 +80,6 @@ PyBool *PyString::leftOr(PyClass const &rightElem) const {
 
     }
     return new PyBool(false);
-}
-
-PyBool *PyString::leftEql(PyClass const &rightElem) const {
-    return nullptr;
 }
 
 PyBool *PyString::leftBigger(PyClass const &rightElem) const {
