@@ -42,15 +42,33 @@ PyClass *PyBool::call(PyClass const &params) {
 }
 
 PyBool *PyBool::leftAnd(PyClass const &rightElem) const {
+    switch (rightElem.type){
+
+        case pyBOOL:
+            return new PyBool(value && ((PyBool const&)rightElem).getValue());
+
+    }
     return nullptr;
 }
 
 PyBool *PyBool::leftOr(PyClass const &rightElem) const {
+    switch (rightElem.type){
+
+        case pyBOOL:
+            return new PyBool(value || ((PyBool const&)rightElem).getValue());
+
+    }
     return nullptr;
 }
 
 PyBool *PyBool::leftEql(PyClass const &rightElem) const {
-    return nullptr;
+    switch (rightElem.type){
+
+        case pyBOOL:
+            return new PyBool(value == ((PyBool const&)rightElem).getValue());
+
+    }
+    return new PyBool(false);
 }
 
 PyBool *PyBool::leftBigger(PyClass const &rightElem) const {
@@ -62,7 +80,7 @@ PyBool *PyBool::leftSmaller(PyClass const &rightElem) const {
 }
 
 PyBool *PyBool::logicalNot() const {
-    return nullptr;
+    return new PyBool(!value);
 }
 
 const PyString *PyBool::asString() const {

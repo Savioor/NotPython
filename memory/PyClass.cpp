@@ -26,7 +26,7 @@ static_ver_bin_impl_deep(pyAnd, leftAnd, PyBool);
 static_ver_bin_impl_deep(pyOr, leftOr, PyBool);
 static_ver_bin_impl_deep(eql, leftEql, PyBool);
 static_ver_bin_impl_deep(bigger, leftBigger, PyBool);
-static_ver_bin_impl_deep(smaller, leftSmaller, PyBool)
+static_ver_bin_impl_deep(smaller, leftSmaller, PyBool);
 
 PyClass *PyClass::setSelf(PyClass &other) { // Only used by PyVariable really, so I'm supplying a default impl
     return nullptr;

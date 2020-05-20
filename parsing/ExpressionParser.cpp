@@ -111,6 +111,14 @@ ExpressionParser::ExpressionParser() {
     operators.insert({"%", new SimpleBinaryOperator(12, PyClass::mod)});
     operators.insert({"**", new SimpleBinaryOperator(15, PyClass::pow)}); // TODO this is subject to changes
 
+    operators.insert({"==", new SimpleBinaryOperatorBool(8, PyClass::eql)});
+    operators.insert({">", new SimpleBinaryOperatorBool(9, PyClass::bigger)});
+    operators.insert({"<", new SimpleBinaryOperatorBool(9, PyClass::smaller)});
+
+    operators.insert({"&&", new SimpleBinaryOperatorBool(4, PyClass::pyAnd)});
+    operators.insert({"||", new SimpleBinaryOperatorBool(3, PyClass::pyOr)});
+//    operators.insert({"!", new SimpleBinaryOperatorBool(9, PyClass::smaller)});
+
     operators.insert({"(", new Brackets()});
     operators.insert({"\"", new StringLiteral(true)});
     operators.insert({"'", new StringLiteral(false)});

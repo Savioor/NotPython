@@ -33,6 +33,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.obj: ../memory/
 
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/builtins/PyBool.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/builtins/PyInteger.cpp
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/builtins/PyInteger.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj: ../memory/builtins/PyString.h
@@ -50,6 +51,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyVariable.cpp.obj: ../mem
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../memory/MemoryManager.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../memory/builtins/PyBool.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../memory/builtins/PyInteger.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../memory/builtins/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../memory/builtins/PyVariable.h
@@ -87,6 +89,7 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.o
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.obj: ../parsing/operators/binary/SetOperator.h
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: ../memory/builtins/PyBool.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: ../parsing/operators/Operator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: ../parsing/operators/binary/BinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.obj: ../parsing/operators/binary/SimpleBinaryOperator.cpp

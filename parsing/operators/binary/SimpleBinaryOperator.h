@@ -7,6 +7,7 @@
 
 
 #include "BinaryOperator.h"
+#include "../../../memory/builtins/PyBool.h"
 
 class SimpleBinaryOperator : public BinaryOperator {
 
@@ -17,6 +18,17 @@ public:
 
 private:
     PyClass* (*operation)(PyClass*, PyClass*);
+};
+
+class SimpleBinaryOperatorBool : public BinaryOperator {
+
+public:
+    SimpleBinaryOperatorBool(int, PyBool* (*)(PyClass*, PyClass*));
+
+    PyBool* reduce(PyClass* left, PyClass* right) override;
+
+private:
+    PyBool* (*operation)(PyClass*, PyClass*);
 };
 
 

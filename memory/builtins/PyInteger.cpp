@@ -7,6 +7,7 @@
 #include "PyString.h"
 #include <cmath>
 #include <iostream>
+#include "PyBool.h"
 #include "../../debug.h"
 
 
@@ -126,15 +127,39 @@ PyBool *PyInteger::leftOr(PyClass const &rightElem) const {
 }
 
 PyBool *PyInteger::leftEql(PyClass const &rightElem) const {
-    return nullptr;
+    switch (rightElem.type){
+
+        case pyINTEGER:
+            return new PyBool(value == ((PyInteger const&)rightElem).getValue());
+        case pyDOUBLE:
+            break; // TODO
+
+    }
+    return new PyBool(false);
 }
 
 PyBool *PyInteger::leftBigger(PyClass const &rightElem) const {
-    return nullptr;
+    switch (rightElem.type){
+
+        case pyINTEGER:
+            return new PyBool(value > ((PyInteger const&)rightElem).getValue());
+        case pyDOUBLE:
+            break; // TODO
+
+    }
+    return new PyBool(false);
 }
 
 PyBool *PyInteger::leftSmaller(PyClass const &rightElem) const {
-    return nullptr;
+    switch (rightElem.type){
+
+        case pyINTEGER:
+            return new PyBool(value < ((PyInteger const&)rightElem).getValue());
+        case pyDOUBLE:
+            break; // TODO
+
+    }
+    return new PyBool(false);
 }
 
 PyBool *PyInteger::logicalNot() const {

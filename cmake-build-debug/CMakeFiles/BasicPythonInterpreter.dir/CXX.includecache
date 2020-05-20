@@ -22,6 +22,10 @@ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
 vector
 -
 
+C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h
+../PyClass.h
+C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+
 C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
 stdint-gcc.h
 -
@@ -102,9 +106,15 @@ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h
 BinaryOperator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
 
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp
+SimpleBinaryOperator.h
+C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
+
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
 BinaryOperator.h
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+../../../memory/builtins/PyBool.h
+C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h
 
 C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
 EncapsulatingOperator.h

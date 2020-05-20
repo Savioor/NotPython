@@ -13,13 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/PyClass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/PyClass.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyBool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyBool.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyInteger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyInteger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyString.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/SetOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/SetOperator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/SetOperator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/SetOperator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/SimpleBinaryOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/SimpleBinaryOperator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/SimpleBinaryOperator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/SimpleBinaryOperator.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,8 @@
       <workItem from="1589710549537" duration="7579000" />
       <workItem from="1589722671624" duration="431000" />
       <workItem from="1589724148776" duration="123000" />
-      <workItem from="1589725102017" duration="4520000" />
+      <workItem from="1589725102017" duration="8020000" />
+      <workItem from="1589983103192" duration="998000" />
     </task>
     <servers />
   </component>
@@ -167,46 +168,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="307" y="518" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685412235" />
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom" timestamp="1589729760683">
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom" timestamp="1589984283019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589729760683" />
-    <state width="1877" height="308" key="GridCell.Tab.0.center" timestamp="1589729760683">
+    <state width="1877" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589984283019" />
+    <state width="1877" height="379" key="GridCell.Tab.0.center" timestamp="1589984283019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589729760683" />
-    <state width="1877" height="308" key="GridCell.Tab.0.left" timestamp="1589729760683">
+    <state width="1877" height="379" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589984283019" />
+    <state width="1877" height="379" key="GridCell.Tab.0.left" timestamp="1589984283019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589729760683" />
-    <state width="1877" height="308" key="GridCell.Tab.0.right" timestamp="1589729760683">
+    <state width="1877" height="379" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589984283019" />
+    <state width="1877" height="379" key="GridCell.Tab.0.right" timestamp="1589984283019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="308" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589729760683" />
-    <state width="1877" height="406" key="GridCell.Tab.1.bottom" timestamp="1589372261669">
+    <state width="1877" height="379" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589984283019" />
+    <state width="1877" height="233" key="GridCell.Tab.1.bottom" timestamp="1589736907277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589372261669" />
-    <state width="1877" height="406" key="GridCell.Tab.1.center" timestamp="1589372261668">
+    <state width="1877" height="233" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589736907277" />
+    <state width="1877" height="233" key="GridCell.Tab.1.center" timestamp="1589736907277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589372261668" />
-    <state width="1877" height="406" key="GridCell.Tab.1.left" timestamp="1589372261668">
+    <state width="1877" height="233" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589736907277" />
+    <state width="1877" height="233" key="GridCell.Tab.1.left" timestamp="1589736907277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589372261668" />
-    <state width="1877" height="406" key="GridCell.Tab.1.right" timestamp="1589372261669">
+    <state width="1877" height="233" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589736907277" />
+    <state width="1877" height="233" key="GridCell.Tab.1.right" timestamp="1589736907277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="406" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589372261669" />
+    <state width="1877" height="233" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589736907277" />
     <state x="540" y="247" key="SettingsEditor" timestamp="1588685480862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="247" key="SettingsEditor/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685480862" />
-    <state x="739" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1589725114670">
+    <state x="739" y="339" key="com.intellij.ide.util.TipDialog" timestamp="1589983110084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589725114670" />
+    <state x="739" y="339" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589983110084" />
     <state x="701" y="163" key="refactoring.ChangeSignatureDialog" timestamp="1588771246608">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -215,10 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589370978536" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589715854006">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589730119741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589715854006" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589730119741" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
