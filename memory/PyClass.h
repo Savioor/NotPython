@@ -40,6 +40,7 @@ public:
     int expressionDepth;
     int memoryAllocationLocation;
     BuiltInClasses type;
+    bool marked; // For mark&sweep
 
     // Mathematical operations
     virtual PyClass* leftAdd(PyClass const& rightElem) const = 0;

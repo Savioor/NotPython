@@ -29,8 +29,10 @@ public:
     void deallocateClass(int);
     int getCurrentDepth();
 
+    void markAndSweep();
+
     PyClass* getVariable(const std::string& name);
-    void allocateVariable(PyVariable* var);
+    int allocateVariable(PyVariable* var);
 
 protected:
     static MemoryManager* instance;

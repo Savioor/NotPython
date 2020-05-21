@@ -21,6 +21,8 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
     LinkedList<std::shared_ptr<Operator>>* tokenizedExpr = toOperatorList(dataStream);
 
+    MemoryManager::getManager().markAndSweep(); // TODO move this, it's here for testing
+
     while (tokenizedExpr->getStart() != nullptr) {
         Node<std::shared_ptr<Operator>>* toExecute = tokenizedExpr->getStart();
         Node<std::shared_ptr<Operator>>* current = toExecute;

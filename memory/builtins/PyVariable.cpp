@@ -116,11 +116,13 @@ void PyVariable::nullptrTest() const {
 
 PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name} {
     type = pyVAR;
+    references++; // Make sure this is never deleted by quick GC
     MemoryManager::getManager().allocateVariable(this);
 }
 
 PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(name)} {
     type = pyVAR;
+    references++; // Make sure this is never deleted by quick GC
     MemoryManager::getManager().allocateVariable(this);
 }
 
