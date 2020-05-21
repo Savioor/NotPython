@@ -11,11 +11,11 @@ class Node {
 public:
     Node* next;
     Node* prev;
-    T value;
+    T value; // This can't be a regular pointer! Otherwise big bad mem leak
 
     virtual ~Node() {
-        if (value != nullptr) delete(value);
-        if (next != nullptr) delete (next);
+//        if (value != nullptr) delete(value);
+        if (next != nullptr) delete(next);
     };
     Node(Node* b, Node* a, T v) : prev(b), next(a), value(v) {};
     Node(Node* b, T v) : Node(b, nullptr, v) {};

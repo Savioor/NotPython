@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <memory>
 #include "ExpressionParser.h"
 #include "operators/ClassOperator.h"
 #include "../memory/builtins/PyInteger.h"
@@ -18,11 +19,11 @@
 
 PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
-    LinkedList<Operator *>* tokenizedExpr = toOperatorList(dataStream);
+    LinkedList<std::shared_ptr<Operator>>* tokenizedExpr = toOperatorList(dataStream);
 
     while (tokenizedExpr->getStart() != nullptr) {
-        Node<Operator*>* toExecute = tokenizedExpr->getStart();
-        Node<Operator*>* current = toExecute;
+        Node<std::shared_ptr<Operator>>* toExecute = tokenizedExpr->getStart();
+        Node<std::shared_ptr<Operator>>* current = toExecute;
 
 #if EXPR_PARSE_DEBUG
         std::cout << "Parsing with " << tokenizedExpr->size() << " operators left." << std::endl;
@@ -34,8 +35,8 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
             }
             current = current->next;
         }
-        Operator* currOp = toExecute->value;
-        BinaryOperator* asBin;
+        std::shared_ptr<Operator> currOp = toExecute->value;
+        std::shared_ptr<BinaryOperator> asBin;
         PyClass* lClass;
         PyClass* rClass;
 
@@ -44,6 +45,7 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
             if (retVal == nullptr) {
                 throw std::runtime_error("Reduced expression to single non-class operator");
             }
+            delete(tokenizedExpr);
             return retVal;
         }
 
@@ -61,17 +63,18 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 if (rClass->type == pyVAR){
                     rClass = ((PyVariable*)rClass)->getChild();
                 }
+                // -------------------------------
 
                 if (lClass == nullptr || rClass == nullptr){
                     throw std::runtime_error("Right or left operand of binary expression are not classes.");
                 }
-                asBin = (BinaryOperator*) currOp;
-                // TODO love mem leaks :)   (it's the ClassOperator obvsly)
-                tokenizedExpr->connectAfterV(toExecute, new ClassOperator(asBin->reduce(lClass, rClass)));
+                asBin = std::dynamic_pointer_cast<BinaryOperator>(currOp);
+                tokenizedExpr->connectAfterV(toExecute,
+                        std::shared_ptr<Operator>(new ClassOperator(asBin->reduce(lClass, rClass))));
 
-                tokenizedExpr->disconnectAndKeepAlive(toExecute->prev);
-                tokenizedExpr->disconnectAndKeepAlive(toExecute->next->next);
-                tokenizedExpr->disconnectAndKeepAlive(toExecute);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->prev);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute);
 
                 break;
 
@@ -81,6 +84,7 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 break;
             case CLASS:
                 if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Easy way to check length == 1
+                    delete(tokenizedExpr);
                     return currOp->getAsClass();
                 } else {
                     throw std::runtime_error("Can't finish parsing equation");
@@ -102,28 +106,28 @@ ExpressionParser::ExpressionParser() {
     insertToBreakerMap(" \t\r\n", WHITESPACE); // Whitespace
     insertToBreakerMap(".", DOT_OPERATOR); // Literally just the dot operator
 
-    operators = std::map<std::string, Operator*>();
+    operators = std::map<std::string, std::shared_ptr<Operator>>();
 
-    operators.insert({"+", new SimpleBinaryOperator(11, PyClass::add)});
-    operators.insert({"-", new SimpleBinaryOperator(11, PyClass::sub)});
-    operators.insert({"*", new SimpleBinaryOperator(12, PyClass::mult)});
-    operators.insert({"/", new SimpleBinaryOperator(12, PyClass::div)});
-    operators.insert({"%", new SimpleBinaryOperator(12, PyClass::mod)});
-    operators.insert({"**", new SimpleBinaryOperator(15, PyClass::pow)}); // TODO this is subject to changes
+    operators.insert({"+", std::shared_ptr<Operator>(new SimpleBinaryOperator(11, PyClass::add))});
+    operators.insert({"-", std::shared_ptr<Operator>(new SimpleBinaryOperator(11, PyClass::sub))});
+    operators.insert({"*", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::mult))});
+    operators.insert({"/", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::div))});
+    operators.insert({"%", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::mod))});
+    operators.insert({"**", std::shared_ptr<Operator>(new SimpleBinaryOperator(15, PyClass::pow))}); // TODO this is subject to changes
 
-    operators.insert({"==", new SimpleBinaryOperatorBool(8, PyClass::eql)});
-    operators.insert({">", new SimpleBinaryOperatorBool(9, PyClass::bigger)});
-    operators.insert({"<", new SimpleBinaryOperatorBool(9, PyClass::smaller)});
+    operators.insert({"==", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(8, PyClass::eql))});
+    operators.insert({">", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(9, PyClass::bigger))});
+    operators.insert({"<", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(9, PyClass::smaller))});
 
-    operators.insert({"&&", new SimpleBinaryOperatorBool(4, PyClass::pyAnd)});
-    operators.insert({"||", new SimpleBinaryOperatorBool(3, PyClass::pyOr)});
+    operators.insert({"&&", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(4, PyClass::pyAnd))});
+    operators.insert({"||", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(3, PyClass::pyOr))});
 //    operators.insert({"!", new SimpleBinaryOperatorBool(9, PyClass::smaller)});
 
-    operators.insert({"(", new Brackets()});
-    operators.insert({"\"", new StringLiteral(true)});
-    operators.insert({"'", new StringLiteral(false)});
+    operators.insert({"(", std::shared_ptr<Operator>(new Brackets())});
+    operators.insert({"\"", std::shared_ptr<Operator>(new StringLiteral(true))});
+    operators.insert({"'", std::shared_ptr<Operator>(new StringLiteral(false))});
 
-    operators.insert({"=", new SetOperator()});
+    operators.insert({"=", std::shared_ptr<Operator>(new SetOperator())});
 
 
     numbers = std::map<char, char>();
@@ -139,9 +143,9 @@ void ExpressionParser::insertToBreakerMap(const std::string& chars, int cls) {
     }
 }
 
-LinkedList<Operator *>* ExpressionParser::toOperatorList(std::istream& dataStream) {
+LinkedList<std::shared_ptr<Operator>>* ExpressionParser::toOperatorList(std::istream& dataStream) {
 
-    auto* returnList = new LinkedList<Operator*>();
+    auto* returnList = new LinkedList<std::shared_ptr<Operator>>();
     int context = WHITESPACE;
     int currContext;
     std::string currentOp;
@@ -173,10 +177,10 @@ LinkedList<Operator *>* ExpressionParser::toOperatorList(std::istream& dataStrea
             std::cout << "Context switched. Curr op = " << currentOp << std::endl;
 #endif
 
-            Operator* op = toOperator(currentOp, context, dataStream);
+            std::shared_ptr<Operator> op = toOperator(currentOp, context, dataStream);
 
-            if (op != nullptr)
-                returnList->addToBackV(op);
+            if (op)
+                returnList->addToBackV(std::shared_ptr<Operator>{op});
 
             if (context != ENCAPSULATING) {
                 currentOp = currCharRead;
@@ -191,18 +195,18 @@ LinkedList<Operator *>* ExpressionParser::toOperatorList(std::istream& dataStrea
         context = currContext;
     }
 
-    Operator* op = toOperator(currentOp, context, dataStream);
+    std::shared_ptr<Operator> op = toOperator(currentOp, context, dataStream);
 
-    if (op != nullptr)
-        returnList->addToBackV(op);
+    if (op)
+        returnList->addToBackV(std::shared_ptr<Operator>{op});
 
     return returnList;
 }
 
-Operator *ExpressionParser::toOperator(const std::string& currentOp, int context, std::istream& stream) {
+std::shared_ptr<Operator> ExpressionParser::toOperator(const std::string& currentOp, int context, std::istream& stream) {
     if (context == ENCAPSULATING) {
 
-        auto* op = ((EncapsulatingOperator*)operators.at(currentOp))->supplySelf();
+        std::shared_ptr<EncapsulatingOperator> op{std::dynamic_pointer_cast<EncapsulatingOperator>(operators.at(currentOp))->supplySelf()};
         auto* innards = new std::string(); // TODO do I hear "mem leak"? too bad...!
 
         if (op->atEncapsulationEnd(currCharRead)) {
@@ -234,13 +238,12 @@ Operator *ExpressionParser::toOperator(const std::string& currentOp, int context
             if (currentOp.find_first_of('.') == std::string::npos){
 
                 // TODO
-                // 1. here `new ClassOperator` is never deleted and creates a mem-leak albeit a small one
-                // 2. std::atoi is not ideal but it's fine for now. replace later.
+                // 1. std::atoi is not ideal but it's fine for now. replace later.
                 // Integer
                 return
-                        new ClassOperator(
+                        std::shared_ptr<Operator>(new ClassOperator(
                                 new PyInteger(std::atoi(currentOp.c_str()))
-                        );
+                        ));
 
             } else {
 
@@ -256,9 +259,9 @@ Operator *ExpressionParser::toOperator(const std::string& currentOp, int context
 
             // This is a variable
             return
-                    new ClassOperator(
+                    std::shared_ptr<Operator>(new ClassOperator(
                             MemoryManager::getManager().getVariable(currentOp)
-                    );
+                    ));
 
         }
 

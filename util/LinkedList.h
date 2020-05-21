@@ -32,10 +32,10 @@ public:
         return (*startNode + i)->value;
     };
 
-    virtual void disconnectAndKeepAlive(int i){
+    virtual void disconnectAndDeleteValue(int i){
         if (startNode == nullptr)
             return;
-        disconnectAndKeepAlive(at(i));
+        disconnectAndDeleteValue(at(i));
     };
     virtual void connectAfter(int i, Node<T>* node){
         if (startNode == nullptr){
@@ -95,7 +95,7 @@ public:
         connectBefore(n, toAdd);
     };
 
-    virtual void disconnectAndKeepAlive(Node<T>* n){
+    virtual void disconnectAndDeleteValue(Node<T>* n){
         Node<T>* bef = n->prev;
         Node<T>* aft = n->next;
 
@@ -112,7 +112,6 @@ public:
             endNode = bef;
         }
 
-        n->value = nullptr;
         n->prev = nullptr;
         n->next = nullptr;
         delete(n);

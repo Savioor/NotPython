@@ -8,6 +8,7 @@
 
 #include <map>
 #include <vector>
+#include <memory>
 #include "../util/LinkedList.h"
 #include "../memory/PyClass.h"
 #include "operators/binary/BinaryOperator.h"
@@ -57,13 +58,13 @@ public:
     ExpressionParser();
 
     PyClass* parse(std::istream&);
-    LinkedList<Operator*>* toOperatorList(std::istream&);
-    Operator* toOperator(const std::string&, int, std::istream&);
+    LinkedList<std::shared_ptr<Operator>>* toOperatorList(std::istream&);
+    std::shared_ptr<Operator> toOperator(const std::string&, int, std::istream&);
 
 protected:
     std::map<char, char> numbers;
     std::map<char, int> breakerClassMap;
-    std::map<std::string, Operator*> operators; // TODO Does this need a custom destructor?
+    std::map<std::string, std::shared_ptr<Operator>> operators;
     char currCharRead;
 
     void insertToBreakerMap(const std::string& chars, int cls);
