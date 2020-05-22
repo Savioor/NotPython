@@ -257,6 +257,33 @@ memory/builtins/PyInteger.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.s
 .PHONY : memory/builtins/PyInteger.cpp.s
 
+memory/builtins/PyList.obj: memory/builtins/PyList.cpp.obj
+
+.PHONY : memory/builtins/PyList.obj
+
+# target to build an object file
+memory/builtins/PyList.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyList.cpp.obj
+.PHONY : memory/builtins/PyList.cpp.obj
+
+memory/builtins/PyList.i: memory/builtins/PyList.cpp.i
+
+.PHONY : memory/builtins/PyList.i
+
+# target to preprocess a source file
+memory/builtins/PyList.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyList.cpp.i
+.PHONY : memory/builtins/PyList.cpp.i
+
+memory/builtins/PyList.s: memory/builtins/PyList.cpp.s
+
+.PHONY : memory/builtins/PyList.s
+
+# target to generate assembly for a file
+memory/builtins/PyList.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyList.cpp.s
+.PHONY : memory/builtins/PyList.cpp.s
+
 memory/builtins/PyString.obj: memory/builtins/PyString.cpp.obj
 
 .PHONY : memory/builtins/PyString.obj
@@ -527,6 +554,60 @@ parsing/operators/encapsulating/EncapsulatingOperator.cpp.s:
 	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
 .PHONY : parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
 
+parsing/operators/encapsulating/RoundBrackets.obj: parsing/operators/encapsulating/RoundBrackets.cpp.obj
+
+.PHONY : parsing/operators/encapsulating/RoundBrackets.obj
+
+# target to build an object file
+parsing/operators/encapsulating/RoundBrackets.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/RoundBrackets.cpp.obj
+.PHONY : parsing/operators/encapsulating/RoundBrackets.cpp.obj
+
+parsing/operators/encapsulating/RoundBrackets.i: parsing/operators/encapsulating/RoundBrackets.cpp.i
+
+.PHONY : parsing/operators/encapsulating/RoundBrackets.i
+
+# target to preprocess a source file
+parsing/operators/encapsulating/RoundBrackets.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/RoundBrackets.cpp.i
+.PHONY : parsing/operators/encapsulating/RoundBrackets.cpp.i
+
+parsing/operators/encapsulating/RoundBrackets.s: parsing/operators/encapsulating/RoundBrackets.cpp.s
+
+.PHONY : parsing/operators/encapsulating/RoundBrackets.s
+
+# target to generate assembly for a file
+parsing/operators/encapsulating/RoundBrackets.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/RoundBrackets.cpp.s
+.PHONY : parsing/operators/encapsulating/RoundBrackets.cpp.s
+
+parsing/operators/encapsulating/SquareBrackets.obj: parsing/operators/encapsulating/SquareBrackets.cpp.obj
+
+.PHONY : parsing/operators/encapsulating/SquareBrackets.obj
+
+# target to build an object file
+parsing/operators/encapsulating/SquareBrackets.cpp.obj:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj
+.PHONY : parsing/operators/encapsulating/SquareBrackets.cpp.obj
+
+parsing/operators/encapsulating/SquareBrackets.i: parsing/operators/encapsulating/SquareBrackets.cpp.i
+
+.PHONY : parsing/operators/encapsulating/SquareBrackets.i
+
+# target to preprocess a source file
+parsing/operators/encapsulating/SquareBrackets.cpp.i:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.i
+.PHONY : parsing/operators/encapsulating/SquareBrackets.cpp.i
+
+parsing/operators/encapsulating/SquareBrackets.s: parsing/operators/encapsulating/SquareBrackets.cpp.s
+
+.PHONY : parsing/operators/encapsulating/SquareBrackets.s
+
+# target to generate assembly for a file
+parsing/operators/encapsulating/SquareBrackets.cpp.s:
+	$(MAKE) -f CMakeFiles\BasicPythonInterpreter.dir\build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.s
+.PHONY : parsing/operators/encapsulating/SquareBrackets.cpp.s
+
 parsing/operators/encapsulating/StringLiteral.obj: parsing/operators/encapsulating/StringLiteral.cpp.obj
 
 .PHONY : parsing/operators/encapsulating/StringLiteral.obj
@@ -605,6 +686,9 @@ help:
 	@echo ... memory/builtins/PyInteger.obj
 	@echo ... memory/builtins/PyInteger.i
 	@echo ... memory/builtins/PyInteger.s
+	@echo ... memory/builtins/PyList.obj
+	@echo ... memory/builtins/PyList.i
+	@echo ... memory/builtins/PyList.s
 	@echo ... memory/builtins/PyString.obj
 	@echo ... memory/builtins/PyString.i
 	@echo ... memory/builtins/PyString.s
@@ -635,6 +719,12 @@ help:
 	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.obj
 	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.i
 	@echo ... parsing/operators/encapsulating/EncapsulatingOperator.s
+	@echo ... parsing/operators/encapsulating/RoundBrackets.obj
+	@echo ... parsing/operators/encapsulating/RoundBrackets.i
+	@echo ... parsing/operators/encapsulating/RoundBrackets.s
+	@echo ... parsing/operators/encapsulating/SquareBrackets.obj
+	@echo ... parsing/operators/encapsulating/SquareBrackets.i
+	@echo ... parsing/operators/encapsulating/SquareBrackets.s
 	@echo ... parsing/operators/encapsulating/StringLiteral.obj
 	@echo ... parsing/operators/encapsulating/StringLiteral.i
 	@echo ... parsing/operators/encapsulating/StringLiteral.s

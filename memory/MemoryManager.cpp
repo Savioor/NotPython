@@ -132,8 +132,9 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
     for (auto mp : namedVariableStack) {
         for (auto it = mp.begin(); it != mp.end(); it++ ){
             PyClass* child = it->second->getChild();
-            if (child != nullptr) {
-                child->marked = true; // TODO PyObject will be able to point to other PyObjects so this will need updating
+            if (child != nullptr && !child->marked) {
+                child->marked = true; // TODO test with pointerMaps
+                markPointerMapOf(child);
             }
         }
     }
@@ -143,6 +144,24 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
         cls = memory.at(i);
         if (cls == nullptr || cls->marked || cls->expressionDepth != 0) continue;
         deallocateClass(i);
+    }
+
+#if GC_DEBUG
+    std::cout << "running GC finished!" << std::endl;
+#endif
+
+}
+
+void MemoryManager::markPointerMapOf(PyClass * cls) {
+
+    // TODO consider switching to iterative stack impl
+
+    auto& pointerMap = cls->pointerMap;
+
+    for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
+        if (it->second->marked) continue;
+        it->second->marked = true;
+        markPointerMapOf(it->second);
     }
 
 }

@@ -15,6 +15,7 @@
 #include "../memory/MemoryManager.h"
 #include "../memory/builtins/PyVariable.h"
 #include "operators/binary/SetOperator.h"
+#include "operators/encapsulating/RoundBrackets.h"
 
 
 PyClass *ExpressionParser::parse(std::istream& dataStream) {
@@ -115,7 +116,7 @@ ExpressionParser::ExpressionParser() {
     operators.insert({"*", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::mult))});
     operators.insert({"/", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::div))});
     operators.insert({"%", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::mod))});
-    operators.insert({"**", std::shared_ptr<Operator>(new SimpleBinaryOperator(15, PyClass::pow))}); // TODO this is subject to changes
+    operators.insert({"**", std::shared_ptr<Operator>(new SimpleBinaryOperator(14, PyClass::pow))}); // TODO this is subject to changes
 
     operators.insert({"==", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(8, PyClass::eql))});
     operators.insert({">", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(9, PyClass::bigger))});
@@ -125,7 +126,7 @@ ExpressionParser::ExpressionParser() {
     operators.insert({"||", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(3, PyClass::pyOr))});
 //    operators.insert({"!", new SimpleBinaryOperatorBool(9, PyClass::smaller)});
 
-    operators.insert({"(", std::shared_ptr<Operator>(new Brackets())});
+    operators.insert({"(", std::shared_ptr<Operator>(new RoundBrackets())});
     operators.insert({"\"", std::shared_ptr<Operator>(new StringLiteral(true))});
     operators.insert({"'", std::shared_ptr<Operator>(new StringLiteral(false))});
 

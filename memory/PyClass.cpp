@@ -6,13 +6,10 @@
 #include "MemoryManager.h"
 #include "builtins/PyVariable.h"
 
-PyClass::PyClass() {
-
-    references = 1;
-    expressionDepth = -1;
+PyClass::PyClass() :
+    references{1}, expressionDepth{-1}, type{pyOTHER}, pointerMap{}
+{
     memoryAllocationLocation = MemoryManager::getManager().allocateNewClass(this);
-    type = pyOTHER;
-
 }
 
 static_ver_bin_impl(add, leftAdd);
@@ -33,7 +30,7 @@ PyClass *PyClass::setSelf(PyClass &other) { // Only used by PyVariable really, s
 }
 
 PyClass *PyClass::getSelf() {
-    if (type == pyOTHER) return this;
+    if (type == pyOTHER || type == pyARRAY) return this;
     if (type == pyVAR) return ((PyVariable*)this)->getChild();
     return nullptr;
 }

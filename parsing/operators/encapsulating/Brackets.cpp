@@ -4,7 +4,6 @@
 
 #include <sstream>
 #include "Brackets.h"
-#include "../../ExpressionParser.h"
 
 void Brackets::supplyInnards(std::string *innards) {
     expr = innards;
@@ -22,7 +21,7 @@ bool Brackets::atEncapsulationEnd(char currChar) {
         inString = false;
     }
 
-    if (currChar == ')') {
+    if (currChar == closingChar) {
         if (bracketDepthCount != 0) {
             bracketDepthCount--;
             goto retFalse;
@@ -30,7 +29,7 @@ bool Brackets::atEncapsulationEnd(char currChar) {
             goto retTrue;
         }
     }
-    if (currChar == '(') {
+    if (currChar == openingChar) {
         bracketDepthCount++;
     }
 
@@ -43,14 +42,6 @@ bool Brackets::atEncapsulationEnd(char currChar) {
 
 }
 
-PyClass *Brackets::getAsClass() const {
-    std::istringstream ss{*expr + ";"}; // TODO this is slow and temporary (but it should work)
-    return ExpressionParser().parse(ss);
-}
+Brackets::Brackets(char opening, char closing) : bracketDepthCount(0), lastChar('\0'),
+                       inString(false), isDoubleQuoteString(false), closingChar{closing}, openingChar{opening} {}
 
-Brackets::Brackets() : bracketDepthCount(0), lastChar('\0'),
-                       inString(false), isDoubleQuoteString(false) {}
-
-EncapsulatingOperator *Brackets::supplySelf() {
-    return new Brackets();
-}

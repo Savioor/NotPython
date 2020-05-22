@@ -1,0 +1,93 @@
+//
+// Created by USER on 5/22/2020.
+//
+
+#include "PyList.h"
+#include "PyString.h"
+#include "PyInteger.h"
+
+PyClass *PyList::leftAdd(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyClass *PyList::leftMult(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyClass *PyList::leftDiv(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyClass *PyList::leftSub(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyClass *PyList::leftModulu(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyClass *PyList::leftPower(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyClass *PyList::negate() const {
+    return nullptr;
+}
+
+PyBool *PyList::leftAnd(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyBool *PyList::leftOr(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyBool *PyList::leftEql(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyBool *PyList::leftBigger(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyBool *PyList::leftSmaller(PyClass const &rightElem) const {
+    return nullptr;
+}
+
+PyBool *PyList::logicalNot() const {
+    return nullptr;
+}
+
+PyClass *PyList::call(PyClass const &params) {
+    return nullptr;
+}
+
+const PyString *PyList::asString() const {
+    std::string repr = "{";
+    for (auto c : ls){
+        repr += c->asString()->getValue();
+        repr += ", ";
+    }
+    repr += "}";
+    return new PyString(std::move(repr));
+}
+
+PyClass *PyList::getElem(PyClass const &indexer) const {
+    switch (indexer.type){
+        case pyINTEGER:
+            return ls.at(((PyInteger const&)indexer).getValue()); // TODO replace c++ out of bound error with custom one
+    }
+    return nullptr;
+}
+
+PyClass *PyList::setElem(PyClass const &indexer, PyClass const &newElem) {
+    return nullptr;
+}
+
+PyList::PyList() : ls{} {
+    type = pyARRAY;
+}
+
+std::vector<PyClass *> &PyList::getElements() {
+    return ls;
+}

@@ -107,6 +107,12 @@
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyList.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyList.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -165,6 +171,18 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/RoundBrackets.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/RoundBrackets.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/SquareBrackets.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/SquareBrackets.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.cpp">

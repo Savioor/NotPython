@@ -39,6 +39,12 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.cpp
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyList.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyList.cpp
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyList.h
+ C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyString.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/debug.h
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
@@ -67,6 +73,7 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/RoundBrackets.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h
  C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
  C:/Users/USER/CLionProjects/NotPython/util/Node.h
@@ -99,19 +106,33 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOpera
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
- C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
- C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
- C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
- C:/Users/USER/CLionProjects/NotPython/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.cpp
  C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/RoundBrackets.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/RoundBrackets.cpp
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/RoundBrackets.h
+ C:/Users/USER/CLionProjects/NotPython/util/LinkedList.h
+ C:/Users/USER/CLionProjects/NotPython/util/Node.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj
+ C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/SquareBrackets.cpp
+ C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/SquareBrackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.obj
  C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
  C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h

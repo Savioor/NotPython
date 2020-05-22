@@ -39,6 +39,8 @@ protected:
     int expressionDepth; // 0 = global expression aka the 'main' function.
 
 private:
+    void markPointerMapOf(PyClass *cls);
+
     MemoryManager& operator=(MemoryManager const&) = delete;
     MemoryManager(MemoryManager const&) = delete;
     MemoryManager();

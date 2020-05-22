@@ -11,15 +11,13 @@
 class Brackets : public EncapsulatingOperator {
 
 public:
-    Brackets();
-
-    EncapsulatingOperator *supplySelf() override;
+    Brackets(char, char);
 
     void supplyInnards(std::string *innards) override;
 
     bool atEncapsulationEnd(char currChar) override;
 
-    PyClass *getAsClass() const override;
+    PyClass *getAsClass() const override = 0;
 
 protected:
     std::string* expr;
@@ -27,6 +25,9 @@ protected:
     char lastChar;
     bool inString;
     bool isDoubleQuoteString;
+
+    char openingChar;
+    char closingChar;
 
 };
 

@@ -14,6 +14,8 @@
 
 
 #include <vector>
+#include <string>
+#include <map>
 
 class PyBool;
 class PyString;
@@ -41,6 +43,8 @@ public:
     int memoryAllocationLocation;
     BuiltInClasses type;
     bool marked; // For mark&sweep
+
+    std::map<std::string, PyClass*> pointerMap;
 
     // Mathematical operations
     virtual PyClass* leftAdd(PyClass const& rightElem) const = 0;
