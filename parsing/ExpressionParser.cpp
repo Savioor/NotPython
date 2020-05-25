@@ -15,7 +15,9 @@
 #include "../memory/MemoryManager.h"
 #include "../memory/builtins/PyVariable.h"
 #include "operators/binary/SetOperator.h"
+#include "operators/unary/unaryForNext/Print.h"
 
+ExpressionParser ExpressionParser::instance = ExpressionParser();
 
 PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
@@ -39,6 +41,7 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
         }
         std::shared_ptr<Operator> currOp = toExecute->value;
         std::shared_ptr<BinaryOperator> asBin;
+        std::shared_ptr<UnaryForNext> asUnar;
         PyClass* lClass;
         PyClass* rClass;
 
@@ -80,7 +83,28 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
                 break;
 
-            case UNARY: // TODO
+            case UNARY:
+                if (toExecute->next == nullptr) {
+                    throw std::runtime_error("Unary operator missing right operand");
+                }
+                rClass = toExecute->next->value->getAsClass();
+
+                // TODO temporary, make better pls
+                if (rClass->type == pyVAR){
+                    rClass = ((PyVariable*)rClass)->getChild();
+                }
+                // -------------------------------
+
+                if (rClass == nullptr){
+                    throw std::runtime_error("Right operand of binary expression are not classes.");
+                }
+                asUnar = std::dynamic_pointer_cast<UnaryForNext>(currOp);
+                tokenizedExpr->connectAfterV(toExecute,
+                                             std::shared_ptr<Operator>(new ClassOperator(asUnar->expand(rClass))));
+
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute);
+
                 break;
             case ENCLOSING: // TODO (might not be needed)
                 break;
@@ -99,16 +123,13 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
     return nullptr;
 }
 
-ExpressionParser::ExpressionParser() {
+ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{}, numbers{} {
 
-    breakerClassMap = std::map<char, int>();
 
     insertToBreakerMap("+-*/%=!&|<>", MATH_AND_LOGIC); // Mathematical and logical operators
     insertToBreakerMap("()[]\"\'{}", ENCAPSULATING); // Enclosing operator, this breaker class breaks itself
     insertToBreakerMap(" \t\r\n", WHITESPACE); // Whitespace
     insertToBreakerMap(".", DOT_OPERATOR); // Literally just the dot operator
-
-    operators = std::map<std::string, std::shared_ptr<Operator>>();
 
     operators.insert({"+", std::shared_ptr<Operator>(new SimpleBinaryOperator(11, PyClass::add))});
     operators.insert({"-", std::shared_ptr<Operator>(new SimpleBinaryOperator(11, PyClass::sub))});
@@ -131,11 +152,11 @@ ExpressionParser::ExpressionParser() {
 
     operators.insert({"=", std::shared_ptr<Operator>(new SetOperator())});
 
-
-    numbers = std::map<char, char>();
     for (const char* c = "1234567890"; *c != '\0'; c++){
         numbers.insert({*c, *c});
     }
+
+    keywords.insert({"print", std::shared_ptr<Operator>(new Print())});
 
 }
 
@@ -256,8 +277,10 @@ std::shared_ptr<Operator> ExpressionParser::toOperator(const std::string& curren
 
         } else {
 
-            // This could be a keyword :/
-            // TODO
+            // This could be a keyword
+            if (keywords.count(currentOp) > 0) {
+                return keywords.at(currentOp);
+            }
 
             // This is a variable
             return
@@ -277,4 +300,15 @@ std::shared_ptr<Operator> ExpressionParser::toOperator(const std::string& curren
 
     }
     return nullptr;
+}
+
+ExpressionParser &ExpressionParser::getParser() {
+    return instance;
+}
+
+PyClass *ExpressionParser::parseNewExpression(std::istream& s) {
+    MemoryManager::getManager().increaseExpDepth();
+    PyClass* ret = parse(s);
+    MemoryManager::getManager().decreaseExpDepth();
+    return ret;
 }

@@ -45,7 +45,7 @@ bool Brackets::atEncapsulationEnd(char currChar) {
 
 PyClass *Brackets::getAsClass() const {
     std::istringstream ss{*expr + ";"}; // TODO this is slow and temporary (but it should work)
-    return ExpressionParser().parse(ss);
+    return ExpressionParser::getParser().parse(ss);
 }
 
 Brackets::Brackets() : bracketDepthCount(0), lastChar('\0'),

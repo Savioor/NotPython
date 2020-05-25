@@ -8,16 +8,13 @@
 
 int main() {
 
-    ExpressionParser parser = ExpressionParser();
+    ExpressionParser& parser = ExpressionParser::getParser();
 
 //    std::string s{"nigga"};
 //    auto* var = new PyVariable(s);
 //    var->setChild(new PyInteger(5));
     while (1) {
-        MemoryManager::getManager().increaseExpDepth();
-        PyClass *cls = parser.parse(std::cin);
-        std::cout << cls->asString()->getValue() << std::endl;
-        MemoryManager::getManager().decreaseExpDepth();
+        PyClass *cls = parser.parseNewExpression(std::cin);
     };
 
     return 0;

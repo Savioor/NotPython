@@ -55,8 +55,9 @@ enum BREAKER_CLASSES {
 class ExpressionParser {
 
 public:
-    ExpressionParser();
+    static ExpressionParser& getParser();
 
+    PyClass* parseNewExpression(std::istream&);
     PyClass* parse(std::istream&);
     LinkedList<std::shared_ptr<Operator>>* toOperatorList(std::istream&);
     std::shared_ptr<Operator> toOperator(const std::string&, int, std::istream&);
@@ -65,11 +66,14 @@ protected:
     std::map<char, char> numbers;
     std::map<char, int> breakerClassMap;
     std::map<std::string, std::shared_ptr<Operator>> operators;
+    std::map<std::string, std::shared_ptr<Operator>> keywords;
     char currCharRead;
 
     void insertToBreakerMap(const std::string& chars, int cls);
 
-
+private:
+    static ExpressionParser instance;
+    ExpressionParser();
 
 };
 

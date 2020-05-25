@@ -6,53 +6,43 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/USER/CLionProjects/NotPython/debug.h
-
-C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.cpp
-iostream
--
-MemoryManager.h
-C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
-../debug.h
-C:/Users/USER/CLionProjects/NotPython/debug.h
-builtins/PyInteger.h
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
-builtins/PyVariable.h
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
-
-C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h
-vector
--
-map
--
-string
--
-PyClass.h
-C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
-
-C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
 vector
 -
 
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyInteger.h
 stdint-gcc.h
 -
 cstdint
 -
 ../PyClass.h
-C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
 PyString.h
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.h
 
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.h
 string
 -
 ../PyClass.h
-C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
 
-C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h
-string
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
+../../memory/PyClass.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.cpp
+Print.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.h
+../../../../memory/builtins/PyInteger.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyInteger.h
+iostream
 -
-../PyClass.h
-C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.h
+UnaryForNext.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/UnaryForNext.h
+
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/UnaryForNext.h
+../../Operator.h
+/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
 

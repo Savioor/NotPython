@@ -8,178 +8,200 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug"/>
+				<Option working_dir="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BasicPythonInterpreter">
-				<Option output="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/BasicPythonInterpreter.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 BasicPythonInterpreter"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BasicPythonInterpreter/fast">
-				<Option output="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/BasicPythonInterpreter.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 BasicPythonInterpreter/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/USER/CLionProjects/NotPython/cmake-build-debug"/>
+				<Option working_dir="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BasicPythonInterpreter">
+				<Option output="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/BasicPythonInterpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 BasicPythonInterpreter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BasicPythonInterpreter/fast">
+				<Option output="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/BasicPythonInterpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 BasicPythonInterpreter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/main.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/main.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/MemoryManager.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/MemoryManager.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/MemoryManager.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/PyClass.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/PyClass.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyBool.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyBool.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyBool.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyCodeblock.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyInteger.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyCodeblock.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyInteger.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyString.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyInteger.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/memory/builtins/PyVariable.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyVariable.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/ExpressionParser.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyVariable.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/ClassOperator.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/ClassOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/Operator.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/ClassOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/BinaryOperator.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SetOperator.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SetOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/binary/SimpleBinaryOperator.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SetOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SimpleBinaryOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/Brackets.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SimpleBinaryOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/Brackets.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/EncapsulatingOperator.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/Brackets.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/parsing/operators/encapsulating/StringLiteral.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.cpp">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/StringLiteral.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/util/NullPointerException.h">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/StringLiteral.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
-		<Unit filename="C:/Users/USER/CLionProjects/NotPython/CMakeLists.txt">
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/UnaryForNext.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/UnaryForNext.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/util/NullPointerException.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
