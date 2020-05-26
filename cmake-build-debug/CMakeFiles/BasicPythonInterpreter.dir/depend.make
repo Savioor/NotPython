@@ -35,6 +35,13 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyBool.cpp.o: ../memory/bu
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../memory/builtins/PyCodeblock.cpp
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../memory/builtins/PyCodeblock.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../memory/builtins/PyInteger.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../memory/builtins/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../parsing/ExpressionParser.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../parsing/operators/Operator.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.o: ../debug.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.o: ../memory/PyClass.h
@@ -68,8 +75,11 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/binary/BinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/binary/SetOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/binary/SimpleBinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/binary/nextBinary/If.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/binary/nextBinary/NextBinary.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/encapsulating/Brackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/encapsulating/EncapsulatingOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/encapsulating/SquiglyBrackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/encapsulating/StringLiteral.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/unary/unaryForNext/Print.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o: ../parsing/operators/unary/unaryForNext/UnaryForNext.h
@@ -103,6 +113,23 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOpera
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.o: ../parsing/operators/binary/SimpleBinaryOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.o: ../parsing/operators/binary/SimpleBinaryOperator.h
 
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../memory/builtins/PyBool.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../memory/builtins/PyCodeblock.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../memory/builtins/PyInteger.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../memory/builtins/PyString.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../parsing/operators/Operator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../parsing/operators/binary/nextBinary/If.cpp
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../parsing/operators/binary/nextBinary/If.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../parsing/operators/binary/nextBinary/NextBinary.h
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: ../parsing/operators/Operator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: ../parsing/operators/binary/BinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: ../parsing/operators/binary/nextBinary/NextBinary.cpp
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: ../parsing/operators/binary/nextBinary/NextBinary.h
+
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.o: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.o: ../parsing/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.o: ../parsing/operators/Operator.h
@@ -117,6 +144,13 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Encapsulat
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.o: ../parsing/operators/Operator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.o: ../parsing/operators/encapsulating/EncapsulatingOperator.cpp
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.o: ../parsing/operators/encapsulating/EncapsulatingOperator.h
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../memory/builtins/PyCodeblock.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../parsing/operators/Operator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../parsing/operators/encapsulating/EncapsulatingOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../parsing/operators/encapsulating/SquiglyBrackets.cpp
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../parsing/operators/encapsulating/SquiglyBrackets.h
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.o: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.o: ../memory/builtins/PyString.h

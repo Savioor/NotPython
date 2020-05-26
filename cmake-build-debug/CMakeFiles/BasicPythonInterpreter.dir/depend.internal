@@ -36,6 +36,13 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyCodeblock.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyCodeblock.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyInteger.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/LinkedList.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/util/Node.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyInteger.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/debug.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
@@ -69,8 +76,11 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SetOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SimpleBinaryOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/Brackets.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/StringLiteral.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/UnaryForNext.h
@@ -103,6 +113,23 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOpera
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SimpleBinaryOperator.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SimpleBinaryOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyBool.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyCodeblock.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyInteger.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/BinaryOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Brackets.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/ExpressionParser.h
@@ -118,6 +145,13 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/Encapsulat
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.cpp
  /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyCodeblock.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/Operator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.h
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.cpp
+ /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.o
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/PyClass.h
  /home/alexey/CLionProjects/BasicPythonInterpreter/memory/builtins/PyString.h

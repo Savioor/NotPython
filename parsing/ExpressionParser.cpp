@@ -16,6 +16,8 @@
 #include "../memory/builtins/PyVariable.h"
 #include "operators/binary/SetOperator.h"
 #include "operators/unary/unaryForNext/Print.h"
+#include "operators/encapsulating/SquiglyBrackets.h"
+#include "operators/binary/nextBinary/If.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -42,6 +44,7 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
         std::shared_ptr<Operator> currOp = toExecute->value;
         std::shared_ptr<BinaryOperator> asBin;
         std::shared_ptr<UnaryForNext> asUnar;
+        std::shared_ptr<NextBinary> asBinAft;
         PyClass* lClass;
         PyClass* rClass;
 
@@ -106,6 +109,30 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 tokenizedExpr->disconnectAndDeleteValue(toExecute);
 
                 break;
+            case BINARY_BOTH_AFTER:
+                if (toExecute->next == nullptr || toExecute->next->next == nullptr) {
+                    throw std::runtime_error("Binary operator missing right or after right operand");
+                }
+                lClass = toExecute->next->value->getAsClass();
+                rClass = toExecute->next->next->value->getAsClass();
+
+                // TODO temporary, make better pls
+                if (rClass->type == pyVAR){
+                    rClass = ((PyVariable*)rClass)->getChild();
+                }
+                // -------------------------------
+
+                if (lClass == nullptr || rClass == nullptr){
+                    throw std::runtime_error("Right or after right operand of binary expression are not classes.");
+                }
+                asBinAft = std::dynamic_pointer_cast<NextBinary>(currOp);
+                tokenizedExpr->connectAfterV(toExecute,
+                                             std::shared_ptr<Operator>(new ClassOperator(asBinAft->reduce(lClass, rClass))));
+
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute);
+                break;
             case ENCLOSING: // TODO (might not be needed)
                 break;
             case CLASS:
@@ -150,6 +177,8 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     operators.insert({"\"", std::shared_ptr<Operator>(new StringLiteral(true))});
     operators.insert({"'", std::shared_ptr<Operator>(new StringLiteral(false))});
 
+    operators.insert({"{", std::shared_ptr<Operator>(new SquiglyBrackets())});
+
     operators.insert({"=", std::shared_ptr<Operator>(new SetOperator())});
 
     for (const char* c = "1234567890"; *c != '\0'; c++){
@@ -157,6 +186,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     }
 
     keywords.insert({"print", std::shared_ptr<Operator>(new Print())});
+    keywords.insert({"if",std::shared_ptr<Operator>(new If())});
 
 }
 

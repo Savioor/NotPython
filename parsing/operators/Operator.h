@@ -14,7 +14,8 @@ enum OPERATOR_TYPE {
     UNARY,
     UNARY_PREV,
     ENCLOSING,
-    CLASS
+    CLASS,
+    BINARY_BOTH_AFTER
 
 };
 

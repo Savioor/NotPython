@@ -165,6 +165,18 @@
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/SimpleBinaryOperator.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/Brackets.cpp">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
@@ -175,6 +187,12 @@
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/EncapsulatingOperator.h">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.cpp">
+			<Option target="BasicPythonInterpreter"/>
+		</Unit>
+		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.h">
 			<Option target="BasicPythonInterpreter"/>
 		</Unit>
 		<Unit filename="/home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/StringLiteral.cpp">

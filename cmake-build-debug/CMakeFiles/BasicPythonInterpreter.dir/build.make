@@ -317,6 +317,45 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/Print
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/Print.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/unary/unaryForNext/Print.cpp -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/Print.cpp.s
 
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o: ../parsing/operators/encapsulating/SquiglyBrackets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.cpp > CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/encapsulating/SquiglyBrackets.cpp -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o: ../parsing/operators/binary/nextBinary/NextBinary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.cpp > CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/NextBinary.cpp -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.s
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: CMakeFiles/BasicPythonInterpreter.dir/flags.make
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o: ../parsing/operators/binary/nextBinary/If.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o -c /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.cpp
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.cpp > CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.i
+
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alexey/CLionProjects/BasicPythonInterpreter/parsing/operators/binary/nextBinary/If.cpp -o CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.s
+
 # Object files for target BasicPythonInterpreter
 BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/main.cpp.o" \
@@ -338,7 +377,10 @@ BasicPythonInterpreter_OBJECTS = \
 "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SetOperator.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o" \
 "CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/UnaryForNext.cpp.o" \
-"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/Print.cpp.o"
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/Print.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o" \
+"CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o"
 
 # External object files for target BasicPythonInterpreter
 BasicPythonInterpreter_EXTERNAL_OBJECTS =
@@ -363,9 +405,12 @@ BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/memory/builtins/PyCodeblock.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/UnaryForNext.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/unary/unaryForNext/Print.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o
+BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/build.make
 BasicPythonInterpreter: CMakeFiles/BasicPythonInterpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable BasicPythonInterpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/CLionProjects/BasicPythonInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable BasicPythonInterpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BasicPythonInterpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

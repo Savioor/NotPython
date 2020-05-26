@@ -501,6 +501,60 @@ parsing/operators/binary/SimpleBinaryOperator.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/SimpleBinaryOperator.cpp.s
 .PHONY : parsing/operators/binary/SimpleBinaryOperator.cpp.s
 
+parsing/operators/binary/nextBinary/If.o: parsing/operators/binary/nextBinary/If.cpp.o
+
+.PHONY : parsing/operators/binary/nextBinary/If.o
+
+# target to build an object file
+parsing/operators/binary/nextBinary/If.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.o
+.PHONY : parsing/operators/binary/nextBinary/If.cpp.o
+
+parsing/operators/binary/nextBinary/If.i: parsing/operators/binary/nextBinary/If.cpp.i
+
+.PHONY : parsing/operators/binary/nextBinary/If.i
+
+# target to preprocess a source file
+parsing/operators/binary/nextBinary/If.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.i
+.PHONY : parsing/operators/binary/nextBinary/If.cpp.i
+
+parsing/operators/binary/nextBinary/If.s: parsing/operators/binary/nextBinary/If.cpp.s
+
+.PHONY : parsing/operators/binary/nextBinary/If.s
+
+# target to generate assembly for a file
+parsing/operators/binary/nextBinary/If.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/If.cpp.s
+.PHONY : parsing/operators/binary/nextBinary/If.cpp.s
+
+parsing/operators/binary/nextBinary/NextBinary.o: parsing/operators/binary/nextBinary/NextBinary.cpp.o
+
+.PHONY : parsing/operators/binary/nextBinary/NextBinary.o
+
+# target to build an object file
+parsing/operators/binary/nextBinary/NextBinary.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.o
+.PHONY : parsing/operators/binary/nextBinary/NextBinary.cpp.o
+
+parsing/operators/binary/nextBinary/NextBinary.i: parsing/operators/binary/nextBinary/NextBinary.cpp.i
+
+.PHONY : parsing/operators/binary/nextBinary/NextBinary.i
+
+# target to preprocess a source file
+parsing/operators/binary/nextBinary/NextBinary.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.i
+.PHONY : parsing/operators/binary/nextBinary/NextBinary.cpp.i
+
+parsing/operators/binary/nextBinary/NextBinary.s: parsing/operators/binary/nextBinary/NextBinary.cpp.s
+
+.PHONY : parsing/operators/binary/nextBinary/NextBinary.s
+
+# target to generate assembly for a file
+parsing/operators/binary/nextBinary/NextBinary.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/binary/nextBinary/NextBinary.cpp.s
+.PHONY : parsing/operators/binary/nextBinary/NextBinary.cpp.s
+
 parsing/operators/encapsulating/Brackets.o: parsing/operators/encapsulating/Brackets.cpp.o
 
 .PHONY : parsing/operators/encapsulating/Brackets.o
@@ -554,6 +608,33 @@ parsing/operators/encapsulating/EncapsulatingOperator.s: parsing/operators/encap
 parsing/operators/encapsulating/EncapsulatingOperator.cpp.s:
 	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
 .PHONY : parsing/operators/encapsulating/EncapsulatingOperator.cpp.s
+
+parsing/operators/encapsulating/SquiglyBrackets.o: parsing/operators/encapsulating/SquiglyBrackets.cpp.o
+
+.PHONY : parsing/operators/encapsulating/SquiglyBrackets.o
+
+# target to build an object file
+parsing/operators/encapsulating/SquiglyBrackets.cpp.o:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.o
+.PHONY : parsing/operators/encapsulating/SquiglyBrackets.cpp.o
+
+parsing/operators/encapsulating/SquiglyBrackets.i: parsing/operators/encapsulating/SquiglyBrackets.cpp.i
+
+.PHONY : parsing/operators/encapsulating/SquiglyBrackets.i
+
+# target to preprocess a source file
+parsing/operators/encapsulating/SquiglyBrackets.cpp.i:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.i
+.PHONY : parsing/operators/encapsulating/SquiglyBrackets.cpp.i
+
+parsing/operators/encapsulating/SquiglyBrackets.s: parsing/operators/encapsulating/SquiglyBrackets.cpp.s
+
+.PHONY : parsing/operators/encapsulating/SquiglyBrackets.s
+
+# target to generate assembly for a file
+parsing/operators/encapsulating/SquiglyBrackets.cpp.s:
+	$(MAKE) -f CMakeFiles/BasicPythonInterpreter.dir/build.make CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquiglyBrackets.cpp.s
+.PHONY : parsing/operators/encapsulating/SquiglyBrackets.cpp.s
 
 parsing/operators/encapsulating/StringLiteral.o: parsing/operators/encapsulating/StringLiteral.cpp.o
 
@@ -714,12 +795,21 @@ help:
 	@echo "... parsing/operators/binary/SimpleBinaryOperator.o"
 	@echo "... parsing/operators/binary/SimpleBinaryOperator.i"
 	@echo "... parsing/operators/binary/SimpleBinaryOperator.s"
+	@echo "... parsing/operators/binary/nextBinary/If.o"
+	@echo "... parsing/operators/binary/nextBinary/If.i"
+	@echo "... parsing/operators/binary/nextBinary/If.s"
+	@echo "... parsing/operators/binary/nextBinary/NextBinary.o"
+	@echo "... parsing/operators/binary/nextBinary/NextBinary.i"
+	@echo "... parsing/operators/binary/nextBinary/NextBinary.s"
 	@echo "... parsing/operators/encapsulating/Brackets.o"
 	@echo "... parsing/operators/encapsulating/Brackets.i"
 	@echo "... parsing/operators/encapsulating/Brackets.s"
 	@echo "... parsing/operators/encapsulating/EncapsulatingOperator.o"
 	@echo "... parsing/operators/encapsulating/EncapsulatingOperator.i"
 	@echo "... parsing/operators/encapsulating/EncapsulatingOperator.s"
+	@echo "... parsing/operators/encapsulating/SquiglyBrackets.o"
+	@echo "... parsing/operators/encapsulating/SquiglyBrackets.i"
+	@echo "... parsing/operators/encapsulating/SquiglyBrackets.s"
 	@echo "... parsing/operators/encapsulating/StringLiteral.o"
 	@echo "... parsing/operators/encapsulating/StringLiteral.i"
 	@echo "... parsing/operators/encapsulating/StringLiteral.s"
