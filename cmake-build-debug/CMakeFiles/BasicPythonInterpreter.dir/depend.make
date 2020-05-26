@@ -18,6 +18,7 @@ CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/Me
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/MemoryManager.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/builtins/PyInteger.h
+CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/builtins/PyList.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/builtins/PyString.h
 CMakeFiles/BasicPythonInterpreter.dir/memory/MemoryManager.cpp.obj: ../memory/builtins/PyVariable.h
 
@@ -73,6 +74,7 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsi
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/encapsulating/Brackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/encapsulating/EncapsulatingOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/encapsulating/RoundBrackets.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/encapsulating/SquareBrackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../parsing/operators/encapsulating/StringLiteral.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../util/LinkedList.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/ExpressionParser.cpp.obj: ../util/Node.h
@@ -127,11 +129,16 @@ CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/RoundBrack
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/RoundBrackets.cpp.obj: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../memory/PyClass.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../memory/builtins/PyList.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/ExpressionParser.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/operators/Operator.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/operators/binary/BinaryOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/operators/encapsulating/Brackets.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/operators/encapsulating/EncapsulatingOperator.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/operators/encapsulating/SquareBrackets.cpp
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../parsing/operators/encapsulating/SquareBrackets.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../util/LinkedList.h
+CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/SquareBrackets.cpp.obj: ../util/Node.h
 
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.obj: ../memory/PyClass.h
 CMakeFiles/BasicPythonInterpreter.dir/parsing/operators/encapsulating/StringLiteral.cpp.obj: ../memory/builtins/PyString.h

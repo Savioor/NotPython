@@ -16,6 +16,7 @@
 #include "../memory/builtins/PyVariable.h"
 #include "operators/binary/SetOperator.h"
 #include "operators/encapsulating/RoundBrackets.h"
+#include "operators/encapsulating/SquareBrackets.h"
 
 
 PyClass *ExpressionParser::parse(std::istream& dataStream) {
@@ -127,6 +128,7 @@ ExpressionParser::ExpressionParser() {
 //    operators.insert({"!", new SimpleBinaryOperatorBool(9, PyClass::smaller)});
 
     operators.insert({"(", std::shared_ptr<Operator>(new RoundBrackets())});
+    operators.insert({"[", std::shared_ptr<Operator>(new SquareBrackets())});
     operators.insert({"\"", std::shared_ptr<Operator>(new StringLiteral(true))});
     operators.insert({"'", std::shared_ptr<Operator>(new StringLiteral(false))});
 

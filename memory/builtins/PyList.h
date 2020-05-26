@@ -49,6 +49,9 @@ public:
 
     std::vector<PyClass*>& getElements();
 
+    void pushBack(PyClass*);
+    void insertBefore(PyClass*, int);
+
 private:
 
     std::vector<PyClass*> ls;

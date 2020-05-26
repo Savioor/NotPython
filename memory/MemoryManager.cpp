@@ -7,8 +7,9 @@
 #include "../debug.h"
 #include "builtins/PyInteger.h"
 #include "builtins/PyVariable.h"
+#include "builtins/PyList.h"
 
-MemoryManager* MemoryManager::instance = nullptr;
+MemoryManager *MemoryManager::instance = nullptr;
 
 void MemoryManager::decreaseExpDepth() {
     expressionDepth--;
@@ -17,10 +18,10 @@ void MemoryManager::decreaseExpDepth() {
     std::cout << "Expr depth now " << expressionDepth << std::endl;
 #endif
 
-    std::vector<PyClass*>* temp = classesByExpDepth.at(classesByExpDepth.size() - 1);
+    std::vector<PyClass *> *temp = classesByExpDepth.at(classesByExpDepth.size() - 1);
     classesByExpDepth.pop_back();
 
-    for (PyClass* i : *temp){
+    for (PyClass *i : *temp) {
         i->references -= 1;
         i->expressionDepth = 0; // After the expression is parsed, variable enters global state
     }
@@ -33,24 +34,25 @@ void MemoryManager::increaseExpDepth() {
 #if EXPR_DEPTH
     std::cout << "Expr depth now " << expressionDepth << std::endl;
 #endif
-    classesByExpDepth.push_back(new std::vector<PyClass*>());
+    classesByExpDepth.push_back(new std::vector<PyClass *>());
 }
 
 MemoryManager::MemoryManager() : namedVariableStack{}, freeOpenCellsStack{}, memory{} {
     expressionDepth = 0;
     namedVariableStack.emplace_back();
-    classesByExpDepth = std::vector<std::vector<PyClass*>*>();
+    classesByExpDepth = std::vector<std::vector<PyClass *> *>();
 
 }
 
-int MemoryManager::allocateNewClass(PyClass* newClass) {
+int MemoryManager::allocateNewClass(PyClass *newClass) {
 
     if (newClass->expressionDepth >= 0) {
         throw std::runtime_error("Attempting to allocate class that was already allocated");
     }
 
 #if MEM_ALLOC_DEBUG
-    std::cout << "Allocating new class. Current classes allocated = " << (1 + memory.size() - freeOpenCellsStack.size()) << std::endl;
+    std::cout << "Allocating new class. Current classes allocated = " << (1 + memory.size() - freeOpenCellsStack.size())
+              << std::endl;
 #endif
 
     classesByExpDepth.at(classesByExpDepth.size() - 1)->push_back(newClass);
@@ -58,7 +60,7 @@ int MemoryManager::allocateNewClass(PyClass* newClass) {
 
     if (freeOpenCellsStack.empty()) {
         memory.push_back(newClass);
-        return (int)(memory.size() - 1);
+        return (int) (memory.size() - 1);
     } else {
         int emptyLocation = freeOpenCellsStack.at(freeOpenCellsStack.size() - 1);
         freeOpenCellsStack.pop_back();
@@ -69,7 +71,7 @@ int MemoryManager::allocateNewClass(PyClass* newClass) {
 }
 
 void MemoryManager::deallocateClass(int index) {
-    PyClass* subject = memory.at(index);
+    PyClass *subject = memory.at(index);
     if (subject == nullptr) {
 #if MEM_ALLOC_DEBUG
         std::cout << "attempted dealloc class at " << index << " that was nullptr";
@@ -83,7 +85,7 @@ void MemoryManager::deallocateClass(int index) {
         throw std::runtime_error("Attempting to dealloc class that is still used in an expression");
     }
 
-    delete(subject);
+    delete (subject);
     memory.assign(index, nullptr);
     freeOpenCellsStack.push_back(index);
 
@@ -124,14 +126,14 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
     std::cout << "running GC!" << std::endl;
 #endif
 
-    for (auto* cls : memory){
+    for (auto *cls : memory) {
         if (cls == nullptr) continue;
         cls->marked = false;
     }
 
     for (auto mp : namedVariableStack) {
-        for (auto it = mp.begin(); it != mp.end(); it++ ){
-            PyClass* child = it->second->getChild();
+        for (auto it = mp.begin(); it != mp.end(); it++) {
+            PyClass *child = it->second->getChild();
             if (child != nullptr && !child->marked) {
                 child->marked = true; // TODO test with pointerMaps
                 markPointerMapOf(child);
@@ -139,8 +141,8 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
         }
     }
 
-    PyClass* cls;
-    for (int i = 0; i < memory.size(); i++){
+    PyClass *cls;
+    for (int i = 0; i < memory.size(); i++) {
         cls = memory.at(i);
         if (cls == nullptr || cls->marked || cls->expressionDepth != 0) continue;
         deallocateClass(i);
@@ -152,16 +154,31 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
 
 }
 
-void MemoryManager::markPointerMapOf(PyClass * cls) {
+void MemoryManager::markPointerMapOf(PyClass *cls) {
 
     // TODO consider switching to iterative stack impl
 
-    auto& pointerMap = cls->pointerMap;
+    auto &pointerMap = cls->pointerMap;
 
-    for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
-        if (it->second->marked) continue;
-        it->second->marked = true;
-        markPointerMapOf(it->second);
+    if (cls->type == pyARRAY) { // This is here because it allows list operation to be more efficient
+
+        auto* asLs = (PyList*) cls;
+
+        for (auto& elem : asLs->getElements()){
+            if (elem->marked) continue;
+            elem->marked = true;
+            markPointerMapOf(elem);
+        }
+
+    } else {
+
+        for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
+            if (it->second->marked) continue;
+            it->second->marked = true;
+            markPointerMapOf(it->second);
+        }
+
     }
+
 
 }

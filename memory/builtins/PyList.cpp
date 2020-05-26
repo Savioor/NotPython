@@ -91,3 +91,11 @@ PyList::PyList() : ls{} {
 std::vector<PyClass *> &PyList::getElements() {
     return ls;
 }
+
+void PyList::insertBefore(PyClass * cls, int ind) {
+    ls.insert(ls.begin() + ind, cls);
+}
+
+void PyList::pushBack(PyClass* cls) {
+    ls.push_back(cls);
+}
