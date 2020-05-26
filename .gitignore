@@ -33,3 +33,5 @@
 
 # Fuck IntelliJ :)
 *.xml
+
+cmake-build-debug

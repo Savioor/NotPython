@@ -24,6 +24,7 @@ enum BuiltInClasses {
     pyINTEGER,
     pyBOOL,
     pyFUNCTION,
+    pyCODE_BLOCK,
     pyDOUBLE,
     pySTRING,
     pyARRAY,

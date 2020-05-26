@@ -1,3 +1,0 @@
-C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir
-C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/USER/CLionProjects/NotPython/cmake-build-debug/CMakeFiles/rebuild_cache.dir

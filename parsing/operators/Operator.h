@@ -12,8 +12,10 @@ enum OPERATOR_TYPE {
 
     BINARY,
     UNARY,
+    UNARY_PREV,
     ENCLOSING,
-    CLASS
+    CLASS,
+    BINARY_BOTH_AFTER
 
 };
 

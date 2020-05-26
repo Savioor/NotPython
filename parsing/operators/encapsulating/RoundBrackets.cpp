@@ -8,7 +8,7 @@
 
 PyClass *RoundBrackets::getAsClass() const {
     std::istringstream ss{*expr + ";"}; // TODO this is slow and temporary (but it should work)
-    return ExpressionParser().parse(ss);
+    return ExpressionParser::getParser().parse(ss);
 }
 
 RoundBrackets::RoundBrackets() : Brackets('(', ')') {

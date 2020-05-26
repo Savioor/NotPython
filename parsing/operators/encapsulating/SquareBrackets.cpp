@@ -15,7 +15,7 @@ PyClass *SquareBrackets::getAsClass() const {
     // TODO this whole thing is temp
     int start = 0;
     auto* retList = new PyList();
-    ExpressionParser parser{}; // TODO this is slow and temporary
+    ExpressionParser& parser = ExpressionParser::getParser(); // TODO this is slow and temporary
     for (int i = 0; i < expr->size(); i++){
         if (expr->at(i) == ',') {
             std::istringstream ss{expr->substr(start, i - start) + ";"};
