@@ -5,7 +5,7 @@
 #ifndef BASICPYTHONINTERPRETER_DEBUG_H
 #define BASICPYTHONINTERPRETER_DEBUG_H
 
-#define DEBUG true
+#define DEBUG false
 
 #if DEBUG
 

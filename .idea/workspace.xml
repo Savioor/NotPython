@@ -12,41 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/nextBinary/If.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/nextBinary/If.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/nextBinary/NextBinary.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/nextBinary/NextBinary.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/SquiglyBrackets.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/SquiglyBrackets.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/debug.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/MemoryManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyList.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyList.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyList.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/SquareBrackets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/SquareBrackets.cpp" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BasicPythonInterpreter.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BasicPythonInterpreter.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/Operator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/Operator.h" afterDir="false" />
->>>>>>> 0e4430ee9d580a45677503d60d970388c24cf6b7
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,18 +74,6 @@
       <recent name="$PROJECT_DIR$/data/datatypes/primitive" />
       <recent name="$PROJECT_DIR$/code" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="BasicPythonInterpreter" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BasicPythonInterpreter" TARGET_NAME="BasicPythonInterpreter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BasicPythonInterpreter" RUN_TARGET_NAME="BasicPythonInterpreter">
@@ -207,42 +166,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="865" y="273" width="640" height="494" key="#xdebugger.XInspectDialog/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1589307031352" />
+    <state width="410" height="466" key="DebuggerActiveHint" timestamp="1590614459037">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="410" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590614459037" />
     <state x="307" y="518" key="FileChooserDialogImpl" timestamp="1588685412235">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="307" y="518" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685412235" />
-    <state width="1877" height="417" key="GridCell.Tab.0.bottom" timestamp="1590169027198">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1590615213037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="417" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169027198" />
-    <state width="1877" height="417" key="GridCell.Tab.0.center" timestamp="1590169027198">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590615213037" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1590615213037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="417" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169027198" />
-    <state width="1877" height="417" key="GridCell.Tab.0.left" timestamp="1590169027198">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590615213037" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1590615213037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="417" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169027198" />
-    <state width="1877" height="417" key="GridCell.Tab.0.right" timestamp="1590169027198">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590615213037" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1590615213037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="417" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169027198" />
-    <state width="1877" height="387" key="GridCell.Tab.1.bottom" timestamp="1590169023226">
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590615213037" />
+    <state width="1370" height="293" key="GridCell.Tab.1.bottom" timestamp="1590614791483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169023226" />
-    <state width="1877" height="387" key="GridCell.Tab.1.center" timestamp="1590169023226">
+    <state width="1370" height="293" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590614791483" />
+    <state width="1370" height="293" key="GridCell.Tab.1.center" timestamp="1590614791483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169023226" />
-    <state width="1877" height="387" key="GridCell.Tab.1.left" timestamp="1590169023226">
+    <state width="1370" height="293" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590614791483" />
+    <state width="1370" height="293" key="GridCell.Tab.1.left" timestamp="1590614791483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169023226" />
-    <state width="1877" height="387" key="GridCell.Tab.1.right" timestamp="1590169023226">
+    <state width="1370" height="293" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590614791483" />
+    <state width="1370" height="293" key="GridCell.Tab.1.right" timestamp="1590614791483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590169023226" />
+    <state width="1370" height="293" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590614791483" />
     <state x="540" y="247" key="SettingsEditor" timestamp="1588685480862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -268,9 +231,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/memory/MemoryManager.cpp</url>
-          <line>123</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/parsing/ExpressionParser.cpp</url>
+          <line>93</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/memory/builtins/PyVariable.cpp</url>
+          <line>140</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -279,6 +247,7 @@
         <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />
         <watch expression="tokenizedExpr-&gt;startNode" />
         <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />
+        <watch expression="manager" />
       </configuration>
     </watches-manager>
   </component>

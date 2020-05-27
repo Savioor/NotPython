@@ -80,6 +80,11 @@ PyClass *PyCodeblock::execute() {
     std::istringstream ss{code};
 
     while (ss.rdbuf()->in_avail() > 0) {
+        char curr = ss.peek(); // Ignore white space :)
+        if (curr == ' ' || curr == '\t' || curr == '\r' || curr == '\n') {
+            ss.get();
+            continue;
+        }
         ExpressionParser::getParser().parseNewExpression(ss);
     }
     // TODO implement something for the return keyword

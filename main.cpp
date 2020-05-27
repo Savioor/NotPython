@@ -9,6 +9,7 @@
 int main() {
 
     ExpressionParser& parser = ExpressionParser::getParser();
+    MemoryManager& manager = MemoryManager::getManager(); // for debug
 
 //    std::string s{"nigga"};
 //    auto* var = new PyVariable(s);

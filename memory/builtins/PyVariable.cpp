@@ -106,6 +106,7 @@ PyClass *PyVariable::getChild() {
 
 void PyVariable::setChild(PyClass * c) {
     child = c;
+    pointerMap[""] = child;
 }
 
 void PyVariable::nullptrTest() const {
@@ -118,12 +119,14 @@ PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     MemoryManager::getManager().allocateVariable(this);
+    pointerMap.insert({"", child});
 }
 
 PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(name)} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     MemoryManager::getManager().allocateVariable(this);
+    pointerMap.insert({"", child});
 }
 
 PyClass *PyVariable::setSelf(PyClass &other) {
@@ -135,9 +138,10 @@ PyClass *PyVariable::setSelf(PyClass &other) {
         return setSelf(*other.getSelf());
     } else {
         if (child != nullptr) child->references--;
-        child = other.getSelf();
+        child = other.getSelf(); // TPESHJJRF{OSDJF{JSDF{IJS{ODF
         child->references++;
     }
+    pointerMap[""] = child;
     return child;
 }
 

@@ -64,7 +64,7 @@ int MemoryManager::allocateNewClass(PyClass *newClass) {
     } else {
         int emptyLocation = freeOpenCellsStack.at(freeOpenCellsStack.size() - 1);
         freeOpenCellsStack.pop_back();
-        memory.assign(emptyLocation, newClass);
+        memory[emptyLocation] = newClass;
         return emptyLocation;
     }
 
@@ -85,8 +85,8 @@ void MemoryManager::deallocateClass(int index) {
         throw std::runtime_error("Attempting to dealloc class that is still used in an expression");
     }
 
+    memory[index] = nullptr;
     delete (subject);
-    memory.assign(index, nullptr);
     freeOpenCellsStack.push_back(index);
 
 #if MEM_ALLOC_DEBUG
@@ -133,7 +133,7 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
 
     for (auto mp : namedVariableStack) {
         for (auto it = mp.begin(); it != mp.end(); it++) {
-            PyClass *child = it->second->getChild();
+            PyClass *child = it->second;
             if (child != nullptr && !child->marked) {
                 child->marked = true; // TODO test with pointerMaps
                 markPointerMapOf(child);
@@ -171,9 +171,8 @@ void MemoryManager::markPointerMapOf(PyClass *cls) {
         }
 
     } else {
-
         for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
-            if (it->second->marked) continue;
+            if (it->second == nullptr || it->second->marked) continue;
             it->second->marked = true;
             markPointerMapOf(it->second);
         }
