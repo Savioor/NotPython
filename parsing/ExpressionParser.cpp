@@ -22,6 +22,7 @@
 #include "operators/binary/nextBinary/If.h"
 #include "operators/binary/CommaOperator.h"
 #include "operators/special/Def.h"
+#include "operators/unary/unaryForNext/Return.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -39,9 +40,17 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
         std::cout << "Parsing with " << tokenizedExpr->size() << " operators left." << std::endl;
 #endif
 
+        int currHighestPred = toExecute->value->getPrecedence();
+
         while (current != nullptr){
-            if (current->value->getPrecedence() > toExecute->value->getPrecedence()) {
-               toExecute = current;
+            if (current->value->getPrecedence() > currHighestPred) {
+                toExecute = current;
+                currHighestPred = toExecute->value->getPrecedence();
+            } else if (current->next != nullptr && current->next->value->bt == BT_ROUND && currHighestPred < 16) {
+                if (current->value->type == CLASS || current->value->type == ENCLOSING) {
+                    toExecute = current;
+                    currHighestPred = 16;
+                }
             }
             current = current->next;
         }
@@ -207,6 +216,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     keywords.insert({"if",std::shared_ptr<Operator>(new If())});
     keywords.insert({"None", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getNone()))});
     keywords.insert({"def", std::shared_ptr<Operator>(new Def())});
+    keywords.insert({"return", std::shared_ptr<Operator>(new Return())});
 
 }
 

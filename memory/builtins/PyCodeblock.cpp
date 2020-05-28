@@ -79,6 +79,7 @@ PyClass *PyCodeblock::setElem(PyClass const &indexer, PyClass const &newElem) {
 PyClass *PyCodeblock::execute() {
 
     std::istringstream ss{code};
+    PyClass* classRecvd;
 
     while (ss.rdbuf()->in_avail() > 0) {
         char curr = ss.peek(); // Ignore white space :)
@@ -86,7 +87,12 @@ PyClass *PyCodeblock::execute() {
             ss.get();
             continue;
         }
-        ExpressionParser::getParser().parseNewExpression(ss);
+        classRecvd = ExpressionParser::getParser().parseNewExpression(ss);
+        if (classRecvd->isReturnValue) {
+            classRecvd->expressionDepth = MemoryManager::getManager().getCurrentDepth(); // TODO test this specific line
+            MemoryManager::getManager().classesByExpDepth.at(classRecvd->expressionDepth - 1)->push_back(classRecvd);
+            return classRecvd;
+        }
     }
     // TODO implement something for the return keyword
     return MemoryManager::getManager().getNone();

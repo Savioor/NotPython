@@ -44,6 +44,7 @@ public:
     int memoryAllocationLocation;
     BuiltInClasses type;
     bool marked; // For mark&sweep
+    bool isReturnValue; // Altered by return.
 
     std::map<std::string, PyClass*> pointerMap;
 

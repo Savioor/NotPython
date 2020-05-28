@@ -98,6 +98,7 @@ PyClass *PyFunction::call(PyClass &params) {
         }
 
         ret = ((PyCodeblock*)pointerMap["b"])->execute();
+        ret->isReturnValue = false;
 
     } else {
         throw std::runtime_error("Input parameter amount doesn't match function signature");
