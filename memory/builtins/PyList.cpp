@@ -58,7 +58,7 @@ PyBool *PyList::logicalNot() const {
     return nullptr;
 }
 
-PyClass *PyList::call(PyClass const &params) {
+PyClass *PyList::call(PyClass &params) {
     return nullptr;
 }
 

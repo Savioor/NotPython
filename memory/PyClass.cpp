@@ -30,7 +30,7 @@ PyClass *PyClass::setSelf(PyClass &other) { // Only used by PyVariable really, s
 }
 
 PyClass *PyClass::getSelf() {
-    if (type == pyOTHER || type == pyARRAY) return this;
+    if (type == pyOTHER || type == pyARRAY || type == pyFUNCTION || type == pyCODE_BLOCK) return this;
     if (type == pyVAR) return ((PyVariable*)this)->getChild();
     return nullptr;
 }

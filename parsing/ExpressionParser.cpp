@@ -21,6 +21,7 @@
 #include "operators/encapsulating/SquiglyBrackets.h"
 #include "operators/binary/nextBinary/If.h"
 #include "operators/binary/CommaOperator.h"
+#include "operators/special/Def.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -48,8 +49,10 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
         std::shared_ptr<BinaryOperator> asBin;
         std::shared_ptr<UnaryForNext> asUnar;
         std::shared_ptr<NextBinary> asBinAft;
+        std::shared_ptr<TernaryAllAfter> asTer;
         PyClass* lClass;
         PyClass* rClass;
+        PyClass* tClass;
 
         if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Checking if length == 1
             PyClass* retVal = tokenizedExpr->getStart()->value->getAsClass();
@@ -120,19 +123,46 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
                 tokenizedExpr->disconnectAndDeleteValue(toExecute);
                 break;
+            case TERNARY_ALL_AFTER:
+                if (toExecute->next == nullptr || toExecute->next->next == nullptr || toExecute->next->next->next == nullptr) {
+                    throw std::runtime_error("Ternary operator operand not found");
+                }
+                lClass = toExecute->next->value->getAsClass();
+                rClass = toExecute->next->next->value->getAsClass();
+                tClass = toExecute->next->next->next->value->getAsClass();
+
+                if (lClass == nullptr || rClass == nullptr || tClass == nullptr){
+                    throw std::runtime_error("Ternary operator operand is not a class");
+                }
+                asTer = std::dynamic_pointer_cast<TernaryAllAfter>(currOp);
+                tokenizedExpr->connectAfterV(toExecute,
+                                             std::shared_ptr<Operator>(new ClassOperator(asTer->reduce(lClass, rClass, tClass))));
+
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute);
+                break;
             case CLASS:
                 if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Easy way to check length == 1
                     delete(tokenizedExpr);
                     return currOp->getAsClass();
                 } else {
-                    throw std::runtime_error("Reached ClassOperator which is not last in expr");
+                    if (toExecute->next != nullptr && toExecute->next->value->bt == BT_ROUND) {
+                        rClass = toExecute->next->value->getAsClass();
+                        PyClass* funcCall = currOp->getAsClass()->call(*rClass);
+                        tokenizedExpr->connectAfterV(toExecute, std::shared_ptr<Operator>(new ClassOperator(funcCall)));
+                        tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                        tokenizedExpr->disconnectAndDeleteValue(toExecute);
+                    } else {
+                        throw std::runtime_error("Reached ClassOperator which is not last in expr");
+                    }
                 }
                 break;
         }
     }
 
-    throw std::runtime_error("Can't finish parsing equation");
-    return nullptr;
+    return MemoryManager::getManager().getNone();
 }
 
 ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{}, numbers{} {
@@ -176,6 +206,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     keywords.insert({"print", std::shared_ptr<Operator>(new Print())});
     keywords.insert({"if",std::shared_ptr<Operator>(new If())});
     keywords.insert({"None", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getNone()))});
+    keywords.insert({"def", std::shared_ptr<Operator>(new Def())});
 
 }
 

@@ -37,7 +37,7 @@ PyClass *PyString::negate() const {
     return nullptr;
 }
 
-PyClass *PyString::call(PyClass const &params) {
+PyClass *PyString::call(PyClass &params) {
     return nullptr;
 }
 

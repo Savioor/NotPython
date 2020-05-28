@@ -95,7 +95,7 @@ PyClass *PyInteger::negate() const {
     return new PyInteger(-value);
 }
 
-PyClass *PyInteger::call(PyClass const &params) {
+PyClass *PyInteger::call(PyClass &params) {
     return nullptr;
 }
 

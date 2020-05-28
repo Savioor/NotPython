@@ -78,8 +78,7 @@ public:
 
     virtual PyBool* logicalNot() const = 0;
 
-    // TODO This should receive List const& when they exist
-    virtual PyClass* call(PyClass const& params) = 0;
+    virtual PyClass* call(PyClass& params) = 0;
 
     virtual const PyString* asString() const = 0;
 

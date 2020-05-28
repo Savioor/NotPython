@@ -110,8 +110,8 @@ int MemoryManager::getCurrentDepth() {
 
 PyClass *MemoryManager::getVariable(const std::string &name) {
     for (int i = namedVariableStack.size() - 1; i >= 0; i--) {
-        if (namedVariableStack.at(0).count(name) != 0) {
-            return namedVariableStack.at(0).at(name);
+        if (namedVariableStack.at(i).count(name) != 0) {
+            return namedVariableStack.at(i).at(name);
         }
     }
     return new PyVariable(name);
@@ -191,4 +191,12 @@ PyClass *MemoryManager::getNone() {
         decreaseExpDepth();
     }
     return NONE;
+}
+
+void MemoryManager::increaseStackDepth() {
+    namedVariableStack.emplace_back();
+}
+
+void MemoryManager::decreaseStackDepth() {
+    namedVariableStack.pop_back();
 }

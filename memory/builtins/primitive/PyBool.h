@@ -27,7 +27,7 @@ public:
 
     PyClass *negate() const override;
 
-    PyClass *call(PyClass const &params) override;
+    PyClass *call(PyClass &params) override;
 
     PyBool *leftAnd(PyClass const &rightElem) const override;
 

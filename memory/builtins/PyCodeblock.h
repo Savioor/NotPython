@@ -40,7 +40,7 @@ public:
 
     PyBool *logicalNot() const override;
 
-    PyClass *call(PyClass const &params) override;
+    PyClass *call(PyClass &params) override;
 
     const PyString *asString() const override;
 

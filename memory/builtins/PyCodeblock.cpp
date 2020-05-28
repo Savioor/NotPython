@@ -60,7 +60,7 @@ PyBool *PyCodeblock::logicalNot() const {
     return nullptr;
 }
 
-PyClass *PyCodeblock::call(PyClass const &params) {
+PyClass *PyCodeblock::call(PyClass &params) {
     return execute();
 }
 

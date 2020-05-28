@@ -72,7 +72,7 @@ PyBool *PyVariable::logicalNot() const {
     return child->logicalNot();
 }
 
-PyClass *PyVariable::call(PyClass const &params) {
+PyClass *PyVariable::call(PyClass &params) {
     nullptrTest();
     return child->call(params);
 }
@@ -118,18 +118,22 @@ void PyVariable::nullptrTest() const {
 PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
-    MemoryManager::getManager().allocateVariable(this);
+    alloced = false;
     pointerMap.insert({"", child});
 }
 
 PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(name)} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
-    MemoryManager::getManager().allocateVariable(this);
+    alloced = false;
     pointerMap.insert({"", child});
 }
 
 PyClass *PyVariable::setSelf(PyClass &other) {
+    if (!alloced) {
+        MemoryManager::getManager().allocateVariable(this);
+        alloced = true;
+    }
     if (other.type == pyOTHER) {
         if (child != nullptr) child->references--;
         child = &other;

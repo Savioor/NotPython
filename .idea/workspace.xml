@@ -12,27 +12,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/memory/builtins/PyFunction.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/PyFunction.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/operators/special/Def.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/operators/special/Def.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/operators/special/TernaryAllAfter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parsing/operators/special/TernaryAllAfter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/MemoryManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/MemoryManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyBool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyBool.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/PyClass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/PyClass.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/PyClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/PyClass.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyInteger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyInteger.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyFunction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyFunction.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/builtins/PyList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyList.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyString.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyString.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyString.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyList.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyString.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyString.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/SimpleBinaryOperator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/SimpleBinaryOperator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/nextBinary/If.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/nextBinary/If.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/SquiglyBrackets.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/SquiglyBrackets.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/encapsulating/StringLiteral.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/encapsulating/StringLiteral.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/unary/unaryForNext/Print.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/unary/unaryForNext/Print.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/Operator.h" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/Operator.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,9 @@
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="BasicPythonInterpreter" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -145,7 +153,7 @@
       <workItem from="1590147136958" duration="4332000" />
       <workItem from="1590163618429" duration="5552000" />
       <workItem from="1590503839252" duration="208000" />
-      <workItem from="1590655294533" duration="6976000" />
+      <workItem from="1590655294533" duration="12658000" />
     </task>
     <servers />
   </component>
@@ -170,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Inspections/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588686072526" />
-    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1590662325500">
+    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser" timestamp="1590664783050">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590662325500" />
+    <state x="765" y="218" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590664783050" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590150950297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -190,38 +198,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="307" y="518" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1588685412235" />
-    <state width="1877" height="466" key="GridCell.Tab.0.bottom" timestamp="1590663131830">
+    <state width="1877" height="211" key="GridCell.Tab.0.bottom" timestamp="1590668784063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="466" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663131830" />
-    <state width="1877" height="466" key="GridCell.Tab.0.center" timestamp="1590663131830">
+    <state width="1877" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668784063" />
+    <state width="1877" height="211" key="GridCell.Tab.0.center" timestamp="1590668784063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="466" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663131830" />
-    <state width="1877" height="466" key="GridCell.Tab.0.left" timestamp="1590663131830">
+    <state width="1877" height="211" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668784063" />
+    <state width="1877" height="211" key="GridCell.Tab.0.left" timestamp="1590668784063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="466" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663131830" />
-    <state width="1877" height="466" key="GridCell.Tab.0.right" timestamp="1590663131830">
+    <state width="1877" height="211" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668784063" />
+    <state width="1877" height="211" key="GridCell.Tab.0.right" timestamp="1590668784063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="466" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663131830" />
-    <state width="1877" height="387" key="GridCell.Tab.1.bottom" timestamp="1590663037968">
+    <state width="1877" height="211" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668784063" />
+    <state width="1877" height="211" key="GridCell.Tab.1.bottom" timestamp="1590668783985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663037968" />
-    <state width="1877" height="387" key="GridCell.Tab.1.center" timestamp="1590663037968">
+    <state width="1877" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668783985" />
+    <state width="1877" height="211" key="GridCell.Tab.1.center" timestamp="1590668783985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663037968" />
-    <state width="1877" height="387" key="GridCell.Tab.1.left" timestamp="1590663037968">
+    <state width="1877" height="211" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668783985" />
+    <state width="1877" height="211" key="GridCell.Tab.1.left" timestamp="1590668783985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663037968" />
-    <state width="1877" height="387" key="GridCell.Tab.1.right" timestamp="1590663037968">
+    <state width="1877" height="211" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668783985" />
+    <state width="1877" height="211" key="GridCell.Tab.1.right" timestamp="1590668783985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="387" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590663037968" />
+    <state width="1877" height="211" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590668783985" />
     <state x="540" y="247" key="SettingsEditor" timestamp="1588685480862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -238,10 +246,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590095928738" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590658730510">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590666797750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590658730510" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590666797750" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -42,7 +42,7 @@ PyClass *PyBool::negate() const {
     return nullptr;
 }
 
-PyClass *PyBool::call(PyClass const &params) {
+PyClass *PyBool::call(PyClass &params) {
     return nullptr;
 }
 
