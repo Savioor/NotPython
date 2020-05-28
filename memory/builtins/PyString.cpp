@@ -73,10 +73,11 @@ PyBool *PyString::leftOr(PyClass const &rightElem) const {
 }
 
 PyBool *PyString::leftEql(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pySTRING:
-            return new PyBool(value == ((PyString const&)rightElem).getValue());
+            return new PyBool(value == ((PyString const&)right).getValue());
 
     }
     return new PyBool(false);

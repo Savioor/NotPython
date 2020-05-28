@@ -35,3 +35,11 @@ PyClass *PyClass::getSelf() {
     return nullptr;
 }
 
+const PyClass &PyClass::getRaw() const {
+    return *this;
+}
+
+PyClass &PyClass::getRaw() {
+    return *this;
+}
+

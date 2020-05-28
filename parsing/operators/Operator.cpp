@@ -4,7 +4,7 @@
 
 #include "Operator.h"
 
-Operator::Operator(OPERATOR_TYPE t) : type{t} {
+Operator::Operator(OPERATOR_TYPE t) : type{t}, bt{BT_NONE} {
     precedence = 0;
 }
 

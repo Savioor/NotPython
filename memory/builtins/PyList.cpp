@@ -73,10 +73,6 @@ const PyString *PyList::asString() const {
 }
 
 PyClass *PyList::getElem(PyClass const &indexer) const {
-    switch (indexer.type){
-        case pyINTEGER:
-            return ls.at(((PyInteger const&)indexer).getValue()); // TODO replace c++ out of bound error with custom one
-    }
     return nullptr;
 }
 

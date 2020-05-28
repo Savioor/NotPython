@@ -8,3 +8,8 @@ BinaryOperator::BinaryOperator() : Operator(BINARY) {
 
 }
 
+PyClass *BinaryOperator::reduceWithBracketContext(PyClass *left, PyClass *right, BRACKET_TYPE leftContext,
+                                                  BRACKET_TYPE rightContext) {
+    return reduce(left, right);
+}
+

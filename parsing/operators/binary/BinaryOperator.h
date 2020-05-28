@@ -8,6 +8,7 @@
 
 #include "../../../memory/PyClass.h"
 #include "../Operator.h"
+#include "../encapsulating/Brackets.h"
 
 
 class BinaryOperator : public Operator {
@@ -17,6 +18,9 @@ public:
     BinaryOperator();
 
     virtual PyClass* reduce(PyClass* left, PyClass* right) = 0;
+
+    virtual PyClass* reduceWithBracketContext(PyClass* left, PyClass* right, BRACKET_TYPE leftContext,
+            BRACKET_TYPE rightContext);
 
 };
 

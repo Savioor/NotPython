@@ -11,7 +11,7 @@ PyClass *RoundBrackets::getAsClass() const {
     return ExpressionParser::getParser().parse(ss);
 }
 
-RoundBrackets::RoundBrackets() : Brackets('(', ')') {
+RoundBrackets::RoundBrackets() : Brackets('(', ')', BT_ROUND) {
 
 }
 

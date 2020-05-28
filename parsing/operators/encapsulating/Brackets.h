@@ -11,7 +11,8 @@
 class Brackets : public EncapsulatingOperator {
 
 public:
-    Brackets(char, char);
+
+    Brackets(char, char, BRACKET_TYPE);
 
     void supplyInnards(std::string *innards) override;
 

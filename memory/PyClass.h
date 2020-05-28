@@ -95,6 +95,9 @@ public:
 
     // Returns itself if PyOTHER, child if PyVAR, and copy of itself otherwise
     virtual PyClass* getSelf();
+    // Returns self if not PyVariable. If PyVaribale returns child.getRaw();
+    virtual const PyClass& getRaw() const;
+    virtual PyClass& getRaw();
 
 };
 

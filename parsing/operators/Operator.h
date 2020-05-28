@@ -19,6 +19,16 @@ enum OPERATOR_TYPE {
 
 };
 
+enum BRACKET_TYPE {
+
+    BT_ROUND,
+    BT_SQUARE,
+    BT_SQUIG,
+    BT_TRIG,
+    BT_NONE
+
+};
+
 class Operator {
 
 public:
@@ -30,6 +40,9 @@ public:
     virtual PyClass* getAsClass() const;
 
     int getPrecedence();
+
+    BRACKET_TYPE bt;
+
 
 protected:
     // Lower = done later. higher = done sooner

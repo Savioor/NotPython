@@ -138,10 +138,20 @@ PyClass *PyVariable::setSelf(PyClass &other) {
         return setSelf(*other.getSelf());
     } else {
         if (child != nullptr) child->references--;
-        child = other.getSelf(); // TPESHJJRF{OSDJF{JSDF{IJS{ODF
+        child = other.getSelf();
         child->references++;
     }
     pointerMap[""] = child;
     return child;
+}
+
+const PyClass& PyVariable::getRaw() const {
+    if (child == nullptr) return *this;
+    return child->getRaw();
+}
+
+PyClass& PyVariable::getRaw() {
+    if (child == nullptr) return *this;
+    return child->getRaw();
 }
 

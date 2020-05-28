@@ -20,6 +20,7 @@
 #include "operators/unary/unaryForNext/Print.h"
 #include "operators/encapsulating/SquiglyBrackets.h"
 #include "operators/binary/nextBinary/If.h"
+#include "operators/binary/CommaOperator.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -69,18 +70,14 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 lClass = toExecute->prev->value->getAsClass();
                 rClass = toExecute->next->value->getAsClass();
 
-                // TODO temporary, make better pls
-                if (rClass->type == pyVAR){
-                    rClass = ((PyVariable*)rClass)->getChild();
-                }
-                // -------------------------------
-
                 if (lClass == nullptr || rClass == nullptr){
                     throw std::runtime_error("Right or left operand of binary expression are not classes.");
                 }
                 asBin = std::dynamic_pointer_cast<BinaryOperator>(currOp);
                 tokenizedExpr->connectAfterV(toExecute,
-                        std::shared_ptr<Operator>(new ClassOperator(asBin->reduce(lClass, rClass))));
+                        std::shared_ptr<Operator>(new ClassOperator(asBin->reduceWithBracketContext(
+                                lClass, rClass, toExecute->prev->value->bt, toExecute->next->value->bt
+                                ))));
 
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->prev);
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
@@ -93,12 +90,6 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                     throw std::runtime_error("Unary operator missing right operand");
                 }
                 rClass = toExecute->next->value->getAsClass();
-
-                // TODO temporary, make better pls
-                if (rClass->type == pyVAR){
-                    rClass = ((PyVariable*)rClass)->getChild();
-                }
-                // -------------------------------
 
                 if (rClass == nullptr){
                     throw std::runtime_error("Right operand of binary expression are not classes.");
@@ -118,12 +109,6 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 lClass = toExecute->next->value->getAsClass();
                 rClass = toExecute->next->next->value->getAsClass();
 
-                // TODO temporary, make better pls
-                if (rClass->type == pyVAR){
-                    rClass = ((PyVariable*)rClass)->getChild();
-                }
-                // -------------------------------
-
                 if (lClass == nullptr || rClass == nullptr){
                     throw std::runtime_error("Right or after right operand of binary expression are not classes.");
                 }
@@ -135,14 +120,12 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
                 tokenizedExpr->disconnectAndDeleteValue(toExecute);
                 break;
-            case ENCLOSING: // TODO (might not be needed)
-                break;
             case CLASS:
                 if (tokenizedExpr->getStart() == tokenizedExpr->getEnd()) { // Easy way to check length == 1
                     delete(tokenizedExpr);
                     return currOp->getAsClass();
                 } else {
-                    throw std::runtime_error("Can't finish parsing equation");
+                    throw std::runtime_error("Reached ClassOperator which is not last in expr");
                 }
                 break;
         }
@@ -159,13 +142,14 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     insertToBreakerMap("()[]\"\'{}", ENCAPSULATING); // Enclosing operator, this breaker class breaks itself
     insertToBreakerMap(" \t\r\n", WHITESPACE); // Whitespace
     insertToBreakerMap(".", DOT_OPERATOR); // Literally just the dot operator
+    insertToBreakerMap(",", COMMA); // comma
 
     operators.insert({"+", std::shared_ptr<Operator>(new SimpleBinaryOperator(11, PyClass::add))});
     operators.insert({"-", std::shared_ptr<Operator>(new SimpleBinaryOperator(11, PyClass::sub))});
     operators.insert({"*", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::mult))});
     operators.insert({"/", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::div))});
     operators.insert({"%", std::shared_ptr<Operator>(new SimpleBinaryOperator(12, PyClass::mod))});
-    operators.insert({"**", std::shared_ptr<Operator>(new SimpleBinaryOperator(14, PyClass::pow))}); // TODO this is subject to changes
+    operators.insert({"**", std::shared_ptr<Operator>(new SimpleBinaryOperator(14, PyClass::pow))});
 
     operators.insert({"==", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(8, PyClass::eql))});
     operators.insert({">", std::shared_ptr<Operator>(new SimpleBinaryOperatorBool(9, PyClass::bigger))});
@@ -179,6 +163,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     operators.insert({"[", std::shared_ptr<Operator>(new SquareBrackets())});
     operators.insert({"\"", std::shared_ptr<Operator>(new StringLiteral(true))});
     operators.insert({"'", std::shared_ptr<Operator>(new StringLiteral(false))});
+    operators.insert({",", std::shared_ptr<Operator>(new CommaOperator())});
 
     operators.insert({"{", std::shared_ptr<Operator>(new SquiglyBrackets())});
 

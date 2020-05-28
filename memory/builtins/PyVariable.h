@@ -50,6 +50,8 @@ public:
     PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
 
     PyClass *setSelf(PyClass &other) override;
+    const PyClass &getRaw() const override;
+    PyClass &getRaw() override;
 
     const std::string& getName() const;
     const PyClass* getChild() const;

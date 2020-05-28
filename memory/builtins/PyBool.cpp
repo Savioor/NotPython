@@ -47,30 +47,33 @@ PyClass *PyBool::call(PyClass const &params) {
 }
 
 PyBool *PyBool::leftAnd(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pyBOOL:
-            return new PyBool(value && ((PyBool const&)rightElem).getValue());
+            return new PyBool(value && ((PyBool const&)right).getValue());
 
     }
     return nullptr;
 }
 
 PyBool *PyBool::leftOr(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pyBOOL:
-            return new PyBool(value || ((PyBool const&)rightElem).getValue());
+            return new PyBool(value || ((PyBool const&)right).getValue());
 
     }
     return nullptr;
 }
 
 PyBool *PyBool::leftEql(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pyBOOL:
-            return new PyBool(value == ((PyBool const&)rightElem).getValue());
+            return new PyBool(value == ((PyBool const&)right).getValue());
 
     }
     return new PyBool(false);

@@ -12,22 +12,24 @@
 
 
 PyClass *PyInteger::leftAdd(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
         case pyINTEGER:
-            return new PyInteger(value + dynamic_cast<PyInteger const&>(rightElem).value);
+            return new PyInteger(value + dynamic_cast<PyInteger const&>(right).value);
         case pyDOUBLE:
 
             break;
         case pySTRING:
-            return new PyString(std::to_string(value) + dynamic_cast<PyString const&>(rightElem).getValue());
+            return new PyString(std::to_string(value) + dynamic_cast<PyString const&>(right).getValue());
     }
     return nullptr;
 }
 
 PyClass *PyInteger::leftMult(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
         case pyINTEGER:
-            return new PyInteger(value * dynamic_cast<PyInteger const&>(rightElem).value);
+            return new PyInteger(value * dynamic_cast<PyInteger const&>(right).value);
         case pyDOUBLE:
 
             break;
@@ -39,9 +41,10 @@ PyClass *PyInteger::leftMult(PyClass const &rightElem) const {
 }
 
 PyClass *PyInteger::leftDiv(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
         case pyINTEGER:
-            return new PyInteger(value / dynamic_cast<PyInteger const&>(rightElem).value);
+            return new PyInteger(value / dynamic_cast<PyInteger const&>(right).value);
         case pyDOUBLE:
 
             break;
@@ -50,9 +53,10 @@ PyClass *PyInteger::leftDiv(PyClass const &rightElem) const {
 }
 
 PyClass *PyInteger::leftSub(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
         case pyINTEGER:
-            return new PyInteger(value - dynamic_cast<PyInteger const&>(rightElem).value);
+            return new PyInteger(value - dynamic_cast<PyInteger const&>(right).value);
         case pyDOUBLE:
 
             break;
@@ -61,9 +65,10 @@ PyClass *PyInteger::leftSub(PyClass const &rightElem) const {
 }
 
 PyClass *PyInteger::leftModulu(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
         case pyINTEGER:
-            return new PyInteger(value % dynamic_cast<PyInteger const&>(rightElem).value);
+            return new PyInteger(value % dynamic_cast<PyInteger const&>(right).value);
         case pyDOUBLE:
 
             break;
@@ -72,9 +77,10 @@ PyClass *PyInteger::leftModulu(PyClass const &rightElem) const {
 }
 
 PyClass *PyInteger::leftPower(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
         case pyINTEGER:
-            return new PyInteger(std::round(std::pow(value, dynamic_cast<PyInteger const&>(rightElem).value)));
+            return new PyInteger(std::round(std::pow(value, dynamic_cast<PyInteger const&>(right).value)));
         case pyDOUBLE:
 
             break;
@@ -127,10 +133,11 @@ PyBool *PyInteger::leftOr(PyClass const &rightElem) const {
 }
 
 PyBool *PyInteger::leftEql(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pyINTEGER:
-            return new PyBool(value == ((PyInteger const&)rightElem).getValue());
+            return new PyBool(value == ((PyInteger const&)right).getValue());
         case pyDOUBLE:
             break; // TODO
 
@@ -139,10 +146,11 @@ PyBool *PyInteger::leftEql(PyClass const &rightElem) const {
 }
 
 PyBool *PyInteger::leftBigger(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pyINTEGER:
-            return new PyBool(value > ((PyInteger const&)rightElem).getValue());
+            return new PyBool(value > ((PyInteger const&)right).getValue());
         case pyDOUBLE:
             break; // TODO
 
@@ -151,10 +159,11 @@ PyBool *PyInteger::leftBigger(PyClass const &rightElem) const {
 }
 
 PyBool *PyInteger::leftSmaller(PyClass const &rightElem) const {
-    switch (rightElem.type){
+    const PyClass& right = rightElem.getRaw();
+    switch (right.type){
 
         case pyINTEGER:
-            return new PyBool(value < ((PyInteger const&)rightElem).getValue());
+            return new PyBool(value < ((PyInteger const&)right).getValue());
         case pyDOUBLE:
             break; // TODO
 

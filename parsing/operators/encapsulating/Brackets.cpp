@@ -42,6 +42,8 @@ bool Brackets::atEncapsulationEnd(char currChar) {
 
 }
 
-Brackets::Brackets(char opening, char closing) : bracketDepthCount(0), lastChar('\0'),
-                       inString(false), isDoubleQuoteString(false), closingChar{closing}, openingChar{opening} {}
+Brackets::Brackets(char opening, char closing, BRACKET_TYPE b) : bracketDepthCount(0), lastChar('\0'),
+                       inString(false), isDoubleQuoteString(false), closingChar{closing}, openingChar{opening} {
+    bt = b;
+}
 
