@@ -7,7 +7,7 @@
 
 
 #include "BinaryOperator.h"
-#include "../../../memory/builtins/PyBool.h"
+#include "../../../memory/builtins/primitive/PyBool.h"
 
 class SimpleBinaryOperator : public BinaryOperator {
 

@@ -3,8 +3,8 @@
 //
 
 #include "PyList.h"
-#include "PyString.h"
-#include "PyInteger.h"
+#include "primitive/PyString.h"
+#include "primitive/PyInteger.h"
 
 PyClass *PyList::leftAdd(PyClass const &rightElem) const {
     return nullptr;

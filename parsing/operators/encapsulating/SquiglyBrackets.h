@@ -22,7 +22,6 @@ public:
     PyClass *getAsClass() const override;
 
 protected:
-    std::string* expr;
     int bracketDepthCount;
     char lastChar;
     bool inString;

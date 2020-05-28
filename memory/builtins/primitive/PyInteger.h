@@ -8,7 +8,7 @@
 
 #include <stdint-gcc.h>
 #include <cstdint>
-#include "../PyClass.h"
+#include "../../PyClass.h"
 #include "PyString.h"
 
 class PyInteger : public PyClass {

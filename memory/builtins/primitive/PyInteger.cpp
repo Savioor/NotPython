@@ -8,7 +8,7 @@
 #include <cmath>
 #include <iostream>
 #include "PyBool.h"
-#include "../../debug.h"
+#include "../../../debug.h"
 
 
 PyClass *PyInteger::leftAdd(PyClass const &rightElem) const {

@@ -3,7 +3,7 @@
 //
 
 #include "StringLiteral.h"
-#include "../../../memory/builtins/PyString.h"
+#include "../../../memory/builtins/primitive/PyString.h"
 
 EncapsulatingOperator *StringLiteral::supplySelf() {
     return new StringLiteral(isDoubleQuote);

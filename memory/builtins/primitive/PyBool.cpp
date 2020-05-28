@@ -3,7 +3,7 @@
 //
 
 #include "PyBool.h"
-#include "../../debug.h"
+#include "../../../debug.h"
 #include "PyString.h"
 #include <iostream>
 

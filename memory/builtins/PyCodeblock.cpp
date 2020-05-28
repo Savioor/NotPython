@@ -4,7 +4,8 @@
 
 #include "PyCodeblock.h"
 #include "../../parsing/ExpressionParser.h"
-#include "PyInteger.h"
+#include "primitive/PyInteger.h"
+#include "../MemoryManager.h"
 #include <sstream>
 
 PyClass *PyCodeblock::leftAdd(PyClass const &rightElem) const {
@@ -88,7 +89,7 @@ PyClass *PyCodeblock::execute() {
         ExpressionParser::getParser().parseNewExpression(ss);
     }
     // TODO implement something for the return keyword
-    return new PyInteger(1); // TODO replace with None
+    return MemoryManager::getManager().getNone();
 }
 
 PyCodeblock::PyCodeblock(std::string &&code) : code{code} {

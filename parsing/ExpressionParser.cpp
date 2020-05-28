@@ -6,7 +6,7 @@
 #include <memory>
 #include "ExpressionParser.h"
 #include "operators/ClassOperator.h"
-#include "../memory/builtins/PyInteger.h"
+#include "../memory/builtins/primitive/PyInteger.h"
 #include "../debug.h"
 #include "operators/binary/SimpleBinaryOperator.h"
 #include "operators/encapsulating/EncapsulatingOperator.h"
@@ -175,6 +175,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
 
     keywords.insert({"print", std::shared_ptr<Operator>(new Print())});
     keywords.insert({"if",std::shared_ptr<Operator>(new If())});
+    keywords.insert({"None", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getNone()))});
 
 }
 

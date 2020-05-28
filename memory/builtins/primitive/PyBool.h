@@ -2,18 +2,16 @@
 // Created by USER on 5/13/2020.
 //
 
-#ifndef BASICPYTHONINTERPRETER_PYSTRING_H
-#define BASICPYTHONINTERPRETER_PYSTRING_H
+#ifndef BASICPYTHONINTERPRETER_PYBOOL_H
+#define BASICPYTHONINTERPRETER_PYBOOL_H
 
 
-#include <string>
-#include "../PyClass.h"
+#include "../../PyClass.h"
 
-class PyString : public PyClass {
+class PyBool : public PyClass {
 
 public:
-    PyString(std::string&& string);
-    ~PyString() override = default;
+    PyBool(bool);
 
     PyClass *leftAdd(PyClass const &rightElem) const override;
 
@@ -49,14 +47,15 @@ public:
 
     PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
 
-    const std::string& getValue() const;
+    const bool& getValue() const;
 
     PyClass *getSelf() override;
 
 private:
-    std::string value;
+    bool value;
+
 
 };
 
 
-#endif //BASICPYTHONINTERPRETER_PYSTRING_H
+#endif //BASICPYTHONINTERPRETER_PYBOOL_H

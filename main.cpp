@@ -1,9 +1,9 @@
 
 #include <iostream>
-#include "memory/builtins/PyString.h"
+#include "memory/builtins/primitive/PyString.h"
 #include "parsing/ExpressionParser.h"
 #include "memory/MemoryManager.h"
-#include "memory/builtins/PyInteger.h"
+#include "memory/builtins/primitive/PyInteger.h"
 #include "memory/builtins/PyVariable.h"
 
 int main() {

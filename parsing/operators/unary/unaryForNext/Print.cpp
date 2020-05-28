@@ -3,12 +3,13 @@
 //
 
 #include "Print.h"
-#include "../../../../memory/builtins/PyInteger.h"
+#include "../../../../memory/builtins/primitive/PyInteger.h"
+#include "../../../../memory/MemoryManager.h"
 #include <iostream>
 
 PyClass *Print::expand(PyClass *next) {
     std::cout << next->asString()->getValue() << std::endl;
-    return new PyInteger(1); // TODO placeholder for None
+    return MemoryManager::getManager().getNone();
 }
 
 Print::Print() {

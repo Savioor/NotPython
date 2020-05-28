@@ -1,17 +1,19 @@
 //
-// Created by USER on 5/13/2020.
+// Created by USER on 5/28/2020.
 //
 
-#ifndef BASICPYTHONINTERPRETER_PYBOOL_H
-#define BASICPYTHONINTERPRETER_PYBOOL_H
+#ifndef BASICPYTHONINTERPRETER_PYFUNCTION_H
+#define BASICPYTHONINTERPRETER_PYFUNCTION_H
 
 
 #include "../PyClass.h"
+#include "PyCodeblock.h"
+#include "PyList.h"
 
-class PyBool : public PyClass {
+class PyFunction : public PyClass {
 
 public:
-    PyBool(bool);
+    PyFunction(PyClass*, PyCodeblock*);
 
     PyClass *leftAdd(PyClass const &rightElem) const override;
 
@@ -27,8 +29,6 @@ public:
 
     PyClass *negate() const override;
 
-    PyClass *call(PyClass const &params) override;
-
     PyBool *leftAnd(PyClass const &rightElem) const override;
 
     PyBool *leftOr(PyClass const &rightElem) const override;
@@ -41,21 +41,15 @@ public:
 
     PyBool *logicalNot() const override;
 
+    PyClass *call(PyClass const &params) override;
+
     const PyString *asString() const override;
 
     PyClass *getElem(PyClass const &indexer) const override;
 
     PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
 
-    const bool& getValue() const;
-
-    PyClass *getSelf() override;
-
-private:
-    bool value;
-
-
 };
 
 
-#endif //BASICPYTHONINTERPRETER_PYBOOL_H
+#endif //BASICPYTHONINTERPRETER_PYFUNCTION_H

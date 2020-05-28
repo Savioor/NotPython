@@ -34,9 +34,12 @@ public:
     PyClass* getVariable(const std::string& name);
     int allocateVariable(PyVariable* var);
 
+    PyClass* getNone();
+
 protected:
     static MemoryManager* instance;
     int expressionDepth; // 0 = global expression aka the 'main' function.
+    PyClass* NONE;
 
 private:
     void markPointerMapOf(PyClass *cls);

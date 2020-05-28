@@ -4,7 +4,7 @@
 
 #include "PyString.h"
 #include "PyBool.h"
-#include "../../debug.h"
+#include "../../../debug.h"
 #include <iostream>
 
 PyClass *PyString::leftAdd(PyClass const &rightElem) const {

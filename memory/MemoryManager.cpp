@@ -5,7 +5,7 @@
 #include <iostream>
 #include "MemoryManager.h"
 #include "../debug.h"
-#include "builtins/PyInteger.h"
+#include "builtins/primitive/PyInteger.h"
 #include "builtins/PyVariable.h"
 #include "builtins/PyList.h"
 
@@ -41,6 +41,8 @@ MemoryManager::MemoryManager() : namedVariableStack{}, freeOpenCellsStack{}, mem
     expressionDepth = 0;
     namedVariableStack.emplace_back();
     classesByExpDepth = std::vector<std::vector<PyClass *> *>();
+
+    NONE = nullptr;
 
 }
 
@@ -144,7 +146,7 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
     PyClass *cls;
     for (int i = 0; i < memory.size(); i++) {
         cls = memory.at(i);
-        if (cls == nullptr || cls->marked || cls->expressionDepth != 0) continue;
+        if (cls == nullptr || cls->marked || cls->expressionDepth != 0 || cls == NONE) continue;
         deallocateClass(i);
     }
 
@@ -180,4 +182,13 @@ void MemoryManager::markPointerMapOf(PyClass *cls) {
     }
 
 
+}
+
+PyClass *MemoryManager::getNone() {
+    if (NONE == nullptr) {
+        increaseExpDepth();
+        NONE = new PyInteger(0);
+        decreaseExpDepth();
+    }
+    return NONE;
 }
