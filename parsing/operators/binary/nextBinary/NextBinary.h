@@ -16,6 +16,8 @@ public:
 
     virtual PyClass* reduce(PyClass* right, PyClass* afterRight) = 0;
 
+    virtual PyClass* reduceWithFullContext(Operator* right, Operator* afterRight);
+
 
 };
 

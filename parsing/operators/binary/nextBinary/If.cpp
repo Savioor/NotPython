@@ -11,14 +11,14 @@
 
 PyClass *If::reduce(PyClass *right, PyClass *afterRight) {
 
-    if (right->type != pyBOOL) {
+    if (right->getRaw().type != pyBOOL) {
         throw std::runtime_error("If expected boolean");
     }
     if (afterRight->type != pyCODE_BLOCK) {
         throw std::runtime_error("If expected code block");
     }
 
-    if (((PyBool*)right)->getValue()) {
+    if (((PyBool&)right->getRaw()).getValue()) {
         return ((PyCodeblock*) afterRight)->execute();
     }
 

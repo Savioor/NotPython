@@ -89,7 +89,8 @@ PyClass *PyCodeblock::execute() {
         }
         classRecvd = ExpressionParser::getParser().parseNewExpression(ss);
         if (classRecvd->isReturnValue) {
-            classRecvd->expressionDepth = MemoryManager::getManager().getCurrentDepth(); // TODO test this specific line
+            // TODO this creates issues with reference counting, consider expressions to not count towards references.
+            classRecvd->expressionDepth = MemoryManager::getManager().getCurrentDepth();
             MemoryManager::getManager().classesByExpDepth.at(classRecvd->expressionDepth - 1)->push_back(classRecvd);
             return classRecvd;
         }

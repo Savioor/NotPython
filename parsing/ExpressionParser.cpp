@@ -23,6 +23,7 @@
 #include "operators/binary/CommaOperator.h"
 #include "operators/special/Def.h"
 #include "operators/unary/unaryForNext/Return.h"
+#include "operators/binary/nextBinary/While.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -79,16 +80,11 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 if (toExecute->prev == nullptr || toExecute->next == nullptr) {
                     throw std::runtime_error("Binary operator missing left or right operand");
                 }
-                lClass = toExecute->prev->value->getAsClass();
-                rClass = toExecute->next->value->getAsClass();
 
-                if (lClass == nullptr || rClass == nullptr){
-                    throw std::runtime_error("Right or left operand of binary expression are not classes.");
-                }
                 asBin = std::dynamic_pointer_cast<BinaryOperator>(currOp);
                 tokenizedExpr->connectAfterV(toExecute,
-                        std::shared_ptr<Operator>(new ClassOperator(asBin->reduceWithBracketContext(
-                                lClass, rClass, toExecute->prev->value->bt, toExecute->next->value->bt
+                        std::shared_ptr<Operator>(new ClassOperator(asBin->reduceWithFullContext(
+                                toExecute->prev->value.get(), toExecute->next->value.get()
                                 ))));
 
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->prev);
@@ -118,15 +114,13 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                 if (toExecute->next == nullptr || toExecute->next->next == nullptr) {
                     throw std::runtime_error("Binary operator missing right or after right operand");
                 }
-                lClass = toExecute->next->value->getAsClass();
-                rClass = toExecute->next->next->value->getAsClass();
 
-                if (lClass == nullptr || rClass == nullptr){
-                    throw std::runtime_error("Right or after right operand of binary expression are not classes.");
-                }
                 asBinAft = std::dynamic_pointer_cast<NextBinary>(currOp);
                 tokenizedExpr->connectAfterV(toExecute,
-                                             std::shared_ptr<Operator>(new ClassOperator(asBinAft->reduce(lClass, rClass))));
+                                             std::shared_ptr<Operator>(new ClassOperator(
+                                                     asBinAft->reduceWithFullContext(toExecute->next->value.get(),
+                                                                                     toExecute->next->next->value.get())
+                                                     )));
 
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next->next);
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
@@ -217,6 +211,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     keywords.insert({"None", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getNone()))});
     keywords.insert({"def", std::shared_ptr<Operator>(new Def())});
     keywords.insert({"return", std::shared_ptr<Operator>(new Return())});
+    keywords.insert({"while", std::shared_ptr<Operator>(new While())});
 
 }
 

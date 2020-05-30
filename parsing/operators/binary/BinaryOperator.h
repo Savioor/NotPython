@@ -22,6 +22,8 @@ public:
     virtual PyClass* reduceWithBracketContext(PyClass* left, PyClass* right, BRACKET_TYPE leftContext,
             BRACKET_TYPE rightContext);
 
+    virtual PyClass* reduceWithFullContext(Operator* left, Operator*);
+
 };
 
 

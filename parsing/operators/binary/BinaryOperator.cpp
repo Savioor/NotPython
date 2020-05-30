@@ -13,3 +13,15 @@ PyClass *BinaryOperator::reduceWithBracketContext(PyClass *left, PyClass *right,
     return reduce(left, right);
 }
 
+PyClass *BinaryOperator::reduceWithFullContext(Operator *left, Operator *right) {
+    PyClass* lClass = left->getAsClass();
+    PyClass* rClass = right->getAsClass();
+
+    if (lClass == nullptr || rClass == nullptr) {
+        throw std::runtime_error("Right or left operand of binary expression are not classes.");
+    }
+
+    return reduceWithBracketContext(lClass, rClass, left->bt, right->bt);
+
+}
+

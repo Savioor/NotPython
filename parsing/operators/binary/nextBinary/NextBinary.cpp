@@ -7,3 +7,14 @@
 NextBinary::NextBinary() : Operator(BINARY_BOTH_AFTER) {
 
 }
+
+PyClass *NextBinary::reduceWithFullContext(Operator *right, Operator *afterRight) {
+    PyClass* lClass = right->getAsClass();
+    PyClass* rClass = afterRight->getAsClass();
+
+    if (lClass == nullptr || rClass == nullptr) {
+        throw std::runtime_error("right or after right operator of bin operator aren't classes.");
+    }
+
+    return reduce(lClass, rClass);
+}

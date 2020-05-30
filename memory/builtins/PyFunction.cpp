@@ -99,12 +99,14 @@ PyClass *PyFunction::call(PyClass &params) {
 
         ret = ((PyCodeblock*)pointerMap["b"])->execute();
         ret->isReturnValue = false;
+        ret->expressionDepth = MemoryManager::getManager().getCurrentDepth(); // TODO test this specific line
+        MemoryManager::getManager().classesByExpDepth.at(ret->expressionDepth - 1)->push_back(ret);
+
 
     } else {
         throw std::runtime_error("Input parameter amount doesn't match function signature");
     }
 
-    // TODO more than 1 input
     MemoryManager::getManager().decreaseStackDepth();
     return ret;
 }
