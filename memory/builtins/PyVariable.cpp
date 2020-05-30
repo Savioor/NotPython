@@ -115,14 +115,14 @@ void PyVariable::nullptrTest() const {
     }
 }
 
-PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name} {
+PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name}, myDepth{-1} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
     pointerMap.insert({"", child});
 }
 
-PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(name)} {
+PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(name)}, myDepth{-1} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
@@ -134,19 +134,27 @@ PyClass *PyVariable::setSelf(PyClass &other) {
         MemoryManager::getManager().allocateVariable(this);
         alloced = true;
     }
-    if (other.type == pyOTHER) {
-        if (child != nullptr) child->references--;
-        child = &other;
-        child->references++;
-    } else if (other.type == pyVAR) {
-        return setSelf(*other.getSelf());
+    if (myDepth != MemoryManager::getManager().getCurrentStackDepth()){
+
+        PyVariable* newPyVar = new PyVariable(varName);
+        newPyVar->setSelf(other);
+        return newPyVar->child;
+
     } else {
-        if (child != nullptr) child->references--;
-        child = other.getSelf();
-        child->references++;
+        if (other.type == pyOTHER) {
+            if (child != nullptr) child->references--;
+            child = &other;
+            child->references++;
+        } else if (other.type == pyVAR) {
+            return setSelf(*other.getSelf());
+        } else {
+            if (child != nullptr) child->references--;
+            child = other.getSelf();
+            child->references++;
+        }
+        pointerMap[""] = child;
+        return child;
     }
-    pointerMap[""] = child;
-    return child;
 }
 
 const PyClass& PyVariable::getRaw() const {

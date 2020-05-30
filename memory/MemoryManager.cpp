@@ -6,6 +6,7 @@
 #include "MemoryManager.h"
 #include "../debug.h"
 #include "builtins/primitive/PyInteger.h"
+#include "builtins/primitive/PyBool.h"
 #include "builtins/PyVariable.h"
 #include "builtins/PyList.h"
 
@@ -109,7 +110,8 @@ int MemoryManager::getCurrentDepth() {
 }
 
 PyClass *MemoryManager::getVariable(const std::string &name) {
-    for (int i = namedVariableStack.size() - 1; i >= 0; i--) {
+    int lastElem = namedVariableStack.size() - 1;
+    for (int i = lastElem; i >= 0; i--) {
         if (namedVariableStack.at(i).count(name) != 0) {
             return namedVariableStack.at(i).at(name);
         }
@@ -118,8 +120,9 @@ PyClass *MemoryManager::getVariable(const std::string &name) {
 }
 
 int MemoryManager::allocateVariable(PyVariable *var) {
-    namedVariableStack.at(namedVariableStack.size() - 1).insert({var->getName(), var});
-    return namedVariableStack.size() - 1;
+    namedVariableStack.at(getCurrentStackDepth()).insert({var->getName(), var});
+    var->myDepth = getCurrentStackDepth();
+    return getCurrentStackDepth();
 }
 
 void MemoryManager::markAndSweep() { // TODO run it properly and automatically
@@ -146,7 +149,7 @@ void MemoryManager::markAndSweep() { // TODO run it properly and automatically
     PyClass *cls;
     for (int i = 0; i < memory.size(); i++) {
         cls = memory.at(i);
-        if (cls == nullptr || cls->marked || cls->expressionDepth != 0 || cls == NONE) continue;
+        if (immune(cls)) continue;
         deallocateClass(i);
     }
 
@@ -199,4 +202,30 @@ void MemoryManager::increaseStackDepth() {
 
 void MemoryManager::decreaseStackDepth() {
     namedVariableStack.pop_back();
+}
+
+bool MemoryManager::immune(PyClass *cls) {
+    return cls == nullptr || cls->marked || cls->expressionDepth != 0 || cls == NONE || cls == TRUE || cls == FALSE;
+}
+
+PyClass *MemoryManager::getTrue() {
+    if (TRUE == nullptr) {
+        increaseExpDepth();
+        TRUE = new PyBool(true);
+        decreaseExpDepth();
+    }
+    return TRUE;
+}
+
+PyClass *MemoryManager::getFalse() {
+    if (FALSE == nullptr) {
+        increaseExpDepth();
+        FALSE = new PyBool(false);
+        decreaseExpDepth();
+    }
+    return FALSE;
+}
+
+int MemoryManager::getCurrentStackDepth() {
+    return namedVariableStack.size() - 1;
 }

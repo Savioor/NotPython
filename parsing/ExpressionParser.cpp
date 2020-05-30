@@ -212,6 +212,8 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     keywords.insert({"def", std::shared_ptr<Operator>(new Def())});
     keywords.insert({"return", std::shared_ptr<Operator>(new Return())});
     keywords.insert({"while", std::shared_ptr<Operator>(new While())});
+    keywords.insert({"true", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getTrue()))});
+    keywords.insert({"false", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getFalse()))});
 
 }
 

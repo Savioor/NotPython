@@ -57,6 +57,7 @@ public:
     const PyClass* getChild() const;
     PyClass* getChild();
     void setChild(PyClass*);
+    int myDepth;
 
 private:
     void nullptrTest() const;

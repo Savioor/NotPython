@@ -32,6 +32,7 @@ public:
     int allocateNewClass(PyClass*);
     void deallocateClass(int);
     int getCurrentDepth();
+    int getCurrentStackDepth();
 
     void markAndSweep();
 
@@ -39,16 +40,21 @@ public:
     int allocateVariable(PyVariable* var);
 
     PyClass* getNone();
+    PyClass* getTrue();
+    PyClass* getFalse();
 
 protected:
     static MemoryManager* instance;
     int expressionDepth; // 0 = global expression aka the 'main' function.
     PyClass* NONE;
+    PyClass* TRUE;
+    PyClass* FALSE;
 
 private:
     std::vector<std::map<std::string, PyVariable*>> namedVariableStack; // Stack depth dictated by code block depth
 
     void markPointerMapOf(PyClass *cls);
+    bool immune(PyClass*);
 
     MemoryManager& operator=(MemoryManager const&) = delete;
     MemoryManager(MemoryManager const&) = delete;
