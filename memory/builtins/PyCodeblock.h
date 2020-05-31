@@ -49,6 +49,7 @@ public:
     PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
 
     PyClass* execute();
+    PyClass* runAsClassStructure();
 
 private:
     std::string code;

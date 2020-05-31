@@ -1,20 +1,17 @@
 //
-// Created by USER on 5/17/2020.
+// Created by alexey on 31/05/2020.
 //
 
-#ifndef BASICPYTHONINTERPRETER_PYVARIABLE_H
-#define BASICPYTHONINTERPRETER_PYVARIABLE_H
+#ifndef BASICPYTHONINTERPRETER_PYCLASSSTRUCTURE_H
+#define BASICPYTHONINTERPRETER_PYCLASSSTRUCTURE_H
 
 
-#include <string>
-#include "../PyClass.h"
+#include "../../PyClass.h"
 
-class PyVariable : public PyClass {
+class PyClassStructure : public PyClass {
 
 public:
-    PyVariable(std::string&&);
-    PyVariable(std::string);
-    PyVariable(std::string, bool);
+    PyClassStructure();
 
     PyClass *leftAdd(PyClass const &rightElem) const override;
 
@@ -50,24 +47,9 @@ public:
 
     PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
 
-    PyClass *setSelf(PyClass &other) override;
-    const PyClass &getRaw() const override;
-    PyClass &getRaw() override;
-
-    const std::string& getName() const;
-    const PyClass* getChild() const;
-    PyClass* getChild();
-    void setChild(PyClass*);
-    int myDepth;
-
-private:
-    void nullptrTest() const;
-    PyClass* child;
-    std::string varName;
-    bool alloced;
-    bool allowAllocation;
+    std::vector<PyClassStructure*> baseClasses;
 
 };
 
 
-#endif //BASICPYTHONINTERPRETER_PYVARIABLE_H
+#endif //BASICPYTHONINTERPRETER_PYCLASSSTRUCTURE_H

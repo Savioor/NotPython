@@ -115,10 +115,21 @@ void PyVariable::nullptrTest() const {
     }
 }
 
+
+PyVariable::PyVariable(std::string data, bool b) : child{nullptr}, varName{std::move(data)}, myDepth{-1} {
+    allowAllocation = b;
+    type = pyVAR;
+    references++; // Make sure this is never deleted by quick GC
+    alloced = false;
+    pointerMap.insert({"", child});
+}
+
+
 PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name}, myDepth{-1} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
+    allowAllocation = true;
     pointerMap.insert({"", child});
 }
 
@@ -126,15 +137,16 @@ PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(nam
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
+    allowAllocation = true;
     pointerMap.insert({"", child});
 }
 
 PyClass *PyVariable::setSelf(PyClass &other) {
-    if (!alloced) {
+    if (!alloced && allowAllocation) {
         MemoryManager::getManager().allocateVariable(this);
         alloced = true;
     }
-    if (myDepth != MemoryManager::getManager().getCurrentStackDepth()){
+    if (myDepth != MemoryManager::getManager().getCurrentStackDepth() && allowAllocation){
 
         PyVariable* newPyVar = new PyVariable(varName);
         newPyVar->setSelf(other);

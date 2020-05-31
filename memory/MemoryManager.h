@@ -21,6 +21,7 @@ public:
     std::vector<PyClass*> memory;
     std::vector<std::vector<PyClass*>*> classesByExpDepth;
     std::vector<int> freeOpenCellsStack; // Vector can be used as a stack :)
+    std::vector<std::map<std::string, PyVariable*>> namedVariableStack; // Stack depth dictated by code block depth
 
 
     void decreaseExpDepth();
@@ -51,8 +52,6 @@ protected:
     PyClass* FALSE;
 
 private:
-    std::vector<std::map<std::string, PyVariable*>> namedVariableStack; // Stack depth dictated by code block depth
-
     void markPointerMapOf(PyClass *cls);
     bool immune(PyClass*);
 

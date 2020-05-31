@@ -29,12 +29,12 @@ int main() {
 
     ExpressionParser& parser = ExpressionParser::getParser();
     MemoryManager& manager = MemoryManager::getManager(); // for debug
-//
-//    while (1) {
-//        PyClass *cls = parser.parseNewExpression(std::cin);
-//    };
 
-    run_from_file("C:\\Users\\USER\\CLionProjects\\NotPython\\examples\\find_primes.npy");
+    while (1) {
+        PyClass *cls = parser.parseNewExpression(std::cin);
+    };
+
+    run_from_file("/home/alexey/CLionProjects/BasicPythonInterpreter/examples/find_primes.npy");
 
     return 0;
 }

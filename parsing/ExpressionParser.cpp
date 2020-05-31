@@ -24,6 +24,8 @@
 #include "operators/special/Def.h"
 #include "operators/unary/unaryForNext/Return.h"
 #include "operators/binary/nextBinary/While.h"
+#include "operators/binary/DotOperator.h"
+#include "operators/special/ClassCreation.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -197,6 +199,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     operators.insert({"\"", std::shared_ptr<Operator>(new StringLiteral(true))});
     operators.insert({"'", std::shared_ptr<Operator>(new StringLiteral(false))});
     operators.insert({",", std::shared_ptr<Operator>(new CommaOperator())});
+    operators.insert({".", std::shared_ptr<Operator>(new DotOperator())});
 
     operators.insert({"{", std::shared_ptr<Operator>(new SquiglyBrackets())});
 
@@ -212,6 +215,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     keywords.insert({"def", std::shared_ptr<Operator>(new Def())});
     keywords.insert({"return", std::shared_ptr<Operator>(new Return())});
     keywords.insert({"while", std::shared_ptr<Operator>(new While())});
+    keywords.insert({"class", std::shared_ptr<Operator>(new ClassCreation())});
     keywords.insert({"true", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getTrue()))});
     keywords.insert({"false", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getFalse()))});
 
