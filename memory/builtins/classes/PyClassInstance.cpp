@@ -3,6 +3,7 @@
 //
 
 #include "PyClassInstance.h"
+#include "PyMethod.h"
 
 PyClass *PyClassInstance::leftAdd(PyClass const &rightElem) const {
     return nullptr;
@@ -74,6 +75,15 @@ PyClass *PyClassInstance::setElem(PyClass const &indexer, PyClass const &newElem
 
 PyClassInstance::PyClassInstance(PyClassStructure* strct) : type{strct} {
 
-    // TODO generate all methods
+    for (auto& variable : strct->pointerMap) {
+        PyClass* secondUnwrapped = &variable.second->getRaw();
+        if (secondUnwrapped->type == pyFUNCTION) {
+            // This is a method
+            pointerMap.insert({variable.first, new PyMethod((PyFunction*)secondUnwrapped, this)});
+        } else {
+            // This is a static variable
+            pointerMap.insert({variable.first, variable.second});
+        }
+    }
 
 }

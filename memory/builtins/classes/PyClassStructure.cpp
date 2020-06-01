@@ -4,6 +4,7 @@
 
 #include "PyClassStructure.h"
 #include "PyClassInstance.h"
+#include "../../MemoryManager.h"
 
 PyClass *PyClassStructure::leftAdd(PyClass const &rightElem) const {
     return nullptr;
@@ -59,7 +60,18 @@ PyBool *PyClassStructure::logicalNot() const {
 
 PyClass *PyClassStructure::call(PyClass &params) {
     PyClassInstance* newInstance = new PyClassInstance(this);
-    return pointerMap["__init__"]->call(*newInstance);
+    if (&params == MemoryManager::getManager().getNone()) {
+        return pointerMap["__init__"]->call(*newInstance);
+    } else if (params.type != pyARRAY) {
+        PyList* inputList = new PyList();
+        inputList->pushBack(newInstance);
+        inputList->pushBack(&params);
+        return pointerMap["__init__"]->call(*inputList);
+    } else {
+        PyList* asLs = (PyList*) (&params);
+        asLs->insertBefore(newInstance, 0);
+        return pointerMap["__init__"]->call(*asLs);
+    }
 }
 
 const PyString *PyClassStructure::asString() const {

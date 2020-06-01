@@ -12,25 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/classes/PyMethod.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/classes/PyMethod.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/DotOperator.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/binary/DotOperator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/special/ClassCreation.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parsing/operators/special/ClassCreation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/MemoryManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +147,7 @@
       <workItem from="1590698428473" duration="595000" />
       <workItem from="1590700730735" duration="167000" />
       <workItem from="1590754122269" duration="12204000" />
-      <workItem from="1590918649953" duration="16650000" />
+      <workItem from="1590918649953" duration="18488000" />
     </task>
     <servers />
   </component>
@@ -266,15 +250,6 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.1.1920.1040@0.0.1920.1040" timestamp="1590666797750" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/parsing/operators/binary/DotOperator.cpp</url>
-          <line>19</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="Memory::currentlyAlloced" language="ObjectiveC" />
