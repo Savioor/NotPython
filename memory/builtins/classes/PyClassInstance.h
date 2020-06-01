@@ -8,7 +8,7 @@
 
 #include "../../PyClass.h"
 #include "PyClassStructure.h"
-#include "../PyFunction.h"
+#include "../functions/PyFunction.h"
 
 class PyClassInstance : public PyClass {
 

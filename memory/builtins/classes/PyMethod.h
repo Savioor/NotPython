@@ -6,7 +6,7 @@
 #define BASICPYTHONINTERPRETER_PYMETHOD_H
 
 
-#include "../PyFunction.h"
+#include "../functions/PyFunction.h"
 #include "PyClassInstance.h"
 
 class PyMethod : public PyClass {

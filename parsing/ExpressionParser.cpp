@@ -17,7 +17,6 @@
 #include "operators/binary/SetOperator.h"
 #include "operators/encapsulating/RoundBrackets.h"
 #include "operators/encapsulating/SquareBrackets.h"
-#include "operators/unary/unaryForNext/Print.h"
 #include "operators/encapsulating/SquiglyBrackets.h"
 #include "operators/binary/nextBinary/If.h"
 #include "operators/binary/CommaOperator.h"
@@ -209,7 +208,6 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
         numbers.insert({*c, *c});
     }
 
-    keywords.insert({"print", std::shared_ptr<Operator>(new Print())});
     keywords.insert({"if",std::shared_ptr<Operator>(new If())});
     keywords.insert({"None", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getNone()))});
     keywords.insert({"def", std::shared_ptr<Operator>(new Def())});

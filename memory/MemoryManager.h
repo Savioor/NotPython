@@ -44,6 +44,9 @@ public:
     PyClass* getTrue();
     PyClass* getFalse();
 
+    PyVariable* allocateAndAssign(std::string& str, PyClass* value);
+    PyVariable* allocateAndAssign(std::string&& str, PyClass* value);
+
 protected:
     static MemoryManager* instance;
     int expressionDepth; // 0 = global expression aka the 'main' function.
@@ -54,6 +57,8 @@ protected:
 private:
     void markPointerMapOf(PyClass *cls);
     bool immune(PyClass*);
+
+    void addInternalFunctions();
 
     MemoryManager& operator=(MemoryManager const&) = delete;
     MemoryManager(MemoryManager const&) = delete;

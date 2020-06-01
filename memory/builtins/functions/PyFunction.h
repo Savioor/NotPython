@@ -6,9 +6,9 @@
 #define BASICPYTHONINTERPRETER_PYFUNCTION_H
 
 
-#include "../PyClass.h"
-#include "PyCodeblock.h"
-#include "PyList.h"
+#include "../../PyClass.h"
+#include "../PyCodeblock.h"
+#include "../PyList.h"
 
 class PyFunction : public PyClass {
 

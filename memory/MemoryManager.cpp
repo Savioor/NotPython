@@ -9,6 +9,7 @@
 #include "builtins/primitive/PyBool.h"
 #include "builtins/PyVariable.h"
 #include "builtins/PyList.h"
+#include "builtins/functions/internalFunctions/Print.h"
 
 MemoryManager *MemoryManager::instance = nullptr;
 
@@ -101,6 +102,7 @@ void MemoryManager::deallocateClass(int index) {
 MemoryManager &MemoryManager::getManager() {
     if (instance == nullptr) {
         instance = new MemoryManager();
+        instance->addInternalFunctions();
     }
     return *instance;
 }
@@ -228,4 +230,21 @@ PyClass *MemoryManager::getFalse() {
 
 int MemoryManager::getCurrentStackDepth() {
     return namedVariableStack.size() - 1;
+}
+
+PyVariable *MemoryManager::allocateAndAssign(std::string& str, PyClass *value) {
+    PyVariable* newVar = new PyVariable(str);
+    newVar->setSelf(*value);
+    return newVar;
+}
+PyVariable *MemoryManager::allocateAndAssign(std::string&& str, PyClass *value) {
+    PyVariable* newVar = new PyVariable(str);
+    newVar->setSelf(*value);
+    return newVar;
+}
+
+void MemoryManager::addInternalFunctions() {
+    increaseExpDepth();
+    allocateAndAssign("print", new Print());
+    decreaseExpDepth();
 }

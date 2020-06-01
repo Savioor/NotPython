@@ -3,8 +3,8 @@
 //
 
 #include "PyFunction.h"
-#include "PyVariable.h"
-#include "../MemoryManager.h"
+#include "../PyVariable.h"
+#include "../../MemoryManager.h"
 
 PyClass *PyFunction::leftAdd(PyClass const &rightElem) const {
     return nullptr;
@@ -98,14 +98,15 @@ PyClass *PyFunction::call(PyClass &params) {
         }
 
         ret = ((PyCodeblock*)pointerMap["b"])->execute();
-        ret->isReturnValue = false;
-        ret->expressionDepth = MemoryManager::getManager().getCurrentDepth(); // TODO test this specific line
-        MemoryManager::getManager().classesByExpDepth.at(ret->expressionDepth - 1)->push_back(ret);
 
 
     } else {
         throw std::runtime_error("Input parameter amount doesn't match function signature");
     }
+
+    ret->isReturnValue = false;
+    ret->expressionDepth = MemoryManager::getManager().getCurrentDepth(); // TODO test this specific line
+    MemoryManager::getManager().classesByExpDepth.at(ret->expressionDepth - 1)->push_back(ret);
 
     MemoryManager::getManager().decreaseStackDepth();
     return ret;

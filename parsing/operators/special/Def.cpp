@@ -4,7 +4,7 @@
 
 #include "Def.h"
 #include "../../../memory/MemoryManager.h"
-#include "../../../memory/builtins/PyFunction.h"
+#include "../../../memory/builtins/functions/PyFunction.h"
 
 PyClass *Def::reduce(PyClass *first, PyClass *second, PyClass *third) {
 
