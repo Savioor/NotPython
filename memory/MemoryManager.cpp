@@ -177,15 +177,13 @@ void MemoryManager::markPointerMapOf(PyClass *cls) {
             markPointerMapOf(elem);
         }
 
-    } else {
-        for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
-            if (it->second == nullptr || it->second->marked) continue;
-            it->second->marked = true;
-            markPointerMapOf(it->second);
-        }
-
     }
 
+    for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
+        if (it->second == nullptr || it->second->marked) continue;
+        it->second->marked = true;
+        markPointerMapOf(it->second);
+    }
 
 }
 
@@ -193,6 +191,7 @@ PyClass *MemoryManager::getNone() {
     if (NONE == nullptr) {
         increaseExpDepth();
         NONE = new PyInteger(0);
+        NONE->allowCollection = false;
         decreaseExpDepth();
     }
     return NONE;
@@ -207,13 +206,14 @@ void MemoryManager::decreaseStackDepth() {
 }
 
 bool MemoryManager::immune(PyClass *cls) {
-    return cls == nullptr || cls->marked || cls->expressionDepth != 0 || cls == NONE || cls == TRUE || cls == FALSE;
+    return cls == nullptr || cls->marked || cls->expressionDepth != 0 || !cls->allowCollection;
 }
 
 PyClass *MemoryManager::getTrue() {
     if (TRUE == nullptr) {
         increaseExpDepth();
         TRUE = new PyBool(true);
+        TRUE->allowCollection = false;
         decreaseExpDepth();
     }
     return TRUE;
@@ -223,6 +223,7 @@ PyClass *MemoryManager::getFalse() {
     if (FALSE == nullptr) {
         increaseExpDepth();
         FALSE = new PyBool(false);
+        FALSE->allowCollection = false;
         decreaseExpDepth();
     }
     return FALSE;

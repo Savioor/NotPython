@@ -12,25 +12,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232ecd6c-d86f-4b47-936c-f7d0822450d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/memory/builtins/functions/PyInternalFunction.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/functions/PyInternalFunction.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/functions/internalFunctions/Print.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/memory/builtins/functions/internalFunctions/Print.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/builtins/functions/internalFunctions/listFunctions/Append.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory/builtins/functions/internalFunctions/listFunctions/Append.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/find_primes.npy" beforeDir="false" afterPath="$PROJECT_DIR$/examples/find_primes.npy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/MemoryManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/MemoryManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/MemoryManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/functions/PyFunction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memory/builtins/PyFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/functions/PyFunction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/PyClass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/PyClass.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/PyClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/PyClass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyCodeblock.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyCodeblock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyList.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyList.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyList.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyList.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/PyVariable.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/PyVariable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyClassStructure.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyMethod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyMethod.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/memory/builtins/classes/PyMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/classes/PyMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/ExpressionParser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/special/Def.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/special/Def.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/unary/unaryForNext/Print.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parsing/operators/unary/unaryForNext/Print.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/functions/PyFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/functions/PyFunction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/functions/PyFunction.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/functions/PyFunction.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/functions/PyInternalFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/functions/PyInternalFunction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyBool.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyInteger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/memory/builtins/primitive/PyString.h" beforeDir="false" afterPath="$PROJECT_DIR$/memory/builtins/primitive/PyString.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsing/operators/binary/DotOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/parsing/operators/binary/DotOperator.cpp" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +102,18 @@
       <recent name="C:\Users\USER\CLionProjects\NotPython\parsing\operators\binary" />
       <recent name="$PROJECT_DIR$/code/keywords" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="BasicPythonInterpreter" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BasicPythonInterpreter" TARGET_NAME="BasicPythonInterpreter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BasicPythonInterpreter" RUN_TARGET_NAME="BasicPythonInterpreter">
@@ -150,6 +175,7 @@
       <workItem from="1590700730735" duration="167000" />
       <workItem from="1590754122269" duration="12204000" />
       <workItem from="1590918649953" duration="18488000" />
+      <workItem from="1591194576103" duration="5715000" />
     </task>
     <servers />
   </component>

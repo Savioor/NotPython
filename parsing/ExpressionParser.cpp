@@ -48,7 +48,8 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
             if (current->value->getPrecedence() > currHighestPred) {
                 toExecute = current;
                 currHighestPred = toExecute->value->getPrecedence();
-            } else if (current->next != nullptr && current->next->value->bt == BT_ROUND && currHighestPred < 16) {
+            } else if (current->next != nullptr
+            && (current->next->value->bt == BT_ROUND || current->next->value->bt == BT_SQUARE) && currHighestPred < 16) {
                 if (current->value->type == CLASS || current->value->type == ENCLOSING) {
                     toExecute = current;
                     currHighestPred = 16;
@@ -155,6 +156,12 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
                     if (toExecute->next != nullptr && toExecute->next->value->bt == BT_ROUND) {
                         rClass = toExecute->next->value->getAsClass();
                         PyClass* funcCall = currOp->getAsClass()->call(*rClass);
+                        tokenizedExpr->connectAfterV(toExecute, std::shared_ptr<Operator>(new ClassOperator(funcCall)));
+                        tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                        tokenizedExpr->disconnectAndDeleteValue(toExecute);
+                    } else if (toExecute->next != nullptr && toExecute->next->value->bt == BT_SQUARE) {
+                        rClass = toExecute->next->value->getAsClass();
+                        PyClass* funcCall = currOp->getAsClass()->getElem(*rClass);
                         tokenizedExpr->connectAfterV(toExecute, std::shared_ptr<Operator>(new ClassOperator(funcCall)));
                         tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
                         tokenizedExpr->disconnectAndDeleteValue(toExecute);

@@ -44,7 +44,7 @@ PyClass *PyInternalFunction::call(PyClass &params) {
                 throw std::runtime_error("one of functions input variables isnt PyVariable");
             }
 
-            input.insert({((PyVariable*)myParams)->getName(), value});
+            input.insert({((PyVariable*)inputName)->getName(), value});
         }
 
 

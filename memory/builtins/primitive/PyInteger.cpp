@@ -103,11 +103,11 @@ const PyString *PyInteger::asString() const {
     return new PyString(std::move(std::to_string(value)));
 }
 
-PyClass *PyInteger::getElem(PyClass const &indexer) const {
+PyClass *PyInteger::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyInteger::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyInteger::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 

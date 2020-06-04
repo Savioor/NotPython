@@ -7,7 +7,7 @@
 #include "builtins/PyVariable.h"
 
 PyClass::PyClass() :
-    references{1}, expressionDepth{-1}, type{pyOTHER}, pointerMap{}, isReturnValue{false}
+    references{1}, expressionDepth{-1}, type{pyOTHER}, pointerMap{}, isReturnValue{false}, allowCollection{true}
 {
     memoryAllocationLocation = MemoryManager::getManager().allocateNewClass(this);
 }

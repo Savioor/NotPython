@@ -15,6 +15,7 @@ public:
     PyVariable(std::string&&);
     PyVariable(std::string);
     PyVariable(std::string, bool);
+    PyVariable(std::string, PyClass*);
 
     PyClass *leftAdd(PyClass const &rightElem) const override;
 
@@ -46,9 +47,9 @@ public:
 
     const PyString *asString() const override;
 
-    PyClass *getElem(PyClass const &indexer) const override;
+    PyClass *getElem(PyClass &indexer) const override;
 
-    PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
+    PyClass *setElem(PyClass &indexer, PyClass &newElem) override;
 
     PyClass *setSelf(PyClass &other) override;
     const PyClass &getRaw() const override;

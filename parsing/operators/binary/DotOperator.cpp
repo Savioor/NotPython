@@ -10,9 +10,6 @@ PyClass *DotOperator::reduce(PyClass *left, PyClass *right) {
         throw std::runtime_error("Dot operator expected pyVAR as second input");
     }
     PyClass* expandedLeft = &left->getRaw();
-    if (expandedLeft->type != pyOTHER) {
-        throw std::runtime_error("Dot operator expected pyOTHER as first input");
-    }
     PyVariable* asVar = (PyVariable*) right;
     if (expandedLeft->pointerMap.count(asVar->getName()) == 0) {
         expandedLeft->pointerMap.insert({asVar->getName(), new PyVariable(asVar->getName(), false)});

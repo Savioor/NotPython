@@ -5,6 +5,10 @@
 #include "PyList.h"
 #include "primitive/PyString.h"
 #include "primitive/PyInteger.h"
+#include "classes/PyMethod.h"
+#include "PyVariable.h"
+#include "functions/internalFunctions/listFunctions/Append.h"
+#include "../MemoryManager.h"
 
 PyClass *PyList::leftAdd(PyClass const &rightElem) const {
     return nullptr;
@@ -72,16 +76,37 @@ const PyString *PyList::asString() const {
     return new PyString(std::move(repr));
 }
 
-PyClass *PyList::getElem(PyClass const &indexer) const {
-    return nullptr;
+PyClass *PyList::getElem(PyClass &indexer) const {
+    PyClass& indexerUnwrapped = indexer.getRaw();
+    if(indexerUnwrapped.type != pyINTEGER) {
+        throw std::runtime_error("List get operator expected integer");
+    }
+    PyInteger& asInt = (PyInteger&) indexerUnwrapped;
+    if (asInt.getValue() < 0 || asInt.getValue() >= ls.size()) {
+        throw std::runtime_error("Index out of bounds exception");
+    }
+    return ls.at(asInt.getValue());
 }
 
-PyClass *PyList::setElem(PyClass const &indexer, PyClass const &newElem) {
-    return nullptr;
+PyClass *PyList::setElem(PyClass &indexer, PyClass &newElem) {
+    PyClass& indexerUnwrapped = indexer.getRaw();
+    PyClass& newElemUnwrapped = newElem.getRaw();
+    if(indexerUnwrapped.type != pyINTEGER) {
+        throw std::runtime_error("List get operator expected integer");
+    }
+    PyInteger& asInt = (PyInteger&) indexerUnwrapped;
+    if (asInt.getValue() < 0 || asInt.getValue() >= ls.size()) {
+        throw std::runtime_error("Index out of bounds exception");
+    }
+    ls[asInt.getValue()] = &newElem;
+    return MemoryManager::getManager().getNone();
 }
 
 PyList::PyList() : ls{} {
+    static Append* appendFunc = new Append();
+
     type = pyARRAY;
+    pointerMap.insert({"append", new PyMethod(appendFunc, this)});
 }
 
 std::vector<PyClass *> &PyList::getElements() {
@@ -89,9 +114,13 @@ std::vector<PyClass *> &PyList::getElements() {
 }
 
 void PyList::insertBefore(PyClass * cls, int ind) {
-    ls.insert(ls.begin() + ind, cls);
+    ls.insert(ls.begin() + ind, new PyVariable("", &cls->getRaw()));
 }
 
 void PyList::pushBack(PyClass* cls) {
-    ls.push_back(cls);
+    ls.push_back(new PyVariable("", &cls->getRaw()));
+}
+
+PyList::PyList(int marker) {
+    type = pyARRAY;
 }

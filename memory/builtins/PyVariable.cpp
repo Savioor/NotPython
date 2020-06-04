@@ -82,12 +82,12 @@ const PyString *PyVariable::asString() const {
     return child->asString();
 }
 
-PyClass *PyVariable::getElem(PyClass const &indexer) const {
+PyClass *PyVariable::getElem(PyClass &indexer) const {
     nullptrTest();
     return child->getElem(indexer);
 }
 
-PyClass *PyVariable::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyVariable::setElem(PyClass &indexer, PyClass &newElem) {
     nullptrTest();
     return child->setElem(indexer, newElem);
 }
@@ -141,6 +141,16 @@ PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(nam
     pointerMap.insert({"", child});
 }
 
+
+PyVariable::PyVariable(std::string name, PyClass *chld) : child{chld}, varName{std::move(name)}, myDepth{-1} {
+    type = pyVAR;
+    references++; // Make sure this is never deleted by quick GC
+    chld->references++;
+    alloced = false;
+    allowAllocation = false;
+    pointerMap.insert({"", child});
+}
+
 PyClass *PyVariable::setSelf(PyClass &other) {
     if (!alloced && allowAllocation) {
         MemoryManager::getManager().allocateVariable(this);
@@ -178,4 +188,5 @@ PyClass& PyVariable::getRaw() {
     if (child == nullptr) return *this;
     return child->getRaw();
 }
+
 

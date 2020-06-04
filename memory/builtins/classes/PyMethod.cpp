@@ -77,15 +77,15 @@ const PyString *PyMethod::asString() const {
     return nullptr;
 }
 
-PyClass *PyMethod::getElem(PyClass const &indexer) const {
+PyClass *PyMethod::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyMethod::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyMethod::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 
-PyMethod::PyMethod(PyFunction * m, PyClassInstance * i) : methodOwner{i}, wrappedFunction{m} {
+PyMethod::PyMethod(PyFunction * m, PyClass * i) : methodOwner{i}, wrappedFunction{m} {
     pointerMap.insert({"f", m});
     pointerMap.insert({"i", methodOwner});
 }

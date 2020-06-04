@@ -43,9 +43,9 @@ public:
 
     const PyString *asString() const override;
 
-    PyClass *getElem(PyClass const &indexer) const override;
+    PyClass *getElem(PyClass &indexer) const override;
 
-    PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
+    PyClass *setElem(PyClass &indexer, PyClass &newElem) override;
 
     std::vector<PyClassStructure*> baseClasses;
 

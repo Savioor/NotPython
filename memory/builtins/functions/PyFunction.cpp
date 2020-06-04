@@ -116,19 +116,18 @@ const PyString *PyFunction::asString() const {
     return nullptr;
 }
 
-PyClass *PyFunction::getElem(PyClass const &indexer) const {
+PyClass *PyFunction::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyFunction::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyFunction::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 
 // params is PyList or None
-PyFunction::PyFunction(PyClass * params, PyCodeblock * block) {
+PyFunction::PyFunction(PyClass * params, PyCodeblock * block) : PyClass() {
     type = pyFUNCTION;
 
     pointerMap.insert({"p", params});
     pointerMap.insert({"b", block});
-
 }

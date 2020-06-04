@@ -96,11 +96,11 @@ const PyString *PyBool::asString() const {
     return new PyString("false");
 }
 
-PyClass *PyBool::getElem(PyClass const &indexer) const {
+PyClass *PyBool::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyBool::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyBool::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 

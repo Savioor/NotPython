@@ -45,11 +45,11 @@ const PyString *PyString::asString() const {
     return this;
 }
 
-PyClass *PyString::getElem(PyClass const &indexer) const {
+PyClass *PyString::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyString::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyString::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 

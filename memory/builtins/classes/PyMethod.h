@@ -12,7 +12,7 @@
 class PyMethod : public PyClass {
 
 public:
-    PyMethod(PyFunction*, PyClassInstance*);
+    PyMethod(PyFunction*, PyClass*);
 
     PyClass *leftAdd(PyClass const &rightElem) const override;
 
@@ -44,13 +44,13 @@ public:
 
     const PyString *asString() const override;
 
-    PyClass *getElem(PyClass const &indexer) const override;
+    PyClass *getElem(PyClass &indexer) const override;
 
-    PyClass *setElem(PyClass const &indexer, PyClass const &newElem) override;
+    PyClass *setElem(PyClass &indexer, PyClass &newElem) override;
 
 private:
     PyFunction* wrappedFunction;
-    PyClassInstance* methodOwner;
+    PyClass* methodOwner;
 
 };
 

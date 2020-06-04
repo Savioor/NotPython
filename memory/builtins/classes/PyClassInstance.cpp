@@ -65,11 +65,11 @@ const PyString *PyClassInstance::asString() const {
     return nullptr;
 }
 
-PyClass *PyClassInstance::getElem(PyClass const &indexer) const {
+PyClass *PyClassInstance::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyClassInstance::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyClassInstance::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 

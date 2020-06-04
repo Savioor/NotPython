@@ -45,6 +45,7 @@ public:
     BuiltInClasses type;
     bool marked; // For mark&sweep
     bool isReturnValue; // Altered by return.
+    bool allowCollection; // For GC
 
     std::map<std::string, PyClass*> pointerMap;
 
@@ -86,9 +87,9 @@ public:
     // Array Operations
     // TODO this is kinda maybe a bad idea,
     // TODO but I'll cross that bridge when I get to it
-    virtual PyClass* getElem(PyClass const& indexer) const = 0;
-    virtual PyClass* setElem(PyClass const& indexer,
-                           PyClass const& newElem) = 0;
+    virtual PyClass* getElem(PyClass& indexer) const = 0;
+    virtual PyClass* setElem(PyClass& indexer,
+                           PyClass& newElem) = 0;
 
     // Literally just for the `=` operation
     virtual PyClass* setSelf(PyClass& other);

@@ -78,11 +78,11 @@ const PyString *PyClassStructure::asString() const {
     return nullptr;
 }
 
-PyClass *PyClassStructure::getElem(PyClass const &indexer) const {
+PyClass *PyClassStructure::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyClassStructure::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyClassStructure::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 

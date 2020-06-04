@@ -68,11 +68,11 @@ const PyString *PyCodeblock::asString() const {
     return nullptr;
 }
 
-PyClass *PyCodeblock::getElem(PyClass const &indexer) const {
+PyClass *PyCodeblock::getElem(PyClass &indexer) const {
     return nullptr;
 }
 
-PyClass *PyCodeblock::setElem(PyClass const &indexer, PyClass const &newElem) {
+PyClass *PyCodeblock::setElem(PyClass &indexer, PyClass &newElem) {
     return nullptr;
 }
 
