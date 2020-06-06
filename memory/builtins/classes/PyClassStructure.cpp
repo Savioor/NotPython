@@ -90,5 +90,10 @@ PyClassStructure::PyClassStructure() {
 
 //    pointerMap.insert({"__str__", nullptr});
 //    pointerMap.insert({"__init__", nullptr});
+    baseClasses.push_back(MemoryManager::getManager().getObject());
+
+}
+
+PyClassStructure::PyClassStructure(int marker) {
 
 }

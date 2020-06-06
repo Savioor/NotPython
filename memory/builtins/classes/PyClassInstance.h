@@ -51,6 +51,10 @@ public:
 
     PyClassStructure* type;
 
+private:
+
+    void constructAllMethodsFrom(PyClassStructure* target);
+
 };
 
 

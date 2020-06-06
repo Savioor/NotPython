@@ -49,6 +49,9 @@ public:
 
     std::vector<PyClassStructure*> baseClasses;
 
+protected:
+    PyClassStructure(int marker);
+
 };
 
 

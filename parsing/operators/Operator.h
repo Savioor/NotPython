@@ -15,8 +15,10 @@ enum OPERATOR_TYPE {
     UNARY_PREV,
     ENCLOSING,
     CLASS,
+    OPTIONAL_CB,
     BINARY_BOTH_AFTER, // e.g for this one is `if`
-    TERNARY_ALL_AFTER // e.g. for this one is `def` that gets a PyVariable, PyList, and PyCodeblock.
+    TERNARY_ALL_AFTER, // e.g. for this one is `def` that gets a PyVariable, PyList, and PyCodeblock.
+    TERNARY_ONE_BEFORE
 
 };
 

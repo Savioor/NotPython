@@ -25,6 +25,8 @@
 #include "operators/binary/nextBinary/While.h"
 #include "operators/binary/DotOperator.h"
 #include "operators/special/ClassCreation.h"
+#include "operators/special/TernaryOneBefore.h"
+#include "operators/special/Elif.h"
 
 ExpressionParser ExpressionParser::instance = ExpressionParser();
 
@@ -62,6 +64,7 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
         std::shared_ptr<UnaryForNext> asUnar;
         std::shared_ptr<NextBinary> asBinAft;
         std::shared_ptr<TernaryAllAfter> asTer;
+        std::shared_ptr<TernaryOneBefore> asTerBef;
         PyClass* lClass;
         PyClass* rClass;
         PyClass* tClass;
@@ -119,12 +122,34 @@ PyClass *ExpressionParser::parse(std::istream& dataStream) {
 
                 asBinAft = std::dynamic_pointer_cast<NextBinary>(currOp);
                 tokenizedExpr->connectAfterV(toExecute,
-                                             std::shared_ptr<Operator>(new ClassOperator(
-                                                     asBinAft->reduceWithFullContext(toExecute->next->value.get(),
-                                                                                     toExecute->next->next->value.get())
-                                                     )));
+                                             std::shared_ptr<Operator>(
+                                                     asBinAft->reduceWithFullContext(toExecute->next->value,
+                                                                                     toExecute->next->next->value)
+                                                     ));
 
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute);
+                break;
+            case TERNARY_ONE_BEFORE:
+                if (toExecute->prev == nullptr || toExecute->next == nullptr || toExecute->next->next == nullptr) {
+                    throw std::runtime_error("Ternary operator operand not found");
+                }
+
+                if (toExecute->prev->value == nullptr
+                || toExecute->next->value == nullptr
+                || toExecute->next->next->value == nullptr){
+                    throw std::runtime_error("Ternary operator operand is not a class");
+                }
+                asTerBef = std::dynamic_pointer_cast<TernaryOneBefore>(currOp);
+                tokenizedExpr->connectAfterV(toExecute,
+                                             std::shared_ptr<Operator>(
+                                                     asTerBef->reduce(toExecute->prev->value,
+                                                             toExecute->next->value,
+                                                             toExecute->next->next->value)));
+
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->prev);
+                tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
                 tokenizedExpr->disconnectAndDeleteValue(toExecute->next->next);
                 tokenizedExpr->disconnectAndDeleteValue(toExecute);
                 break;
@@ -216,6 +241,7 @@ ExpressionParser::ExpressionParser() : keywords{}, breakerClassMap{}, operators{
     }
 
     keywords.insert({"if",std::shared_ptr<Operator>(new If())});
+    keywords.insert({"elif", std::shared_ptr<Operator>(new Elif())});
     keywords.insert({"None", std::shared_ptr<Operator>(new ClassOperator(MemoryManager::getManager().getNone()))});
     keywords.insert({"def", std::shared_ptr<Operator>(new Def())});
     keywords.insert({"return", std::shared_ptr<Operator>(new Return())});

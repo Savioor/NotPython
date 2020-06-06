@@ -10,6 +10,9 @@
 #include "builtins/PyVariable.h"
 #include "builtins/PyList.h"
 #include "builtins/functions/internalFunctions/Print.h"
+#include "builtins/classes/ObjectStructure.h"
+#include "builtins/classes/PyClassStructure.h"
+
 
 MemoryManager *MemoryManager::instance = nullptr;
 
@@ -190,7 +193,7 @@ void MemoryManager::markPointerMapOf(PyClass *cls) {
 PyClass *MemoryManager::getNone() {
     if (NONE == nullptr) {
         increaseExpDepth();
-        NONE = new PyInteger(0);
+        NONE = new PyString("None");
         NONE->allowCollection = false;
         decreaseExpDepth();
     }
@@ -247,5 +250,17 @@ PyVariable *MemoryManager::allocateAndAssign(std::string&& str, PyClass *value) 
 void MemoryManager::addInternalFunctions() {
     increaseExpDepth();
     allocateAndAssign("print", new Print());
+    allocateAndAssign("-Object-", getObject());
     decreaseExpDepth();
+}
+
+PyClassStructure *MemoryManager::getObject() {
+    if (ObjectStruct == nullptr || ObjectStruct == ((ObjectStructure*)0xbaadf00d)) {
+        std::cout << ObjectStruct;
+        increaseExpDepth();
+        ObjectStruct = new ObjectStructure();
+        ObjectStruct->allowCollection = false;
+        decreaseExpDepth();
+    }
+    return ObjectStruct;
 }

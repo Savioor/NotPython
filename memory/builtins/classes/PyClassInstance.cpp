@@ -75,7 +75,27 @@ PyClass *PyClassInstance::setElem(PyClass &indexer, PyClass &newElem) {
 
 PyClassInstance::PyClassInstance(PyClassStructure* strct) : type{strct} {
 
-    for (auto& variable : strct->pointerMap) {
+    std::vector<PyClassStructure*> constructionStack;
+    constructionStack.push_back(strct);
+    int i = 0;
+
+    while (constructionStack.size() > i) {
+
+        PyClassStructure* curr = constructionStack.at(i);
+        i += 1;
+
+        constructAllMethodsFrom(curr);
+
+        for (auto& super : curr->baseClasses) {
+            constructionStack.push_back(super);
+        }
+
+    }
+
+}
+
+void PyClassInstance::constructAllMethodsFrom(PyClassStructure* target) {
+    for (auto& variable : target->pointerMap) {
         PyClass* secondUnwrapped = &variable.second->getRaw();
         if (secondUnwrapped->type == pyFUNCTION) {
             // This is a method
@@ -85,5 +105,5 @@ PyClassInstance::PyClassInstance(PyClassStructure* strct) : type{strct} {
             pointerMap.insert({variable.first, variable.second});
         }
     }
-
 }
+

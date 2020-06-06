@@ -6,6 +6,7 @@
 #define BASICPYTHONINTERPRETER_NEXTBINARY_H
 
 
+#include <memory>
 #include "../BinaryOperator.h"
 
 class NextBinary : public Operator {
@@ -14,9 +15,9 @@ public:
 
     NextBinary();
 
-    virtual PyClass* reduce(PyClass* right, PyClass* afterRight) = 0;
+    virtual Operator* reduce(PyClass* right, PyClass* afterRight) = 0;
 
-    virtual PyClass* reduceWithFullContext(Operator* right, Operator* afterRight);
+    virtual Operator* reduceWithFullContext(std::shared_ptr<Operator>& right, std::shared_ptr<Operator>& afterRight);
 
 
 };

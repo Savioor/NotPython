@@ -8,7 +8,7 @@ NextBinary::NextBinary() : Operator(BINARY_BOTH_AFTER) {
 
 }
 
-PyClass *NextBinary::reduceWithFullContext(Operator *right, Operator *afterRight) {
+Operator *NextBinary::reduceWithFullContext(std::shared_ptr<Operator>& right, std::shared_ptr<Operator>& afterRight) {
     PyClass* lClass = right->getAsClass();
     PyClass* rClass = afterRight->getAsClass();
 

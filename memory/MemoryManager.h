@@ -10,6 +10,7 @@
 #include <map>
 #include <string>
 #include "PyClass.h"
+#include "builtins/classes/PyClassStructure.h"
 
 class PyVariable;
 
@@ -43,6 +44,7 @@ public:
     PyClass* getNone();
     PyClass* getTrue();
     PyClass* getFalse();
+    PyClassStructure* getObject();
 
     PyVariable* allocateAndAssign(std::string& str, PyClass* value);
     PyVariable* allocateAndAssign(std::string&& str, PyClass* value);
@@ -53,6 +55,7 @@ protected:
     PyClass* NONE;
     PyClass* TRUE;
     PyClass* FALSE;
+    PyClassStructure* ObjectStruct;
 
 private:
     void markPointerMapOf(PyClass *cls);

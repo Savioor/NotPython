@@ -7,14 +7,15 @@
 #include "../../../../memory/builtins/PyCodeblock.h"
 #include "../../../../memory/builtins/primitive/PyBool.h"
 #include "../../../../memory/MemoryManager.h"
+#include "../../ClassOperator.h"
 
 
-PyClass *While::reduce(PyClass *right, PyClass *afterRight) {
+Operator *While::reduce(PyClass *right, PyClass *afterRight) {
     throw std::runtime_error("This should happen");
     return nullptr;
 }
 
-PyClass *While::reduceWithFullContext(Operator *right, Operator *afterRight) {
+Operator *While::reduceWithFullContext(std::shared_ptr<Operator>& right, std::shared_ptr<Operator>& afterRight) {
 
     if (right->bt != BT_ROUND) {
         throw std::runtime_error("while loop expected round brackets!");
@@ -26,7 +27,7 @@ PyClass *While::reduceWithFullContext(Operator *right, Operator *afterRight) {
     }
     PyCodeblock* asCB = (PyCodeblock*) code;
 
-    SquareBrackets* expr = (SquareBrackets*) right;
+    SquareBrackets* expr = (SquareBrackets*) right.get();
 
 
     while (true) {
@@ -41,12 +42,12 @@ PyClass *While::reduceWithFullContext(Operator *right, Operator *afterRight) {
 
         PyClass* cbResult = asCB->execute();
         if (cbResult->isReturnValue) {
-            return cbResult;
+            return new ClassOperator(cbResult);
         }
 
     }
 
-    return MemoryManager::getManager().getNone();
+    return new ClassOperator(MemoryManager::getManager().getNone());
 }
 
 While::While() {

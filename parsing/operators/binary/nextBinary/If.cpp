@@ -7,24 +7,27 @@
 #include "../../../../memory/builtins/primitive/PyBool.h"
 #include "../../../../memory/builtins/PyCodeblock.h"
 #include "../../../../memory/builtins/primitive/PyInteger.h"
-#include "../../../../memory/MemoryManager.h"
+#include "../../OptionalCodeblock.h"
 
-PyClass *If::reduce(PyClass *right, PyClass *afterRight) {
+Operator *If::reduceWithFullContext(std::shared_ptr<Operator>& right, std::shared_ptr<Operator>& afterRight) {
 
-    if (right->getRaw().type != pyBOOL) {
-        throw std::runtime_error("If expected boolean");
+    if (right->bt != BT_ROUND) {
+        throw std::runtime_error("If expected round bracket expression");
     }
-    if (afterRight->type != pyCODE_BLOCK) {
+
+    PyClass* afterRightClass = afterRight->getAsClass();
+    if (afterRightClass == nullptr || afterRightClass->type != pyCODE_BLOCK) {
         throw std::runtime_error("If expected code block");
     }
 
-    if (((PyBool&)right->getRaw()).getValue()) {
-        return ((PyCodeblock*) afterRight)->execute();
-    }
+    return new OptionalCodeblock((PyCodeblock*)afterRightClass, nullptr, std::static_pointer_cast<RoundBrackets>(right));
 
-    return MemoryManager::getManager().getNone();
 }
 
 If::If() {
     precedence = 16;
+}
+
+Operator *If::reduce(PyClass *right, PyClass *afterRight) {
+    return nullptr;
 }
