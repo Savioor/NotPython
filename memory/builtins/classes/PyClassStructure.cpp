@@ -4,6 +4,7 @@
 
 #include "PyClassStructure.h"
 #include "PyClassInstance.h"
+#include "../PyVariable.h"
 #include "../../MemoryManager.h"
 
 PyClass *PyClassStructure::leftAdd(PyClass const &rightElem) const {

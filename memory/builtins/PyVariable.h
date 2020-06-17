@@ -16,6 +16,7 @@ public:
     PyVariable(std::string);
     PyVariable(std::string, bool);
     PyVariable(std::string, PyClass*);
+    PyVariable(PyClass*);
 
     PyClass *leftAdd(PyClass const &rightElem) const override;
 

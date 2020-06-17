@@ -16,6 +16,6 @@ Append::Append() : PyInternalFunction(nullptr) {
     PyList* params = new PyList(0);
     params->pushBack(new PyVariable("self", false));
     params->pushBack(new PyVariable("toInsert", false));
-    pointerMap["p"] = params;
+    pointerMap["p"] = new PyVariable(params);
     allowCollection = false;
 }

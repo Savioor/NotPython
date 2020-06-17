@@ -106,7 +106,7 @@ PyList::PyList() : ls{} {
     static Append* appendFunc = new Append();
 
     type = pyARRAY;
-    pointerMap.insert({"append", new PyMethod(appendFunc, this)});
+    pointerMap.insert({"append", new PyVariable(new PyMethod(appendFunc, this))});
 }
 
 std::vector<PyClass *> &PyList::getElements() {

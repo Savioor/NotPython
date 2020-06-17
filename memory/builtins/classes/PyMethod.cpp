@@ -4,6 +4,7 @@
 
 #include "PyMethod.h"
 #include "../../MemoryManager.h"
+#include "../PyVariable.h"
 
 PyClass *PyMethod::call(PyClass &params) {
     if (&params == MemoryManager::getManager().getNone()) {
@@ -86,6 +87,6 @@ PyClass *PyMethod::setElem(PyClass &indexer, PyClass &newElem) {
 }
 
 PyMethod::PyMethod(PyFunction * m, PyClass * i) : methodOwner{i}, wrappedFunction{m} {
-    pointerMap.insert({"f", m});
-    pointerMap.insert({"i", methodOwner});
+    pointerMap.insert({"f", new PyVariable(m)});
+    pointerMap.insert({"i", new PyVariable(methodOwner)});
 }

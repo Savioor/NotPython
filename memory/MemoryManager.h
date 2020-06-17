@@ -24,7 +24,6 @@ public:
     std::vector<int> freeOpenCellsStack; // Vector can be used as a stack :)
     std::vector<std::map<std::string, PyVariable*>> namedVariableStack; // Stack depth dictated by code block depth
 
-
     void decreaseExpDepth();
     void increaseExpDepth();
 

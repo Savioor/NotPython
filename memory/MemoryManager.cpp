@@ -48,6 +48,9 @@ MemoryManager::MemoryManager() : namedVariableStack{}, freeOpenCellsStack{}, mem
     classesByExpDepth = std::vector<std::vector<PyClass *> *>();
 
     NONE = nullptr;
+    TRUE = nullptr;
+    FALSE = nullptr;
+    ObjectStruct = nullptr;
 
 }
 
@@ -180,6 +183,13 @@ void MemoryManager::markPointerMapOf(PyClass *cls) {
             markPointerMapOf(elem);
         }
 
+    } else if (cls->type == pyVAR) {
+        auto* asVar = (PyVariable*) cls;
+
+        if (asVar->getChild() != nullptr && !asVar->getChild()->marked) {
+            asVar->getChild()->marked = true;
+            markPointerMapOf(asVar->getChild());
+        }
     }
 
     for (auto it = pointerMap.begin(); it != pointerMap.end(); it++) {
@@ -255,8 +265,7 @@ void MemoryManager::addInternalFunctions() {
 }
 
 PyClassStructure *MemoryManager::getObject() {
-    if (ObjectStruct == nullptr || ObjectStruct == ((ObjectStructure*)0xbaadf00d)) {
-        std::cout << ObjectStruct;
+    if (ObjectStruct == nullptr) {
         increaseExpDepth();
         ObjectStruct = new ObjectStructure();
         ObjectStruct->allowCollection = false;

@@ -9,7 +9,7 @@
 PyClass *PyInternalFunction::call(PyClass &params) {
     MemoryManager::getManager().increaseStackDepth();
 
-    PyClass* myParams = pointerMap["p"];
+    PyClass* myParams = retrievePointed("p");
     PyClass* None = MemoryManager::getManager().getNone();
     PyClass* ret = nullptr;
     std::map<std::string, PyClass*> input;

@@ -106,7 +106,6 @@ PyClass *PyVariable::getChild() {
 
 void PyVariable::setChild(PyClass * c) {
     child = c;
-    pointerMap[""] = child;
 }
 
 void PyVariable::nullptrTest() const {
@@ -121,7 +120,6 @@ PyVariable::PyVariable(std::string data, bool b) : child{nullptr}, varName{std::
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
-    pointerMap.insert({"", child});
 }
 
 
@@ -130,7 +128,6 @@ PyVariable::PyVariable(std::string && name) : child{nullptr}, varName{name}, myD
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
     allowAllocation = true;
-    pointerMap.insert({"", child});
 }
 
 PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(name)}, myDepth{-1} {
@@ -138,17 +135,17 @@ PyVariable::PyVariable(std::string name) : child{nullptr}, varName{std::move(nam
     references++; // Make sure this is never deleted by quick GC
     alloced = false;
     allowAllocation = true;
-    pointerMap.insert({"", child});
 }
 
 
 PyVariable::PyVariable(std::string name, PyClass *chld) : child{chld}, varName{std::move(name)}, myDepth{-1} {
     type = pyVAR;
     references++; // Make sure this is never deleted by quick GC
-    chld->references++;
+    if (chld != nullptr) {
+        chld->references++;
+    }
     alloced = false;
     allowAllocation = false;
-    pointerMap.insert({"", child});
 }
 
 PyClass *PyVariable::setSelf(PyClass &other) {
@@ -174,7 +171,6 @@ PyClass *PyVariable::setSelf(PyClass &other) {
             child = other.getSelf();
             child->references++;
         }
-        pointerMap[""] = child;
         return child;
     }
 }
@@ -187,6 +183,10 @@ const PyClass& PyVariable::getRaw() const {
 PyClass& PyVariable::getRaw() {
     if (child == nullptr) return *this;
     return child->getRaw();
+}
+
+PyVariable::PyVariable(PyClass * val) : PyVariable("", val) {
+
 }
 
 

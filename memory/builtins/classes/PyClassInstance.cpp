@@ -4,6 +4,7 @@
 
 #include "PyClassInstance.h"
 #include "PyMethod.h"
+#include "../PyVariable.h"
 
 PyClass *PyClassInstance::leftAdd(PyClass const &rightElem) const {
     return nullptr;
@@ -99,7 +100,8 @@ void PyClassInstance::constructAllMethodsFrom(PyClassStructure* target) {
         PyClass* secondUnwrapped = &variable.second->getRaw();
         if (secondUnwrapped->type == pyFUNCTION) {
             // This is a method
-            pointerMap.insert({variable.first, new PyMethod((PyFunction*)secondUnwrapped, this)});
+            pointerMap.insert({variable.first,
+                               new PyVariable(new PyMethod((PyFunction*)secondUnwrapped, this))});
         } else {
             // This is a static variable
             pointerMap.insert({variable.first, variable.second});

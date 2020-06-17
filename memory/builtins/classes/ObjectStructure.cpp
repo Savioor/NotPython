@@ -8,6 +8,7 @@
 
 ObjectStructure::ObjectStructure() : PyClassStructure(0) {
 
-    pointerMap.insert({"__str__", new StringDefault(new PyVariable("self", false))});
+    pointerMap.insert({"__str__",
+                       new PyVariable(new StringDefault(new PyVariable("self", false)))});
 
 }

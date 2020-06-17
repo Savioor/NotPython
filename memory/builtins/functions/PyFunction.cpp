@@ -61,16 +61,16 @@ PyBool *PyFunction::logicalNot() const {
 PyClass *PyFunction::call(PyClass &params) {
     MemoryManager::getManager().increaseStackDepth();
 
-    PyClass* myParams = pointerMap["p"];
+    PyClass* myParams = retrievePointed("p");
     PyClass* None = MemoryManager::getManager().getNone();
     PyClass* ret = nullptr;
 
     if (&params == None && myParams == None) {
-        ret = ((PyCodeblock*)pointerMap["b"])->execute();
+        ret = ((PyCodeblock*)retrievePointed("b"))->execute();
     } else if (params.type != pyARRAY) {
         if (myParams->type != pyARRAY && myParams != None) {
             (new PyVariable(((PyVariable*)myParams)->getName()))->setSelf(params);
-            ret = ((PyCodeblock*)pointerMap["b"])->execute();
+            ret = ((PyCodeblock*)retrievePointed("b"))->execute();
         } else {
             throw std::runtime_error("Input parameter amount doesn't match function signature");
         }
@@ -97,7 +97,7 @@ PyClass *PyFunction::call(PyClass &params) {
             (new PyVariable(((PyVariable*)inputName)->getName()))->setSelf(*input);
         }
 
-        ret = ((PyCodeblock*)pointerMap["b"])->execute();
+        ret = ((PyCodeblock*)retrievePointed("b"))->execute();
 
 
     } else {
@@ -128,6 +128,6 @@ PyClass *PyFunction::setElem(PyClass &indexer, PyClass &newElem) {
 PyFunction::PyFunction(PyClass * params, PyCodeblock * block) : PyClass() {
     type = pyFUNCTION;
 
-    pointerMap.insert({"p", params});
-    pointerMap.insert({"b", block});
+    pointerMap.insert({"p", new PyVariable(params)});
+    pointerMap.insert({"b", new PyVariable(block)});
 }

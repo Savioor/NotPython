@@ -7,7 +7,8 @@
 #include "builtins/PyVariable.h"
 
 PyClass::PyClass() :
-    references{1}, expressionDepth{-1}, type{pyOTHER}, pointerMap{}, isReturnValue{false}, allowCollection{true}
+    references{1}, expressionDepth{-1}, type{pyOTHER}, pointerMap{}, isReturnValue{false}, allowCollection{true},
+    isThrowValue{false}
 {
     memoryAllocationLocation = MemoryManager::getManager().allocateNewClass(this);
 }
@@ -41,5 +42,13 @@ const PyClass &PyClass::getRaw() const {
 
 PyClass &PyClass::getRaw() {
     return *this;
+}
+
+PyClass *PyClass::retrievePointed(std::string & data) {
+    return &(pointerMap[data])->getRaw();
+}
+
+PyClass *PyClass::retrievePointed(std::string && data) {
+    return &(pointerMap[data])->getRaw();
 }
 

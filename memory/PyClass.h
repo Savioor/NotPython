@@ -18,6 +18,7 @@
 #include <map>
 
 class PyBool;
+class PyVariable;
 class PyString;
 
 enum BuiltInClasses {
@@ -45,9 +46,10 @@ public:
     BuiltInClasses type;
     bool marked; // For mark&sweep
     bool isReturnValue; // Altered by return.
+    bool isThrowValue; // Used for throwing exceptions.
     bool allowCollection; // For GC
 
-    std::map<std::string, PyClass*> pointerMap;
+    std::map<std::string, PyVariable*> pointerMap;
 
     // Mathematical operations
     virtual PyClass* leftAdd(PyClass const& rightElem) const = 0;
@@ -85,8 +87,6 @@ public:
     virtual const PyString* asString() const = 0;
 
     // Array Operations
-    // TODO this is kinda maybe a bad idea,
-    // TODO but I'll cross that bridge when I get to it
     virtual PyClass* getElem(PyClass& indexer) const = 0;
     virtual PyClass* setElem(PyClass& indexer,
                            PyClass& newElem) = 0;
@@ -99,6 +99,10 @@ public:
     // Returns self if not PyVariable. If PyVaribale returns child.getRaw();
     virtual const PyClass& getRaw() const;
     virtual PyClass& getRaw();
+
+protected:
+    PyClass* retrievePointed(std::string&);
+    PyClass* retrievePointed(std::string&&);
 
 };
 
