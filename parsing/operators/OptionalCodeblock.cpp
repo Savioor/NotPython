@@ -37,6 +37,6 @@ PyClass *OptionalCodeblock::getAsClass() const {
 }
 
 OptionalCodeblock::OptionalCodeblock(PyCodeblock* c, std::shared_ptr<OptionalCodeblock> oc, std::shared_ptr<RoundBrackets> cond)
-    : codeblock{c}, parentBlock{std::move(oc)}, condition{std::move(cond)}, hasChild{false}, Operator(OPTIONAL_CB) {
+    : codeblock{c}, parentBlock{std::move(oc)}, condition{std::move(cond)}, hasChild{false}, Operator(OPTIONAL_CODEBLOCK) {
     if (parentBlock != nullptr) parentBlock->hasChild = true;
 }

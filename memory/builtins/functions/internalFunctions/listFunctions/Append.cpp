@@ -7,8 +7,8 @@
 #include "../../../../MemoryManager.h"
 
 PyClass *Append::process(std::map<std::string, PyClass *> &map) {
-    PyList* listInQuestion = (PyList*) map["self"];
-    listInQuestion->pushBack(map["toInsert"]);
+    PyList* listInQuestion = (PyList*)&map["self"]->getRaw();
+    listInQuestion->pushBack(&map["toInsert"]->getRaw());
     return listInQuestion;
 }
 

@@ -38,7 +38,7 @@ PyClass *PyInternalFunction::call(PyClass &params) {
 
         for (int i = 0; i < inputList.getElements().size(); i++){
             value = inputList.getElements().at(i);
-            inputName = inputNameList.getElements().at(i);
+            inputName = ((PyVariable*)inputNameList.getElements().at(i))->getChild();
 
             if (inputName->type != pyVAR) {
                 throw std::runtime_error("one of functions input variables isnt PyVariable");

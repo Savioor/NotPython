@@ -98,6 +98,7 @@ PyClass *PyCodeblock::execute() {
     return MemoryManager::getManager().getNone();
 }
 
+// Just ignores return values.
 PyClass *PyCodeblock::runAsClassStructure() {
     std::istringstream ss{code};
 
@@ -114,5 +115,9 @@ PyClass *PyCodeblock::runAsClassStructure() {
 
 PyCodeblock::PyCodeblock(std::string &&code) : code{code} {
     type = pyCODE_BLOCK;
+}
+void PyCodeblock::prefixInnit(const std::string& class_name)
+{
+	this->code.insert(0, class_name + ".__init__(self);");
 }
 

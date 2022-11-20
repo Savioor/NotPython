@@ -1,0 +1,18 @@
+
+def add(a, b) {
+    return a + b;
+};
+
+def mult(a, b) {
+    return a * b;
+};
+
+def apply(func, a, b) {
+    return func(a, b);
+};
+
+a = 1;
+b = 2;
+
+print(apply(add, a, b));
+print(apply(mult, a, b));

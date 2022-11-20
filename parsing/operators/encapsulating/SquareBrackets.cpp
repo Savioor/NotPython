@@ -12,6 +12,9 @@ SquareBrackets::SquareBrackets() : Brackets('[', ']', BT_SQUARE) {
 }
 
 PyClass *SquareBrackets::getAsClass() const {
+	if (expr->empty()) {
+		return new PyList();
+	}
     std::istringstream ss{*expr + ";"}; // TODO this is slow and temporary (but it should work)
     return ExpressionParser::getParser().parse(ss);
 }

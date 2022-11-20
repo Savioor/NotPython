@@ -265,7 +265,7 @@ LinkedList<std::shared_ptr<Operator>>* ExpressionParser::toOperatorList(std::ist
     int currContext;
     std::string currentOp;
 
-    while (true) { // Not sure with while true is the correct thing here.
+    while (!dataStream.eof()) {
 
         currCharRead = dataStream.get();
 

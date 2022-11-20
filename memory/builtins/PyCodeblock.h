@@ -51,6 +51,8 @@ public:
     PyClass* execute();
     PyClass* runAsClassStructure();
 
+	void prefixInnit(const std::string&);
+
 private:
     std::string code;
 

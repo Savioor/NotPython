@@ -47,7 +47,7 @@ public:
 
     PyClass *setElem(PyClass &indexer, PyClass &newElem) override;
 
-    std::vector<PyClassStructure*> baseClasses;
+    PyClassStructure* baseClass;
 
 protected:
     PyClassStructure(int marker);

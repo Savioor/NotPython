@@ -35,8 +35,8 @@ int main() {
 //    };
 
 //    run_from_file("C:\\Users\\USER\\CLionProjects\\NotPython\\examples\\find_primes.npy");
-//    run_from_file("/home/alexey/CLionProjects/BasicPythonInterpreter/examples/find_primes.npy");
-    run_from_file("C:\\Users\\USER\\CLionProjects\\NotPython\\examples\\prng.npy");
+    run_from_file("/media/alexey/hdd/code/NotPython/examples/inheritance.npy");
+//    run_from_file("C:\\Users\\USER\\CLionProjects\\NotPython\\examples\\prng.npy");
 
     return 0;
 }

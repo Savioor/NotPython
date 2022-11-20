@@ -15,7 +15,7 @@ Operator *Elif::reduce(std::shared_ptr<Operator> before, std::shared_ptr<Operato
         throw std::runtime_error("elif expected code block");
     }
 
-    if (before->type != OPTIONAL_CB) {
+    if (before->type != OPTIONAL_CODEBLOCK) {
         throw std::runtime_error("elif expected to be after and if\\elif");
     }
 

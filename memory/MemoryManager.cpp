@@ -260,7 +260,7 @@ PyVariable *MemoryManager::allocateAndAssign(std::string&& str, PyClass *value) 
 void MemoryManager::addInternalFunctions() {
     increaseExpDepth();
     allocateAndAssign("print", new Print());
-    allocateAndAssign("-Object-", getObject());
+    allocateAndAssign("Object", getObject());
     decreaseExpDepth();
 }
 
